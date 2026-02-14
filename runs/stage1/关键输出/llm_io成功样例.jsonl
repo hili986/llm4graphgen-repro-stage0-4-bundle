@@ -1,0 +1,1 @@
+{"timestamp": "2026-02-14T14:04:22", "provider": "mock", "prompt": "请输出一个 4 节点路径图，格式为 (n, [(u,v), ...])", "model": "gpt-4.1-mini", "temperature": 0.0, "raw_output": "(4, [(0,1), (1,2), (2,3), (0,1),])", "parsed_result": {"success": true, "n": 4, "edges": [[0, 1], [1, 2], [2, 3]], "parse_failure_reason": null}, "parse_failure_reason": null}

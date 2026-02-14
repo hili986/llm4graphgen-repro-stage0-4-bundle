@@ -1,0 +1,26 @@
+﻿# Stage0 运行日志
+
+- 运行时间：2026-02-14 13:24:38
+- 阶段：Stage0
+- 执行范围：仅仓库骨架与最小测试，不进入 Stage1
+
+## 执行记录
+
+1. 读取约束文件：`AGENTS.md`、`SPEC.md`（成功）
+2. 创建工程骨架：`src/`、`tests/`、`docs/`、`Makefile`、`pyproject.toml`（成功）
+3. 运行 `python -m pip install -e .`（失败：临时目录权限不足）
+4. 采用仓库内直跑方案，执行 `python -X utf8 -m llm4graphgen.smoke`（成功，输出 ok）
+5. 执行 `python -X utf8 -m pytest -q`（成功，2 passed）
+6. 尝试执行 `make check` 与 `make stage0_summary`（失败：当前环境未安装 make）
+7. 生成验收产物：`runs/stage0/验收报告.md` 与 `runs/stage0/关键输出/`（成功）
+
+## 关键产物
+
+- `runs/stage0/验收报告.md`
+- `runs/stage0/关键输出/smoke输出.txt`
+- `runs/stage0/关键输出/stage0_summary输出.txt`
+- `runs/stage0/关键输出/pytest输出.txt`
+- `runs/stage0/关键输出/make_check输出.txt`
+- `runs/stage0/关键输出/make_stage0_summary输出.txt`
+- `runs/stage0/关键输出/目录结构.txt`
+- `runs/stage0/关键输出/关键文件清单.csv`

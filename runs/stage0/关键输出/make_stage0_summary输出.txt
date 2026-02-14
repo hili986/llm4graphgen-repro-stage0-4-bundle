@@ -1,0 +1,2 @@
+﻿当前系统未安装 make 命令，无法直接执行 make stage0_summary。
+已完成等价复核：python -X utf8 -m llm4graphgen.smoke --summary（见 stage0_summary输出.txt）。

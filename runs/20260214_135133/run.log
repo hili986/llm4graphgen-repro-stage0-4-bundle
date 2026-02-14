@@ -1,0 +1,29 @@
+﻿# Stage0 运行日志（补修）
+
+- 运行时间：2026-02-14 13:51:33
+- 阶段：Stage0（补修）
+- 目标：修复权限问题、补齐安装、完成未执行的复核项
+
+## 执行记录
+
+1. 检查权限异常目录（`pytest-cache-files-*`、`.tmp*`）
+2. 对问题目录执行 ACL 修复（`takeown` + `icacls`，管理员上下文）
+3. 清理异常目录并重建临时目录
+4. 成功执行 `python -m pip install -e .`（管理员上下文）
+5. 成功执行 `python -m pip install -e .[dev]`（管理员上下文）
+6. 验证安装：`python -m pip show llm4graphgen-repro`
+7. 重跑 Stage0 核心复核：
+   - `python -X utf8 -m llm4graphgen.smoke`
+   - `python -X utf8 -m llm4graphgen.smoke --summary`
+   - `python -X utf8 -m pytest -q`
+8. 由于系统缺少 `make` 命令，生成等价复核说明文件
+
+## 关键产物
+
+- `runs/stage0/关键输出/pip_install验证.txt`
+- `runs/stage0/关键输出/smoke输出.txt`
+- `runs/stage0/关键输出/stage0_summary输出.txt`
+- `runs/stage0/关键输出/pytest输出.txt`
+- `runs/stage0/关键输出/make_check输出.txt`
+- `runs/stage0/关键输出/make_stage0_summary输出.txt`
+- `runs/stage0/验收报告.md`

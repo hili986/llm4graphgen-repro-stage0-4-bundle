@@ -1,0 +1,19 @@
+{
+  "success": true,
+  "n": 4,
+  "edges": [
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      2,
+      3
+    ]
+  ],
+  "parse_failure_reason": null
+}

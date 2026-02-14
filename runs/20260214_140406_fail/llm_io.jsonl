@@ -1,0 +1,1 @@
+{"timestamp": "2026-02-14T14:04:22", "provider": "mock", "prompt": "请输出一个 4 节点路径图，格式为 (n, [(u,v), ...])", "model": "gpt-4.1-mini", "temperature": 0.0, "raw_output": "bad-output", "parsed_result": null, "parse_failure_reason": "格式错误，无法解析为 `(n, [(u,v), ...])`：malformed node or string on line 1: <ast.Name object at 0x000002143843E0D0>"}

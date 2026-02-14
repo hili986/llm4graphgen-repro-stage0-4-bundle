@@ -1,0 +1,4 @@
+﻿sample_id,raw_output,is_valid,canonical_smiles,parse_failure_reason,classifier_score,classifier_positive,is_novel_vs_fewshot
+3,invalid_smiles,False,,RDKit 无法解析该 SMILES。,,,
+8,C1CC1(,False,,RDKit 无法解析该 SMILES。,,,
+12,,False,,SMILES 为空字符串。,,,
