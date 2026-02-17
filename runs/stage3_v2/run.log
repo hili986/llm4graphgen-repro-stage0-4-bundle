@@ -1,0 +1,27 @@
+Stage3 运行日志
+
+- 运行时间：2026-02-15 13:36:24
+- 模型：mock-distribution-stage3
+- 策略：zero_shot
+- 温度：0.5
+- p 值扫描：[0.2, 0.4, 0.6, 0.8]
+- 阶段范围：Distribution-based 任务（p_pred / p_gen / p_error）
+- 指标口径（对齐论文）：
+  - p_pred = LLM 推断的分布参数
+  - p_gen = 从生成图计算的经验正类率
+  - p_pred_error = |p_pred - p_true|
+  - p_gen_error = |p_gen - p_true|
+
+任务摘要：
+- trees_or_cycles(p=0.2): p_pred=0.2500, p_gen=1.0000, parse_fail=0.0000, judge_fail=0.0000
+- trees_or_cycles(p=0.4): p_pred=0.4500, p_gen=1.0000, parse_fail=0.0000, judge_fail=0.0000
+- trees_or_cycles(p=0.6): p_pred=0.6500, p_gen=1.0000, parse_fail=0.0000, judge_fail=0.0000
+- trees_or_cycles(p=0.8): p_pred=0.8500, p_gen=1.0000, parse_fail=0.0000, judge_fail=0.0000
+- union_of_components(p=0.2): p_pred=0.2500, p_gen=1.0000, parse_fail=0.0000, judge_fail=0.0000
+- union_of_components(p=0.4): p_pred=0.4500, p_gen=1.0000, parse_fail=0.0000, judge_fail=0.0000
+- union_of_components(p=0.6): p_pred=0.6500, p_gen=1.0000, parse_fail=0.0000, judge_fail=0.0000
+- union_of_components(p=0.8): p_pred=0.8500, p_gen=1.0000, parse_fail=0.0000, judge_fail=0.0000
+- motif_triangle(p=0.2): p_pred=0.2500, p_gen=1.0000, parse_fail=0.0000, judge_fail=0.0000
+- motif_triangle(p=0.4): p_pred=0.4500, p_gen=1.0000, parse_fail=0.0000, judge_fail=0.0000
+- motif_triangle(p=0.6): p_pred=0.6500, p_gen=1.0000, parse_fail=0.0000, judge_fail=0.0000
+- motif_triangle(p=0.8): p_pred=0.8500, p_gen=1.0000, parse_fail=0.0000, judge_fail=0.0000

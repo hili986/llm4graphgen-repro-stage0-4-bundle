@@ -1,0 +1,20 @@
+Stage4 运行日志
+
+- 运行时间：2026-02-15 14:00:20
+- 模型：mock-mol-stage4
+- 策略：few_shot
+- 温度：0.5
+- 阶段范围：Property-based（MolHIV）
+- 指标口径（对齐论文）：
+  - CM = 有效样本中 baseline 正类概率均值
+  - C_raw = 有效样本中 baseline 判为正类的比例
+  - rectified_C = (CM - FPR) / (TPR - FPR)  [论文公式]
+  - Unique = unique_valid_count / valid_count
+  - Novel = novel_unique_count / unique_valid_count（相对 few-shot 训练集）
+  - 分类器 TPR = 1.0000
+  - 分类器 FPR = 0.0000
+
+结果摘要：
+- total=21, valid=18, valid_rate=0.8571
+- unique_rate=0.9444, novel_rate=0.5294
+- CM=0.6281, C_raw=0.6667, rectified_C=0.6281

@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:ar5iv.org)",
+      "WebFetch(domain:ar5iv.labs.arxiv.org)",
+      "Bash(python -B -X utf8 -m llm4graphgen.stage2_rule_based:*)",
+      "Bash(python:*)",
+      "WebFetch(domain:arxiv.org)"
+    ]
+  }
+}

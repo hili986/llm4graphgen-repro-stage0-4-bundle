@@ -1,17 +1,33 @@
-"""Stage2：Rule-based 8 任务评测与导出。"""
+"""Stage2：Rule-based 8 任务评测 — 对齐论文实验设计。
+
+改进点（vs 原版）：
+- 图规模对齐论文 Table 7（15/16 节点）
+- 精确平面性检测（NetworkX Boyer-Myrvold）
+- 支持 4 种 prompting 策略
+- 支持真实 LLM 调用（100 samples/task）
+- 支持多次重复实验 + 均值±标准差
+- 保留 Mock 模式用于快速测试
+"""
 
 from __future__ import annotations
 
 import argparse
 import csv
 import json
-from dataclasses import dataclass
+import re
+from dataclasses import dataclass, field
 from datetime import datetime
-from itertools import combinations
 from pathlib import Path
 
-from llm4graphgen.parsers import GraphParseResult, parse_graph_output
+import networkx as nx
 
+from llm4graphgen.parsers import GraphParseResult, parse_graph_output
+from llm4graphgen.prompts import build_rule_prompt
+
+
+# ---------------------------------------------------------------------------
+# 数据结构
+# ---------------------------------------------------------------------------
 
 @dataclass(frozen=True)
 class Graph:
@@ -23,12 +39,14 @@ class Graph:
 class TaskConfig:
     task_id: str
     task_name: str
-    prompt: str
-    samples: tuple[str, ...]
-    train_seen_signatures: frozenset[str]
+    n: int
     validator_name: str
-    validator_args: dict[str, int]
+    validator_args: dict[str, int] = field(default_factory=dict)
 
+
+# ---------------------------------------------------------------------------
+# 图工具函数
+# ---------------------------------------------------------------------------
 
 def canonical_signature(n: int, edges: list[tuple[int, int]] | tuple[tuple[int, int], ...]) -> str:
     ordered = sorted((u, v) if u <= v else (v, u) for u, v in edges)
@@ -42,7 +60,7 @@ def build_graph(parse_result: GraphParseResult) -> Graph:
 
 
 def adjacency(graph: Graph) -> list[set[int]]:
-    adj = [set() for _ in range(graph.n)]
+    adj: list[set[int]] = [set() for _ in range(graph.n)]
     for u, v in graph.edges:
         adj[u].add(v)
         adj[v].add(u)
@@ -110,69 +128,13 @@ def is_bipartite(graph: Graph) -> bool:
     return True
 
 
-def contains_k5(graph: Graph) -> bool:
-    edge_set = set(graph.edges)
-    for nodes in combinations(range(graph.n), 5):
-        ok = True
-        for u, v in combinations(nodes, 2):
-            a, b = (u, v) if u <= v else (v, u)
-            if (a, b) not in edge_set:
-                ok = False
-                break
-        if ok:
-            return True
-    return False
-
-
-def contains_k33(graph: Graph) -> bool:
-    edge_set = set(graph.edges)
-    for nodes in combinations(range(graph.n), 6):
-        nodes = list(nodes)
-        for left in combinations(nodes, 3):
-            left_set = set(left)
-            right = [x for x in nodes if x not in left_set]
-            ok = True
-            for u in left:
-                for v in right:
-                    a, b = (u, v) if u <= v else (v, u)
-                    if (a, b) not in edge_set:
-                        ok = False
-                        break
-                if not ok:
-                    break
-            if not ok:
-                continue
-            for u, v in combinations(left, 2):
-                a, b = (u, v) if u <= v else (v, u)
-                if (a, b) in edge_set:
-                    ok = False
-                    break
-            if not ok:
-                continue
-            for u, v in combinations(right, 2):
-                a, b = (u, v) if u <= v else (v, u)
-                if (a, b) in edge_set:
-                    ok = False
-                    break
-            if ok:
-                return True
-    return False
-
-
-def is_planar_approx(graph: Graph) -> bool:
-    n = graph.n
-    m = len(graph.edges)
-    if n <= 4:
-        return True
-    if m > 3 * n - 6:
-        return False
-    if is_bipartite(graph) and m > 2 * n - 4:
-        return False
-    if contains_k5(graph):
-        return False
-    if contains_k33(graph):
-        return False
-    return True
+def is_planar(graph: Graph) -> bool:
+    """精确平面性检测 — 使用 NetworkX Boyer-Myrvold 算法，O(n) 时间。"""
+    G = nx.Graph()
+    G.add_nodes_from(range(graph.n))
+    G.add_edges_from(graph.edges)
+    is_planar_result, _ = nx.check_planarity(G)
+    return is_planar_result
 
 
 def is_k_regular(graph: Graph, k: int) -> bool:
@@ -191,7 +153,7 @@ def is_wheel(graph: Graph) -> bool:
     for node in rim:
         if len(adj[node]) != 3:
             return False
-    rim_edges = []
+    rim_edges: list[tuple[int, int]] = []
     for u, v in graph.edges:
         if u != center and v != center:
             rim_edges.append((u, v))
@@ -210,26 +172,39 @@ def _reindex_edges(nodes: list[int], edges: list[tuple[int, int]]) -> list[tuple
 
 
 def is_k_colorable(graph: Graph, k: int) -> bool:
+    """k-着色检测 — 使用贪心着色作为上界快速检查。"""
+    G = nx.Graph()
+    G.add_nodes_from(range(graph.n))
+    G.add_edges_from(graph.edges)
+    coloring = nx.coloring.greedy_color(G, strategy="largest_first")
+    num_colors = max(coloring.values()) + 1 if coloring else 0
+    if num_colors <= k:
+        return True
+    # 贪心不精确时，回退到回溯
     adj = adjacency(graph)
     order = sorted(range(graph.n), key=lambda x: len(adj[x]), reverse=True)
-    color = [-1] * graph.n
+    color_arr = [-1] * graph.n
 
     def backtrack(pos: int) -> bool:
         if pos == graph.n:
             return True
         u = order[pos]
-        used = {color[v] for v in adj[u] if color[v] != -1}
+        used = {color_arr[v] for v in adj[u] if color_arr[v] != -1}
         for c in range(k):
             if c in used:
                 continue
-            color[u] = c
+            color_arr[u] = c
             if backtrack(pos + 1):
                 return True
-            color[u] = -1
+            color_arr[u] = -1
         return False
 
     return backtrack(0)
 
+
+# ---------------------------------------------------------------------------
+# 验证器分派
+# ---------------------------------------------------------------------------
 
 def validate_graph(graph: Graph, task: TaskConfig) -> bool:
     vid = task.validator_name
@@ -239,9 +214,13 @@ def validate_graph(graph: Graph, task: TaskConfig) -> bool:
     if vid == "cycle":
         return is_cycle(graph)
     if vid == "planar":
-        return is_planar_approx(graph)
+        expected_edges = args.get("m", 0)
+        ok = is_planar(graph)
+        if expected_edges > 0 and len(graph.edges) != expected_edges:
+            ok = False
+        return ok
     if vid == "components":
-        return components_count(graph) == int(args["components"])
+        return components_count(graph) == int(args["k"])
     if vid == "k_regular":
         return is_k_regular(graph, int(args["k"]))
     if vid == "wheel":
@@ -249,231 +228,267 @@ def validate_graph(graph: Graph, task: TaskConfig) -> bool:
     if vid == "bipartite":
         return is_bipartite(graph)
     if vid == "k_coloring":
-        return is_k_colorable(graph, int(args["k"]))
+        expected_edges = args.get("m", 0)
+        ok = is_k_colorable(graph, int(args["k"]))
+        if expected_edges > 0 and len(graph.edges) != expected_edges:
+            ok = False
+        return ok
     raise ValueError(f"未知任务判定器：{vid}")
 
 
+# ---------------------------------------------------------------------------
+# 任务配置 — 对齐论文 Table 7
+# ---------------------------------------------------------------------------
+
 def _task_configs() -> list[TaskConfig]:
     return [
-        TaskConfig(
-            task_id="tree",
-            task_name="Tree",
-            prompt="生成一张树图，输出格式为 (n, [(u,v), ...])。",
-            samples=(
-                "(5, [(0,1),(1,2),(2,3),(3,4)])",
-                "(5, [(0,1),(0,2),(0,3),(0,4)])",
-                "(5, [(0,1),(1,2),(2,3),(3,4)])",
-                "(5, [(0,1),(1,2),(2,0),(3,4)])",
-                "bad-output",
-                "(5, [(0,1),(1,2),(2,3),(0,4)])",
-            ),
-            train_seen_signatures=frozenset(
-                {
-                    canonical_signature(5, [(0, 1), (1, 2), (2, 3), (3, 4)]),
-                    canonical_signature(5, [(0, 1), (0, 2), (0, 3), (0, 4)]),
-                }
-            ),
-            validator_name="tree",
-            validator_args={},
-        ),
-        TaskConfig(
-            task_id="cycle",
-            task_name="Cycle",
-            prompt="生成一张单环图，输出格式为 (n, [(u,v), ...])。",
-            samples=(
-                "(6, [(0,1),(1,2),(2,3),(3,4),(4,5),(5,0)])",
-                "(6, [(0,1),(1,2),(2,3),(3,4),(4,5),(5,0),(0,1)])",
-                "(6, [(0,1),(1,2),(2,3),(3,4),(4,5)])",
-                "(5, [(0,1),(1,2),(2,3),(3,4),(4,0)])",
-                "oops",
-                "(6, [(0,1),(1,2),(2,3),(3,4),(4,5),(5,0),(0,2)])",
-            ),
-            train_seen_signatures=frozenset(
-                {canonical_signature(6, [(0, 1), (1, 2), (2, 3), (3, 4), (4, 5), (0, 5)])}
-            ),
-            validator_name="cycle",
-            validator_args={},
-        ),
-        TaskConfig(
-            task_id="planar",
-            task_name="Planar",
-            prompt="生成一张平面图，输出格式为 (n, [(u,v), ...])。",
-            samples=(
-                "(5, [(0,1),(1,2),(2,3),(3,4),(4,0)])",
-                "(5, [(0,1),(0,2),(0,3),(0,4),(1,2),(1,3),(1,4),(2,3),(2,4),(3,4)])",
-                "(6, [(0,3),(0,4),(0,5),(1,3),(1,4),(1,5),(2,3),(2,4),(2,5)])",
-                "(4, [(0,1),(1,2),(2,3)])",
-                "planar???",
-                "(5, [(0,1),(1,2),(2,3),(3,4),(4,0)])",
-            ),
-            train_seen_signatures=frozenset({canonical_signature(5, [(0, 1), (1, 2), (2, 3), (3, 4), (0, 4)])}),
-            validator_name="planar",
-            validator_args={},
-        ),
-        TaskConfig(
-            task_id="components",
-            task_name="#Components",
-            prompt="生成恰好 2 个连通分量的图，输出格式为 (n, [(u,v), ...])。",
-            samples=(
-                "(6, [(0,1),(1,2),(3,4),(4,5)])",
-                "(6, [(0,1),(1,2),(2,3),(3,4),(4,5)])",
-                "(6, [(0,1),(2,3)])",
-                "(6, [(0,1),(1,2),(3,4),(4,5)])",
-                "bad components",
-                "(6, [(0,1),(1,2),(2,3),(4,5)])",
-            ),
-            train_seen_signatures=frozenset({canonical_signature(6, [(0, 1), (1, 2), (3, 4), (4, 5)])}),
-            validator_name="components",
-            validator_args={"components": 2},
-        ),
-        TaskConfig(
-            task_id="k_regular",
-            task_name="k-regular",
-            prompt="生成一张 2-regular 图，输出格式为 (n, [(u,v), ...])。",
-            samples=(
-                "(6, [(0,1),(1,2),(2,3),(3,4),(4,5),(5,0)])",
-                "(6, [(0,1),(1,2),(2,0),(3,4),(4,5),(5,3)])",
-                "(6, [(0,1),(1,2),(2,3),(3,4),(4,5)])",
-                "(6, [(0,1),(1,2),(2,3),(3,4),(4,5),(5,0)])",
-                "reg",
-                "(5, [(0,1),(1,2),(2,3),(3,4),(4,0)])",
-            ),
-            train_seen_signatures=frozenset({canonical_signature(6, [(0, 1), (1, 2), (2, 3), (3, 4), (4, 5), (0, 5)])}),
-            validator_name="k_regular",
-            validator_args={"k": 2},
-        ),
-        TaskConfig(
-            task_id="wheel",
-            task_name="Wheel",
-            prompt="生成一张轮图，输出格式为 (n, [(u,v), ...])。",
-            samples=(
-                "(6, [(0,1),(0,2),(0,3),(0,4),(0,5),(1,2),(2,3),(3,4),(4,5),(5,1)])",
-                "(6, [(0,2),(0,3),(0,4),(0,5),(0,1),(1,2),(2,3),(3,4),(4,5),(5,1)])",
-                "(6, [(0,1),(0,2),(0,3),(0,4),(0,5),(1,2),(2,3),(3,4),(4,5)])",
-                "(6, [(0,1),(0,2),(0,3),(0,4),(0,5)])",
-                "wheel",
-                "(5, [(0,1),(0,2),(0,3),(0,4),(1,2),(2,3),(3,4),(4,1)])",
-            ),
-            train_seen_signatures=frozenset(
-                {
-                    canonical_signature(
-                        6, [(0, 1), (0, 2), (0, 3), (0, 4), (0, 5), (1, 2), (2, 3), (3, 4), (4, 5), (1, 5)]
-                    )
-                }
-            ),
-            validator_name="wheel",
-            validator_args={},
-        ),
-        TaskConfig(
-            task_id="bipartite",
-            task_name="Bipartite",
-            prompt="生成一张二分图，输出格式为 (n, [(u,v), ...])。",
-            samples=(
-                "(6, [(0,3),(0,4),(0,5),(1,3),(1,4),(1,5),(2,3),(2,4),(2,5)])",
-                "(5, [(0,1),(1,2),(2,3),(3,4),(4,0)])",
-                "(6, [(0,1),(1,2),(2,3)])",
-                "(6, [(0,3),(0,4),(0,5),(1,3),(1,4),(1,5),(2,3),(2,4),(2,5)])",
-                "bipartite",
-                "(4, [(0,1),(0,2),(0,3),(1,2),(1,3),(2,3)])",
-            ),
-            train_seen_signatures=frozenset({canonical_signature(6, [(0, 1), (1, 2), (2, 3)])}),
-            validator_name="bipartite",
-            validator_args={},
-        ),
-        TaskConfig(
-            task_id="k_coloring",
-            task_name="k-coloring",
-            prompt="生成一张 3-可着色图，输出格式为 (n, [(u,v), ...])。",
-            samples=(
-                "(5, [(0,1),(1,2),(2,3),(3,4),(4,0)])",
-                "(4, [(0,1),(0,2),(0,3),(1,2),(1,3),(2,3)])",
-                "(6, [(0,1),(1,2),(2,3)])",
-                "(5, [(0,1),(1,2),(2,3),(3,4),(4,0)])",
-                "kcolor",
-                "(3, [(0,1),(1,2),(2,0)])",
-            ),
-            train_seen_signatures=frozenset({canonical_signature(5, [(0, 1), (1, 2), (2, 3), (3, 4), (0, 4)])}),
-            validator_name="k_coloring",
-            validator_args={"k": 3},
-        ),
+        TaskConfig(task_id="tree", task_name="Tree", n=15,
+                   validator_name="tree"),
+        TaskConfig(task_id="cycle", task_name="Cycle", n=15,
+                   validator_name="cycle"),
+        TaskConfig(task_id="planar", task_name="Planar", n=15,
+                   validator_name="planar", validator_args={"m": 24}),
+        TaskConfig(task_id="components", task_name="#Components", n=15,
+                   validator_name="components", validator_args={"k": 5}),
+        TaskConfig(task_id="k_regular", task_name="k-regular", n=16,
+                   validator_name="k_regular", validator_args={"k": 3}),
+        TaskConfig(task_id="wheel", task_name="Wheel", n=15,
+                   validator_name="wheel"),
+        TaskConfig(task_id="bipartite", task_name="Bipartite", n=10,
+                   validator_name="bipartite", validator_args={"k": 5}),
+        TaskConfig(task_id="k_coloring", task_name="k-coloring", n=15,
+                   validator_name="k_coloring", validator_args={"k": 3, "m": 32}),
     ]
 
 
-def run_stage2(output_root: Path, run_id: str, model: str = "mock-rule-stage2", temperature: float = 0.0) -> tuple[int, Path]:
+# ---------------------------------------------------------------------------
+# Mock 样本生成（用于无 API 快速测试）— 扩充到论文级别
+# ---------------------------------------------------------------------------
+
+def _generate_mock_samples(task: TaskConfig, num_samples: int = 6) -> list[str]:
+    """生成与论文参数对齐的 Mock 样本（用于离线测试）。"""
+    import random as _rand
+    from llm4graphgen.graph_samplers import random_tree, random_cycle, random_wheel, format_graph
+
+    rng = _rand.Random(42 + hash(task.task_id))
+    samples: list[str] = []
+    n = task.n
+
+    for i in range(num_samples):
+        if i == num_samples - 1:
+            # 最后一个为故意坏输出
+            samples.append("bad-output")
+            continue
+
+        try:
+            if task.task_id == "tree":
+                gn, ge = random_tree(n, rng)
+                samples.append(format_graph(gn, ge))
+            elif task.task_id == "cycle":
+                gn, ge = random_cycle(n, rng)
+                samples.append(format_graph(gn, ge))
+            elif task.task_id == "wheel":
+                gn, ge = random_wheel(n, rng)
+                samples.append(format_graph(gn, ge))
+            elif task.task_id == "bipartite":
+                # 生成二分图
+                edges = []
+                for u in range(n // 2):
+                    for v in range(n // 2, n):
+                        if rng.random() < 0.4:
+                            edges.append((u, v))
+                if not edges:
+                    edges.append((0, n // 2))
+                samples.append(format_graph(n, sorted(edges)))
+            elif task.task_id == "k_regular":
+                k = task.validator_args["k"]
+                # 尝试生成 k-regular：创建若干 cycle 覆盖
+                gn, ge = random_cycle(n, rng)
+                samples.append(format_graph(gn, ge))
+            elif task.task_id == "components":
+                k_comp = task.validator_args["k"]
+                chunk = n // k_comp
+                edges = []
+                offset = 0
+                for c in range(k_comp):
+                    sz = chunk if c < k_comp - 1 else n - offset
+                    for j in range(sz - 1):
+                        edges.append((offset + j, offset + j + 1))
+                    offset += sz
+                samples.append(format_graph(n, sorted(edges)))
+            elif task.task_id == "planar":
+                edges = []
+                for j in range(n - 1):
+                    edges.append((j, j + 1))
+                extra = 0
+                while len(edges) < task.validator_args.get("m", 24) and extra < 100:
+                    u = rng.randint(0, n - 1)
+                    v = rng.randint(0, n - 1)
+                    if u != v:
+                        e = (min(u, v), max(u, v))
+                        if e not in edges:
+                            edges.append(e)
+                    extra += 1
+                samples.append(format_graph(n, sorted(edges)))
+            elif task.task_id == "k_coloring":
+                edges = []
+                for j in range(n - 1):
+                    edges.append((j, j + 1))
+                while len(edges) < task.validator_args.get("m", 32):
+                    u = rng.randint(0, n - 1)
+                    v = rng.randint(0, n - 1)
+                    if u != v:
+                        e = (min(u, v), max(u, v))
+                        if e not in edges:
+                            edges.append(e)
+                samples.append(format_graph(n, sorted(edges)))
+            else:
+                samples.append(format_graph(n, [(i, (i + 1) % n) for i in range(n)]))
+        except Exception:
+            samples.append(format_graph(n, [(0, 1)]))
+
+    return samples
+
+
+# ---------------------------------------------------------------------------
+# LLM 输出解析：从可能包含推理过程的文本中提取图
+# ---------------------------------------------------------------------------
+
+def extract_graph_from_response(response: str) -> str:
+    """从 LLM 响应中提取最后一个 (n, [...]) 格式的图。
+
+    支持 CoT 模式（响应中包含推理文本 + 最终图）。
+    """
+    pattern = r'\(\s*\d+\s*,\s*\[.*?\]\s*\)'
+    matches = re.findall(pattern, response, re.DOTALL)
+    if matches:
+        return matches[-1]  # 取最后一个匹配（CoT 时最终答案在末尾）
+    return response.strip()
+
+
+# ---------------------------------------------------------------------------
+# 核心运行引擎
+# ---------------------------------------------------------------------------
+
+def run_stage2(
+    output_root: Path,
+    run_id: str,
+    model: str = "mock-rule-stage2",
+    temperature: float = 0.8,
+    provider=None,
+    strategy: str = "zero_shot",
+    num_samples: int = 100,
+    num_repeats: int = 1,
+) -> tuple[int, Path]:
+    """运行 Stage2 评测。
+
+    Args:
+        provider: BaseProvider 实例。为 None 时使用 Mock 数据。
+        strategy: "zero_shot" | "few_shot" | "zero_shot_cot" | "few_shot_cot"
+        num_samples: 每任务样本数（论文为 100）
+        num_repeats: 重复实验次数（用于计算均值±标准差）
+    """
     run_dir = output_root / run_id
     run_dir.mkdir(parents=True, exist_ok=True)
 
     tasks = _task_configs()
-    llm_records: list[dict[str, object]] = []
-    sample_rows: list[dict[str, object]] = []
-    metric_rows: list[dict[str, object]] = []
+    use_mock = provider is None
 
-    for task in tasks:
-        valid_signatures: list[str] = []
-        parse_success_count = 0
-        valid_count = 0
-        parse_fail_count = 0
+    all_repeat_metrics: list[list[dict[str, object]]] = []
 
-        for idx, raw_output in enumerate(task.samples, start=1):
-            parse_result = parse_graph_output(raw_output)
-            is_valid = False
-            signature = ""
-            if parse_result.success:
-                parse_success_count += 1
-                graph = build_graph(parse_result)
-                is_valid = validate_graph(graph, task)
-                if is_valid:
-                    valid_count += 1
-                    signature = canonical_signature(graph.n, graph.edges)
-                    valid_signatures.append(signature)
+    for repeat_idx in range(num_repeats):
+        llm_records: list[dict[str, object]] = []
+        sample_rows: list[dict[str, object]] = []
+        metric_rows: list[dict[str, object]] = []
+
+        for task in tasks:
+            prompt = build_rule_prompt(task.task_id, strategy, n=task.n)
+
+            if use_mock:
+                raw_outputs = _generate_mock_samples(task, num_samples=min(num_samples, 20))
             else:
-                parse_fail_count += 1
+                raw_outputs = []
+                for _ in range(num_samples):
+                    try:
+                        resp = provider.generate(prompt, model, temperature)
+                        raw_outputs.append(extract_graph_from_response(resp))
+                    except Exception as exc:
+                        raw_outputs.append(f"LLM_ERROR: {exc}")
 
-            parsed_result = parse_result.to_dict() if parse_result.success else None
-            failure_reason = parse_result.parse_failure_reason
+            valid_signatures: list[str] = []
+            parse_success_count = 0
+            valid_count = 0
+            parse_fail_count = 0
 
-            sample_rows.append(
-                {
+            # 收集 few-shot 示例签名作为 train_seen
+            from llm4graphgen.prompts import RULE_TASK_DESCRIPTIONS
+            train_seen: set[str] = set()
+            for ex in RULE_TASK_DESCRIPTIONS[task.task_id]["few_shot_examples"]:
+                pr = parse_graph_output(ex)
+                if pr.success and pr.n is not None:
+                    train_seen.add(canonical_signature(pr.n, pr.edges))
+
+            for idx, raw_output in enumerate(raw_outputs, start=1):
+                parse_result = parse_graph_output(raw_output)
+                is_valid = False
+                signature = ""
+                if parse_result.success:
+                    parse_success_count += 1
+                    graph = build_graph(parse_result)
+                    is_valid = validate_graph(graph, task)
+                    if is_valid:
+                        valid_count += 1
+                        signature = canonical_signature(graph.n, graph.edges)
+                        valid_signatures.append(signature)
+                else:
+                    parse_fail_count += 1
+
+                parsed_result = parse_result.to_dict() if parse_result.success else None
+                failure_reason = parse_result.parse_failure_reason
+
+                sample_rows.append({
+                    "repeat": repeat_idx + 1,
                     "task_id": task.task_id,
                     "task_name": task.task_name,
                     "sample_id": idx,
-                    "raw_output": raw_output,
+                    "raw_output": raw_output[:200],
                     "parse_success": parse_result.success,
                     "is_valid": is_valid,
                     "signature": signature,
                     "parse_failure_reason": failure_reason or "",
-                }
-            )
+                })
 
-            llm_records.append(
-                {
+                llm_records.append({
                     "timestamp": datetime.now().isoformat(timespec="seconds"),
+                    "repeat": repeat_idx + 1,
                     "task_id": task.task_id,
                     "sample_id": idx,
-                    "provider": "mock",
-                    "prompt": task.prompt,
+                    "provider": "mock" if use_mock else provider.name,
+                    "strategy": strategy,
+                    "prompt": prompt[:300],
                     "model": model,
                     "temperature": temperature,
-                    "raw_output": raw_output,
+                    "raw_output": raw_output[:500],
                     "parsed_result": parsed_result,
                     "parse_failure_reason": failure_reason,
                     "is_valid": is_valid,
-                }
-            )
+                })
 
-        unique_valid = set(valid_signatures)
-        unique_valid_count = len(unique_valid)
-        novel_unique_count = sum(1 for sig in unique_valid if sig not in task.train_seen_signatures)
+            unique_valid = set(valid_signatures)
+            unique_valid_count = len(unique_valid)
+            novel_unique_count = sum(1 for sig in unique_valid if sig not in train_seen)
 
-        total = len(task.samples)
-        valid_rate = valid_count / total if total else 0.0
-        unique_rate = unique_valid_count / valid_count if valid_count else 0.0
-        novel_rate = novel_unique_count / unique_valid_count if unique_valid_count else 0.0
+            total = len(raw_outputs)
+            valid_rate = valid_count / total if total else 0.0
+            unique_rate = unique_valid_count / valid_count if valid_count else 0.0
+            novel_rate = novel_unique_count / unique_valid_count if unique_valid_count else 0.0
 
-        metric_rows.append(
-            {
+            metric_rows.append({
+                "repeat": repeat_idx + 1,
                 "task_id": task.task_id,
                 "task_name": task.task_name,
+                "strategy": strategy,
+                "n": task.n,
                 "total_samples": total,
                 "parse_success_count": parse_success_count,
                 "parse_fail_count": parse_fail_count,
@@ -483,20 +498,67 @@ def run_stage2(output_root: Path, run_id: str, model: str = "mock-rule-stage2", 
                 "valid_rate": f"{valid_rate:.4f}",
                 "unique_rate": f"{unique_rate:.4f}",
                 "novel_rate": f"{novel_rate:.4f}",
-            }
+            })
+
+        all_repeat_metrics.append(metric_rows)
+
+        # 写入当前 repeat 的数据
+        suffix = f"_r{repeat_idx + 1}" if num_repeats > 1 else ""
+        _write_jsonl(run_dir / f"llm_io{suffix}.jsonl", llm_records)
+        _write_csv(run_dir / f"rule_based_samples{suffix}.csv", sample_rows)
+        _write_csv(run_dir / f"rule_based_metrics{suffix}.csv", metric_rows)
+        _write_csv(
+            run_dir / f"failure_cases{suffix}.csv",
+            [r for r in sample_rows if not bool(r["parse_success"]) or not bool(r["is_valid"])],
         )
 
-    _write_jsonl(run_dir / "llm_io.jsonl", llm_records)
-    _write_csv(run_dir / "rule_based_samples.csv", sample_rows)
-    _write_csv(run_dir / "rule_based_metrics.csv", metric_rows)
-    _write_csv(
-        run_dir / "failure_cases.csv",
-        [row for row in sample_rows if (not bool(row["parse_success"])) or (not bool(row["is_valid"]))],
-    )
-
-    _write_run_log(run_dir / "run.log", metric_rows)
+    # 汇总统计
+    summary_rows = _compute_summary(all_repeat_metrics)
+    _write_csv(run_dir / "rule_based_summary.csv", summary_rows)
+    _write_run_log(run_dir / "run.log", summary_rows, strategy, model, temperature, num_samples, num_repeats)
     return 0, run_dir
 
+
+def _compute_summary(all_repeats: list[list[dict[str, object]]]) -> list[dict[str, object]]:
+    """多次重复实验的均值±标准差汇总。"""
+    import numpy as _np
+
+    if len(all_repeats) == 1:
+        return all_repeats[0]
+
+    task_ids: list[str] = []
+    for row in all_repeats[0]:
+        task_ids.append(str(row["task_id"]))
+
+    summary: list[dict[str, object]] = []
+    for i, tid in enumerate(task_ids):
+        vals = {"valid_rate": [], "unique_rate": [], "novel_rate": []}
+        for repeat_metrics in all_repeats:
+            row = repeat_metrics[i]
+            for key in vals:
+                vals[key].append(float(str(row[key])))
+
+        row0 = all_repeats[0][i]
+        s: dict[str, object] = {
+            "task_id": tid,
+            "task_name": row0["task_name"],
+            "strategy": row0["strategy"],
+            "n": row0["n"],
+            "num_repeats": len(all_repeats),
+        }
+        for key in vals:
+            arr = _np.array(vals[key])
+            s[f"{key}_mean"] = f"{arr.mean():.1f}" if key == "valid_rate" else f"{arr.mean():.4f}"
+            s[f"{key}_std"] = f"{arr.std():.1f}" if key == "valid_rate" else f"{arr.std():.4f}"
+            s[f"{key}_display"] = f"{arr.mean() * 100:.1f}±{arr.std() * 100:.1f}"
+        summary.append(s)
+
+    return summary
+
+
+# ---------------------------------------------------------------------------
+# 输出写入工具
+# ---------------------------------------------------------------------------
 
 def _write_jsonl(path: Path, rows: list[dict[str, object]]) -> None:
     with path.open("w", encoding="utf-8") as f:
@@ -514,43 +576,82 @@ def _write_csv(path: Path, rows: list[dict[str, object]]) -> None:
         writer.writerows(rows)
 
 
-def _write_run_log(path: Path, metrics: list[dict[str, object]]) -> None:
+def _write_run_log(
+    path: Path,
+    metrics: list[dict[str, object]],
+    strategy: str,
+    model: str,
+    temperature: float,
+    num_samples: int,
+    num_repeats: int,
+) -> None:
     lines = [
         "Stage2 运行日志",
         "",
         f"- 运行时间：{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}",
+        f"- 模型：{model}",
+        f"- 策略：{strategy}",
+        f"- 温度：{temperature}",
+        f"- 每任务样本数：{num_samples}",
+        f"- 重复次数：{num_repeats}",
         "- 阶段范围：Rule-based 8 任务（valid/unique/novel）",
+        "- 图规模：对齐论文 Table 7（Tree/Cycle/Planar/Wheel=15, k-regular=16, Bipartite=10, k-coloring=15）",
+        "- 平面性检测：NetworkX Boyer-Myrvold 精确算法",
         "- 指标口径：",
         "  - valid_rate = valid_count / total_samples",
         "  - unique_rate = unique_valid_count / valid_count",
         "  - novel_rate = novel_unique_count / unique_valid_count",
-        "  - novel 判定：与预设 train_seen_signatures 不同的唯一有效图视为 novel",
         "",
         "任务摘要：",
     ]
     for row in metrics:
-        lines.append(
-            f"- {row['task_id']}: valid={row['valid_rate']}, unique={row['unique_rate']}, novel={row['novel_rate']}"
-        )
+        if "valid_rate_display" in row:
+            lines.append(
+                f"- {row['task_id']}: valid={row['valid_rate_display']}, "
+                f"unique={row['unique_rate_display']}, novel={row['novel_rate_display']}"
+            )
+        else:
+            lines.append(
+                f"- {row['task_id']}: valid={row['valid_rate']}, "
+                f"unique={row['unique_rate']}, novel={row['novel_rate']}"
+            )
     path.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 
+# ---------------------------------------------------------------------------
+# CLI
+# ---------------------------------------------------------------------------
+
 def main(argv: list[str] | None = None) -> int:
-    parser = argparse.ArgumentParser(description="Stage2 Rule-based 8 任务评测")
+    parser = argparse.ArgumentParser(description="Stage2 Rule-based 8 任务评测（论文对齐版）")
     parser.add_argument("--output-root", default="runs", help="输出目录根路径")
     parser.add_argument("--run-id", default=datetime.now().strftime("%Y%m%d_%H%M%S"))
     parser.add_argument("--model", default="mock-rule-stage2")
-    parser.add_argument("--temperature", type=float, default=0.0)
+    parser.add_argument("--temperature", type=float, default=0.8)
+    parser.add_argument("--strategy", default="zero_shot",
+                        choices=["zero_shot", "few_shot", "zero_shot_cot", "few_shot_cot"])
+    parser.add_argument("--num-samples", type=int, default=100, help="每任务样本数（论文为100）")
+    parser.add_argument("--num-repeats", type=int, default=1, help="重复实验次数")
+    parser.add_argument("--provider", default="mock", choices=["mock", "openai"])
     args = parser.parse_args(argv)
+
+    prov = None
+    if args.provider == "openai":
+        from llm4graphgen.providers import OpenAIProvider
+        prov = OpenAIProvider()
 
     _, run_dir = run_stage2(
         output_root=Path(args.output_root),
         run_id=args.run_id,
         model=args.model,
         temperature=args.temperature,
+        provider=prov,
+        strategy=args.strategy,
+        num_samples=args.num_samples,
+        num_repeats=args.num_repeats,
     )
     print(f"Stage2 运行完成：{run_dir.as_posix()}")
-    print("结果文件：rule_based_metrics.csv / rule_based_samples.csv / llm_io.jsonl")
+    print("结果文件：rule_based_summary.csv / rule_based_metrics.csv / llm_io.jsonl")
     return 0
 
 

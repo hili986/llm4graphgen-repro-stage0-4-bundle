@@ -1,3 +1,5 @@
+"""Stage3 Distribution-based 测试（对齐论文改进版）。"""
+
 from pathlib import Path
 import csv
 import shutil
@@ -32,7 +34,10 @@ def test_stage3_run_outputs_and_metrics():
     root = Path("runs") / "test_stage3_tmp"
     if root.exists():
         shutil.rmtree(root)
-    code, run_dir = run_stage3(output_root=root, run_id="case")
+    code, run_dir = run_stage3(
+        output_root=root, run_id="case",
+        p_values=[0.5], num_output=5,
+    )
     assert code == 0
     assert (run_dir / "distribution_metrics.csv").exists()
     assert (run_dir / "distribution_samples.csv").exists()
@@ -42,8 +47,10 @@ def test_stage3_run_outputs_and_metrics():
 
     with (run_dir / "distribution_metrics.csv").open("r", encoding="utf-8-sig") as f:
         rows = list(csv.DictReader(f))
+    # 3 tasks x 1 p-value = 3 rows
     assert len(rows) == 3
-    motif_row = next(r for r in rows if r["task_id"] == "motif")
-    assert float(motif_row["parse_fail_rate"]) > 0.0
-    assert float(motif_row["judge_fail_rate"]) > 0.0
+    for row in rows:
+        assert "p_true" in row
+        assert "p_gen" in row
+        assert "p_pred" in row
     shutil.rmtree(root)

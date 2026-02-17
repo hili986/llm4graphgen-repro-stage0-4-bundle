@@ -1,0 +1,9 @@
+﻿repeat,task_id,task_name,strategy,n,total_samples,parse_success_count,parse_fail_count,valid_count,unique_valid_count,novel_unique_count,valid_rate,unique_rate,novel_rate
+3,tree,Tree,zero_shot,15,100,0,100,0,0,0,0.0000,0.0000,0.0000
+3,cycle,Cycle,zero_shot,15,100,0,100,0,0,0,0.0000,0.0000,0.0000
+3,planar,Planar,zero_shot,15,100,0,100,0,0,0,0.0000,0.0000,0.0000
+3,components,#Components,zero_shot,15,100,0,100,0,0,0,0.0000,0.0000,0.0000
+3,k_regular,k-regular,zero_shot,16,100,0,100,0,0,0,0.0000,0.0000,0.0000
+3,wheel,Wheel,zero_shot,15,100,0,100,0,0,0,0.0000,0.0000,0.0000
+3,bipartite,Bipartite,zero_shot,10,100,0,100,0,0,0,0.0000,0.0000,0.0000
+3,k_coloring,k-coloring,zero_shot,15,100,0,100,0,0,0,0.0000,0.0000,0.0000
