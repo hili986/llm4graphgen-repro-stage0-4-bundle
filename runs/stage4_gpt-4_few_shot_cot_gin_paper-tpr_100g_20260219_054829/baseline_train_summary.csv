@@ -1,0 +1,2 @@
+﻿classifier_type,data_source,train_total,train_positive,train_negative,train_unique_canonical,classifier_own_TPR,classifier_own_FPR,rectified_C_TPR,rectified_C_FPR,tpr_fpr_source,eval_set,accuracy,test_rocauc,confusion_matrix_full
+"GIN(layers=5, dim=300)",ogbg-molhiv,32901,1232,31669,32898,0.3056,0.0047,0.5615,0.1045,paper_table10,full_dataset,0.9711,0.7597,"[[39498, 186], [1002, 441]]"

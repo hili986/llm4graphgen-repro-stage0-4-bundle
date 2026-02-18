@@ -1,6 +1,9 @@
 """Stage2：Rule-based 8 任务评测 — 对齐论文实验设计。
 
-改进点（vs 原版）：
+改进点（v3, vs v2）：
+- [P2a] 图同构去重（WL hash）替代 canonical signature，对齐论文 Unique Rate
+- [P2b] 支持 Small/Medium/Large 三种图规模消融（对齐论文 Table 4/8）
+- [P3a] 支持多模型便捷切换
 - 图规模对齐论文 Table 7（15/16 节点）
 - 精确平面性检测（NetworkX Boyer-Myrvold）
 - 支持 4 种 prompting 策略
@@ -49,9 +52,22 @@ class TaskConfig:
 # ---------------------------------------------------------------------------
 
 def canonical_signature(n: int, edges: list[tuple[int, int]] | tuple[tuple[int, int], ...]) -> str:
+    """边排序签名 — 快速但不考虑图同构。"""
     ordered = sorted((u, v) if u <= v else (v, u) for u, v in edges)
     edge_text = ",".join(f"{u}-{v}" for u, v in ordered)
     return f"{n}|{edge_text}"
+
+
+def isomorphism_hash(n: int, edges: list[tuple[int, int]] | tuple[tuple[int, int], ...]) -> str:
+    """[P2a] 基于图同构的哈希 — 使用 Weisfeiler-Lehman 图哈希。
+
+    同构的图会得到相同的哈希值，能正确处理节点重标号。
+    论文中 Unique Rate 应当基于图同构判定去重。
+    """
+    G = nx.Graph()
+    G.add_nodes_from(range(n))
+    G.add_edges_from(edges)
+    return nx.weisfeiler_lehman_graph_hash(G)
 
 
 def build_graph(parse_result: GraphParseResult) -> Graph:
@@ -180,7 +196,6 @@ def is_k_colorable(graph: Graph, k: int) -> bool:
     num_colors = max(coloring.values()) + 1 if coloring else 0
     if num_colors <= k:
         return True
-    # 贪心不精确时，回退到回溯
     adj = adjacency(graph)
     order = sorted(range(graph.n), key=lambda x: len(adj[x]), reverse=True)
     color_arr = [-1] * graph.n
@@ -237,28 +252,69 @@ def validate_graph(graph: Graph, task: TaskConfig) -> bool:
 
 
 # ---------------------------------------------------------------------------
-# 任务配置 — 对齐论文 Table 7
+# 任务配置 — 对齐论文 Table 7/8（支持 Small/Medium/Large 三种规模）
 # ---------------------------------------------------------------------------
 
-def _task_configs() -> list[TaskConfig]:
-    return [
-        TaskConfig(task_id="tree", task_name="Tree", n=15,
-                   validator_name="tree"),
-        TaskConfig(task_id="cycle", task_name="Cycle", n=15,
-                   validator_name="cycle"),
-        TaskConfig(task_id="planar", task_name="Planar", n=15,
-                   validator_name="planar", validator_args={"m": 24}),
-        TaskConfig(task_id="components", task_name="#Components", n=15,
-                   validator_name="components", validator_args={"k": 5}),
-        TaskConfig(task_id="k_regular", task_name="k-regular", n=16,
-                   validator_name="k_regular", validator_args={"k": 3}),
-        TaskConfig(task_id="wheel", task_name="Wheel", n=15,
-                   validator_name="wheel"),
-        TaskConfig(task_id="bipartite", task_name="Bipartite", n=10,
-                   validator_name="bipartite", validator_args={"k": 5}),
-        TaskConfig(task_id="k_coloring", task_name="k-coloring", n=15,
-                   validator_name="k_coloring", validator_args={"k": 3, "m": 32}),
-    ]
+# [P2b] 论文 Table 7 定义的三种规模
+SIZE_PRESETS: dict[str, dict[str, dict[str, int]]] = {
+    "small": {
+        "tree":       {"n": 8},
+        "cycle":      {"n": 8},
+        "planar":     {"n": 8,  "m": 12},
+        "components": {"n": 8,  "k": 3},
+        "k_regular":  {"n": 8,  "k": 3},
+        "wheel":      {"n": 8},
+        "bipartite":  {"n": 6,  "k": 3},
+        "k_coloring": {"n": 8,  "m": 16, "k": 3},
+    },
+    "medium": {
+        "tree":       {"n": 15},
+        "cycle":      {"n": 15},
+        "planar":     {"n": 15, "m": 24},
+        "components": {"n": 15, "k": 5},
+        "k_regular":  {"n": 16, "k": 3},
+        "wheel":      {"n": 15},
+        "bipartite":  {"n": 10, "k": 5},
+        "k_coloring": {"n": 15, "m": 32, "k": 3},
+    },
+    "large": {
+        "tree":       {"n": 30},
+        "cycle":      {"n": 30},
+        "planar":     {"n": 30, "m": 50},
+        "components": {"n": 30, "k": 10},
+        "k_regular":  {"n": 30, "k": 3},
+        "wheel":      {"n": 30},
+        "bipartite":  {"n": 20, "k": 10},
+        "k_coloring": {"n": 30, "m": 64, "k": 3},
+    },
+}
+
+
+def _task_configs(size: str = "medium") -> list[TaskConfig]:
+    """生成任务配置，支持 small/medium/large 三种规模。"""
+    preset = SIZE_PRESETS[size]
+
+    configs = []
+    for task_id, params in [
+        ("tree", "Tree"),
+        ("cycle", "Cycle"),
+        ("planar", "Planar"),
+        ("components", "#Components"),
+        ("k_regular", "k-regular"),
+        ("wheel", "Wheel"),
+        ("bipartite", "Bipartite"),
+        ("k_coloring", "k-coloring"),
+    ]:
+        p = preset[task_id]
+        validator_args = {k: v for k, v in p.items() if k != "n"}
+        configs.append(TaskConfig(
+            task_id=task_id,
+            task_name=params,
+            n=p["n"],
+            validator_name=task_id,
+            validator_args=validator_args,
+        ))
+    return configs
 
 
 # ---------------------------------------------------------------------------
@@ -276,7 +332,6 @@ def _generate_mock_samples(task: TaskConfig, num_samples: int = 6) -> list[str]:
 
     for i in range(num_samples):
         if i == num_samples - 1:
-            # 最后一个为故意坏输出
             samples.append("bad-output")
             continue
 
@@ -291,7 +346,6 @@ def _generate_mock_samples(task: TaskConfig, num_samples: int = 6) -> list[str]:
                 gn, ge = random_wheel(n, rng)
                 samples.append(format_graph(gn, ge))
             elif task.task_id == "bipartite":
-                # 生成二分图
                 edges = []
                 for u in range(n // 2):
                     for v in range(n // 2, n):
@@ -302,7 +356,6 @@ def _generate_mock_samples(task: TaskConfig, num_samples: int = 6) -> list[str]:
                 samples.append(format_graph(n, sorted(edges)))
             elif task.task_id == "k_regular":
                 k = task.validator_args["k"]
-                # 尝试生成 k-regular：创建若干 cycle 覆盖
                 gn, ge = random_cycle(n, rng)
                 samples.append(format_graph(gn, ge))
             elif task.task_id == "components":
@@ -362,7 +415,7 @@ def extract_graph_from_response(response: str) -> str:
     pattern = r'\(\s*\d+\s*,\s*\[.*?\]\s*\)'
     matches = re.findall(pattern, response, re.DOTALL)
     if matches:
-        return matches[-1]  # 取最后一个匹配（CoT 时最终答案在末尾）
+        return matches[-1]
     return response.strip()
 
 
@@ -379,6 +432,8 @@ def run_stage2(
     strategy: str = "zero_shot",
     num_samples: int = 100,
     num_repeats: int = 1,
+    unique_method: str = "isomorphism",
+    size: str = "medium",
 ) -> tuple[int, Path]:
     """运行 Stage2 评测。
 
@@ -386,13 +441,21 @@ def run_stage2(
         provider: BaseProvider 实例。为 None 时使用 Mock 数据。
         strategy: "zero_shot" | "few_shot" | "zero_shot_cot" | "few_shot_cot"
         num_samples: 每任务样本数（论文为 100）
-        num_repeats: 重复实验次数（用于计算均值±标准差）
+        num_repeats: 重复实验次数
+        unique_method: "signature" (v2 边排序) 或 "isomorphism" (v3 WL hash，默认)
+        size: "small" | "medium" | "large" (对齐论文 Table 4/8)
     """
     run_dir = output_root / run_id
     run_dir.mkdir(parents=True, exist_ok=True)
 
-    tasks = _task_configs()
+    tasks = _task_configs(size=size)
     use_mock = provider is None
+
+    # 选择去重函数
+    def compute_unique_key(n: int, edges) -> str:
+        if unique_method == "isomorphism":
+            return isomorphism_hash(n, edges)
+        return canonical_signature(n, edges)
 
     all_repeat_metrics: list[list[dict[str, object]]] = []
 
@@ -415,7 +478,7 @@ def run_stage2(
                     except Exception as exc:
                         raw_outputs.append(f"LLM_ERROR: {exc}")
 
-            valid_signatures: list[str] = []
+            valid_keys: list[str] = []
             parse_success_count = 0
             valid_count = 0
             parse_fail_count = 0
@@ -426,20 +489,20 @@ def run_stage2(
             for ex in RULE_TASK_DESCRIPTIONS[task.task_id]["few_shot_examples"]:
                 pr = parse_graph_output(ex)
                 if pr.success and pr.n is not None:
-                    train_seen.add(canonical_signature(pr.n, pr.edges))
+                    train_seen.add(compute_unique_key(pr.n, pr.edges))
 
             for idx, raw_output in enumerate(raw_outputs, start=1):
                 parse_result = parse_graph_output(raw_output)
                 is_valid = False
-                signature = ""
+                unique_key = ""
                 if parse_result.success:
                     parse_success_count += 1
                     graph = build_graph(parse_result)
                     is_valid = validate_graph(graph, task)
                     if is_valid:
                         valid_count += 1
-                        signature = canonical_signature(graph.n, graph.edges)
-                        valid_signatures.append(signature)
+                        unique_key = compute_unique_key(graph.n, graph.edges)
+                        valid_keys.append(unique_key)
                 else:
                     parse_fail_count += 1
 
@@ -454,7 +517,8 @@ def run_stage2(
                     "raw_output": raw_output[:200],
                     "parse_success": parse_result.success,
                     "is_valid": is_valid,
-                    "signature": signature,
+                    "unique_key": unique_key,
+                    "unique_method": unique_method,
                     "parse_failure_reason": failure_reason or "",
                 })
 
@@ -474,9 +538,9 @@ def run_stage2(
                     "is_valid": is_valid,
                 })
 
-            unique_valid = set(valid_signatures)
+            unique_valid = set(valid_keys)
             unique_valid_count = len(unique_valid)
-            novel_unique_count = sum(1 for sig in unique_valid if sig not in train_seen)
+            novel_unique_count = sum(1 for key in unique_valid if key not in train_seen)
 
             total = len(raw_outputs)
             valid_rate = valid_count / total if total else 0.0
@@ -488,7 +552,9 @@ def run_stage2(
                 "task_id": task.task_id,
                 "task_name": task.task_name,
                 "strategy": strategy,
+                "size": size,
                 "n": task.n,
+                "unique_method": unique_method,
                 "total_samples": total,
                 "parse_success_count": parse_success_count,
                 "parse_fail_count": parse_fail_count,
@@ -502,7 +568,6 @@ def run_stage2(
 
         all_repeat_metrics.append(metric_rows)
 
-        # 写入当前 repeat 的数据
         suffix = f"_r{repeat_idx + 1}" if num_repeats > 1 else ""
         _write_jsonl(run_dir / f"llm_io{suffix}.jsonl", llm_records)
         _write_csv(run_dir / f"rule_based_samples{suffix}.csv", sample_rows)
@@ -512,10 +577,12 @@ def run_stage2(
             [r for r in sample_rows if not bool(r["parse_success"]) or not bool(r["is_valid"])],
         )
 
-    # 汇总统计
     summary_rows = _compute_summary(all_repeat_metrics)
     _write_csv(run_dir / "rule_based_summary.csv", summary_rows)
-    _write_run_log(run_dir / "run.log", summary_rows, strategy, model, temperature, num_samples, num_repeats)
+    _write_run_log(
+        run_dir / "run.log", summary_rows, strategy, model, temperature,
+        num_samples, num_repeats, unique_method, size,
+    )
     return 0, run_dir
 
 
@@ -543,7 +610,9 @@ def _compute_summary(all_repeats: list[list[dict[str, object]]]) -> list[dict[st
             "task_id": tid,
             "task_name": row0["task_name"],
             "strategy": row0["strategy"],
+            "size": row0.get("size", "medium"),
             "n": row0["n"],
+            "unique_method": row0.get("unique_method", "signature"),
             "num_repeats": len(all_repeats),
         }
         for key in vals:
@@ -584,6 +653,8 @@ def _write_run_log(
     temperature: float,
     num_samples: int,
     num_repeats: int,
+    unique_method: str,
+    size: str,
 ) -> None:
     lines = [
         "Stage2 运行日志",
@@ -594,8 +665,9 @@ def _write_run_log(
         f"- 温度：{temperature}",
         f"- 每任务样本数：{num_samples}",
         f"- 重复次数：{num_repeats}",
+        f"- 图规模：{size}",
+        f"- 去重方式：{unique_method}",
         "- 阶段范围：Rule-based 8 任务（valid/unique/novel）",
-        "- 图规模：对齐论文 Table 7（Tree/Cycle/Planar/Wheel=15, k-regular=16, Bipartite=10, k-coloring=15）",
         "- 平面性检测：NetworkX Boyer-Myrvold 精确算法",
         "- 指标口径：",
         "  - valid_rate = valid_count / total_samples",
@@ -623,9 +695,9 @@ def _write_run_log(
 # ---------------------------------------------------------------------------
 
 def main(argv: list[str] | None = None) -> int:
-    parser = argparse.ArgumentParser(description="Stage2 Rule-based 8 任务评测（论文对齐版）")
+    parser = argparse.ArgumentParser(description="Stage2 Rule-based 8 任务评测（论文对齐版 v3）")
     parser.add_argument("--output-root", default="runs", help="输出目录根路径")
-    parser.add_argument("--run-id", default=datetime.now().strftime("%Y%m%d_%H%M%S"))
+    parser.add_argument("--run-id", default=None, help="运行 ID，默认自动生成描述性名称")
     parser.add_argument("--model", default="mock-rule-stage2")
     parser.add_argument("--temperature", type=float, default=0.8)
     parser.add_argument("--strategy", default="zero_shot",
@@ -633,7 +705,26 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--num-samples", type=int, default=100, help="每任务样本数（论文为100）")
     parser.add_argument("--num-repeats", type=int, default=1, help="重复实验次数")
     parser.add_argument("--provider", default="mock", choices=["mock", "openai"])
+    parser.add_argument("--unique-method", default="isomorphism",
+                        choices=["signature", "isomorphism"],
+                        help="去重方式: signature (v2 边排序) 或 isomorphism (v3 WL hash)")
+    parser.add_argument("--size", default="medium",
+                        choices=["small", "medium", "large"],
+                        help="图规模：small/medium/large (对齐论文 Table 4/8)")
     args = parser.parse_args(argv)
+
+    # 自动生成描述性 run_id
+    if args.run_id is None:
+        ts = datetime.now().strftime("%Y%m%d_%H%M%S")
+        model_short = args.model.split("/")[-1]  # 去掉可能的路径前缀
+        parts = [
+            "stage2", model_short, args.strategy, args.size,
+            f"{args.num_samples}s",
+        ]
+        if args.num_repeats > 1:
+            parts.append(f"r{args.num_repeats}")
+        parts.append(ts)
+        args.run_id = "_".join(parts)
 
     prov = None
     if args.provider == "openai":
@@ -649,6 +740,8 @@ def main(argv: list[str] | None = None) -> int:
         strategy=args.strategy,
         num_samples=args.num_samples,
         num_repeats=args.num_repeats,
+        unique_method=args.unique_method,
+        size=args.size,
     )
     print(f"Stage2 运行完成：{run_dir.as_posix()}")
     print("结果文件：rule_based_summary.csv / rule_based_metrics.csv / llm_io.jsonl")

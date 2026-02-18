@@ -1,5 +1,0 @@
-﻿sample_id,raw_output,is_valid,canonical_smiles,parse_failure_reason,classifier_score,classifier_positive,is_novel_vs_fewshot,mol_weight,logp,num_h_donors,num_h_acceptors
-8,c1ccnccc1N,False,,RDKit 无法解析该 SMILES。,,,,,,,
-13,c1ccncnc1N,False,,RDKit 无法解析该 SMILES。,,,,,,,
-18,c1ccncnc1NC,False,,RDKit 无法解析该 SMILES。,,,,,,,
-21,"Remember, these are purely hypothetical molecules and their actual anti-HIV activity would need to be experimentally validated.",False,,RDKit 无法解析该 SMILES。,,,,,,,

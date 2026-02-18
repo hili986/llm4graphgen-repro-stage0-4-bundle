@@ -1,4 +1,4 @@
-"""Stage3 Distribution-based 测试（对齐论文改进版）。"""
+"""Stage3 Distribution-based 测试（v3 对齐论文改进版）。"""
 
 from pathlib import Path
 import csv
@@ -47,10 +47,52 @@ def test_stage3_run_outputs_and_metrics():
 
     with (run_dir / "distribution_metrics.csv").open("r", encoding="utf-8-sig") as f:
         rows = list(csv.DictReader(f))
-    # 3 tasks x 1 p-value = 3 rows
     assert len(rows) == 3
     for row in rows:
         assert "p_true" in row
         assert "p_gen" in row
         assert "p_pred" in row
+        assert "strategy" in row
+    shutil.rmtree(root)
+
+
+def test_stage3_all_strategies():
+    """[P1b] 验证 strategy='all' 能运行全部 4 种策略。"""
+    root = Path("runs") / "test_stage3_all_tmp"
+    if root.exists():
+        shutil.rmtree(root)
+    code, run_dir = run_stage3(
+        output_root=root, run_id="case",
+        strategy="all",
+        p_values=[0.5], num_output=3,
+    )
+    assert code == 0
+
+    with (run_dir / "distribution_metrics.csv").open("r", encoding="utf-8-sig") as f:
+        rows = list(csv.DictReader(f))
+    # 4 strategies x 3 tasks x 1 p-value = 12 rows
+    assert len(rows) == 12
+    strategies_seen = set(row["strategy"] for row in rows)
+    assert strategies_seen == {"zero_shot", "few_shot", "zero_shot_cot", "few_shot_cot"}
+    shutil.rmtree(root)
+
+
+def test_stage3_multi_repeat():
+    """[P3b] 验证多次重复实验。"""
+    root = Path("runs") / "test_stage3_repeat_tmp"
+    if root.exists():
+        shutil.rmtree(root)
+    code, run_dir = run_stage3(
+        output_root=root, run_id="case",
+        p_values=[0.5], num_output=3,
+        num_repeats=2,
+    )
+    assert code == 0
+    # 应有 summary 文件
+    assert (run_dir / "distribution_summary.csv").exists()
+
+    with (run_dir / "distribution_metrics.csv").open("r", encoding="utf-8-sig") as f:
+        rows = list(csv.DictReader(f))
+    # 2 repeats x 3 tasks x 1 p-value = 6 rows
+    assert len(rows) == 6
     shutil.rmtree(root)

@@ -1,4 +1,0 @@
-﻿task_id,task_name,total_samples,parse_success_count,parse_fail_count,parse_fail_rate,judge_success_count,judge_fail_count,judge_fail_rate,pred_positive_count,p_pred,p_gen
-trees_or_cycles,Trees-or-cycles,6,5,1,0.1667,5,0,0.0000,3,0.6000,0.5000
-union_of_components,Union-of-components,6,5,1,0.1667,5,0,0.0000,4,0.8000,0.6667
-motif,Motif,6,5,1,0.1667,4,1,0.2000,3,0.7500,0.5000

@@ -1,6 +1,8 @@
 """Stage3：Distribution-based 评测 — 对齐论文实验设计。
 
-改进点（vs 原版）：
+改进点（v3, vs v2）：
+- [P1b] 支持全部 4 种 prompting 策略
+- [P3b] 支持多次重复实验 + 均值±标准差
 - 实现 p 值扫描实验（p = 0.2, 0.4, 0.6, 0.8）
 - 图分布采样器生成输入图
 - 支持 3 种 motif（triangle, house, crane）
@@ -17,6 +19,8 @@ import re
 from dataclasses import dataclass
 from datetime import datetime
 from pathlib import Path
+
+import numpy as np
 
 from llm4graphgen.parsers import GraphParseResult, parse_graph_output
 from llm4graphgen.prompts import build_distribution_prompt
@@ -239,45 +243,30 @@ def _generate_mock_outputs(
 
 
 # ---------------------------------------------------------------------------
-# 核心运行引擎
+# 单次运行评测引擎
 # ---------------------------------------------------------------------------
 
-def run_stage3(
-    output_root: Path,
-    run_id: str,
-    model: str = "mock-distribution-stage3",
-    temperature: float = 0.5,
-    provider=None,
-    strategy: str = "zero_shot",
-    p_values: list[float] | None = None,
-    n_nodes: int = 10,
-    num_input: int = 10,
-    num_output: int = 10,
-) -> tuple[int, Path]:
-    """运行 Stage3 评测。
-
-    Args:
-        p_values: 要扫描的 p 值列表（论文为 [0.2, 0.4, 0.6, 0.8]）
-        n_nodes: 每个图的节点数
-        num_input: 输入图数量
-        num_output: 要求生成的图数量
-    """
-    if p_values is None:
-        p_values = [0.2, 0.4, 0.6, 0.8]
-
-    run_dir = output_root / run_id
-    run_dir.mkdir(parents=True, exist_ok=True)
-
-    tasks = _task_configs()
-    use_mock = provider is None
-
+def _evaluate_single_run(
+    tasks: list[DistributionTaskConfig],
+    p_values: list[float],
+    n_nodes: int,
+    num_input: int,
+    num_output: int,
+    strategy: str,
+    model: str,
+    temperature: float,
+    provider,
+    use_mock: bool,
+    repeat_idx: int = 0,
+) -> tuple[list[dict[str, object]], list[dict[str, object]], list[dict[str, object]]]:
+    """执行一次完整的分布评测。返回 (sample_rows, metric_rows, llm_rows)。"""
     sample_rows: list[dict[str, object]] = []
     metric_rows: list[dict[str, object]] = []
     llm_rows: list[dict[str, object]] = []
 
     for task in tasks:
         for p in p_values:
-            seed = int(p * 1000) + hash(task.task_id) % 10000
+            seed = int(p * 1000) + hash(task.task_id) % 10000 + repeat_idx * 7919
 
             # 生成输入图
             if task.task_id == "trees_or_cycles":
@@ -292,7 +281,7 @@ def run_stage3(
             # 获取 LLM 输出
             if use_mock:
                 output_graphs = _generate_mock_outputs(task, p, n_nodes, num_output, seed)
-                p_pred_val = p + 0.05  # Mock: 推断 p 接近真实值
+                p_pred_val = p + 0.05
             else:
                 try:
                     resp = provider.generate(prompt, model, temperature)
@@ -329,9 +318,11 @@ def run_stage3(
                     parse_fail_count += 1
 
                 sample_rows.append({
+                    "repeat": repeat_idx + 1,
                     "task_id": task.task_id,
                     "task_name": task.task_name,
                     "p_true": p,
+                    "strategy": strategy,
                     "sample_id": idx,
                     "raw_output": raw[:200],
                     "parse_success": parse_result.success,
@@ -343,11 +334,12 @@ def run_stage3(
 
                 llm_rows.append({
                     "timestamp": datetime.now().isoformat(timespec="seconds"),
+                    "repeat": repeat_idx + 1,
                     "task_id": task.task_id,
                     "p_true": p,
+                    "strategy": strategy,
                     "sample_id": idx,
                     "provider": "mock" if use_mock else provider.name,
-                    "strategy": strategy,
                     "model": model,
                     "temperature": temperature,
                     "raw_output": raw[:500],
@@ -357,14 +349,16 @@ def run_stage3(
                     "judge_failure_reason": judge_failure_reason if judge_positive is None else None,
                 })
 
-            # 计算指标 — 对齐论文定义
+            # 计算指标
             p_gen = pred_positive_count / judge_success_count if judge_success_count else 0.0
             parse_fail_rate = parse_fail_count / total if total else 0.0
             judge_fail_rate = judge_fail_count / parse_success_count if parse_success_count else 0.0
 
             metric_rows.append({
+                "repeat": repeat_idx + 1,
                 "task_id": task.task_id,
                 "task_name": task.task_name,
+                "strategy": strategy,
                 "p_true": p,
                 "p_pred": f"{p_pred_val:.4f}" if p_pred_val is not None else "N/A",
                 "p_gen": f"{p_gen:.4f}",
@@ -380,15 +374,164 @@ def run_stage3(
                 "pred_positive_count": pred_positive_count,
             })
 
-    _write_csv(run_dir / "distribution_metrics.csv", metric_rows)
-    _write_csv(run_dir / "distribution_samples.csv", sample_rows)
+    return sample_rows, metric_rows, llm_rows
+
+
+# ---------------------------------------------------------------------------
+# 核心运行引擎
+# ---------------------------------------------------------------------------
+
+def run_stage3(
+    output_root: Path,
+    run_id: str,
+    model: str = "mock-distribution-stage3",
+    temperature: float = 0.5,
+    provider=None,
+    strategy: str = "zero_shot",
+    p_values: list[float] | None = None,
+    n_nodes: int = 10,
+    num_input: int = 10,
+    num_output: int = 10,
+    num_repeats: int = 1,
+) -> tuple[int, Path]:
+    """运行 Stage3 评测。
+
+    Args:
+        strategy: "zero_shot" | "few_shot" | "zero_shot_cot" | "few_shot_cot" | "all"
+                  "all" 会依次运行全部 4 种策略
+        num_repeats: 重复实验次数（用于计算均值±标准差）
+    """
+    if p_values is None:
+        p_values = [0.2, 0.4, 0.6, 0.8]
+
+    run_dir = output_root / run_id
+    run_dir.mkdir(parents=True, exist_ok=True)
+
+    tasks = _task_configs()
+    use_mock = provider is None
+
+    # [P1b] 支持 "all" 策略
+    strategies = (
+        ["zero_shot", "few_shot", "zero_shot_cot", "few_shot_cot"]
+        if strategy == "all"
+        else [strategy]
+    )
+
+    all_sample_rows: list[dict[str, object]] = []
+    all_metric_rows: list[dict[str, object]] = []
+    all_llm_rows: list[dict[str, object]] = []
+    all_repeat_metrics: list[list[dict[str, object]]] = []
+
+    for strat in strategies:
+        print(f"  [Stage3] 运行策略: {strat}")
+        for repeat_idx in range(num_repeats):
+            if num_repeats > 1:
+                print(f"    重复 {repeat_idx + 1}/{num_repeats}")
+
+            sample_rows, metric_rows, llm_rows = _evaluate_single_run(
+                tasks=tasks,
+                p_values=p_values,
+                n_nodes=n_nodes,
+                num_input=num_input,
+                num_output=num_output,
+                strategy=strat,
+                model=model,
+                temperature=temperature,
+                provider=provider,
+                use_mock=use_mock,
+                repeat_idx=repeat_idx,
+            )
+
+            all_sample_rows.extend(sample_rows)
+            all_metric_rows.extend(metric_rows)
+            all_llm_rows.extend(llm_rows)
+            all_repeat_metrics.append(metric_rows)
+
+            # 写入每个 repeat 的独立文件
+            if num_repeats > 1:
+                suffix = f"_{strat}_r{repeat_idx + 1}"
+                _write_csv(run_dir / f"distribution_metrics{suffix}.csv", metric_rows)
+
+    # 写入汇总数据
+    _write_csv(run_dir / "distribution_metrics.csv", all_metric_rows)
+    _write_csv(run_dir / "distribution_samples.csv", all_sample_rows)
     _write_csv(
         run_dir / "failure_cases.csv",
-        [row for row in sample_rows if not bool(row["parse_success"]) or not bool(row["judge_success"])],
+        [row for row in all_sample_rows
+         if not bool(row["parse_success"]) or not bool(row["judge_success"])],
     )
-    _write_jsonl(run_dir / "llm_io.jsonl", llm_rows)
-    _write_run_log(run_dir / "run.log", metric_rows, strategy, model, temperature, p_values)
+    _write_jsonl(run_dir / "llm_io.jsonl", all_llm_rows)
+
+    # [P3b] 多次重复的汇总统计
+    if num_repeats > 1:
+        summary_rows = _compute_summary(all_repeat_metrics, num_repeats)
+        _write_csv(run_dir / "distribution_summary.csv", summary_rows)
+
+    _write_run_log(
+        run_dir / "run.log", all_metric_rows, strategies, model, temperature,
+        p_values, num_repeats,
+    )
     return 0, run_dir
+
+
+def _compute_summary(
+    all_repeat_metrics: list[list[dict[str, object]]], num_repeats: int,
+) -> list[dict[str, object]]:
+    """计算多次重复实验的均值±标准差。"""
+    if num_repeats <= 1:
+        return []
+
+    # 按 (strategy, task_id, p_true) 分组
+    groups: dict[tuple[str, str, str], list[dict[str, object]]] = {}
+    for metrics in all_repeat_metrics:
+        for row in metrics:
+            key = (str(row["strategy"]), str(row["task_id"]), str(row["p_true"]))
+            groups.setdefault(key, []).append(row)
+
+    summary: list[dict[str, object]] = []
+    for (strat, task_id, p_true), rows in sorted(groups.items()):
+        p_pred_vals = []
+        p_gen_vals = []
+        p_pred_err_vals = []
+        p_gen_err_vals = []
+
+        for row in rows:
+            if row["p_pred"] != "N/A":
+                p_pred_vals.append(float(str(row["p_pred"])))
+            if row["p_gen"] != "N/A":
+                p_gen_vals.append(float(str(row["p_gen"])))
+            if row["p_pred_error"] != "N/A":
+                p_pred_err_vals.append(float(str(row["p_pred_error"])))
+            p_gen_err_vals.append(float(str(row["p_gen_error"])))
+
+        s: dict[str, object] = {
+            "strategy": strat,
+            "task_id": task_id,
+            "task_name": rows[0]["task_name"],
+            "p_true": p_true,
+            "num_repeats": len(rows),
+        }
+
+        if p_pred_vals:
+            arr = np.array(p_pred_vals)
+            s["p_pred_mean"] = f"{arr.mean():.4f}"
+            s["p_pred_std"] = f"{arr.std():.4f}"
+        if p_gen_vals:
+            arr = np.array(p_gen_vals)
+            s["p_gen_mean"] = f"{arr.mean():.4f}"
+            s["p_gen_std"] = f"{arr.std():.4f}"
+        if p_pred_err_vals:
+            arr = np.array(p_pred_err_vals)
+            s["p_pred_error_mean"] = f"{arr.mean():.4f}"
+            s["p_pred_error_std"] = f"{arr.std():.4f}"
+        if p_gen_err_vals:
+            arr = np.array(p_gen_err_vals)
+            s["p_gen_error_mean"] = f"{arr.mean():.4f}"
+            s["p_gen_error_std"] = f"{arr.std():.4f}"
+
+        summary.append(s)
+
+    return summary
 
 
 # ---------------------------------------------------------------------------
@@ -414,19 +557,21 @@ def _write_jsonl(path: Path, rows: list[dict[str, object]]) -> None:
 def _write_run_log(
     path: Path,
     metrics: list[dict[str, object]],
-    strategy: str,
+    strategies: list[str],
     model: str,
     temperature: float,
     p_values: list[float],
+    num_repeats: int,
 ) -> None:
     lines = [
         "Stage3 运行日志",
         "",
         f"- 运行时间：{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}",
         f"- 模型：{model}",
-        f"- 策略：{strategy}",
+        f"- 策略：{strategies}",
         f"- 温度：{temperature}",
         f"- p 值扫描：{p_values}",
+        f"- 重复次数：{num_repeats}",
         "- 阶段范围：Distribution-based 任务（p_pred / p_gen / p_error）",
         "- 指标口径（对齐论文）：",
         "  - p_pred = LLM 推断的分布参数",
@@ -438,9 +583,9 @@ def _write_run_log(
     ]
     for row in metrics:
         lines.append(
-            f"- {row['task_id']}(p={row['p_true']}): p_pred={row['p_pred']}, "
-            f"p_gen={row['p_gen']}, parse_fail={row['parse_fail_rate']}, "
-            f"judge_fail={row['judge_fail_rate']}"
+            f"- {row['task_id']}(p={row['p_true']}, s={row.get('strategy','?')}): "
+            f"p_pred={row['p_pred']}, p_gen={row['p_gen']}, "
+            f"parse_fail={row['parse_fail_rate']}, judge_fail={row['judge_fail_rate']}"
         )
     path.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
@@ -450,20 +595,33 @@ def _write_run_log(
 # ---------------------------------------------------------------------------
 
 def main(argv: list[str] | None = None) -> int:
-    parser = argparse.ArgumentParser(description="Stage3 Distribution-based 评测（论文对齐版）")
+    parser = argparse.ArgumentParser(description="Stage3 Distribution-based 评测（论文对齐版 v3）")
     parser.add_argument("--output-root", default="runs")
-    parser.add_argument("--run-id", default=datetime.now().strftime("%Y%m%d_%H%M%S"))
+    parser.add_argument("--run-id", default=None, help="运行 ID，默认自动生成描述性名称")
     parser.add_argument("--model", default="mock-distribution-stage3")
     parser.add_argument("--temperature", type=float, default=0.5)
     parser.add_argument("--strategy", default="zero_shot",
-                        choices=["zero_shot", "few_shot", "zero_shot_cot", "few_shot_cot"])
+                        choices=["zero_shot", "few_shot", "zero_shot_cot", "few_shot_cot", "all"])
     parser.add_argument("--p-values", default="0.2,0.4,0.6,0.8",
                         help="逗号分隔的 p 值列表")
     parser.add_argument("--n-nodes", type=int, default=10, help="每图节点数")
     parser.add_argument("--num-input", type=int, default=10, help="输入图数量")
     parser.add_argument("--num-output", type=int, default=10, help="生成图数量")
+    parser.add_argument("--num-repeats", type=int, default=1, help="重复实验次数")
     parser.add_argument("--provider", default="mock", choices=["mock", "openai"])
     args = parser.parse_args(argv)
+
+    # 自动生成描述性 run_id
+    if args.run_id is None:
+        ts = datetime.now().strftime("%Y%m%d_%H%M%S")
+        model_short = args.model.split("/")[-1]
+        p_vals_raw = [x.strip() for x in args.p_values.split(",")]
+        p_tag = f"p{'-'.join(p_vals_raw)}"
+        parts = ["stage3", model_short, args.strategy, p_tag]
+        if args.num_repeats > 1:
+            parts.append(f"r{args.num_repeats}")
+        parts.append(ts)
+        args.run_id = "_".join(parts)
 
     prov = None
     if args.provider == "openai":
@@ -483,6 +641,7 @@ def main(argv: list[str] | None = None) -> int:
         n_nodes=args.n_nodes,
         num_input=args.num_input,
         num_output=args.num_output,
+        num_repeats=args.num_repeats,
     )
     print(f"Stage3 运行完成：{run_dir.as_posix()}")
     print("结果文件：distribution_metrics.csv / distribution_samples.csv / llm_io.jsonl")

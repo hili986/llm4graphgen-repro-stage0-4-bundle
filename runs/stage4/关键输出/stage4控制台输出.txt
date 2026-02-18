@@ -1,7 +1,0 @@
-﻿Stage4 控制台摘要
-
-- 命令：python -X utf8 -m llm4graphgen.stage4_property --run-id 20260214_143230
-- 运行结果：成功
-- 运行目录：runs/20260214_143230
-- 主要产物：property_metrics.csv / property_samples.csv / llm_io.jsonl
-- 说明：RDKit 对非法 SMILES 会输出英文解析警告，指标与落盘结果已按中文口径写入 CSV/JSONL 与 run.log。

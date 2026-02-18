@@ -1,2 +1,0 @@
-﻿train_total,train_positive,train_negative,train_unique_canonical,TPR,FPR,confusion_matrix
-24,12,12,24,1.0000,0.0000,"[[12, 0], [0, 12]]"

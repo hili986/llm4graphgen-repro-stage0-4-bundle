@@ -1,2 +1,0 @@
-﻿当前系统未安装 make 命令，无法直接执行 make check。
-已完成等价复核：python -X utf8 -m pytest -q（见 pytest输出.txt）。

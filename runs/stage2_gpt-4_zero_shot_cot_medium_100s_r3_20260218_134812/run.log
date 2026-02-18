@@ -1,0 +1,26 @@
+Stage2 运行日志
+
+- 运行时间：2026-02-18 23:42:18
+- 模型：gpt-4
+- 策略：zero_shot_cot
+- 温度：0.8
+- 每任务样本数：100
+- 重复次数：3
+- 图规模：medium
+- 去重方式：isomorphism
+- 阶段范围：Rule-based 8 任务（valid/unique/novel）
+- 平面性检测：NetworkX Boyer-Myrvold 精确算法
+- 指标口径：
+  - valid_rate = valid_count / total_samples
+  - unique_rate = unique_valid_count / valid_count
+  - novel_rate = novel_unique_count / unique_valid_count
+
+任务摘要：
+- tree: valid=97.7±0.9, unique=13.0±1.8, novel=100.0±0.0
+- cycle: valid=97.0±2.8, unique=1.0±0.0, novel=100.0±0.0
+- planar: valid=37.3±2.6, unique=80.0±7.3, novel=100.0±0.0
+- components: valid=93.3±3.4, unique=13.5±0.9, novel=100.0±0.0
+- k_regular: valid=39.7±4.5, unique=2.6±0.3, novel=100.0±0.0
+- wheel: valid=95.7±0.9, unique=1.0±0.0, novel=100.0±0.0
+- bipartite: valid=98.7±1.2, unique=5.4±0.4, novel=100.0±0.0
+- k_coloring: valid=66.7±2.5, unique=77.1±2.5, novel=100.0±0.0

@@ -1,0 +1,13 @@
+﻿repeat,task_id,task_name,strategy,p_true,p_pred,p_gen,p_pred_error,p_gen_error,total_samples,parse_success_count,parse_fail_count,parse_fail_rate,judge_success_count,judge_fail_count,judge_fail_rate,pred_positive_count
+3,trees_or_cycles,Trees-or-cycles,zero_shot_cot,0.2,0.2000,1.0000,0.0000,0.8000,10,10,0,0.0000,10,0,0.0000,10
+3,trees_or_cycles,Trees-or-cycles,zero_shot_cot,0.4,0.4000,1.0000,0.0000,0.6000,10,10,0,0.0000,10,0,0.0000,10
+3,trees_or_cycles,Trees-or-cycles,zero_shot_cot,0.6,0.4000,1.0000,0.2000,0.4000,10,10,0,0.0000,10,0,0.0000,10
+3,trees_or_cycles,Trees-or-cycles,zero_shot_cot,0.8,N/A,0.0000,N/A,0.8000,1,0,1,1.0000,0,0,0.0000,0
+3,union_of_components,Union-of-components,zero_shot_cot,0.2,1.0000,1.0000,0.8000,0.8000,10,10,0,0.0000,10,0,0.0000,10
+3,union_of_components,Union-of-components,zero_shot_cot,0.4,N/A,1.0000,N/A,0.6000,10,10,0,0.0000,10,0,0.0000,10
+3,union_of_components,Union-of-components,zero_shot_cot,0.6,0.2000,1.0000,0.4000,0.4000,10,10,0,0.0000,10,0,0.0000,10
+3,union_of_components,Union-of-components,zero_shot_cot,0.8,0.9000,1.0000,0.1000,0.2000,10,10,0,0.0000,10,0,0.0000,10
+3,motif_triangle,Motif-Triangle,zero_shot_cot,0.2,0.6000,0.9000,0.4000,0.7000,10,10,0,0.0000,10,0,0.0000,9
+3,motif_triangle,Motif-Triangle,zero_shot_cot,0.4,0.4000,1.0000,0.0000,0.6000,10,10,0,0.0000,10,0,0.0000,10
+3,motif_triangle,Motif-Triangle,zero_shot_cot,0.6,0.8000,1.0000,0.2000,0.4000,10,10,0,0.0000,10,0,0.0000,10
+3,motif_triangle,Motif-Triangle,zero_shot_cot,0.8,0.6000,1.0000,0.2000,0.2000,10,10,0,0.0000,10,0,0.0000,10
