@@ -46,6 +46,13 @@ def parse_graph_output(raw_text: str) -> GraphParseResult:
         return GraphParseResult(False, None, [], "输出必须是长度为 2 的元组：`(n, edges)`。")
 
     n, raw_edges = parsed
+
+    # 容忍字符串引号数字：LLaMA 常输出 '10' 而非 10
+    if isinstance(n, str):
+        try:
+            n = int(n)
+        except ValueError:
+            return GraphParseResult(False, None, [], f"节点数 n 无法转为整数：'{n}'。")
     if not isinstance(n, int) or n < 0:
         return GraphParseResult(False, None, [], "节点数 n 必须是非负整数。")
     if not isinstance(raw_edges, (list, tuple)):
@@ -57,6 +64,17 @@ def parse_graph_output(raw_text: str) -> GraphParseResult:
         if not isinstance(edge, (list, tuple)) or len(edge) != 2:
             return GraphParseResult(False, None, [], f"第 {idx + 1} 条边不是二元组 `(u,v)`。")
         u, v = edge
+        # 容忍字符串引号端点：LLaMA 常输出 ('0','1') 而非 (0,1)
+        if isinstance(u, str):
+            try:
+                u = int(u)
+            except ValueError:
+                return GraphParseResult(False, None, [], f"第 {idx + 1} 条边端点无法转为整数：'{u}'。")
+        if isinstance(v, str):
+            try:
+                v = int(v)
+            except ValueError:
+                return GraphParseResult(False, None, [], f"第 {idx + 1} 条边端点无法转为整数：'{v}'。")
         if not isinstance(u, int) or not isinstance(v, int):
             return GraphParseResult(False, None, [], f"第 {idx + 1} 条边包含非整数端点。")
         if u < 0 or v < 0 or u >= n or v >= n:

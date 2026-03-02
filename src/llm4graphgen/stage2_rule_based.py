@@ -259,13 +259,13 @@ def validate_graph(graph: Graph, task: TaskConfig) -> bool:
 SIZE_PRESETS: dict[str, dict[str, dict[str, int]]] = {
     "small": {
         "tree":       {"n": 8},
-        "cycle":      {"n": 8},
+        "cycle":      {"n": 10},                    # Table 8: 10
         "planar":     {"n": 8,  "m": 12},
         "components": {"n": 8,  "k": 3},
-        "k_regular":  {"n": 8,  "k": 3},
+        "k_regular":  {"n": 12, "k": 3},            # Table 8: 12
         "wheel":      {"n": 8},
         "bipartite":  {"n": 6,  "k": 3},
-        "k_coloring": {"n": 8,  "m": 16, "k": 3},
+        "k_coloring": {"n": 10, "m": 20, "k": 3},   # Table 8: n=10, m=20
     },
     "medium": {
         "tree":       {"n": 15},
@@ -279,13 +279,13 @@ SIZE_PRESETS: dict[str, dict[str, dict[str, int]]] = {
     },
     "large": {
         "tree":       {"n": 30},
-        "cycle":      {"n": 30},
+        "cycle":      {"n": 20},                     # Table 8: 20
         "planar":     {"n": 30, "m": 50},
         "components": {"n": 30, "k": 10},
-        "k_regular":  {"n": 30, "k": 3},
+        "k_regular":  {"n": 20, "k": 3},             # Table 8: 20
         "wheel":      {"n": 30},
         "bipartite":  {"n": 20, "k": 10},
-        "k_coloring": {"n": 30, "m": 64, "k": 3},
+        "k_coloring": {"n": 18, "m": 39, "k": 3},    # Table 8: n=18, m=39
     },
 }
 
