@@ -1,6 +1,6 @@
 #!/bin/bash
-# Run all 4 strategies for Stage 2 (re-run with corrected SIZE_PRESETS)
-# Usage: nohup bash run_remaining.sh > run_rerun.log 2>&1 &
+# Rerun FS and FS+CoT with max_tokens=2048 (previously 512, truncated CoT output)
+# Usage: nohup bash run_rerun_maxtok2048.sh > run_rerun_maxtok2048.log 2>&1 &
 
 export OPENAI_BASE_URL=http://localhost:8000/v1
 export OPENAI_API_KEY=none
@@ -14,12 +14,12 @@ COMMON_ARGS="--size small \
 --provider openai \
 --model $MODEL"
 
-LOG="run_remaining.log"
-STRATEGIES=("zero_shot" "few_shot" "zero_shot_cot" "few_shot_cot")
+STRATEGIES=("few_shot" "few_shot_cot")
 
 echo "========================================"
 echo "Start time: $(date)"
-echo "Running 4 strategies: ${STRATEGIES[*]}"
+echo "Rerun with max_tokens=2048"
+echo "Strategies: ${STRATEGIES[*]}"
 echo "========================================"
 
 for strategy in "${STRATEGIES[@]}"; do
@@ -48,7 +48,6 @@ for strategy in "${STRATEGIES[@]}"; do
 
     if [ $EXIT_CODE -eq 0 ]; then
         echo "Status: SUCCESS"
-        # Find and show the summary CSV
         RESULT_DIR=$(ls -td results/stage2_*_${strategy}_* \
             2>/dev/null | head -1)
         if [ -n "$RESULT_DIR" ]; then

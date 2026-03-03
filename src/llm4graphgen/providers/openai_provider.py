@@ -23,14 +23,15 @@ class OpenAIProvider(BaseProvider):
     def __init__(
         self,
         api_key_env: str = "OPENAI_API_KEY",
-        base_url: str = "https://api.openai.com/v1",
+        base_url: str | None = None,
         timeout: float = 120.0,
         api_mode: str = "chat",  # "chat" 或 "responses"
     ) -> None:
         self._api_key = os.getenv(api_key_env)
         if not self._api_key:
             raise ValueError(f"未检测到环境变量 {api_key_env}，无法使用 OpenAIProvider。")
-        self._base_url = base_url.rstrip("/")
+        resolved_url = base_url or os.getenv("OPENAI_BASE_URL", "https://api.openai.com/v1")
+        self._base_url = resolved_url.rstrip("/")
         self._timeout = timeout
         self._api_mode = api_mode
 
@@ -45,7 +46,7 @@ class OpenAIProvider(BaseProvider):
             "model": model,
             "messages": [{"role": "user", "content": prompt}],
             "temperature": temperature,
-            "max_tokens": 4096,
+            "max_tokens": int(os.getenv("LLM_MAX_TOKENS", "4096")),
         }
         url = f"{self._base_url}/chat/completions"
         data = self._post(url, payload)
