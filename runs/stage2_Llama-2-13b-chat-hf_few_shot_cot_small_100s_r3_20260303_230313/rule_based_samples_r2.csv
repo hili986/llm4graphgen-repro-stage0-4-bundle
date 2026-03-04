@@ -1,0 +1,1270 @@
+﻿repeat,task_id,task_name,sample_id,raw_output,parse_success,is_valid,unique_key,unique_method,parse_failure_reason
+2,tree,Tree,1,"(8, [('0', '1'), ('0', '2'), ('0', '3'), ('0', '4'), ('0', '5'), ('1', '4'), ('1', '5'), ('2', '3'), ('3', '4'), ('3', '5'), ('4', '5')])",True,False,,isomorphism,
+2,tree,Tree,2,"(8, [(0,1),(1,2),(2,3),(3,4),(4,5),(5,6),(6,7),(7,0)])",True,False,,isomorphism,
+2,tree,Tree,3,"(6, [(0,1),(0,2),(0,3),(1,4),(1,5)])",True,True,833c89e8aca800e5707fb47ea63f9088,isomorphism,
+2,tree,Tree,4,"(6, [(0,1),(0,2),(0,3),(1,4),(1,5)])",True,True,833c89e8aca800e5707fb47ea63f9088,isomorphism,
+2,tree,Tree,5,"(6, [(0,1),(0,2),(0,3),(1,4),(1,5)])",True,True,833c89e8aca800e5707fb47ea63f9088,isomorphism,
+2,tree,Tree,6,"(6, [(0,1),(1,2),(2,3),(3,4),(4,5)])",True,True,50803b752054f0512687e537ee7368f9,isomorphism,
+2,tree,Tree,7,"(6, [(0,1),(0,2),(0,3),(1,4),(1,5)])",True,True,833c89e8aca800e5707fb47ea63f9088,isomorphism,
+2,tree,Tree,8,"(8, [(0,1),(1,2),(2,3),(3,4),(4,5),(5,6),(6,7),(7,0)])",True,False,,isomorphism,
+2,tree,Tree,9,"(8, [(0,1),(1,2),(2,3),(3,4),(4,5),(5,6)])",True,False,,isomorphism,
+2,tree,Tree,10,"(6, [(0,1),(0,2),(0,3),(1,4),(1,5)])",True,True,833c89e8aca800e5707fb47ea63f9088,isomorphism,
+2,tree,Tree,11,"(8, [(0,1),(1,2),(2,3),(3,4),(4,5),(5,6)])",True,False,,isomorphism,
+2,tree,Tree,12,"(6, [(0,1),(0,2),(0,3),(1,4),(1,5)])",True,True,833c89e8aca800e5707fb47ea63f9088,isomorphism,
+2,tree,Tree,13,"(8, [(0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7)])",True,True,653d67ad3d369bf2cd63d0027cde92ec,isomorphism,
+2,tree,Tree,14,"(6, [(0,1),(1,2),(2,3),(3,4),(4,5),(5,6)])",False,False,,isomorphism,第 6 条边端点越界（节点范围应为 0..5）。
+2,tree,Tree,15,"(6, [(0,1),(0,2),(0,3),(1,4),(1,5)])",True,True,833c89e8aca800e5707fb47ea63f9088,isomorphism,
+2,tree,Tree,16,"(6, [(0,1),(0,2),(0,3),(1,4),(1,5)])",True,True,833c89e8aca800e5707fb47ea63f9088,isomorphism,
+2,tree,Tree,17,"(8, [(0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7)])",True,True,653d67ad3d369bf2cd63d0027cde92ec,isomorphism,
+2,tree,Tree,18,"(6, [(0,1),(0,2),(0,3),(1,4),(1,5)])",True,True,833c89e8aca800e5707fb47ea63f9088,isomorphism,
+2,tree,Tree,19,"(6, [(0,1),(0,2),(0,3),(1,4),(1,5)])",True,True,833c89e8aca800e5707fb47ea63f9088,isomorphism,
+2,tree,Tree,20,"(6, [(0,1), (1,2), (2,3), (3,4), (4,5)])",True,True,50803b752054f0512687e537ee7368f9,isomorphism,
+2,tree,Tree,21,"(8, [(0,1), (1,2), (2,3), (3,4), (4,5), (5,6)])",True,False,,isomorphism,
+2,tree,Tree,22,"(8, [(0,1),(1,2),(2,3),(3,4),(4,5),(5,6),(6,7),(7,8)])",False,False,,isomorphism,第 8 条边端点越界（节点范围应为 0..7）。
+2,tree,Tree,23,"(8, [(0,1), (0,2), (0,3), (1,4), (1,5), (2,6), (3,7)])",True,True,d25563e624d9195ce94b1f768fdc503d,isomorphism,
+2,tree,Tree,24,"(8, [((0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,8)])",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：closing parenthesis ']' does not match opening parenthesis '(' (<unknown>, line 1)"
+2,tree,Tree,25,"(8, [(0,1), (0,2), (0,3), (1,4), (1,5), (2,6), (3,7)])",True,True,d25563e624d9195ce94b1f768fdc503d,isomorphism,
+2,tree,Tree,26,"(8, [(0,1), (1,2), (2,3), (3,4), (4,5), (5,6)])",True,False,,isomorphism,
+2,tree,Tree,27,"(6, [(0,1),(0,2),(0,3),(1,4),(1,5)])",True,True,833c89e8aca800e5707fb47ea63f9088,isomorphism,
+2,tree,Tree,28,"(8, [(0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7)])",True,True,653d67ad3d369bf2cd63d0027cde92ec,isomorphism,
+2,tree,Tree,29,"(8, [(0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7)])",True,True,653d67ad3d369bf2cd63d0027cde92ec,isomorphism,
+2,tree,Tree,30,"(8, [(0,1),(1,2),(2,3),(3,4),(4,5),(5,6),(6,7)])",True,True,653d67ad3d369bf2cd63d0027cde92ec,isomorphism,
+2,tree,Tree,31,"(8, [(0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7)])",True,True,653d67ad3d369bf2cd63d0027cde92ec,isomorphism,
+2,tree,Tree,32,"(8, [(0,1), (1,2), (2,3), (3,4), (4,5), (5,6)])",True,False,,isomorphism,
+2,tree,Tree,33,"(8, [(0,1),(1,2),(2,3),(3,4),(4,5),(5,6),(6,7)])",True,True,653d67ad3d369bf2cd63d0027cde92ec,isomorphism,
+2,tree,Tree,34,"(8, [(0,1),(0,2),(0,3),(1,4),(1,5),(2,6),(3,7)])",True,True,d25563e624d9195ce94b1f768fdc503d,isomorphism,
+2,tree,Tree,35,"(8, [(0,1), (1,2), (2,3), (3,4), (4,5), (5,6)])",True,False,,isomorphism,
+2,tree,Tree,36,"(8, [(0,1),(1,2),(2,3),(3,4),(4,5),(5,6),(6,7)])",True,True,653d67ad3d369bf2cd63d0027cde92ec,isomorphism,
+2,tree,Tree,37,"(8, [(0, 1), (1, 2), (2, 3), (3, 4), (4, 5), (5, 6)])",True,False,,isomorphism,
+2,tree,Tree,38,"(8, [(0,1),(1,2),(2,3),(3,4),(4,5),(5,6),(6,7)])",True,True,653d67ad3d369bf2cd63d0027cde92ec,isomorphism,
+2,tree,Tree,39,"(8, [(0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7)])",True,True,653d67ad3d369bf2cd63d0027cde92ec,isomorphism,
+2,tree,Tree,40,"(8, [(0,1),(1,2),(2,3),(3,4),(4,5),(5,6),(6,7)])",True,True,653d67ad3d369bf2cd63d0027cde92ec,isomorphism,
+2,tree,Tree,41,"(8, [(0,1), (0,2), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7)])",True,False,,isomorphism,
+2,tree,Tree,42,"(6, [(0,1),(0,2),(0,3),(1,4),(1,5)])",True,True,833c89e8aca800e5707fb47ea63f9088,isomorphism,
+2,tree,Tree,43,"(8, [(0,1),(1,2),(2,3),(3,4),(4,5),(5,6),(6,7),(7,0)])",True,False,,isomorphism,
+2,tree,Tree,44,"(8, [(0,1),(1,2),(2,3),(3,4),(4,5),(5,6)])",True,False,,isomorphism,
+2,tree,Tree,45,"(8, [(0,1),(1,2),(2,3),(3,4),(4,5),(5,6),(6,7)])",True,True,653d67ad3d369bf2cd63d0027cde92ec,isomorphism,
+2,tree,Tree,46,"(8, [(0,1),(1,2),(2,3),(3,4),(4,5),(5,6),(6,7)])",True,True,653d67ad3d369bf2cd63d0027cde92ec,isomorphism,
+2,tree,Tree,47,"(8, [(0,1), (1,2), (2,3), (3,4), (4,5), (5,6)])",True,False,,isomorphism,
+2,tree,Tree,48,"(8, [(0,0), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7)])",True,False,,isomorphism,
+2,tree,Tree,49,"(6, [(0,1),(0,2),(0,3),(1,4),(1,5)])",True,True,833c89e8aca800e5707fb47ea63f9088,isomorphism,
+2,tree,Tree,50,"(8, [(0,1),(1,2),(2,3),(3,4),(4,5),(5,6),(6,7)])",True,True,653d67ad3d369bf2cd63d0027cde92ec,isomorphism,
+2,tree,Tree,51,"(6, [(0,1),(0,2),(0,3),(1,4),(1,5)])",True,True,833c89e8aca800e5707fb47ea63f9088,isomorphism,
+2,tree,Tree,52,"(8, [(0,1),(1,2),(2,3),(3,4),(4,5)])",True,False,,isomorphism,
+2,tree,Tree,53,"(0, [(0,1),(1,2),(2,3),(3,4),(4,5),(5,6),(6,7),(7,0)])",False,False,,isomorphism,第 1 条边端点越界（节点范围应为 0..-1）。
+2,tree,Tree,54,"(6, [(0,1), (1,2), (2,3), (3,4), (4,5), (5,6)])",False,False,,isomorphism,第 6 条边端点越界（节点范围应为 0..5）。
+2,tree,Tree,55,"(8, [(0,1),(1,2),(2,3),(3,4),(4,5),(5,6),(6,7),(7,8)])",False,False,,isomorphism,第 8 条边端点越界（节点范围应为 0..7）。
+2,tree,Tree,56,"(6, [(0,1),(0,2),(0,3),(1,4),(1,5)])",True,True,833c89e8aca800e5707fb47ea63f9088,isomorphism,
+2,tree,Tree,57,"(8, [(0,1),(1,2),(2,3),(3,4),(4,5),(5,6),(6,7),(7,8)])",False,False,,isomorphism,第 8 条边端点越界（节点范围应为 0..7）。
+2,tree,Tree,58,"(8, [(0,1),(1,2),(2,3),(3,4),(4,5),(5,6)])",True,False,,isomorphism,
+2,tree,Tree,59,"(6, [(0,1),(1,2),(2,3),(3,4),(4,5)])",True,True,50803b752054f0512687e537ee7368f9,isomorphism,
+2,tree,Tree,60,"(8, [(0,1),(1,2),(2,3),(3,4),(4,5),(5,6),(6,7)])",True,True,653d67ad3d369bf2cd63d0027cde92ec,isomorphism,
+2,tree,Tree,61,"(8, [(0,1),(0,2),(0,3),(1,4),(1,5),(2,6),(3,7)])",True,True,d25563e624d9195ce94b1f768fdc503d,isomorphism,
+2,tree,Tree,62,"(6, [(0,1), (1,2), (2,3), (3,4), (4,5)])",True,True,50803b752054f0512687e537ee7368f9,isomorphism,
+2,tree,Tree,63,"(6, [(0,0),(1,1),(2,2),(3,3),(4,4)])",True,False,,isomorphism,
+2,tree,Tree,64,"(8, [(0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7)])",True,True,ddc2ef1be48dc58fe68226818824b648,isomorphism,
+2,tree,Tree,65,"(8, [(0,1),(1,2),(2,3),(3,4),(4,5),(5,6),(6,7)])",True,True,653d67ad3d369bf2cd63d0027cde92ec,isomorphism,
+2,tree,Tree,66,"(6, [(0,1),(1,2),(2,3),(3,4),(4,5)])",True,True,50803b752054f0512687e537ee7368f9,isomorphism,
+2,tree,Tree,67,"(8, [(0,1),(1,2),(2,3),(3,4),(4,5),(5,6)])",True,False,,isomorphism,
+2,tree,Tree,68,"(8, [(0,1),(1,2),(2,3),(3,4),(4,5),(5,6),(6,7)])",True,True,653d67ad3d369bf2cd63d0027cde92ec,isomorphism,
+2,tree,Tree,69,"(8, [(0,1),(1,2),(2,3),(3,4),(4,5),(5,6),(6,7),(7,8)])",False,False,,isomorphism,第 8 条边端点越界（节点范围应为 0..7）。
+2,tree,Tree,70,"(8, [(0,1),(1,2),(2,3),(3,4),(4,5),(5,6)])",True,False,,isomorphism,
+2,tree,Tree,71,"(8, [(0,1), (0,2), (0,3), (1,4), (1,5), (2,6), (3,7)])",True,True,d25563e624d9195ce94b1f768fdc503d,isomorphism,
+2,tree,Tree,72,"(8, [(0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7)])",True,True,653d67ad3d369bf2cd63d0027cde92ec,isomorphism,
+2,tree,Tree,73,"(8, [(0,1),(1,2),(2,3),(3,4),(4,5),(5,6)])",True,False,,isomorphism,
+2,tree,Tree,74,"(8, [(0,1),(1,2),(2,3),(3,4),(4,5),(5,6)])",True,False,,isomorphism,
+2,tree,Tree,75,"(8, [(0,1), (1,2), (2,3), (3,4), (4,5), (5,6)])",True,False,,isomorphism,
+2,tree,Tree,76,"(8, [(0,1),(1,2),(2,3),(3,4),(4,5),(5,6),(6,7)])",True,True,653d67ad3d369bf2cd63d0027cde92ec,isomorphism,
+2,tree,Tree,77,"(8, [(0,1),(1,2),(2,3),(3,4),(4,5),(5,6),(6,7),(7,8)])",False,False,,isomorphism,第 8 条边端点越界（节点范围应为 0..7）。
+2,tree,Tree,78,"(8, [((0,1), (1,2)), ((0,2), (2,3)), ((1,4), (4,5)), ((2,6), (6,7))])",False,False,,isomorphism,第 1 条边包含非整数端点。
+2,tree,Tree,79,"(6, [(0,1),(0,2),(0,3),(1,4),(1,5)])",True,True,833c89e8aca800e5707fb47ea63f9088,isomorphism,
+2,tree,Tree,80,"(8, [(0,1), (1,2), (2,3), (3,4), (4,5), (5,6)])",True,False,,isomorphism,
+2,tree,Tree,81,"(8, [(0,1), (0,2), (0,3), (1,4), (1,5), (2,6), (3,7)])",True,True,d25563e624d9195ce94b1f768fdc503d,isomorphism,
+2,tree,Tree,82,"(6, [(0,1),(1,2),(2,3),(3,4),(4,5)])",True,True,50803b752054f0512687e537ee7368f9,isomorphism,
+2,tree,Tree,83,"(6, [(0,1),(1,2),(2,3),(3,4),(4,5)])",True,True,50803b752054f0512687e537ee7368f9,isomorphism,
+2,tree,Tree,84,"(8, [(0,1), (1,2), (2,3), (3,4), (4,5), (5,6)])",True,False,,isomorphism,
+2,tree,Tree,85,"(7, [(0,1),(1,2),(2,3),(3,4),(4,5)])",True,False,,isomorphism,
+2,tree,Tree,86,"(6, [(0,1), (0,2), (0,3), (1,4), (1,5)])",True,True,833c89e8aca800e5707fb47ea63f9088,isomorphism,
+2,tree,Tree,87,"(8, [(0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7)])",True,True,653d67ad3d369bf2cd63d0027cde92ec,isomorphism,
+2,tree,Tree,88,"(6, [(0,1),(0,2),(0,3),(1,4),(1,5)])",True,True,833c89e8aca800e5707fb47ea63f9088,isomorphism,
+2,tree,Tree,89,"(8, [(0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7)])",True,True,653d67ad3d369bf2cd63d0027cde92ec,isomorphism,
+2,tree,Tree,90,"(8, [(0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7)])",True,True,653d67ad3d369bf2cd63d0027cde92ec,isomorphism,
+2,tree,Tree,91,"(8, [(0,1), (1,2), (2,3), (3,4), (4,5)])",True,False,,isomorphism,
+2,tree,Tree,92,"(6, [(0,1),(0,2),(0,3),(1,4)])",True,False,,isomorphism,
+2,tree,Tree,93,"(6, [(0,1),(0,2),(0,3),(1,4),(1,5)])",True,True,833c89e8aca800e5707fb47ea63f9088,isomorphism,
+2,tree,Tree,94,"(6, [(0,1),(0,2),(0,3),(1,4),(1,5)])",True,True,833c89e8aca800e5707fb47ea63f9088,isomorphism,
+2,tree,Tree,95,"(8, [(0,1),(1,2),(2,3),(3,4),(4,5),(5,6)])",True,False,,isomorphism,
+2,tree,Tree,96,"(8, [(0,1),(1,2),(2,3),(3,4),(4,5),(5,6)])",True,False,,isomorphism,
+2,tree,Tree,97,"(6, [(0,1),(0,2),(1,3),(3,4),(4,5)])",True,True,50803b752054f0512687e537ee7368f9,isomorphism,
+2,tree,Tree,98,"(6, [(0,1),(1,2),(2,3),(3,4),(4,5)])",True,True,50803b752054f0512687e537ee7368f9,isomorphism,
+2,tree,Tree,99,"(6, [(0,1),(0,2),(0,3),(1,4),(1,5)])",True,True,833c89e8aca800e5707fb47ea63f9088,isomorphism,
+2,tree,Tree,100,"(8, [(0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,8)])",False,False,,isomorphism,第 8 条边端点越界（节点范围应为 0..7）。
+2,cycle,Cycle,1,"(10, [(0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,8), (8,9), (9,0)])",True,True,d037d26b7e14770c86b690a4c58f2f12,isomorphism,
+2,cycle,Cycle,2,"(10, [(0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,8), (8,9), (9,0)])",True,True,d037d26b7e14770c86b690a4c58f2f12,isomorphism,
+2,cycle,Cycle,3,"(10, [(0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,8), (8,9), (9,0)])",True,True,d037d26b7e14770c86b690a4c58f2f12,isomorphism,
+2,cycle,Cycle,4,"(10, [(0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,8), (8,9), (9,0)])",True,True,d037d26b7e14770c86b690a4c58f2f12,isomorphism,
+2,cycle,Cycle,5,"(10, [(0,1),(1,2),(2,3),(3,4),(4,5),(5,6),(6,7),(7,8),(8,9),(9,0)])",True,True,d037d26b7e14770c86b690a4c58f2f12,isomorphism,
+2,cycle,Cycle,6,"(10, [(0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,8), (8,9), (9,0)])",True,True,d037d26b7e14770c86b690a4c58f2f12,isomorphism,
+2,cycle,Cycle,7,"(10, [(u1,v1), (u2,v2), ...])",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：malformed node or string on line 1: <ast.Name object at 0x79730377bdc0>"
+2,cycle,Cycle,8,"(10, [(0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7), (0,8), (0,9)])",True,False,,isomorphism,
+2,cycle,Cycle,9,"(10, [(0, 1), (0, 2), (1, 3), (1, 4), (2, 3), (2, 5), (3, 4), (3, 6), (4, 5), (4, 7), (5, 6), (5, 8), (6, 7), (7, 8), (8, 9), (9, 0)])",True,False,,isomorphism,
+2,cycle,Cycle,10,"Sure! Let's go through the steps to generate a single cycle graph with 10 nodes:
+
+Step 1: Create a path visiting all 10 nodes.
+
+We can start at node 0 and visit each node in sequence, so the path is: ",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：unterminated string literal (detected at line 1) (<unknown>, line 1)"
+2,cycle,Cycle,11,"(10, [(0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,8), (8,9), (9,0)])",True,True,d037d26b7e14770c86b690a4c58f2f12,isomorphism,
+2,cycle,Cycle,12,"(10, [((0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,8), (8,9), (9,0))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+2,cycle,Cycle,13,"(10, [(0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,8), (8,9), (9,0)])",True,True,d037d26b7e14770c86b690a4c58f2f12,isomorphism,
+2,cycle,Cycle,14,"(10, [(0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,8), (8,9), (9,0)])",True,True,d037d26b7e14770c86b690a4c58f2f12,isomorphism,
+2,cycle,Cycle,15,"(10, [(0,1),(1,2),(2,3),(3,4),(4,5),(5,6),(6,7),(7,8),(8,9),(9,0)])",True,True,d037d26b7e14770c86b690a4c58f2f12,isomorphism,
+2,cycle,Cycle,16,"(10, [(0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,8), (8,9), (9,0)])",True,True,d037d26b7e14770c86b690a4c58f2f12,isomorphism,
+2,cycle,Cycle,17,"(10, [(0, 1), (1, 2), (2, 3), (3, 4), (4, 5), (5, 0), (9, 0)])",True,False,,isomorphism,
+2,cycle,Cycle,18,"(10, [((0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,8), (8,9), (9,0))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+2,cycle,Cycle,19,"(10, [(0,1), (0,2), (1,2), (1,3), (2,3), (2,4), (3,4), (3,5), (4,5), (4,0)])",True,False,,isomorphism,
+2,cycle,Cycle,20,"(10, [(0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,8), (8,9), (9,0)])",True,True,d037d26b7e14770c86b690a4c58f2f12,isomorphism,
+2,cycle,Cycle,21,"(10, [(0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,8), (8,9), (9,0)])",True,True,d037d26b7e14770c86b690a4c58f2f12,isomorphism,
+2,cycle,Cycle,22,"(10, [((0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,8), (8,9), (9,0))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+2,cycle,Cycle,23,"(10, [((0,1), (1,2)), ((1,2), (2,3)), ((2,3), (3,4)), ((3,4), (4,5)), ((4,5), (5,6)), ((5,6), (6,7)), ((6,7), (7,8)), ((7,8), (8,9)), ((8,9), (9,0))])",False,False,,isomorphism,第 1 条边包含非整数端点。
+2,cycle,Cycle,24,"(10, [(0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,8), (8,9), (9,0)])",True,True,d037d26b7e14770c86b690a4c58f2f12,isomorphism,
+2,cycle,Cycle,25,"(10, [(0,1), (1,2), (2,3), ..., (9,0)])",False,False,,isomorphism,"第 4 条边不是二元组 `(u,v)`。"
+2,cycle,Cycle,26,"(10, [(0, 1), (1, 2), (2, 3), (3, 4), (4, 5), (5, 6), (6, 7), (7, 8), (8, 9), (9, 0)])",True,True,d037d26b7e14770c86b690a4c58f2f12,isomorphism,
+2,cycle,Cycle,27,"Sure, I can help you with that! Here's my reasoning:
+
+1. Create a path visiting all 10 nodes: 0-1-2-...-9.
+
+To create a path visiting all 10 nodes, we can start at node 0 and visit each node in sequen",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：unterminated string literal (detected at line 1) (<unknown>, line 1)"
+2,cycle,Cycle,28,"Sure, I can help you with that! Here's my reasoning and the final graph:
+
+1. First, let's create a path visiting all 10 nodes: 0-1-2-...-9. We can do this by starting at node 0 and traversing the path",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：unterminated string literal (detected at line 1) (<unknown>, line 1)"
+2,cycle,Cycle,29,"(10, [(0,1),(1,2),(2,3),(3,4),(4,5),(5,6),(6,7),(7,8),(8,9),(9,0)])",True,True,d037d26b7e14770c86b690a4c58f2f12,isomorphism,
+2,cycle,Cycle,30,"(10, [(0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,8), (8,9), (9,0)])",True,True,d037d26b7e14770c86b690a4c58f2f12,isomorphism,
+2,cycle,Cycle,31,"(10, [((0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,8), (8,9), (9,0))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+2,cycle,Cycle,32,"(10, [((0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,8), (8,9), (9,0))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+2,cycle,Cycle,33,"(10, [(0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,8), (8,9), (9,0)])",True,True,d037d26b7e14770c86b690a4c58f2f12,isomorphism,
+2,cycle,Cycle,34,"(10, [(0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,8), (8,9), (9,0)])",True,True,d037d26b7e14770c86b690a4c58f2f12,isomorphism,
+2,cycle,Cycle,35,"(10, [(0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,8), (8,9), (9,0)])",True,True,d037d26b7e14770c86b690a4c58f2f12,isomorphism,
+2,cycle,Cycle,36,"(10, [
+    (0, 1),
+    (0, 9),
+    (1, 2),
+    (1, 8),
+    (2, 3),
+    (2, 7),
+    (3, 4),
+    (3, 6),
+    (4, 5),
+    (4, 10),
+    (5, 6),
+    (5, 9),
+    (6, 7),
+    (7, 8),
+    (8, 9),
+    (9, 0)
+]",False,False,,isomorphism,第 10 条边端点越界（节点范围应为 0..9）。
+2,cycle,Cycle,37,"(10, [(0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,8), (8,9), (9,0)])",True,True,d037d26b7e14770c86b690a4c58f2f12,isomorphism,
+2,cycle,Cycle,38,"(10, [(0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,8), (8,9), (9,0)])",True,True,d037d26b7e14770c86b690a4c58f2f12,isomorphism,
+2,cycle,Cycle,39,"(10, [
+    (0, 1),
+    (1, 2),
+    (2, 3),
+    (3, 4),
+    (4, 5),
+    (5, 6),
+    (6, 7),
+    (7, 8),
+    (8, 9),
+    (9, 0)
+])",True,True,d037d26b7e14770c86b690a4c58f2f12,isomorphism,
+2,cycle,Cycle,40,"(10, [((0,1), (1,2)), ((1,2), (2,3)), ..., ((9,0), (0,1))])",False,False,,isomorphism,第 1 条边包含非整数端点。
+2,cycle,Cycle,41,"(10, [(0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,8), (8,9), (9,0)])",True,True,d037d26b7e14770c86b690a4c58f2f12,isomorphism,
+2,cycle,Cycle,42,"(10, [(0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,8), (8,9), (9,0)])",True,True,d037d26b7e14770c86b690a4c58f2f12,isomorphism,
+2,cycle,Cycle,43,"(10, [((0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,8), (8,9), (9,0))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+2,cycle,Cycle,44,"(10, [(0,1), (1,2), (2,3), ..., (9,0)])",False,False,,isomorphism,"第 4 条边不是二元组 `(u,v)`。"
+2,cycle,Cycle,45,"(10, [(0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,8), (8,9), (9,0)])",True,True,d037d26b7e14770c86b690a4c58f2f12,isomorphism,
+2,cycle,Cycle,46,"(10, [(0,1), (0,2), (1,2), (1,3), (2,3), (2,4), (3,4), (3,5), (4,5), (4,0)])",True,False,,isomorphism,
+2,cycle,Cycle,47,"(10, [(0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7), (0,8), (0,9), (9,0)])",True,False,,isomorphism,
+2,cycle,Cycle,48,"(10, [(0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,8), (8,9), (9,0)])",True,True,d037d26b7e14770c86b690a4c58f2f12,isomorphism,
+2,cycle,Cycle,49,"(10, [(0,1),(1,2),(2,3),(3,4),(4,5),(5,6),(6,7),(7,8),(8,9),(9,0)])",True,True,d037d26b7e14770c86b690a4c58f2f12,isomorphism,
+2,cycle,Cycle,50,"(10, [('0', '1'), ('0', '2'), ('1', '2'), ('1', '3'), ('2', '3'), ('2', '4'), ('3', '4'), ('3', '5'), ('4', '5'), ('4', '9'), ('5', '9'), ('9', '0')])",True,False,,isomorphism,
+2,cycle,Cycle,51,"(10, [(0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,8), (8,9), (9,0)])",True,True,d037d26b7e14770c86b690a4c58f2f12,isomorphism,
+2,cycle,Cycle,52,"(10, [('0', '1'), ('1', '2'), ('2', '3'), ('3', '4'), ('4', '5'), ('5', '6'), ('6', '7'), ('7', '8'), ('8', '9'), ('9', '0')])",True,True,d037d26b7e14770c86b690a4c58f2f12,isomorphism,
+2,cycle,Cycle,53,"(10, [(0,1),(1,2),(2,3),(3,4),(4,5),(5,6),(6,7),(7,8),(8,9),(9,0)])",True,True,d037d26b7e14770c86b690a4c58f2f12,isomorphism,
+2,cycle,Cycle,54,"(10, [(0,1), (0,2), (1,3), (1,4), (2,5), (2,6), (3,7), (3,8), (4,9), (4,0)])",True,False,,isomorphism,
+2,cycle,Cycle,55,"(10, [(0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7), (0,8), (0,9)])",True,False,,isomorphism,
+2,cycle,Cycle,56,"(10, [((0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,8), (8,9), (9,0))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+2,cycle,Cycle,57,"Sure, I'd be happy to help! Here's my reasoning:
+
+1. To create a single cycle graph with 10 nodes, we need to find a path that visits all 10 nodes exactly once. One way to do this is to start at node ",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：unterminated string literal (detected at line 7) (<unknown>, line 7)"
+2,cycle,Cycle,58,"(10, [
+    (0, 1),
+    (1, 2),
+    (2, 3),
+    (3, 4),
+    (4, 5),
+    (5, 6),
+    (6, 7),
+    (7, 8),
+    (8, 9),
+    (9, 0)
+])",True,True,d037d26b7e14770c86b690a4c58f2f12,isomorphism,
+2,cycle,Cycle,59,"(10, [(0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,8), (8,9), (9,0)])",True,True,d037d26b7e14770c86b690a4c58f2f12,isomorphism,
+2,cycle,Cycle,60,"(10, [(0, 1), (1, 2), (2, 3), (3, 4), (4, 5), (5, 6), (6, 7), (7, 8), (8, 9), (9, 0)])",True,True,d037d26b7e14770c86b690a4c58f2f12,isomorphism,
+2,cycle,Cycle,61,"(10, [(0,1), (1,2), (2,3), (3,4), (4,5), (5,9), (9,0)])",True,False,,isomorphism,
+2,cycle,Cycle,62,"(10, [(0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,8), (8,9), (9,0)])",True,True,d037d26b7e14770c86b690a4c58f2f12,isomorphism,
+2,cycle,Cycle,63,"(10, [(0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7), (0,8), (0,9)])",True,False,,isomorphism,
+2,cycle,Cycle,64,"(10, [(0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,8), (8,9), (9,0)])",True,True,d037d26b7e14770c86b690a4c58f2f12,isomorphism,
+2,cycle,Cycle,65,"(10, [(0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,8), (8,9), (9,0)])",True,True,d037d26b7e14770c86b690a4c58f2f12,isomorphism,
+2,cycle,Cycle,66,"(10, [(0,1), (1,2), (2,3), ..., (9,0)])",False,False,,isomorphism,"第 4 条边不是二元组 `(u,v)`。"
+2,cycle,Cycle,67,"(10, [(0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,8), (8,9), (9,0)])",True,True,d037d26b7e14770c86b690a4c58f2f12,isomorphism,
+2,cycle,Cycle,68,"(10, [(0,1),(1,2),(2,3),(3,4),(4,5),(5,6),(6,7),(7,8),(8,9),(9,0)])",True,True,d037d26b7e14770c86b690a4c58f2f12,isomorphism,
+2,cycle,Cycle,69,"(10, [(0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7), (0,8), (0,9)])",True,False,,isomorphism,
+2,cycle,Cycle,70,"(10, [(0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,8), (8,9), (9,0)])",True,True,d037d26b7e14770c86b690a4c58f2f12,isomorphism,
+2,cycle,Cycle,71,"(10, [(0,1), (0,2), (1,3), (2,4), (3,5), (4,6), (5,7), (6,8), (7,9), (8,0)])",True,False,,isomorphism,
+2,cycle,Cycle,72,"(10, [((0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,8), (8,9), (9,0))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+2,cycle,Cycle,73,"(10, [((0,1), (1,2)), ((0,2), (2,3)), ((0,3), (3,4)), ((0,4), (4,5)), ((0,5), (5,6)), ((0,6), (6,7)), ((0,7), (7,8)), ((0,8), (8,9)), ((0,9), (9,0))])",False,False,,isomorphism,第 1 条边包含非整数端点。
+2,cycle,Cycle,74,"(10, [(0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,8), (8,9), (9,0)])",True,True,d037d26b7e14770c86b690a4c58f2f12,isomorphism,
+2,cycle,Cycle,75,"(10, [(0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,8), (8,9), (9,0)])",True,True,d037d26b7e14770c86b690a4c58f2f12,isomorphism,
+2,cycle,Cycle,76,"(10, [(0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,8), (8,9), (9,0)])",True,True,d037d26b7e14770c86b690a4c58f2f12,isomorphism,
+2,cycle,Cycle,77,"(10, [(0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,8), (8,9), (9,0)])",True,True,d037d26b7e14770c86b690a4c58f2f12,isomorphism,
+2,cycle,Cycle,78,"(10, [((0, 1), (1, 2), (2, 3), (3, 4), (4, 5), (5, 6), (6, 7), (7, 8), (8, 9), (9, 0)])",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：closing parenthesis ']' does not match opening parenthesis '(' (<unknown>, line 1)"
+2,cycle,Cycle,79,"(10, [(0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,8), (8,9), (9,0)])",True,True,d037d26b7e14770c86b690a4c58f2f12,isomorphism,
+2,cycle,Cycle,80,"(10, [(0, 1), (1, 2), (2, 3), (3, 4), (4, 5), (5, 6), (6, 7), (7, 8), (8, 9), (9, 0)])",True,True,d037d26b7e14770c86b690a4c58f2f12,isomorphism,
+2,cycle,Cycle,81,"(10, [(0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,8), (8,9), (9,0)])",True,True,d037d26b7e14770c86b690a4c58f2f12,isomorphism,
+2,cycle,Cycle,82,"(10, [
+    (0, 1),
+    (1, 2),
+    (2, 3),
+    (3, 4),
+    (4, 5),
+    (5, 6),
+    (6, 7),
+    (7, 8),
+    (8, 9),
+    (9, 0)
+])",True,True,d037d26b7e14770c86b690a4c58f2f12,isomorphism,
+2,cycle,Cycle,83,"(10, [
+    (0, 1),
+    (1, 2),
+    (2, 3),
+    (3, 4),
+    (4, 5),
+    (5, 6),
+    (6, 7),
+    (7, 8),
+    (8, 9),
+    (9, 0)
+])",True,True,d037d26b7e14770c86b690a4c58f2f12,isomorphism,
+2,cycle,Cycle,84,"(10, [(0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,8), (8,9), (9,0)])",True,True,d037d26b7e14770c86b690a4c58f2f12,isomorphism,
+2,cycle,Cycle,85,"(10, [(0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,8), (8,9), (9,0)])",True,True,d037d26b7e14770c86b690a4c58f2f12,isomorphism,
+2,cycle,Cycle,86,"(10, [((0,1), (1,2)), ((1,2), (2,3)), ((2,3), (3,4)), ((3,4), (4,5)), ((4,5), (5,6)), ((5,6), (6,7)), ((6,7), (7,8)), ((7,8), (8,9)), ((8,9), (9,0))])",False,False,,isomorphism,第 1 条边包含非整数端点。
+2,cycle,Cycle,87,"(10, [((0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,8), (8,9), (9,0))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+2,cycle,Cycle,88,"(10, [((0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,8), (8,9), (9,0))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+2,cycle,Cycle,89,"(10, [(0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,8), (8,9), (9,0)])",True,True,d037d26b7e14770c86b690a4c58f2f12,isomorphism,
+2,cycle,Cycle,90,"(10, [(0,1), (1,2), (2,3), ..., (9,0)])",False,False,,isomorphism,"第 4 条边不是二元组 `(u,v)`。"
+2,cycle,Cycle,91,"(10, [(0,1), (0,2), (1,2), (1,3), (2,3), (2,4), (3,4), (3,5), (4,5), (4,0)])",True,False,,isomorphism,
+2,cycle,Cycle,92,"(10, [(0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,8), (8,9), (9,0)])",True,True,d037d26b7e14770c86b690a4c58f2f12,isomorphism,
+2,cycle,Cycle,93,"(10, [((0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,8), (8,9), (9,0))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+2,cycle,Cycle,94,"(10, [((0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,8), (8,9), (9,0))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+2,cycle,Cycle,95,"(10, [(0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,8), (8,9), (9,0)])",True,True,d037d26b7e14770c86b690a4c58f2f12,isomorphism,
+2,cycle,Cycle,96,"(10, [((0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,8), (8,9), (9,0))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+2,cycle,Cycle,97,"(10, [(0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,8), (8,9), (9,0)])",True,True,d037d26b7e14770c86b690a4c58f2f12,isomorphism,
+2,cycle,Cycle,98,"(10, [(0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,8), (8,9), (9,0)])",True,True,d037d26b7e14770c86b690a4c58f2f12,isomorphism,
+2,cycle,Cycle,99,"(10, [((0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,8), (8,9), (9,0))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+2,cycle,Cycle,100,"(10, [(0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7), (0,8), (0,9)])",True,False,,isomorphism,
+2,planar,Planar,1,"(8, [(0,1),(1,2),(2,3),(3,4),(4,5),(5,6),(6,7),(7,0)])",True,False,,isomorphism,
+2,planar,Planar,2,"(8, [
+    (0,1),
+    (1,2),
+    (2,3),
+    (3,4),
+    (4,5),
+    (5,6),
+    (6,7),
+    (7,0)
+])",True,False,,isomorphism,
+2,planar,Planar,3,"(8, [(0,1), (0,3), (1,2), (2,3), (3,4), (4,5), (5,6), (1,4), (2,6), (3,5), (4,7), (5,8)])",False,False,,isomorphism,第 12 条边端点越界（节点范围应为 0..7）。
+2,planar,Planar,4,"(8, [(0,1),(0,2),(0,3),(0,6),(1,2),(1,4),(2,3),(2,5),(3,4),(3,7),(4,5),(4,7),(5,6),(6,7),(6,8)])",False,False,,isomorphism,第 15 条边端点越界（节点范围应为 0..7）。
+2,planar,Planar,5,"(8, [(1,2),(1,3),(2,4),(3,5),(4,6),(5,7),(6,8),(7,0)])",False,False,,isomorphism,第 7 条边端点越界（节点范围应为 0..7）。
+2,planar,Planar,6,"(8, [(0,1),(1,2),(2,3),(3,4),(4,5),(5,6),(6,0)])",True,False,,isomorphism,
+2,planar,Planar,7,"(8, [(0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,0), (0,4), (1,6), (2,7), (3,5), (4,2), (5,3), (6,1)])",True,False,,isomorphism,
+2,planar,Planar,8,"(8, [(0,1),(1,2),(2,3),(3,4),(4,5),(5,0),(6,7),(7,4),(0,6),(1,3)])",True,False,,isomorphism,
+2,planar,Planar,9,"(8, [(0,1),(1,2),(2,3),(3,4),(4,5),(5,6),(6,0),(0,7),(1,7),(2,7),(3,7),(4,7),(5,8),(6,8),(7,8),(8,0)])",False,False,,isomorphism,第 13 条边端点越界（节点范围应为 0..7）。
+2,planar,Planar,10,"(8, [(0,1),(1,0),(2,0),(2,1),(3,0),(3,1),(3,2),(4,0),(4,1),(4,2),(4,3),(5,1),(5,2),(5,4),(6,2),(6,3),(6,5)])",True,False,,isomorphism,
+2,planar,Planar,11,"(8, [((0,1), (1,2)), ((0,2), (2,3)), ((0,3), (3,4)), ((1,4), (4,5)), ((2,5), (5,3)), ((3,0), (0,4)), ((4,0), (0,2))])",False,False,,isomorphism,第 1 条边包含非整数端点。
+2,planar,Planar,12,"(8, [(0,1),(1,2),(2,3),(3,4),(4,5),(5,6),(6,7),(7,8)])",False,False,,isomorphism,第 8 条边端点越界（节点范围应为 0..7）。
+2,planar,Planar,13,"(8, [(0,1),(1,2),(2,3),(3,4),(4,5),(5,6),(6,7)])",True,False,,isomorphism,
+2,planar,Planar,14,"(8, [(0,1),(1,2),(2,3),(3,4),(4,5),(5,0),(0,2)])",True,False,,isomorphism,
+2,planar,Planar,15,"(8, [(0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,0)])",True,False,,isomorphism,
+2,planar,Planar,16,"(8, [(0,1),(1,2),(2,3),(3,4),(4,5),(5,6),(6,0),(7,3),(8,0)])",False,False,,isomorphism,第 9 条边端点越界（节点范围应为 0..7）。
+2,planar,Planar,17,"(8, [(0,1), (1,2), (2,3), (3,4), (4,5), (5,0), (0,4), (1,6), (2,7), (3,8)])",False,False,,isomorphism,第 10 条边端点越界（节点范围应为 0..7）。
+2,planar,Planar,18,"(8, [(0,1),(1,2),(2,3),(3,4),(4,5),(5,6),(6,7),(7,8)])",False,False,,isomorphism,第 8 条边端点越界（节点范围应为 0..7）。
+2,planar,Planar,19,"(8, [(0,1), (0,2), (0,3), (1,2), (1,3), (2,3), (3,6), (5,7), (7,8)])",False,False,,isomorphism,第 9 条边端点越界（节点范围应为 0..7）。
+2,planar,Planar,20,"(8, [(0,1),(1,2),(2,3),(3,4),(4,5),(5,6),(6,7),(7,0)])",True,False,,isomorphism,
+2,planar,Planar,21,"(8, [(0,1),(1,2),(2,3),(3,4),(4,5),(5,6),(6,0),(0,7),(1,7),(2,7),(3,7),(4,7),(5,7),(6,8),(7,8),(8,0)])",False,False,,isomorphism,第 14 条边端点越界（节点范围应为 0..7）。
+2,planar,Planar,22,"(8, [((0,1), (1,2), (2,3)), ((0,1), (1,4), (4,5)), ((2,3), (3,4), (4,5)), ((2,5), (3,4), (4,0)), ((0,4), (1,4), (4,2)), ((1,2), (2,3), (3,0)), ((1,5), (2,3), (3,4)), ((4,5), (5,0), (0,1))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+2,planar,Planar,23,"(8, [(0,1),(1,2),(2,3),(3,0),(0,4),(4,5),(5,3),(0,4)])",True,False,,isomorphism,
+2,planar,Planar,24,"(8, [(0,1),(1,2),(2,3),(3,4),(4,5),(5,6),(6,7),(7,8)])",False,False,,isomorphism,第 8 条边端点越界（节点范围应为 0..7）。
+2,planar,Planar,25,"(8, [(0,1),(1,2),(2,3),(3,4),(4,5),(5,6),(6,0),(0,7),(1,7),(2,7),(3,7),(4,7),(5,8),(6,8),(7,8),(8,0))]
+
+Here's how we built the graph:
+
+1. Start with the two nodes that are not connected to any other ",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：closing parenthesis ')' does not match opening parenthesis '[' (<unknown>, line 1)"
+2,planar,Planar,26,"(8, [(0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,0)])",True,False,,isomorphism,
+2,planar,Planar,27,"(8, [(0,1),(1,2),(2,3),(3,4),(4,5),(5,6),(6,7),(7,8)])",False,False,,isomorphism,第 8 条边端点越界（节点范围应为 0..7）。
+2,planar,Planar,28,"(8, [((0,1), (1,2)), ((0,1), (1,3)), ((0,2), (2,3)), ((0,2), (2,4)), ((0,3), (3,4)), ((1,2), (2,4)), ((1,3), (3,4)), ((2,3), (3,5)), ((2,4), (4,5)), ((3,4), (4,5)), ((3,5), (5,0)), ((4,5), (5,0))])",False,False,,isomorphism,第 1 条边包含非整数端点。
+2,planar,Planar,29,"(8, [(0,1), (0,4), (1,2), (2,3), (3,5), (4,6), (5,7), (1,8)])",False,False,,isomorphism,第 8 条边端点越界（节点范围应为 0..7）。
+2,planar,Planar,30,"(8, [(0,1),(1,2),(2,3),(3,4),(4,5),(5,6),(6,7),(7,4),(2,6)])",True,False,,isomorphism,
+2,planar,Planar,31,"(8, [(0,1),(1,2),(2,3),(0,4),(1,5),(3,6),(5,7),(6,8)])",False,False,,isomorphism,第 8 条边端点越界（节点范围应为 0..7）。
+2,planar,Planar,32,"(8, [((0,1), (1,2)), ((0,2), (2,3)), ((0,3), (3,4)), ((1,4), (4,5)), ((2,5), (5,3)), ((3,0), (0,4)), ((4,0), (0,2))])",False,False,,isomorphism,第 1 条边包含非整数端点。
+2,planar,Planar,33,"(8, [(0,1),(1,2),(2,3),(3,4),(4,5),(5,0)])",True,False,,isomorphism,
+2,planar,Planar,34,"(7, [(0,1),(1,2),(2,3),(3,4),(4,5),(5,6),(6,7)])",False,False,,isomorphism,第 7 条边端点越界（节点范围应为 0..6）。
+2,planar,Planar,35,"(8, [(0,1),(1,2),(2,3),(3,4),(4,5),(5,0),(0,4),(4,1),(1,6),(6,2),(2,7),(7,3),(3,5),(5,4)])",True,False,,isomorphism,
+2,planar,Planar,36,"(8, [((0,1), (1,2), (2,3)), ((0,1), (1,4), (4,5)), ((0,2), (2,3), (3,0)), ((0,2), (2,4), (4,5)), ((1,3), (3,4), (4,5)), ((1,4), (4,5), (5,3)), ((2,3), (3,4), (4,5)), ((2,4), (4,5), (5,3))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+2,planar,Planar,37,"(8, [(0,1),(1,2),(2,3),(3,4),(4,5),(5,6),(6,7),(7,8)])",False,False,,isomorphism,第 8 条边端点越界（节点范围应为 0..7）。
+2,planar,Planar,38,"(8, [
+    (0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,0)
+])",True,False,,isomorphism,
+2,planar,Planar,39,"(8, [((0,1), (1,2)), ((0,2), (1,3)), ((0,3), (1,4)), ((1,4), (2,5)), ((1,5), (2,6)), ((2,6), (3,7)), ((2,7), (3,0)), ((3,0), (4,1)), ((3,1), (4,2)), ((4,2), (5,3)), ((4,3), (5,0)), ((5,0), (6,1)), ((5",False,False,,isomorphism,第 1 条边包含非整数端点。
+2,planar,Planar,40,"(8, [(0,1),(1,2),(2,3),(3,4),(4,5),(5,6),(6,7),(0,4),(1,5),(2,6),(3,7),(4,8),(5,9),(6,10),(7,8)])",False,False,,isomorphism,第 12 条边端点越界（节点范围应为 0..7）。
+2,planar,Planar,41,"(8, [(0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7)])",True,False,,isomorphism,
+2,planar,Planar,42,"(8, [(0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,0)])",True,False,,isomorphism,
+2,planar,Planar,43,"(8, [(0,1),(1,2),(2,3),(3,4),(4,5),(5,6),(6,0),(0,4),(1,7),(2,7),(3,7),(4,8),(5,8),(6,7)])",False,False,,isomorphism,第 12 条边端点越界（节点范围应为 0..7）。
+2,planar,Planar,44,"(8, [((0,1), (1,2), (2,3)), ((0,1), (1,4), (2,5)), ((3,4), (4,5), (5,3))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+2,planar,Planar,45,"(8, [(0,1),(1,2),(2,3),(3,4),(4,5),(5,6),(6,7),(7,0)])",True,False,,isomorphism,
+2,planar,Planar,46,"(8, [(0,1),(1,2),(2,3),(3,0),(0,4),(4,5),(5,3),(1,6),(6,7),(7,4),(4,0)])",True,False,,isomorphism,
+2,planar,Planar,47,"(7, [(0,1), (1,2), (2,3), (3,4), (4,5), (5,7)])",False,False,,isomorphism,第 6 条边端点越界（节点范围应为 0..6）。
+2,planar,Planar,48,"(8, [(0,1), (1,2), (2,3), (3,0), (1,4), (2,5), (0,4), (4,5)])",True,False,,isomorphism,
+2,planar,Planar,49,"(8, [(0,1),(1,2),(2,3),(3,4),(4,5),(5,6),(6,7),(7,0)])",True,False,,isomorphism,
+2,planar,Planar,50,"(8, [(0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,0)])",True,False,,isomorphism,
+2,planar,Planar,51,"(8, [
+    (0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,0)
+])",True,False,,isomorphism,
+2,planar,Planar,52,"(8, [((0,1), (1,2)), ((1,2), (2,3)), ((2,3), (3,4)), ((3,4), (4,5)), ((4,5), (5,6)), ((5,6), (6,0)), ((6,0), (0,1))])",False,False,,isomorphism,第 1 条边包含非整数端点。
+2,planar,Planar,53,"(8, [(0,1),(1,2),(2,3),(3,4),(4,5),(5,6),(6,7),(7,0)])",True,False,,isomorphism,
+2,planar,Planar,54,"(8, [(1,2), (1,3), (1,4), (2,0), (2,5), (3,1), (3,6), (4,2), (4,7), (5,0), (6,3), (7,4), (8,5)])",False,False,,isomorphism,第 13 条边端点越界（节点范围应为 0..7）。
+2,planar,Planar,55,"(8, [(0,1), (0,2), (0,3), (0,4), (0,5), (1,2), (1,3), (1,4), (2,3), (2,4), (2,5), (3,4), (3,5), (4,5)])",True,False,,isomorphism,
+2,planar,Planar,56,"(8, [(0,1),(1,2),(2,3),(3,4),(4,5),(5,6),(0,2),(1,4),(2,6),(3,5),(4,7),(5,8)])",False,False,,isomorphism,第 12 条边端点越界（节点范围应为 0..7）。
+2,planar,Planar,57,"(8, [
+  (0,1),
+  (1,2),
+  (2,3),
+  (3,4),
+  (4,5),
+  (5,6),
+  (6,7),
+  (7,0)
+])",True,False,,isomorphism,
+2,planar,Planar,58,"(8, [(0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,8), (0,4), (1,7), (2,5), (3,6), (4,8), (5,7)])",False,False,,isomorphism,第 7 条边端点越界（节点范围应为 0..7）。
+2,planar,Planar,59,"(8, [(0,1),(1,2),(2,3),(3,4),(4,5),(5,6)])",True,False,,isomorphism,
+2,planar,Planar,60,"(8, [(0,1),(1,2),(2,3),(3,4),(4,5),(5,6),(6,0),(0,7),(1,7),(2,7),(3,7),(4,7),(5,8),(6,8),(7,8),(8,0)])",False,False,,isomorphism,第 13 条边端点越界（节点范围应为 0..7）。
+2,planar,Planar,61,"(8, [(0,1), (0,2), (0,3), (0,4), (1,2), (1,3), (2,3), (2,4), (3,4)])",True,False,,isomorphism,
+2,planar,Planar,62,"(8, [(0,1),(1,2),(2,3),(3,4),(4,5),(5,6),(6,7),(7,8),(8,0)])",False,False,,isomorphism,第 8 条边端点越界（节点范围应为 0..7）。
+2,planar,Planar,63,"(8, [(0,1),(1,2),(2,3),(3,4),(4,5),(5,6),(6,7),(7,8)])",False,False,,isomorphism,第 8 条边端点越界（节点范围应为 0..7）。
+2,planar,Planar,64,"(8, [(0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,0)])",True,False,,isomorphism,
+2,planar,Planar,65,"(8, [
+  (0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7), (0,8),
+  (1,2), (1,3), (1,4), (1,5), (1,6), (1,7), (1,8),
+  (2,3), (2,4), (2,5), (2,6), (2,7), (2,8),
+  (3,4), (3,5), (3,6), (3,7), (3,8),
+  (4",False,False,,isomorphism,第 8 条边端点越界（节点范围应为 0..7）。
+2,planar,Planar,66,"(8, [(0, 1), (1, 2), (2, 3), (3, 4), (4, 5), (5, 6), (6, 7), (7, 8)])",False,False,,isomorphism,第 8 条边端点越界（节点范围应为 0..7）。
+2,planar,Planar,67,"(8, [(0,1),(1,2),(2,3),(3,4),(4,5),(5,6),(6,7),(7,8)])",False,False,,isomorphism,第 8 条边端点越界（节点范围应为 0..7）。
+2,planar,Planar,68,"(8, [(0,1),(1,2),(2,3),(3,4),(4,5),(5,6),(6,7),(7,0)])",True,False,,isomorphism,
+2,planar,Planar,69,"(8, [(0,1),(1,2),(2,3),(3,4),(4,5),(5,6),(6,7),(7,8)])",False,False,,isomorphism,第 8 条边端点越界（节点范围应为 0..7）。
+2,planar,Planar,70,"(8, [(0,1),(1,2),(2,3),(3,4),(4,5),(5,6),(6,7),(7,0)])",True,False,,isomorphism,
+2,planar,Planar,71,"(8, [(0,1),(1,2),(2,3),(3,4),(4,5),(5,6),(6,7),(7,0),(1,4),(2,6),(3,7)])",True,False,,isomorphism,
+2,planar,Planar,72,"(8, [(0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,0)])",True,False,,isomorphism,
+2,planar,Planar,73,"(8, [(0,1),(1,2),(2,3),(3,4),(4,5),(5,6),(6,0)])",True,False,,isomorphism,
+2,planar,Planar,74,"(8, [(0,1),(1,2),(2,3),(3,4),(4,5),(5,6),(6,7),(7,8),(8,0)])",False,False,,isomorphism,第 8 条边端点越界（节点范围应为 0..7）。
+2,planar,Planar,75,"(8, [(0,1),(1,2),(2,3),(3,4),(4,5),(5,6),(6,7),(7,0)])",True,False,,isomorphism,
+2,planar,Planar,76,"(8, [(0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,0)])",True,False,,isomorphism,
+2,planar,Planar,77,"(8, [(0,1),(0,3),(1,2),(1,4),(2,3),(2,5),(3,4),(4,5),(5,3),(0,6)])",True,False,,isomorphism,
+2,planar,Planar,78,"(8, [((0,1), (1,2), (2,3), (3,0), (4,5), (5,6), (6,7), (7,4), (0,4), (1,5), (2,6), (3,7)])",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：closing parenthesis ']' does not match opening parenthesis '(' (<unknown>, line 1)"
+2,planar,Planar,79,"(8, [(0,1),(1,2),(2,3),(3,4),(4,5),(5,6),(6,7),(7,0)])",True,False,,isomorphism,
+2,planar,Planar,80,"(8, [(0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (1,12), (2,13), (3,14), (4,15), (5,16)])",False,False,,isomorphism,第 7 条边端点越界（节点范围应为 0..7）。
+2,planar,Planar,81,"(8, [(0,1),(1,2),(2,3),(3,4),(4,5),(5,6),(6,7),(7,0),(0,8),(1,8),(2,8),(3,8),(4,8),(5,8),(6,8),(7,8),(8,0)])",False,False,,isomorphism,第 9 条边端点越界（节点范围应为 0..7）。
+2,planar,Planar,82,"(8, [(0,1),(1,2),(2,3),(3,4),(4,5),(5,6),(6,7),(7,0)])",True,False,,isomorphism,
+2,planar,Planar,83,"(8, [(0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,0)])",True,False,,isomorphism,
+2,planar,Planar,84,"(8, [(0,1), (0,4), (1,2), (1,5), (2,3), (2,6), (3,4), (3,7), (4,6), (5,7)])",True,False,,isomorphism,
+2,planar,Planar,85,"(8, [('0', '1'), ('1', '2'), ('2', '3'), ('3', '4'), ('4', '5'), ('5', '6'), ('6', '7'), ('7', '8')])",False,False,,isomorphism,第 8 条边端点越界（节点范围应为 0..7）。
+2,planar,Planar,86,"(3, [(0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7)])",False,False,,isomorphism,第 3 条边端点越界（节点范围应为 0..2）。
+2,planar,Planar,87,"(8, [(0,1), (1,2), (2,0), (0,4), (1,5), (2,6), (3,7), (4,8), (5,9)])",False,False,,isomorphism,第 8 条边端点越界（节点范围应为 0..7）。
+2,planar,Planar,88,"(8, [((0,1),(1,2)), ((1,2),(2,3)), ((2,3),(3,4)), ((3,4),(4,5)), ((4,5),(5,3)), ((5,3),(3,0)), ((3,0),(0,4)), ((0,4),(4,5)), ((4,5),(5,0)), ((5,0),(0,1))])",False,False,,isomorphism,第 1 条边包含非整数端点。
+2,planar,Planar,89,"(8, [((0,1),(0,2)),((1,2),(1,3)),((2,3),(2,4)),((3,4),(3,5)),((4,5),(4,0)),((5,0),(5,1)),((1,0),(1,4)),((2,4),(2,6)),((3,5),(3,7)),((4,6),(4,7)),((5,7),(5,0))])",False,False,,isomorphism,第 1 条边包含非整数端点。
+2,planar,Planar,90,"(8, [('1', '2'), ('2', '3'), ('3', '4'), ('4', '5'), ('5', '6'), ('6', '7'), ('7', '8')])",False,False,,isomorphism,第 7 条边端点越界（节点范围应为 0..7）。
+2,planar,Planar,91,"(8, [(0,1),(1,2),(2,3),(3,0),(0,4),(4,5),(5,6),(6,7),(7,0),(0,4,8),(1,5,9),(2,6,10),(3,7,11)])",False,False,,isomorphism,"第 10 条边不是二元组 `(u,v)`。"
+2,planar,Planar,92,"(8, [((0,1), (1,2)), ((2,3), (3,4)), ((4,5), (5,6)), ((6,7), (7,0)), ((0,4), (4,1)), ((1,3), (3,2)), ((2,6), (6,5)), ((5,7), (7,4))])",False,False,,isomorphism,第 1 条边包含非整数端点。
+2,planar,Planar,93,"(8, [(0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,8)])",False,False,,isomorphism,第 8 条边端点越界（节点范围应为 0..7）。
+2,planar,Planar,94,"(8, [(0,1),(1,2),(2,3),(3,4),(4,5),(5,6),(6,7),(7,0)])",True,False,,isomorphism,
+2,planar,Planar,95,"(8, [(0,1),(0,2),(0,3),(1,2),(1,4),(2,3),(2,5),(3,4),(3,6),(4,5),(4,7),(5,6),(6,7)])",True,False,,isomorphism,
+2,planar,Planar,96,"(8, [(0,1),(1,2),(2,3),(3,4),(4,5),(5,6),(6,7),(7,0)])",True,False,,isomorphism,
+2,planar,Planar,97,"(8, [(0,1),(1,2),(2,3),(3,4),(4,5),(5,6),(6,7),(7,8)])",False,False,,isomorphism,第 8 条边端点越界（节点范围应为 0..7）。
+2,planar,Planar,98,"(8, [
+    (0,1),  (1,2),  (2,3),  (3,4),  (4,5),  (5,6),  (6,7),  (7,0)
+])",True,False,,isomorphism,
+2,planar,Planar,99,"(8, [((0,1), (1,2), (2,3)), ((0,1), (1,4), (4,5)), ((0,2), (2,3), (3,0)), ((1,2), (2,3), (3,4)), ((1,4), (4,5), (5,3)), ((2,3), (3,4), (4,5)), ((3,0), (4,5), (5,3))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+2,planar,Planar,100,"(8, [
+  (0, 1),
+  (0, 2),
+  (0, 3),
+  (0, 4),
+  (1, 2),
+  (1, 5),
+  (2, 3),
+  (2, 6),
+  (3, 4),
+  (3, 7),
+  (4, 5),
+  (4, 8),
+  (5, 6),
+  (5, 7),
+  (6, 8)
+])",False,False,,isomorphism,第 12 条边端点越界（节点范围应为 0..7）。
+2,components,#Components,1,"(8, [
+    (0, 0),
+    (1, 2),
+    (2, 1),
+    (3, 4),
+    (4, 3),
+    (5, 5),
+    (6, 7),
+    (7, 6)
+])",True,False,,isomorphism,
+2,components,#Components,2,"(8, [(0,1), (1,2), (2,3), (4,5), (5,6), (6,7), (8,9)])",False,False,,isomorphism,第 7 条边端点越界（节点范围应为 0..7）。
+2,components,#Components,3,"(6, [(0,1),(0,2),(3,4),(6,7)])",False,False,,isomorphism,第 4 条边端点越界（节点范围应为 0..5）。
+2,components,#Components,4,"(8, [(0, 1), (1, 2), (3, 4), (4, 5), (6, 7)])",True,True,de837449b9b1ac221f958aa18f8b69de,isomorphism,
+2,components,#Components,5,"(8, [
+(0, 1),
+(2, 3),
+(4, 5),
+(6, 7)
+])",True,False,,isomorphism,
+2,components,#Components,6,"(8, [(0,1),(2,3),(4,5),(6,7)])",True,False,,isomorphism,
+2,components,#Components,7,"(8, [(0, 1), (2, 3), (4, 5), (6, 7)])",True,False,,isomorphism,
+2,components,#Components,8,"(8, [((0, 1), (1, 2), (2, 3)), ((4, 5), (5, 6), (6, 7))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+2,components,#Components,9,"(8, [(0, 1), (2, 3), (2, 4), (4, 5), (5, 6), (6, 7), (8)])",False,False,,isomorphism,"第 7 条边不是二元组 `(u,v)`。"
+2,components,#Components,10,"(8, [(0, 1), (0, 2), (1, 3), (2, 3), (3, 4), (4, 5), (5, 6), (5, 7), (6, 7)])",True,False,,isomorphism,
+2,components,#Components,11,"(8, [(0, 1), (1, 2), (3, 4), (4, 5), (6, 7)])",True,True,de837449b9b1ac221f958aa18f8b69de,isomorphism,
+2,components,#Components,12,"(8, [
+    (0, 1),
+    (1, 2),
+    (2, 3),
+    (4, 5),
+    (5, 6),
+    (6, 7),
+    (7, 0)
+])",True,False,,isomorphism,
+2,components,#Components,13,"(8, [(0, 7), (1, 3), (1, 7), (2, 6), (3, 6)])",True,True,9f3916331a21afee268bef4004507269,isomorphism,
+2,components,#Components,14,"(8, [(0, 4), (2, 6), (4, 7), (1, 3), (3, 5)])",True,True,de837449b9b1ac221f958aa18f8b69de,isomorphism,
+2,components,#Components,15,"(8, [((0,1), (0,2), (0,3)), ((1,4), (1,5), (2,6)), ((2,7), (3,7), (4,7)), ((3,5), (4,5), (5,6)), ((5,6), (6,7), (7,8))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+2,components,#Components,16,"(8, [(0,1),(2,3),(4,5),(6,7),(0,2),(3,4)])",True,False,,isomorphism,
+2,components,#Components,17,"(8, [(0, 1), (1, 2), (2, 3), (4, 5), (5, 6), (6, 7)])",True,False,,isomorphism,
+2,components,#Components,18,"(8, [
+    (0, 1),
+    (2, 3),
+    (2, 3),
+    (4, 5),
+    (4, 5),
+    (6, 7),
+    (6, 7),
+    (8, 8)
+])",False,False,,isomorphism,第 8 条边端点越界（节点范围应为 0..7）。
+2,components,#Components,19,"(8, [(0,1), (0,2), (1,3), (2,3), (3,4), (4,5), (6,7)])",True,False,,isomorphism,
+2,components,#Components,20,"(8, [(0, 1), (1, 2), (3, 4), (4, 5), (6, 7)])",True,True,de837449b9b1ac221f958aa18f8b69de,isomorphism,
+2,components,#Components,21,"(8, [(0, 1), (1, 2), (2, 3), (3, 4), (4, 5), (5, 6), (6, 7)])",True,False,,isomorphism,
+2,components,#Components,22,"(8, [(0, 2), (1, 3), (4, 6), (5, 7)])",True,False,,isomorphism,
+2,components,#Components,23,"(8, [(0, 1), (2, 3), (4, 5), (6, 7), (8, 0), (9, 4)])",False,False,,isomorphism,第 5 条边端点越界（节点范围应为 0..7）。
+2,components,#Components,24,"(8, [((0,1), (1,2), (2,3), (3,4), (4,5)), ((5,6), (6,7), (7,5)), ((1,2), (2,3)), ((3,4), (4,5)), ((5,6), (6,7))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+2,components,#Components,25,"(8, [(0, 1), (2, 3), (4, 5), (6, 7)])",True,False,,isomorphism,
+2,components,#Components,26,"(8, [(0, 1), (1, 2), (2, 3), (4, 5), (5, 6), (6, 7)])",True,False,,isomorphism,
+2,components,#Components,27,"(8, [(0, 1), (1, 2), (3, 4), (4, 5), (6, 7)])",True,True,de837449b9b1ac221f958aa18f8b69de,isomorphism,
+2,components,#Components,28,"(8, [(0, 1), (1, 2), (3, 4), (6, 7), (7, 8)])",False,False,,isomorphism,第 5 条边端点越界（节点范围应为 0..7）。
+2,components,#Components,29,"(8, [
+    (0, 1),
+    (1, 2),
+    (2, 3),
+    (4, 5),
+    (5, 6),
+    (6, 7),
+    (8, 0)
+])",False,False,,isomorphism,第 7 条边端点越界（节点范围应为 0..7）。
+2,components,#Components,30,"(8, [(0,1),(1,2),(2,3),(3,4),(4,5),(5,6),(6,7),(7,0)])",True,False,,isomorphism,
+2,components,#Components,31,"(8, [(0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7)])",True,False,,isomorphism,
+2,components,#Components,32,"(8, [(0, 1), (1, 2), (3, 4), (4, 5), (6, 7)])",True,True,de837449b9b1ac221f958aa18f8b69de,isomorphism,
+2,components,#Components,33,"(8, [
+    (0, 1),
+    (1, 2),
+    (2, 3),
+    (4, 5),
+    (5, 6),
+    (6, 7),
+    (0, 4),
+    (1, 5)
+])",True,False,,isomorphism,
+2,components,#Components,34,"(8, [(0, 1), (1, 2), (3, 4), (4, 5), (6, 7)])",True,True,de837449b9b1ac221f958aa18f8b69de,isomorphism,
+2,components,#Components,35,"(8, [(0,1),(2,3),(4,5),(6,7)])",True,False,,isomorphism,
+2,components,#Components,36,"(8, [(0, 1), (1, 2), (2, 3), (3, 8), (8, 0), (4, 5), (5, 6), (6, 7), (7, 8)])",False,False,,isomorphism,第 4 条边端点越界（节点范围应为 0..7）。
+2,components,#Components,37,"(8, [(0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7)])",True,False,,isomorphism,
+2,components,#Components,38,"(8, [((0, 1), (1, 2), (2, 3), (3, 4)), ((5, 6), (6, 7)), ((0, 2)), ((3, 4)), ((1, 5))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+2,components,#Components,39,"(8, [(0,2), (1,3), (4,5), (5,6), (6,7)])",True,True,27c2ca9f9af00d2d9b173e5cb28c53de,isomorphism,
+2,components,#Components,40,"(8, [(0, 2), (2, 4), (1, 3), (3, 5), (6, 7)])",True,True,de837449b9b1ac221f958aa18f8b69de,isomorphism,
+2,components,#Components,41,"(8, [
+(0, 1),
+(1, 2),
+(2, 3),
+(3, 4),
+(5, 6),
+(6, 7)
+])",True,False,,isomorphism,
+2,components,#Components,42,"(8, [(0, 1), (1, 2), (2, 3), (4, 5), (5, 6), (6, 7), (0, 2), (4, 6), (1, 3), (3, 5), (5, 7)])",True,False,,isomorphism,
+2,components,#Components,43,"(8, [(0, 1), (2, 3), (4, 5), (6, 7), (0, 2)])",True,True,27c2ca9f9af00d2d9b173e5cb28c53de,isomorphism,
+2,components,#Components,44,"(8, [(0, 1), (1, 2), (2, 3), (3, 4), (5, 6), (6, 7), (0, 2), (1, 5)])",True,False,,isomorphism,
+2,components,#Components,45,"(8, [(0,1), (0,2), (1,3), (2,4), (3,5), (4,6), (5,7), (6,7)])",True,False,,isomorphism,
+2,components,#Components,46,"(8, [(0, 2), (1, 3), (2, 0), (3, 1), (4, 6), (5, 7), (6, 4), (7, 5)])",True,False,,isomorphism,
+2,components,#Components,47,"(8, [(0, 1), (0, 2), (1, 2), (3, 4), (3, 5), (4, 5), (6, 7)])",True,True,549ddf61b33c747b7d039a2118793eec,isomorphism,
+2,components,#Components,48,"(8, [(0, 1), (0, 2), (1, 2), (2, 3), (3, 4), (4, 5), (4, 6), (5, 6)])",True,False,,isomorphism,
+2,components,#Components,49,"(8, [(0, 1), (1, 2), (2, 3), (4, 5), (5, 6), (6, 7)])",True,False,,isomorphism,
+2,components,#Components,50,"(8, [(0, 1), (0, 2), (1, 2), (3, 4), (5, 6), (6, 7), (7, 7)])",True,True,4ab77a272ba17fa4b8d0e7f6f39f3e84,isomorphism,
+2,components,#Components,51,"(8, [(0, 1), (2, 3), (2, 4), (4, 5), (5, 6), (6, 7), (8)])",False,False,,isomorphism,"第 7 条边不是二元组 `(u,v)`。"
+2,components,#Components,52,"(8, [(0, 2), (4, 6)])",True,False,,isomorphism,
+2,components,#Components,53,"(8, [
+    (0, 1),
+    (1, 2),
+    (2, 3),
+    (3, 4),
+    (4, 5),
+    (5, 6),
+    (6, 7),
+    (7, 8)
+])",False,False,,isomorphism,第 8 条边端点越界（节点范围应为 0..7）。
+2,components,#Components,54,"(8, [(0, 1), (1, 2), (2, 3), (3, 4), (5, 6), (6, 7)])",True,False,,isomorphism,
+2,components,#Components,55,"(8, [(0, 1), (0, 2), (1, 2), (2, 3), (4, 5), (4, 6), (5, 6), (5, 7), (6, 7)])",True,False,,isomorphism,
+2,components,#Components,56,"(8, [(0, 1), (1, 2), (3, 4), (5, 6), (6, 7), (7)])",False,False,,isomorphism,"第 6 条边不是二元组 `(u,v)`。"
+2,components,#Components,57,"(8, [(0, 1), (1, 2), (2, 3), (3, 4), (4, 5), (6, 7)])",True,False,,isomorphism,
+2,components,#Components,58,"(8, [(0, 1), (0, 2), (1, 2), (2, 3), (4, 5), (4, 6), (5, 6), (5, 7), (6, 7)])",True,False,,isomorphism,
+2,components,#Components,59,"(8, [(0, 2), (2, 7), (4, 6), (6, 5)])",True,False,,isomorphism,
+2,components,#Components,60,"(8, [(0,1), (1,2), (2,3), (4,5), (5,6), (6,7)])",True,False,,isomorphism,
+2,components,#Components,61,"(8, [
+    (0, 2),
+    (2, 5),
+    (4, 6),
+    (6, 7)
+])",True,False,,isomorphism,
+2,components,#Components,62,"(8, [((0,1), (2,3)), ((4,5), (6,7)), ((0,2), (3,4)), ((6,7), (0,1)), ((2,3), (4,5))])",False,False,,isomorphism,第 1 条边包含非整数端点。
+2,components,#Components,63,"(8, [(0,1),(0,2),(1,3),(2,4),(3,5),(4,6),(5,7),(6,7)])",True,False,,isomorphism,
+2,components,#Components,64,"(8, [(0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7)])",True,False,,isomorphism,
+2,components,#Components,65,"(8, [(0, 1), (2, 3), (4, 5), (6, 7), (8, )])",False,False,,isomorphism,"第 5 条边不是二元组 `(u,v)`。"
+2,components,#Components,66,"(8, [(0, 1), (2, 3), (4, 5), (6, 7)])",True,False,,isomorphism,
+2,components,#Components,67,"(8, [(0, 1), (2, 3), (4, 5), (6, 7)])",True,False,,isomorphism,
+2,components,#Components,68,"(8, [(0,2),(1,3),(4,6),(5,7)])",True,False,,isomorphism,
+2,components,#Components,69,"(8, [(0,1), (0,2), (1,3), (4,5), (4,6), (5,7)])",True,False,,isomorphism,
+2,components,#Components,70,"(8, [(0,1),(2,3),(4,5),(6,7),(0,2),(1,3),(4,6)])",True,False,,isomorphism,
+2,components,#Components,71,"(8, [(0, 1), (1, 2), (2, 3), (4, 5), (5, 6), (6, 7)])",True,False,,isomorphism,
+2,components,#Components,72,"(8, [(0, 1), (0, 2), (1, 3), (3, 4), (4, 5), (6, 7)])",True,False,,isomorphism,
+2,components,#Components,73,"(8, [(0,1),(1,2),(2,3),(4,5),(5,6),(6,7)])",True,False,,isomorphism,
+2,components,#Components,74,"(8, [(0, 1), (2, 3), (2, 0), (4, 5), (5, 4), (6, 7), (7, 6), (0, 2)])",True,True,27c2ca9f9af00d2d9b173e5cb28c53de,isomorphism,
+2,components,#Components,75,"(8, [(0, 2), (2, 5), (4, 6), (6, 7)])",True,False,,isomorphism,
+2,components,#Components,76,"(8, [(0,1),(2,3),(4,5),(6,7)])",True,False,,isomorphism,
+2,components,#Components,77,"(8, [(0, 2), (2, 4), (4, 6), (6, 8), (1, 3), (3, 5), (5, 7), (7, 9)])",False,False,,isomorphism,第 4 条边端点越界（节点范围应为 0..7）。
+2,components,#Components,78,"(8, [(0, 2), (2, 5), (4, 6), (6, 7)])",True,False,,isomorphism,
+2,components,#Components,79,"(8, [(0, 1), (2, 3), (2, 3), (4, 5), (6, 7), (0, 2), (0, 2)])",True,True,27c2ca9f9af00d2d9b173e5cb28c53de,isomorphism,
+2,components,#Components,80,"(8, [(0, 1), (1, 2), (2, 3), (3, 4), (5, 6), (6, 7)])",True,False,,isomorphism,
+2,components,#Components,81,"(8, [(0,1), (0,3), (1,2), (3,4), (4,5), (6,7)])",True,False,,isomorphism,
+2,components,#Components,82,"(8, [((0, 2), (1, 3), (4, 6), (5, 7))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+2,components,#Components,83,"(8, [(0, 2), (1, 3), (4, 6), (5, 7)])",True,False,,isomorphism,
+2,components,#Components,84,"(8, [(0, 1), (1, 2), (3, 4), (4, 5), (6, 7)])",True,True,de837449b9b1ac221f958aa18f8b69de,isomorphism,
+2,components,#Components,85,"(8, [((0, 1), (2, 3)), ((4, 5), (6, 7))])",False,False,,isomorphism,第 1 条边包含非整数端点。
+2,components,#Components,86,"(8, [(0, 1), (1, 2), (3, 4), (4, 5), (6, 7)])",True,True,de837449b9b1ac221f958aa18f8b69de,isomorphism,
+2,components,#Components,87,"(8, [(0, 1), (2, 3), (2, 3), (4, 5), (4, 5), (6, 7), (6, 7), (8)])",False,False,,isomorphism,"第 8 条边不是二元组 `(u,v)`。"
+2,components,#Components,88,"(8, [(0,0), (1,2), (2,1), (3,4), (4,3), (5,5), (6,7), (7,6)])",True,False,,isomorphism,
+2,components,#Components,89,"(8, [((0,1), (2,3), (4,5)), ((0,2), (3,4)), ((1,2), (3,5)), ((1,4), (2,5)), ((2,4), (3,5))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+2,components,#Components,90,"(8, [(0, 1), (1, 2), (2, 3), (4, 5), (5, 6), (7, 8)])",False,False,,isomorphism,第 6 条边端点越界（节点范围应为 0..7）。
+2,components,#Components,91,"(8, [(0, 1), (1, 2), (2, 3), (4, 5), (5, 6), (7, 8)])",False,False,,isomorphism,第 6 条边端点越界（节点范围应为 0..7）。
+2,components,#Components,92,"(8, [(0,1), (2,3), (4,5), (6), (7)])",False,False,,isomorphism,"第 4 条边不是二元组 `(u,v)`。"
+2,components,#Components,93,"(8, [
+    (0, 1),
+    (1, 2),
+    (2, 3),
+    (3, 4),
+    (4, 5),
+    (5, 6),
+    (6, 7)
+])",True,False,,isomorphism,
+2,components,#Components,94,"(8, [(0, 1), (2, 3), (2, 4), (4, 5), (5, 6), (6, 7), (8)])",False,False,,isomorphism,"第 7 条边不是二元组 `(u,v)`。"
+2,components,#Components,95,"(8, [(0,1), (2,3), (4,5), (6,7)])",True,False,,isomorphism,
+2,components,#Components,96,"(8, [(0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7)])",True,False,,isomorphism,
+2,components,#Components,97,"(8, [(0,1), (2,3), (4,5), (6,7)])",True,False,,isomorphism,
+2,components,#Components,98,"(8, [((0, 1), (2, 3)), ((4, 5), (6, 7))])",False,False,,isomorphism,第 1 条边包含非整数端点。
+2,components,#Components,99,"(8, [(0, 1), (1, 2), (3, 4), (4, 5), (6, 7), (0, 3), (1, 4)])",True,False,,isomorphism,
+2,components,#Components,100,"(8, [(0,2), (1,3), (4,6), (5,7)])",True,False,,isomorphism,
+2,k_regular,k-regular,1,"(12, [
+(0,1), (0,2), (0,3),
+(1,2), (1,3), (1,4),
+(2,3), (2,4), (2,5),
+(3,4), (3,5), (4,5)
+])",True,False,,isomorphism,
+2,k_regular,k-regular,2,"(12, [
+    (0,1,2),
+    (1,2,3),
+    (2,3,4),
+    (3,4,5),
+    (4,5,6),
+    (5,6,7),
+    (6,7,8),
+    (7,8,9),
+    (8,9,10),
+    (9,10,11),
+    (10,11,0)
+])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+2,k_regular,k-regular,3,"(12, [(0,1),(0,3),(0,5),(1,2),(1,4),(2,3),(2,5),(3,4),(4,5),(5,6),(6,7)])",True,False,,isomorphism,
+2,k_regular,k-regular,4,"(12, [((0,1), (0,2), (0,3)), ((1,2), (1,3), (2,3)), ((2,0), (2,1), (2,3)), ((3,0), (3,1), (3,2)), ((4,0), (4,1), (4,3)), ((5,0), (5,1), (5,2)), ((6,0), (6,1), (6,3)), ((7,0), (7,1), (7,2)), ((8,0), (8",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+2,k_regular,k-regular,5,"(12, [(0,1), (0,2), (0,3), (1,2), (1,3), (2,3), (2,4), (3,4), (3,5), (4,5)])",True,False,,isomorphism,
+2,k_regular,k-regular,6,"(12, [(0,3), (0,6), (0,9), (1,1), (1,2), (2,5), (2,8), (3,2), (3,5), (4,6), (4,9), (5,3), (5,7), (6,1), (6,4), (7,2), (7,11), (8,5), (8,12), (9,4), (9,6), (10,1), (10,3), (11,2), (11,7)])",False,False,,isomorphism,第 19 条边端点越界（节点范围应为 0..11）。
+2,k_regular,k-regular,7,"(12, [(0,1), (0,3), (0,5), (1,2), (1,4), (2,3), (2,5), (3,4), (4,5)])",True,False,,isomorphism,
+2,k_regular,k-regular,8,"(12, [((0,1), (0,3), (0,5)), ((1,2), (1,4), (2,3)), ((2,3), (2,5), (3,4)), ((3,4), (4,5), (5,0))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+2,k_regular,k-regular,9,"(12, [((0,1), (0,2), (0,3)), ((1,2), (1,3), (2,3)), ((2,3), (3,4), (4,5)), ((0,4), (1,4), (2,5)), ((3,5), (4,5), (5,6))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+2,k_regular,k-regular,10,"(12, [((0,1),(0,2),(0,3)), ((1,3),(1,4),(1,5)), ((2,4),(2,5),(2,6)), ((3,5),(3,6),(4,6))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+2,k_regular,k-regular,11,"(12, [(1, 2), (1, 3), (2, 3), (2, 4), (3, 4), (3, 5), (4, 5)])",True,False,,isomorphism,
+2,k_regular,k-regular,12,"(12, [(0,4,8), (1,3), (2,9), (5,9), (3,6), (6,7), (7,3)])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+2,k_regular,k-regular,13,"(12, [(0,1), (0,2), (1,3), (1,4), (2,5), (2,6), (3,4), (3,5), (4,5), (4,6), (5,6)])",True,False,,isomorphism,
+2,k_regular,k-regular,14,"(12, [(0,1),(0,2),(0,3),(1,4),(1,5),(2,3),(2,6),(3,4),(3,5),(4,6),(5,6)])",True,False,,isomorphism,
+2,k_regular,k-regular,15,"(12, [(0,1,3), (0,2,4), (0,5,6), (1,2,7), (1,3,8), (2,3,9), (2,4,10), (3,4,11), (4,5,12)])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+2,k_regular,k-regular,16,"(12, [(0,1), (0,2), (0,3), (1,2), (1,3), (1,4), (2,3), (2,4), (2,5), (3,4), (3,5), (4,5)])",True,False,,isomorphism,
+2,k_regular,k-regular,17,"(12, [
+    (0, 1),
+    (0, 2),
+    (0, 3),
+    (1, 4),
+    (1, 5),
+    (2, 6),
+    (2, 7),
+    (3, 8),
+    (3, 9),
+    (4, 10),
+    (4, 11),
+    (5, 12),
+    (6, 1)
+])",False,False,,isomorphism,第 12 条边端点越界（节点范围应为 0..11）。
+2,k_regular,k-regular,18,"(12, [(0,1), (0,2), (0,3), (1,2), (1,3), (2,3), (2,4), (3,4), (3,5), (4,5), (4,6), (5,6), (5,7), (6,7), (6,8), (7,8), (7,9), (8,9), (8,10), (9,10), (9,11), (10,11)])",True,False,,isomorphism,
+2,k_regular,k-regular,19,"Sure, I'd be happy to help! Here's my reasoning step by step:
+
+1. Every node must have exactly 3 neighbors:
+Since we want every node to have degree exactly 3, we need to ensure that each node has exac",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：unterminated string literal (detected at line 10) (<unknown>, line 10)"
+2,k_regular,k-regular,20,"(12, [(0,1), (0,2), (0,3), (1,2), (1,3), (1,4), (2,3), (2,4), (2,5), (3,4), (3,5), (4,5)])",True,False,,isomorphism,
+2,k_regular,k-regular,21,"(12, [((0,1),(0,2),(0,3)), ((1,2),(1,3),(2,3)), ((2,3),(3,0),(3,1)), ((3,1),(3,2),(4,2)), ((4,2),(4,3),(5,3)), ((5,3),(5,4),(6,4))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+2,k_regular,k-regular,22,"(12, [((0,1), (0,2), (0,3)), ((1,2), (1,3), (2,3)), ((2,0), (2,1), (2,3)), ((3,0), (3,1), (3,2)), ((4,1), (4,2), (4,3)), ((5,2), (5,3), (5,4))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+2,k_regular,k-regular,23,"(12, [(0,5),(0,6),(0,7),(1,5),(1,6),(1,7),(2,5),(2,6),(2,7),(3,5),(3,6),(3,7),(4,5),(4,6),(4,7)])",True,False,,isomorphism,
+2,k_regular,k-regular,24,"(12, [
+    (0,1),
+    (0,2),
+    (0,3),
+    (1,2),
+    (1,3),
+    (1,4),
+    (2,3),
+    (2,4),
+    (2,5),
+    (3,4),
+    (3,5),
+    (4,5)
+])",True,False,,isomorphism,
+2,k_regular,k-regular,25,"(12, [(0,2), (0,8), (0,11), (1,3), (1,6), (2,3), (2,9), (3,5), (3,10), (4,5), (4,11), (5,6), (5,10), (6,7), (7,8), (7,11), (8,9), (9,10), (10,11)])",True,False,,isomorphism,
+2,k_regular,k-regular,26,"(12, [(0,1,3), (0,2,5), (0,4,7), (1,2,6), (1,3,8), (2,3,9), (2,5,10), (3,4,11), (3,5,12)])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+2,k_regular,k-regular,27,"(12, [(0,1,2), (0,3,4), (0,5,6), (1,2,3), (1,4,5), (2,3,6), (2,5,7), (3,4,7), (4,5,8), (5,6,8), (6,7,8)])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+2,k_regular,k-regular,28,"(12, [(0,1),(0,2),(0,3),(1,2),(1,3),(2,3),(2,4),(3,4),(4,5),(5,6)])",True,False,,isomorphism,
+2,k_regular,k-regular,29,"(12, [(0,1,2), (0,3,4), (0,5,6), (1,2,7), (1,4,8), (2,3,9), (2,5,10), (3,4,11), (4,5,12)])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+2,k_regular,k-regular,30,"(12, [(0,1,2), (0,3,4), (0,5,6), (1,2,3), (1,4,5), (2,3,6), (2,5,7), (3,4,7), (4,5,8), (5,6,8)])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+2,k_regular,k-regular,31,"(12, [(0,1),(0,2),(0,3),(1,2),(1,3),(2,3),(2,4),(3,4),(3,5),(4,5)])",True,False,,isomorphism,
+2,k_regular,k-regular,32,"(12, [(0,1,3), (0,2,4), (0,3,5), (1,2,6), (1,3,7), (2,3,8), (2,4,9), (3,4,10), (3,5,11)])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+2,k_regular,k-regular,33,"(12, [(0,1,2), (0,3,4), (0,5,6), (1,2,7), (1,4,8), (2,3,9), (2,5,10), (3,4,11), (4,5,12)])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+2,k_regular,k-regular,34,"(12, [(0,1), (0,2), (0,3), (1,2), (1,3), (2,3), (4,5), (4,6)])",True,False,,isomorphism,
+2,k_regular,k-regular,35,"(12, [(0,1),(0,2),(0,3),(0,4),(0,5),(1,2),(1,3),(1,4),(1,5),(2,3),(2,4),(2,5)])",True,False,,isomorphism,
+2,k_regular,k-regular,36,"(12, [((0,1), (0,2), (0,3)), ((1,2), (1,3), (2,3)), ((2,3), (3,4), (4,5)), ((0,1), (1,4), (2,5)), ((1,2), (2,5), (3,4)), ((2,3), (3,4), (4,5))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+2,k_regular,k-regular,37,"(12, [(0,1,2), (0,3,4), (0,5,6), (1,2,3), (1,4,5), (2,3,6), (2,5,7), (3,4,7), (4,5,8), (5,6,8), (6,7,8)])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+2,k_regular,k-regular,38,"(12, [(0,1,2), (0,3,4), (0,5,6), (1,2,7), (1,4,8), (2,3,9), (2,5,10), (3,4,11), (4,5,12)])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+2,k_regular,k-regular,39,"(12, [(0,1), (0,3), (0,5), (0,7), (1,2), (1,4), (2,3), (2,5), (3,4), (4,5), (7,8)])",True,False,,isomorphism,
+2,k_regular,k-regular,40,"(12, [((0, 1), (0, 2), (0, 3)), ((1, 2), (1, 3), (1, 4)), ((2, 3), (2, 4), (2, 5)), ((3, 4), (3, 5), (4, 5))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+2,k_regular,k-regular,41,"(12, [(0,1,3), (0,2,5), (0,3,4), (1,2,6), (1,3,7), (2,3,8), (2,4,9), (3,4,10), (3,5,11), (4,5,12)])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+2,k_regular,k-regular,42,"(12, [(0,1), (0,2), (0,3), (1,2), (1,3), (2,3), (2,4), (3,4), (3,5), (4,5)])",True,False,,isomorphism,
+2,k_regular,k-regular,43,"(12, [(0,1),(0,2),(0,3),(1,2),(1,3),(2,3),(3,4),(4,5),(5,6),(6,7),(7,8),(8,9),(9,10),(10,11),(11,12)])",False,False,,isomorphism,第 15 条边端点越界（节点范围应为 0..11）。
+2,k_regular,k-regular,44,"(12, [(0,1,2), (0,3,4), (0,5,6), (1,2,3), (1,4,5), (2,3,6), (2,5,7), (3,4,7), (4,5,8)])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+2,k_regular,k-regular,45,"(12, [(0, 1), (0, 2), (0, 3), (1, 4), (1, 5), (2, 6), (2, 7), (3, 8), (3, 9), (4, 10), (5, 11), (6, 12)])",False,False,,isomorphism,第 12 条边端点越界（节点范围应为 0..11）。
+2,k_regular,k-regular,46,"(12, [(0,1,2), (0,3,4), (0,5,6), (1,2,3), (1,4,5), (2,3,6), (2,5,7), (3,4,7), (4,5,8)])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+2,k_regular,k-regular,47,"(12, [(0,2), (0,5), (1,3), (1,6), (2,5), (3,6), (4,5), (5,6)])",True,False,,isomorphism,
+2,k_regular,k-regular,48,"(12, [(0,1,2), (0,3,4), (0,5,6), (1,2,7), (1,4,8), (2,3,9), (2,5,10), (3,4,11), (4,5,12)])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+2,k_regular,k-regular,49,"(12, [(0,1,2), (0,3,4), (0,5,6), (1,2,3), (1,4,5), (2,3,6), (2,5,7), (3,4,7), (4,5,8)])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+2,k_regular,k-regular,50,"(12, [(0,1),(0,3),(0,5),(1,2),(1,4),(2,3),(2,5),(3,4),(4,5),(4,7),(5,8),(6,9)])",True,False,,isomorphism,
+2,k_regular,k-regular,51,"(12, [(0,1), (0,2), (0,3), (1,2), (1,3), (2,3), (3,4), (4,5), (5,6), (6,7), (7,8), (8,9), (9,10), (10,11), (11,0)])",True,False,,isomorphism,
+2,k_regular,k-regular,52,"(12, [(0,1),(0,2),(0,3),(0,4),(1,2),(1,3),(1,4),(2,3),(2,4),(3,4),(4,5),(5,6),(6,7),(7,8),(8,9)])",True,False,,isomorphism,
+2,k_regular,k-regular,53,"(12, [(0,1,2), (1,3,4), (2,5,6), (3,7,8), (4,9,10), (5,11,12)])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+2,k_regular,k-regular,54,"(12, [(0,1,3), (0,2,4), (0,3,5), (1,2,6), (1,3,7), (2,3,8), (2,4,9), (3,4,10), (3,5,11)])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+2,k_regular,k-regular,55,"(12, [(0,1,2), (0,3,4), (0,5,6), (1,2,3), (1,4,5), (2,3,6), (2,5,7), (3,4,7), (4,5,8)])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+2,k_regular,k-regular,56,"Sure! Here's my reasoning and the final graph:
+
+1. Every node must have exactly 3 neighbors:
+
+Since we want a 3-regular graph, every node must have exactly 3 neighbors. This means that for each node, ",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：unterminated string literal (detected at line 1) (<unknown>, line 1)"
+2,k_regular,k-regular,57,"(4, [(0,1),(0,2),(0,3),(1,2),(1,3),(2,3)])",True,True,d2e3f71e5c020057da0dd1812bdf6517,isomorphism,
+2,k_regular,k-regular,58,"(12, [(0,1,2,3), (1,2,3,0), (2,3,0,1), (3,0,1,2)])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+2,k_regular,k-regular,59,"(12, [(0,1,3), (0,2,4), (0,3,5), (1,2,6), (1,3,7), (2,3,8), (2,4,9), (3,4,10), (3,5,11)])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+2,k_regular,k-regular,60,"(12, [((0,1),(0,2),(0,3)), ((1,2),(1,3),(2,3)), ((2,3),(3,4),(4,5)), ((4,5),(5,6),(6,7)), ((5,6),(6,7),(7,8)), ((6,7),(7,8),(8,9)), ((7,8),(8,9),(9,10)), ((8,9),(9,10),(10,11)), ((9,10),(10,11),(11,12",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+2,k_regular,k-regular,61,"(12, [(0,1,2), (0,3,4), (0,5,6), (1,2,3), (1,4,5), (2,3,6), (2,5,7), (3,4,7), (4,5,8)])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+2,k_regular,k-regular,62,"(12, [(0,1), (0,3), (0,5), (1,2), (1,4), (2,3), (2,5), (3,4), (4,5)])",True,False,,isomorphism,
+2,k_regular,k-regular,63,"(6, [(0,1),(0,2),(0,3),(1,2),(1,3),(2,3),(2,4),(3,4),(3,5),(4,5)])",True,False,,isomorphism,
+2,k_regular,k-regular,64,"(12, [(0, 1), (0, 2), (0, 3), (1, 2), (1, 3), (2, 3), (3, 4), (4, 5), (5, 6), (6, 7), (7, 8), (8, 9), (9, 10), (10, 11)])",True,False,,isomorphism,
+2,k_regular,k-regular,65,"(12, [(0,1), (0,2), (0,3), (1,2), (1,3), (1,4), (2,3), (2,4), (2,5), (3,4), (3,5), (4,5)])",True,False,,isomorphism,
+2,k_regular,k-regular,66,"(12, [(0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (1,2), (1,3), (1,4), (2,3), (2,4), (2,5), (3,4), (3,5), (3,6), (4,5), (4,6), (5,6), (5,7), (6,7), (6,8), (7,8), (7,9), (8,9), (8,10), (9,10), (9,11), (1",False,False,,isomorphism,第 30 条边端点越界（节点范围应为 0..11）。
+2,k_regular,k-regular,67,"(12, [(0,1),(0,2),(0,3),(0,5),(0,6),(1,2),(1,3),(2,3)])",True,False,,isomorphism,
+2,k_regular,k-regular,68,"(12, [(0,1,2), (0,3,4), (0,5,6), (1,2,7), (1,4,8), (2,3,9), (2,5,10), (3,4,11), (4,5,12)])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+2,k_regular,k-regular,69,"(12, [(0,1,2), (0,3,4), (0,5,6), (1,2,3), (1,4,5), (2,3,6), (2,5,7), (3,4,7), (4,5,8)])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+2,k_regular,k-regular,70,"(12, [
+    (0, 1, 2), 
+    (0, 3, 4), 
+    (0, 5, 6), 
+    (1, 2, 3), 
+    (1, 4, 5), 
+    (2, 3, 6), 
+    (2, 5, 7), 
+    (3, 4, 7), 
+    (4, 5, 8)
+])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+2,k_regular,k-regular,71,"(12, [(0,1),(0,3),(0,5),(1,2),(1,4),(2,3),(2,5),(3,4),(4,5),(5,6),(6,7),(7,8),(8,9),(9,10),(10,11),(11,12),(12,13)])",False,False,,isomorphism,第 16 条边端点越界（节点范围应为 0..11）。
+2,k_regular,k-regular,72,"(12, [(0,1), (0,2), (0,3), (1,0), (1,2), (1,3), (2,0), (2,1), (2,3), (3,0), (3,1), (3,2)])",True,False,,isomorphism,
+2,k_regular,k-regular,73,"Sure, I'd be happy to help!
+
+Step 1: Every node must have exactly 3 neighbors.
+
+Since we want a 3-regular graph, every node must have exactly 3 neighbors. This means that for each node, there will be ",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：unterminated string literal (detected at line 1) (<unknown>, line 1)"
+2,k_regular,k-regular,74,"(12, [(0,1,3), (0,2,4), (0,3,5), (1,2,6), (1,4,7), (2,3,8), (2,5,9), (3,4,10), (4,5,11)])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+2,k_regular,k-regular,75,"(12, [(0,1), (0,3), (0,5), (1,2), (1,4), (2,3), (2,5), (3,4), (4,5), (7,8), (7,9), (8,9)])",True,False,,isomorphism,
+2,k_regular,k-regular,76,"(6, [(0,1),(0,3),(0,5),(1,2),(1,4),(2,3),(2,5),(3,4),(4,5)])",True,True,1a41b4e61e53acb3bf88861a051d3d19,isomorphism,
+2,k_regular,k-regular,77,"(12, [(0, 3), (1, 2), (1, 4), (2, 3), (2, 5), (3, 4), (4, 5)])",True,False,,isomorphism,
+2,k_regular,k-regular,78,"(12, [((0,1), (0,2), (0,3)), ((1,2), (1,3), (2,3)), ((2,3), (3,4), (4,5)), ((0,1), (1,4), (2,5)), ((0,3), (3,4), (4,5)), ((1,2), (2,5), (3,4)), ((2,3), (3,5), (4,5))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+2,k_regular,k-regular,79,"(12, [((0,1), (0,2), (0,3)), ((1,2), (1,3), (2,3)), ((2,3), (3,4), (4,5)), ((0,4), (1,4), (2,5)), ((3,5), (4,5), (5,6))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+2,k_regular,k-regular,80,"(12, [(0,1,2), (0,2,3), (0,3,4), (1,2,5), (1,3,6), (2,3,7), (2,4,8), (3,4,9), (3,5,10), (4,5,11)])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+2,k_regular,k-regular,81,"(12, [((0,1), (0,2), (0,3)), ((1,2), (1,3), (1,4)), ((2,3), (2,4), (2,5)), ((3,4), (3,5), (4,5))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+2,k_regular,k-regular,82,"(12, [(0,1), (0,2), (0,3), (1,2), (1,3), (2,3), (2,5)])",True,False,,isomorphism,
+2,k_regular,k-regular,83,"(12, [((0,3), (1,2), (2,3)), ((1,2), (1,4), (2,3)), ((2,3), (3,4), (4,5)), ((3,4), (4,5), (5,3)), ((4,5), (5,3), (0,3))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+2,k_regular,k-regular,84,"(12, [(0,1,3), (0,2,5), (0,4,6), (1,2,7), (1,3,8), (2,3,9), (2,5,10), (3,4,11), (3,5,12)])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+2,k_regular,k-regular,85,"(12, [(0,1,2), (0,3,4), (0,5,6), (1,2,3), (1,4,5), (2,3,6), (2,5,7), (3,4,7), (4,5,8)])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+2,k_regular,k-regular,86,"(12, [(0,1,2), (0,3,4), (0,5,6), (1,2,7), (1,4,8), (2,3,9), (2,5,10), (3,4,11), (4,5,12)])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+2,k_regular,k-regular,87,"(12, [(0,1,2), (0,3,4), (0,5,6), (1,2,7), (1,4,8), (2,3,9), (2,5,10), (3,4,11)])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+2,k_regular,k-regular,88,"(6, [(0,1),(0,2),(0,3),(1,2),(1,3),(2,3),(2,4),(3,4),(3,5),(4,5)])",True,False,,isomorphism,
+2,k_regular,k-regular,89,"(12, [(0,1),(0,2),(0,3),(1,3),(1,4),(2,3),(2,4),(3,4),(4,5),(5,6)])",True,False,,isomorphism,
+2,k_regular,k-regular,90,"(12, [((0,1), (0,2), (0,3)), ((1,2), (1,3), (2,3)), ((2,0), (2,1), (2,3)), ((3,0), (3,1), (3,2)), ((4,0), (4,1), (4,3)), ((5,0), (5,1), (5,2))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+2,k_regular,k-regular,91,"(12, [(0, 1), (0, 2), (0, 3), (0, 4), (0, 5), (0, 6), (1, 4), (1, 5), (1, 6), (2, 3), (2, 5), (3, 4), (3, 5), (3, 6), (4, 5), (4, 6), (5, 6)])",True,False,,isomorphism,
+2,k_regular,k-regular,92,"(12, [(0,1), (0,2), (0,3), (1,2), (1,3), (2,3), (2,4), (3,4), (3,5), (4,5), (5,6), (6,7), (7,8), (8,9), (9,10), (10,11), (11,12)])",False,False,,isomorphism,第 17 条边端点越界（节点范围应为 0..11）。
+2,k_regular,k-regular,93,"(12, [((0,1),(0,2),(0,3)), ((1,2),(1,3),(2,3)), ((2,0),(2,1),(3,1)), ((3,0),(3,2),(4,2)), ((4,3),(4,0),(5,0)), ((5,3),(5,1),(6,1)), ((6,5),(6,0),(7,0)), ((7,5),(7,3),(8,3)), ((8,5),(8,2),(9,2)), ((9,5",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+2,k_regular,k-regular,94,"(12, [(0,1),(0,2),(0,3),(1,2),(1,3),(2,3),(3,4),(4,5),(5,6),(6,7),(7,8),(8,9),(9,10),(10,11),(11,12)])",False,False,,isomorphism,第 15 条边端点越界（节点范围应为 0..11）。
+2,k_regular,k-regular,95,"(12, [(0,1,2), (0,3,4), (0,5,6), (1,2,3), (1,4,5), (2,3,7), (2,5,8), (3,4,9), (4,5,10), (5,6,11), (6,7,12)])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+2,k_regular,k-regular,96,"(12, [(0,1),(0,2),(0,3), (1,2),(1,3), (2,3), (3,4), (4,5), (5,6), (6,7), (7,8), (8,9), (9,10), (10,11)])",True,False,,isomorphism,
+2,k_regular,k-regular,97,"(12, [(0,1,2), (0,3,4), (0,5,6), (1,2,3), (1,4,5), (2,3,6), (2,5,7), (3,4,7), (4,5,8), (5,6,8)])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+2,k_regular,k-regular,98,"(12, [(0,1,(2,3)), (0,2,(1,3)), (0,3,(1,4)), (1,2,(2,5)), (1,4,(3,5)), (2,3,(4,5)), (2,5,(3,6)), (3,4,(4,6)), (3,5,(5,7)), (4,5,(6,7)), (5,6,(7,8)), (6,7,(8,9)), (7,8,(9,10)), (8,9,(10,11)), (9,10,(11",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+2,k_regular,k-regular,99,"(12, [(0,1,2), (0,3,4), (0,5,6), (1,2,3), (1,4,5), (2,3,7), (2,5,8), (3,4,9), (4,5,10), (5,6,11)])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+2,k_regular,k-regular,100,"(12, [((0,1),(0,3),(0,5)), ((1,2),(1,4),(2,3)), ((2,3),(3,4),(4,5)), ((3,4),(4,5),(5,6)), ((4,5),(5,6),(6,7)), ((5,6),(6,7),(7,8)), ((6,7),(7,8),(8,9)), ((7,8),(8,9),(9,10)), ((8,9),(9,10),(10,11)), (",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+2,wheel,Wheel,1,"(8, [(0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7)])",True,False,,isomorphism,
+2,wheel,Wheel,2,"(8, [(0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7), (1,2), (1,3), (1,4), (1,5), (1,6), (1,7), (2,3), (2,4), (2,5), (2,6), (2,7), (3,4), (3,5), (3,6), (3,7), (4,5), (4,6), (4,7), (5,6), (5,7), (6,7)]",True,False,,isomorphism,
+2,wheel,Wheel,3,"(8, [((0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7)), ((1,2), (1,3), (1,4), (1,5), (1,6), (1,7)), ((2,3), (2,4), (2,5), (2,6), (2,7)), ((3,4), (3,5), (3,6), (3,7)), ((4,5), (4,6), (4,7)), ((5,6), (5",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+2,wheel,Wheel,4,"(8, [(0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7), (1,2), (1,3), (1,4), (1,5), (1,6), (1,7), (2,3), (2,4), (2,5), (2,6), (2,7), (3,4), (3,5), (3,6), (3,7), (4,5), (4,6), (4,7), (5,6), (5,7), (6,7)]",True,False,,isomorphism,
+2,wheel,Wheel,5,"(8, [(0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7), (1,2), (1,3), (1,4), (1,5), (1,6), (1,7), (2,3), (2,4), (2,5), (2,6), (2,7), (3,4), (3,5), (3,6), (3,7), (4,5), (4,6), (4,7), (5,6), (5,7), (6,7)]",True,False,,isomorphism,
+2,wheel,Wheel,6,"(8, [((0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7)), ((1,2), (1,3), (1,4), (1,5), (1,6), (1,7)), ((2,3), (2,4), (2,5), (2,6), (2,7)), ((3,4), (3,5), (3,6), (3,7)), ((4,5), (4,6), (4,7)), ((5,6), (5",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+2,wheel,Wheel,7,"(8, [((0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7)), ((1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,1))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+2,wheel,Wheel,8,"(8, [(0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7), (1,2), (1,3), (1,4), (1,5), (1,6), (1,7)])",True,False,,isomorphism,
+2,wheel,Wheel,9,"(8, [(0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7), (1,2), (1,3), (1,4), (1,5), (1,6), (1,7), (2,3), (2,4), (2,5), (2,6), (2,7), (3,4), (3,5), (3,6), (3,7), (4,5), (4,6), (4,7), (5,6), (5,7), (6,7)]",True,False,,isomorphism,
+2,wheel,Wheel,10,"(8, [(0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7), (1,2), (1,3), (1,4), (1,5), (1,6), (1,7), (2,3), (2,4), (2,5), (2,6), (2,7), (3,4), (3,5), (3,6), (3,7), (4,5), (4,6), (4,7), (5,6), (5,7), (6,7)]",True,False,,isomorphism,
+2,wheel,Wheel,11,"(8, [(0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7), (1,2), (1,3), (1,4), (1,5), (1,6), (1,7), (2,3), (2,4), (2,5), (2,6), (2,7), (3,4), (3,5), (3,6), (3,7), (4,5), (4,6), (4,7), (5,6), (5,7), (6,7)]",True,False,,isomorphism,
+2,wheel,Wheel,12,"(8, [(0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7), (1,2), (1,3), (1,4), (1,5), (1,6), (1,7), (2,3), (2,4), (2,5), (2,6), (3,4), (3,5), (3,6), (4,5), (4,6), (5,6), (6,7), (7,1)])",True,False,,isomorphism,
+2,wheel,Wheel,13,"(8, [(0,1),(0,2),(0,3),(0,4),(0,5),(0,6),(0,7),(1,2),(1,3),(1,4),(1,5),(1,6),(1,7),(2,3),(2,4),(2,5),(2,6),(2,7),(3,4),(3,5),(3,6),(3,7),(4,5),(4,6),(4,7),(5,6),(5,7),(6,7),(7,1)])",True,False,,isomorphism,
+2,wheel,Wheel,14,"(8, [((0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7)), ((1,2), (2,3), (3,4), (4,5), (5,6), (6,7)), ((1,3), (2,4), (3,5), (4,6), (5,7)), ((2,4), (3,5), (4,6)), ((3,5), (4,6)), ((4,5), (5,6)), ((5,6), ",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+2,wheel,Wheel,15,"(8, [(0, 1), (0, 2), (0, 3), (0, 4), (0, 5), (0, 6), (0, 7), (1, 2), (1, 3), (1, 4), (1, 5), (1, 6), (1, 7), (2, 3), (2, 4), (2, 5), (2, 6), (2, 7), (3, 4), (3, 5), (3, 6), (3, 7), (4, 5), (4, 6), (4,",True,False,,isomorphism,
+2,wheel,Wheel,16,"(8, [(0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7), (1,2), (1,3), (1,4), (1,5), (1,6), (1,7), (2,3), (2,4), (2,5), (2,6), (2,7), (3,4), (3,5), (3,6), (3,7), (4,5), (4,6), (4,7), (5,6), (5,7), (6,7)]",True,False,,isomorphism,
+2,wheel,Wheel,17,"(8, [(0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7), (1,2), (1,3), (1,4), (1,5), (1,6), (1,7), (2,3), (2,4), (2,5), (2,6), (2,7), (3,4), (3,5), (3,6), (3,7), (4,5), (4,6), (4,7), (5,6), (5,7), (6,7)]",True,False,,isomorphism,
+2,wheel,Wheel,18,"(8, [((0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7)), ((1,2), (1,3), (1,4), (1,5), (1,6), (1,7)), ((2,3), (2,4), (2,5), (2,6), (2,7)), ((3,4), (3,5), (3,6), (3,7)), ((4,5), (4,6), (4,7)), ((5,6), (5",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+2,wheel,Wheel,19,"(8, [((0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7)), ((1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,1))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+2,wheel,Wheel,20,"(8, [(0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7), (1,2), (1,3), (1,4), (1,5), (1,6), (1,7), (2,3), (2,4), (2,5), (2,6), (3,4), (3,5), (3,6), (4,5), (4,6), (5,6), (6,7), (7,1)])",True,False,,isomorphism,
+2,wheel,Wheel,21,"(8, [(0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7), (1,2), (1,3), (1,4), (1,5), (1,6), (1,7), (2,3), (2,4), (2,5), (2,6), (3,4), (3,5), (3,6), (4,5), (4,6), (5,6), (6,7), (7,1)])",True,False,,isomorphism,
+2,wheel,Wheel,22,"(8, [((0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7)), ((1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,1))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+2,wheel,Wheel,23,"(8, [(0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7), (1,2), (1,3), (1,4), (1,5), (1,6), (1,7), (2,3), (2,4), (2,5), (2,6), (3,4), (3,5), (3,6), (4,5), (4,6), (5,6), (6,7), (7,1)])",True,False,,isomorphism,
+2,wheel,Wheel,24,"(8, [(0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7), (1,2), (1,3), (1,4), (1,5), (1,6), (1,7), (2,3), (2,4), (2,5), (2,6), (2,7), (3,4), (3,5), (3,6), (3,7), (4,5), (4,6), (4,7), (5,6), (5,7), (6,7)]",True,False,,isomorphism,
+2,wheel,Wheel,25,"(8, [((0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7)), ((1,2), (2,3), (3,4), (4,5), (5,6), (6,7)), ((1,3), (2,4), (3,5), (4,6), (5,7)), ((2,4), (3,5), (4,6)), ((3,5), (4,6)), ((4,5), (5,6)), ((5,6), ",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+2,wheel,Wheel,26,"(8, [(0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7), (1,2), (1,3), (1,4), (1,5), (1,6), (1,7), (2,3), (2,4), (2,5), (2,6), (2,7), (3,4), (3,5), (3,6), (3,7), (4,5), (4,6), (4,7), (5,6), (5,7), (6,7)]",True,False,,isomorphism,
+2,wheel,Wheel,27,"(8, [(0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7), (1,2), (1,3), (1,4), (1,5), (1,6), (1,7), (2,3), (2,4), (2,5), (2,6), (2,7), (3,4), (3,5), (3,6), (3,7), (4,5), (4,6), (4,7), (5,6), (5,7), (6,7)]",True,False,,isomorphism,
+2,wheel,Wheel,28,"(8, [((0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7)), ((1,2), (1,3), (1,4), (1,5), (1,6), (1,7)), ((2,3), (2,4), (2,5), (2,6), (2,7)), ((3,4), (3,5), (3,6), (3,7)), ((4,5), (4,6), (4,7)), ((5,6), (5",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+2,wheel,Wheel,29,"(8, [(0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7), (1,2), (1,3), (1,4), (1,5), (1,6), (1,7), (2,3), (2,4), (2,5), (2,6), (3,4), (3,5), (3,6), (4,5), (4,6), (5,6), (6,7), (7,1)])",True,False,,isomorphism,
+2,wheel,Wheel,30,"(8, [((0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7), (1,2), (1,3), (1,4), (1,5), (1,6), (1,7), (2,3), (2,4), (2,5), (2,6), (2,7), (3,4), (3,5), (3,6), (3,7), (4,5), (4,6), (4,7), (5,6), (5,7), (6,7)",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：closing parenthesis ']' does not match opening parenthesis '(' (<unknown>, line 1)"
+2,wheel,Wheel,31,"(8, [(0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7), (1,2), (1,3), (1,4), (1,5), (1,6), (1,7), (2,3), (2,4), (2,5), (2,6), (3,4), (3,5), (3,6), (4,5), (4,6), (5,6), (6,7), (7,1)])",True,False,,isomorphism,
+2,wheel,Wheel,32,"(8, [(0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7), (1,2), (1,3), (1,4), (1,5), (1,6), (1,7), (2,3), (2,4), (2,5), (2,6), (2,7), (3,4), (3,5), (3,6), (3,7), (4,5), (4,6), (4,7), (5,6), (5,7), (6,7)]",True,False,,isomorphism,
+2,wheel,Wheel,33,"(8, [('0', '1'), ('0', '2'), ('0', '3'), ('0', '4'), ('0', '5'), ('0', '6'), ('0', '7'), ('1', '2'), ('1', '3'), ('1', '4'), ('1', '5'), ('1', '6'), ('1', '7'), ('2', '3'), ('2', '4'), ('2', '5'), ('2",True,False,,isomorphism,
+2,wheel,Wheel,34,"(8, [(0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7), (1,2), (1,3), (1,4), (1,5), (1,6), (1,7), (2,3), (2,4), (2,5), (2,6), (2,7), (3,4), (3,5), (3,6), (3,7), (4,5), (4,6), (4,7), (5,6), (5,7), (6,7)]",True,False,,isomorphism,
+2,wheel,Wheel,35,"(8, [((0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,1)])",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：closing parenthesis ']' does not match opening parenthesis '(' (<unknown>, line 1)"
+2,wheel,Wheel,36,"(8, [(0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7), (1,2), (1,3), (1,4), (1,5), (1,6), (1,7), (2,3), (2,4), (2,5), (2,6), (2,7), (3,4), (3,5), (3,6), (3,7), (4,5), (4,6), (4,7), (5,6), (5,7), (6,7)]",True,False,,isomorphism,
+2,wheel,Wheel,37,"(8, [(0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7), (1,2), (1,3), (1,4), (1,5), (1,6), (1,7), (2,3), (2,4), (2,5), (2,6), (2,7), (3,4), (3,5), (3,6), (3,7), (4,5), (4,6), (4,7), (5,6), (5,7), (6,7)]",True,False,,isomorphism,
+2,wheel,Wheel,38,"(8, [(0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7)])",True,False,,isomorphism,
+2,wheel,Wheel,39,"(8, [(0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7), (1,2), (1,3), (1,4), (1,5), (1,6), (1,7), (2,3), (2,4), (2,5), (2,6), (2,7), (3,4), (3,5), (3,6), (3,7), (4,5), (4,6), (4,7), (5,6), (5,7), (6,7)]",True,False,,isomorphism,
+2,wheel,Wheel,40,"(8, [(0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7), (1,2), (1,3), (1,4), (1,5), (1,6), (1,7), (2,3), (2,4), (2,5), (2,6), (2,7), (3,4), (3,5), (3,6), (3,7), (4,5), (4,6), (4,7), (5,6), (5,7), (6,7)]",True,False,,isomorphism,
+2,wheel,Wheel,41,"(8, [(0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7), (1,2), (1,3), (1,4), (1,5), (1,6), (1,7), (2,3), (2,4), (2,5), (2,6), (2,7), (3,4), (3,5), (3,6), (3,7), (4,5), (4,6), (4,7), (5,6), (5,7), (6,7)]",True,False,,isomorphism,
+2,wheel,Wheel,42,"(8, [((0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7)), ((1,2), (1,3), (1,4), (1,5), (1,6), (1,7)), ((2,3), (2,4), (2,5), (2,6), (2,7)), ((3,4), (3,5), (3,6), (3,7)), ((4,5), (4,6), (4,7)), ((5,6), (5",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+2,wheel,Wheel,43,"(8, [(0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7), (1,2), (1,3), (1,4), (1,5), (1,6), (1,7), (2,3), (2,4), (2,5), (2,6), (3,4), (3,5), (3,6), (4,5), (4,6), (5,6), (6,7), (7,1)])",True,False,,isomorphism,
+2,wheel,Wheel,44,"(8, [
+    (0, 1), (0, 2), (0, 3), (0, 4), (0, 5), (0, 6), (0, 7),
+    (1, 2), (1, 3), (1, 4), (1, 5), (1, 6), (1, 7),
+    (2, 3), (2, 4), (2, 5), (2, 6), (2, 7),
+    (3, 4), (3, 5), (3, 6), (3, 7),
+  ",True,False,,isomorphism,
+2,wheel,Wheel,45,"(8, [((0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7)), ((1,2), (1,3), (1,4), (1,5), (1,6), (1,7)), ((2,3), (2,4), (2,5), (2,6), (2,7)), ((3,4), (3,5), (3,6), (3,7)), ((4,5), (4,6), (4,7)), ((5,6), (5",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+2,wheel,Wheel,46,"(8, [(0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7), (1,2), (1,3), (1,4), (1,5), (1,6), (1,7), (2,3), (2,4), (2,5), (2,6), (2,7), (3,4), (3,5), (3,6), (3,7), (4,5), (4,6), (4,7), (5,6), (5,7), (6,7)]",True,False,,isomorphism,
+2,wheel,Wheel,47,"(8, [((0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7)), ((1,2), (1,3), (1,4), (1,5), (1,6), (1,7)), ((2,3), (2,4), (2,5), (2,6), (2,7)), ((3,4), (3,5), (3,6), (3,7)), ((4,5), (4,6), (4,7)), ((5,6), (5",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+2,wheel,Wheel,48,"(8, [(0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7), (1,2), (1,3), (1,4), (1,5), (1,6), (1,7), (2,3), (2,4), (2,5), (2,6), (3,4), (3,5), (3,6), (4,5), (4,6), (5,6), (5,7), (6,7), (7,1)])",True,False,,isomorphism,
+2,wheel,Wheel,49,"(8, [(0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7), (1,2), (1,3), (1,4), (1,5), (1,6), (1,7), (2,3), (2,4), (2,5), (2,6), (3,4), (3,5), (3,6), (4,5), (4,6), (5,6), (6,7), (7,1)])",True,False,,isomorphism,
+2,wheel,Wheel,50,"(8, [(0, 1), (0, 2), (0, 3), (0, 4), (0, 5), (0, 6), (0, 7), (1, 2), (2, 3), (3, 4), (4, 5), (5, 6), (6, 7), (7, 1)])",True,True,b0d934efbac4c689fe89836cedf7d74b,isomorphism,
+2,wheel,Wheel,51,"(8, [(0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7), (1,2), (1,3), (1,4), (1,5), (1,6), (1,7), (2,3), (2,4), (2,5), (2,6), (2,7), (3,4), (3,5), (3,6), (3,7), (4,5), (4,6), (4,7), (5,6), (5,7), (6,7)]",True,False,,isomorphism,
+2,wheel,Wheel,52,"(8, [((0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7)), ((1,2), (1,3), (1,4), (1,5), (1,6), (1,7)), ((2,3), (2,4), (2,5), (2,6), (2,7)), ((3,4), (3,5), (3,6), (3,7)), ((4,5), (4,6), (4,7)), ((5,6), (5",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+2,wheel,Wheel,53,"(8, [(0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7), (1,2), (1,3), (1,4), (1,5), (1,6), (1,7), (2,3), (2,4), (2,5), (2,6), (2,7), (3,4), (3,5), (3,6), (3,7), (4,5), (4,6), (4,7), (5,6), (5,7), (6,7)]",True,False,,isomorphism,
+2,wheel,Wheel,54,"(8, [(0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7), (1,2), (1,3), (1,4), (1,5), (1,6), (1,7), (2,3), (2,4), (2,5), (2,6), (2,7), (3,4), (3,5), (3,6), (3,7), (4,5), (4,6), (4,7), (5,6), (5,7), (6,7)]",True,False,,isomorphism,
+2,wheel,Wheel,55,"(8, [(0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7), (1,2), (1,3), (1,4), (1,5), (1,6), (1,7), (2,3), (2,4), (2,5), (2,6), (3,4), (3,5), (3,6), (4,5), (4,6), (5,6), (6,7), (7,1)])",True,False,,isomorphism,
+2,wheel,Wheel,56,"(8, [(0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7), (1,2), (1,3), (1,4), (1,5), (1,6), (1,7), (2,3), (2,4), (2,5), (2,6), (3,4), (3,5), (3,6), (4,5), (4,6), (5,6), (6,7), (7,1)])",True,False,,isomorphism,
+2,wheel,Wheel,57,"(8, [(0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,1)])",True,True,b0d934efbac4c689fe89836cedf7d74b,isomorphism,
+2,wheel,Wheel,58,"(8, [(0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7), (1,2), (1,3), (1,4), (1,5), (1,6), (1,7), (2,3), (2,4), (2,5), (2,6), (2,7), (3,4), (3,5), (3,6), (3,7), (4,5), (4,6), (4,7), (5,6), (5,7), (6,7)]",True,False,,isomorphism,
+2,wheel,Wheel,59,"(8, [(0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7), (1,2), (1,3), (1,4), (1,5), (1,6), (1,7), (2,3), (2,4), (2,5), (2,6), (2,7), (3,4), (3,5), (3,6), (3,7), (4,5), (4,6), (4,7), (5,6), (5,7), (6,7)]",True,False,,isomorphism,
+2,wheel,Wheel,60,"(8, [(0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7), (1,2), (1,3), (1,4), (1,5), (1,6), (1,7), (2,3), (2,4), (2,5), (2,6), (2,7), (3,4), (3,5), (3,6), (3,7), (4,5), (4,6), (4,7), (5,6), (5,7), (6,7)]",True,False,,isomorphism,
+2,wheel,Wheel,61,"(8, [(0,1),(0,2),(0,3),(0,4),(0,5),(0,6),(0,7),(1,2),(1,3),(1,4),(1,5),(1,6),(1,7), (2,3),(2,4),(2,5),(2,6),(2,7), (3,4),(3,5),(3,6),(3,7), (4,5),(4,6),(4,7), (5,6),(5,7), (6,7)])",True,False,,isomorphism,
+2,wheel,Wheel,62,"(8, [(0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7), (1,2), (1,3), (1,4), (1,5), (1,6), (1,7), (2,3), (2,4), (2,5), (2,6), (2,7), (3,4), (3,5), (3,6), (3,7), (4,5), (4,6), (4,7), (5,6), (5,7), (6,7)]",True,False,,isomorphism,
+2,wheel,Wheel,63,"(8, [(0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7), (1,2), (1,3), (1,4), (1,5), (1,6), (1,7), (2,3), (2,4), (2,5), (2,6), (2,7), (3,4), (3,5), (3,6), (3,7), (4,5), (4,6), (4,7), (5,6), (5,7), (6,7)]",True,False,,isomorphism,
+2,wheel,Wheel,64,"(8, [(0,1), (0,2), (0,3), ..., (0,7), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,1)])",False,False,,isomorphism,"第 4 条边不是二元组 `(u,v)`。"
+2,wheel,Wheel,65,"(8, [(0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7), (1,2), (1,3), (1,4), (1,5), (1,6), (1,7), (2,3), (2,4), (2,5), (2,6), (2,7), (3,4), (3,5), (3,6), (3,7), (4,5), (4,6), (4,7), (5,6), (5,7), (6,7)]",True,False,,isomorphism,
+2,wheel,Wheel,66,"(8, [(0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7), (1,2), (1,3), (1,4), (1,5), (1,6), (1,7), (2,3), (2,4), (2,5), (2,6), (2,7), (3,4), (3,5), (3,6), (3,7), (4,5), (4,6), (4,7), (5,6), (5,7), (6,7)]",True,False,,isomorphism,
+2,wheel,Wheel,67,"(8, [ (0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7), (1,2), (1,3), (1,4), (1,5), (1,6), (1,7), (2,3), (2,4), (2,5), (2,6), (2,7), (3,4), (3,5), (3,6), (3,7), (4,5), (4,6), (4,7), (5,6), (5,7), (6,7)",True,False,,isomorphism,
+2,wheel,Wheel,68,"(8, [((0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7)), ((1,2), (2,3), (3,4), (4,5), (5,6), (6,7)), ((1,3), (2,4), (3,5), (4,6), (5,7)), ((2,4), (3,5), (4,6), (5,7)), ((3,5), (4,6), (5,7)), ((4,6), (5",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+2,wheel,Wheel,69,"(8, [(0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7), (1,2), (1,3), (1,4), (1,5), (1,6), (1,7), (2,3), (2,4), (2,5), (2,6), (2,7), (3,4), (3,5), (3,6), (3,7), (4,5), (4,6), (4,7), (5,6), (5,7), (6,7)]",True,False,,isomorphism,
+2,wheel,Wheel,70,"(8, [(0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7), (1,2), (1,3), (1,4), (1,5), (1,6), (1,7), (2,3), (2,4), (2,5), (2,6), (2,7), (3,4), (3,5), (3,6), (3,7), (4,5), (4,6), (4,7), (5,6), (5,7), (6,7)]",True,False,,isomorphism,
+2,wheel,Wheel,71,"(8, [(0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7), (1,2), (1,3), (1,4), (1,5), (1,6), (1,7), (2,3), (2,4), (2,5), (2,6), (2,7), (3,4), (3,5), (3,6), (3,7), (4,5), (4,6), (4,7), (5,6), (5,7), (6,7)]",True,False,,isomorphism,
+2,wheel,Wheel,72,"(8, [((0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7)), ((1,2), (1,3), (1,4), (1,5), (1,6), (1,7)), ((2,3), (2,4), (2,5), (2,6), (2,7)), ((3,4), (3,5), (3,6), (3,7)), ((4,5), (4,6), (4,7)), ((5,6), (5",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+2,wheel,Wheel,73,"(8, [(0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7), (1,2), (1,3), (1,4), (1,5), (1,6), (1,7), (2,3), (2,4), (2,5), (2,6), (2,7), (3,4), (3,5), (3,6), (3,7), (4,5), (4,6), (4,7), (5,6), (5,7), (6,7)]",True,False,,isomorphism,
+2,wheel,Wheel,74,"(8, [(0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7), (1,2), (1,3), (1,4), (1,5), (1,6), (1,7), (2,3), (2,4), (2,5), (2,6), (2,7), (3,4), (3,5), (3,6), (3,7), (4,5), (4,6), (4,7), (5,6), (5,7), (6,7)]",True,False,,isomorphism,
+2,wheel,Wheel,75,"(8, [(0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7), (1,2), (1,3), (1,4), (1,5), (1,6), (1,7), (2,3), (2,4), (2,5), (2,6), (2,7), (3,4), (3,5), (3,6), (3,7), (4,5), (4,6), (4,7), (5,6), (5,7), (6,7)]",True,False,,isomorphism,
+2,wheel,Wheel,76,"(8, [(0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7), (1,2), (1,3), (1,4), (1,5), (1,6), (1,7), (2,3), (2,4), (2,5), (2,6), (2,7), (3,4), (3,5), (3,6), (3,7), (4,5), (4,6), (4,7), (5,6), (5,7), (6,7)]",True,False,,isomorphism,
+2,wheel,Wheel,77,"(8, [((0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7)), ((1,2), (1,3), (1,4)), ((2,3), (2,4), (2,5)), ((3,4), (3,5), (3,6)), ((4,5), (4,6), (4,7)), ((5,6), (5,7)), ((6,7))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+2,wheel,Wheel,78,"(8, [(0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7), (1,2), (1,3), (1,4), (1,5), (1,6), (1,7), (2,3), (2,4), (2,5), (2,6), (2,7), (3,4), (3,5), (3,6), (3,7), (4,5), (4,6), (4,7), (5,6), (5,7), (6,7)]",True,False,,isomorphism,
+2,wheel,Wheel,79,"(8, [(0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7), (1,2), (1,3), (1,4), (1,5), (1,6), (1,7), (2,3), (2,4), (2,5), (2,6), (2,7), (3,4), (3,5), (3,6), (3,7), (4,5), (4,6), (4,7), (5,6), (5,7), (6,7)]",True,False,,isomorphism,
+2,wheel,Wheel,80,"(8, [(0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7), (1,2), (1,3), (1,4), (1,5), (1,6), (1,7), (2,3), (2,4), (2,5), (2,6), (2,7), (3,4), (3,5), (3,6), (3,7), (4,5), (4,6), (4,7), (5,6), (5,7), (6,7)]",True,False,,isomorphism,
+2,wheel,Wheel,81,"(8, [(0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7), (1,2), (1,3), (1,4), (1,5), (1,6), (1,7), (2,3), (2,4), (2,5), (2,6), (2,7), (3,4), (3,5), (3,6), (3,7), (4,5), (4,6), (4,7), (5,6), (5,7), (6,7)]",True,False,,isomorphism,
+2,wheel,Wheel,82,"(8, [(0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7), (1,2), (1,3), (1,4), (1,5), (1,6), (1,7), (2,3), (2,4), (2,5), (2,6), (2,7), (3,4), (3,5), (3,6), (3,7), (4,5), (4,6), (4,7), (5,6), (5,7), (6,7)]",True,False,,isomorphism,
+2,wheel,Wheel,83,"(8, [(0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7), (1,2), (1,3), (1,4), (1,5), (1,6), (1,7), (2,3), (2,4), (2,5), (2,6), (2,7), (3,4), (3,5), (3,6), (3,7), (4,5), (4,6), (4,7), (5,6), (5,7), (6,7)]",True,False,,isomorphism,
+2,wheel,Wheel,84,"(8, [(0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7)])",True,False,,isomorphism,
+2,wheel,Wheel,85,"(8, [(0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7), (1,2), (1,3), (1,4), (1,5), (1,6), (1,7), (2,3), (2,4), (2,5), (2,6), (2,7), (3,4), (3,5), (3,6), (3,7), (4,5), (4,6), (4,7), (5,6), (5,7), (6,7)]",True,False,,isomorphism,
+2,wheel,Wheel,86,"(8, [(0, 1), (0, 2), (0, 3), (0, 4), (0, 5), (0, 6), (0, 7), (1, 2), (2, 3), (3, 4), (4, 5), (5, 6), (6, 7), (7, 1)])",True,True,b0d934efbac4c689fe89836cedf7d74b,isomorphism,
+2,wheel,Wheel,87,"(8, [(0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7), (1,2), (1,3), (1,4), (1,5), (1,6), (1,7), (2,3), (2,4), (2,5), (2,6), (2,7), (3,4), (3,5), (3,6), (3,7), (4,5), (4,6), (4,7), (5,6), (5,7), (6,7)]",True,False,,isomorphism,
+2,wheel,Wheel,88,"(8, [(0,1),(0,2),(0,3),(0,4),(0,5),(0,6),(0,7),(1,2),(2,3),(3,4),(4,5),(5,6),(6,7),(7,1)])",True,True,b0d934efbac4c689fe89836cedf7d74b,isomorphism,
+2,wheel,Wheel,89,"(8, [(0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7), (1,2), (1,3), (1,4), (1,5), (1,6), (1,7), (2,3), (2,4), (2,5), (2,6), (2,7), (3,4), (3,5), (3,6), (3,7), (4,5), (4,6), (4,7), (5,6), (5,7), (6,7)]",True,False,,isomorphism,
+2,wheel,Wheel,90,"(8, [(0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7), (1,2), (1,3), (1,4), (1,5), (1,6), (1,7), (2,3), (2,4), (2,5), (2,6), (2,7), (3,4), (3,5), (3,6), (3,7), (4,5), (4,6), (4,7), (5,6), (5,7), (6,7)]",True,False,,isomorphism,
+2,wheel,Wheel,91,"(8, [(0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7), (1,2), (1,3), (1,4), (1,5), (1,6), (1,7), (2,3), (2,4), (2,5), (2,6), (3,4), (3,5), (3,6), (4,5), (4,6), (5,6), (6,7), (7,1)])",True,False,,isomorphism,
+2,wheel,Wheel,92,"(8, [(0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7), (1,2), (1,3), (1,4), (1,5), (1,6), (1,7), (2,3), (2,4), (2,5), (2,6), (3,4), (3,5), (3,6), (4,5), (4,6), (5,6), (6,7), (7,1)])",True,False,,isomorphism,
+2,wheel,Wheel,93,"(8, [((0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7)), ((1,2), (2,3), (3,4), (4,5), (5,6), (6,7)), ((1,3), (2,4), (3,5), (4,6), (5,7)), ((1,4), (2,5), (3,6), (4,7)), ((1,5), (2,6), (3,7)), ((1,6), (2",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+2,wheel,Wheel,94,"(8, [(0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7), (1,2), (1,3), (1,4), (1,5), (1,6), (1,7), (2,3), (2,4), (2,5), (2,6), (2,7), (3,4), (3,5), (3,6), (3,7), (4,5), (4,6), (4,7), (5,6), (5,7), (6,7)]",True,False,,isomorphism,
+2,wheel,Wheel,95,"(8, [(0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7), (1,2), (1,3), (1,4), (1,5), (1,6), (1,7), (2,3), (2,4), (2,5), (2,6), (2,7), (3,4), (3,5), (3,6), (3,7), (4,5), (4,6), (4,7), (5,6), (5,7), (6,7)]",True,False,,isomorphism,
+2,wheel,Wheel,96,"(8, [(0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7), (1,2), (1,3), (1,4), (1,5), (1,6), (1,7), (2,3), (2,4), (2,5), (2,6), (3,4), (3,5), (3,6), (4,5), (4,6), (5,6), (6,7), (7,1)])",True,False,,isomorphism,
+2,wheel,Wheel,97,"(8, [((0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7)), ((1,2), (1,3), (1,4), (1,5), (1,6), (1,7)), ((2,3), (2,4), (2,5), (2,6), (2,7)), ((3,4), (3,5), (3,6), (3,7)), ((4,5), (4,6), (4,7)), ((5,6), (5",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+2,wheel,Wheel,98,"(8, [(0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7), (1,2), (1,3), (1,4), (1,5), (1,6), (1,7), (2,3), (2,4), (2,5), (2,6), (3,4), (3,5), (3,6), (4,5), (4,6), (5,6), (6,7), (7,1)])",True,False,,isomorphism,
+2,wheel,Wheel,99,"(8, [(0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7), (1,2), (1,3), (1,4), (1,5), (1,6), (1,7), (2,3), (2,4), (2,5), (2,6), (2,7), (3,4), (3,5), (3,6), (3,7), (4,5), (4,6), (4,7), (5,6), (5,7), (6,7)]",True,False,,isomorphism,
+2,wheel,Wheel,100,"(8, [(0,1),(0,2),(0,3),(0,4),(0,5),(0,6),(0,7),(1,2),(1,3),(1,4),(1,5),(1,6),(1,7),(2,3),(2,4),(2,5),(2,6),(2,7),(3,4),(3,5),(3,6),(3,7),(4,5),(4,6),(4,7),(5,6),(5,7),(6,7),(7,1)])",True,False,,isomorphism,
+2,bipartite,Bipartite,1,"(6, [(0,5),(1,5),(2,5),(3,5),(4,5)])",True,True,c24dd733315066f7c7da3d578f954d8c,isomorphism,
+2,bipartite,Bipartite,2,"(6, [(0,5),(1,5),(2,5),(3,5),(4,5)])",True,True,c24dd733315066f7c7da3d578f954d8c,isomorphism,
+2,bipartite,Bipartite,3,"(10, [(0,5),(1,5),(2,5),(3,5),(4,5),(5,0),(5,1),(5,2),(5,3),(5,4)])",True,True,7a3c26afcf7b6a230d620eadbf2b1cd4,isomorphism,
+2,bipartite,Bipartite,4,"(6, [(u1,v1), (u2,v2), ...])",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：malformed node or string on line 1: <ast.Name object at 0x7973037792d0>"
+2,bipartite,Bipartite,5,"(6, [(0,3), (0,4), (0,5), (1,3), (1,4), (2,5)])",True,True,31bcee1b066a63f64c6901bb1e1b69cb,isomorphism,
+2,bipartite,Bipartite,6,"(10, [(0, 5), (1, 5), (2, 5), (3, 5), (4, 5)])",True,True,7a3c26afcf7b6a230d620eadbf2b1cd4,isomorphism,
+2,bipartite,Bipartite,7,"(6, [(0,5),(1,4),(2,3),(3,2),(4,1),(5,0)])",True,True,87224c590a6c623e4385c63f6a5a56ea,isomorphism,
+2,bipartite,Bipartite,8,"(10, [(0,3),(0,4),(0,5),(1,3),(1,4),(1,5),(2,3),(2,4),(2,5)])",True,True,0e3166bf1a5b1ef362189f317e352289,isomorphism,
+2,bipartite,Bipartite,9,"(10, [(0, 5), (1, 6), (2, 7), (3, 8), (4, 9), (0, 1), (1, 2), (2, 3), (3, 4), (5, 6), (6, 7), (7, 8), (8, 9)])",True,True,c8be520c17703d2542ee423b46e13746,isomorphism,
+2,bipartite,Bipartite,10,"(10, [(0, 5), (1, 6), (2, 7), (3, 8), (4, 9)])",True,True,be3312c5c1bc33b10be9c834d0af7350,isomorphism,
+2,bipartite,Bipartite,11,"(6, [(0,3),(0,4),(1,3),(1,4),(2,5),(5,5)])",True,False,,isomorphism,
+2,bipartite,Bipartite,12,"(10, [((0,5), (1,6), (2,7), (3,8)), ((0,5), (4,6), (5,7), (6,8))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+2,bipartite,Bipartite,13,"(6, [(0,5),(1,5),(2,5),(3,5),(4,5)])",True,True,c24dd733315066f7c7da3d578f954d8c,isomorphism,
+2,bipartite,Bipartite,14,"(6, [(0,3),(1,4),(2,5)])",True,True,87224c590a6c623e4385c63f6a5a56ea,isomorphism,
+2,bipartite,Bipartite,15,"(6, [(0,3),(0,4),(1,4),(1,5),(2,3),(2,5)])",True,True,da3c81488557dc57e6e1f0bd43d65336,isomorphism,
+2,bipartite,Bipartite,16,"(6, [(0,3), (0,4), (0,5), (1,3), (1,4), (2,5)])",True,True,31bcee1b066a63f64c6901bb1e1b69cb,isomorphism,
+2,bipartite,Bipartite,17,"(6, [((0, 3), (0, 4), (0, 5), (1, 3), (1, 4), (2, 5))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+2,bipartite,Bipartite,18,"(6, [(0,5), (1,4), (2,3), (3,1), (4,2), (5,0)])",True,True,7273659d5d28548f0a6e0383bcc9f2a8,isomorphism,
+2,bipartite,Bipartite,19,"(10, [(0, 5), (1, 5), (2, 5), (3, 5), (4, 5)])",True,True,7a3c26afcf7b6a230d620eadbf2b1cd4,isomorphism,
+2,bipartite,Bipartite,20,"(9, [(0, 5), (1, 6), (2, 7), (3, 8), (4, 9)])",False,False,,isomorphism,第 5 条边端点越界（节点范围应为 0..8）。
+2,bipartite,Bipartite,21,"(10, [(0, 5), (1, 6), (2, 7), (3, 8), (4, 9)])",True,True,be3312c5c1bc33b10be9c834d0af7350,isomorphism,
+2,bipartite,Bipartite,22,"(6, [(0,5),(0,3),(0,4),(1,5),(1,3),(2,4)])",True,True,31bcee1b066a63f64c6901bb1e1b69cb,isomorphism,
+2,bipartite,Bipartite,23,"(6, [(0,3), (0,4), (0,5), (1,3), (1,4), (2,5)])",True,True,31bcee1b066a63f64c6901bb1e1b69cb,isomorphism,
+2,bipartite,Bipartite,24,"(6, [(0,3),(1,4),(2,5)])",True,True,87224c590a6c623e4385c63f6a5a56ea,isomorphism,
+2,bipartite,Bipartite,25,"(6, [(0, 5), (1, 5), (2, 5), (3, 5), (4, 5)])",True,True,c24dd733315066f7c7da3d578f954d8c,isomorphism,
+2,bipartite,Bipartite,26,"(6, [(0,3), (0,4), (0,5), (1,3), (1,4), (2,5)])",True,True,31bcee1b066a63f64c6901bb1e1b69cb,isomorphism,
+2,bipartite,Bipartite,27,"(10, [(0, 1), (0, 2), (0, 3), (1, 2), (1, 3), (2, 3), (5, 6), (5, 7), (6, 7), (8, 9)])",True,False,,isomorphism,
+2,bipartite,Bipartite,28,"(10, [([0, 5], [1, 6], [2, 7], [3, 8], [4, 9])",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：'[' was never closed (<unknown>, line 1)"
+2,bipartite,Bipartite,29,"(6, [(0,3),(0,4),(1,4),(2,5),(3,5)])",True,True,50803b752054f0512687e537ee7368f9,isomorphism,
+2,bipartite,Bipartite,30,"(10, [(0,5),(0,6),(0,7),(1,5),(1,8),(2,6),(2,7),(3,5),(3,9),(4,8),(4,9)])",True,True,8e29dc0ab3e5d80bb8a4899015ace6ba,isomorphism,
+2,bipartite,Bipartite,31,"(6, [(0, 3), (0, 5), (1, 4), (2, 5)])",True,True,944d1e10c1efdd3cf89f3eb5fd93918c,isomorphism,
+2,bipartite,Bipartite,32,"(6, [(0,5),(0,3),(0,4),(1,4),(1,5),(2,3),(2,5)])",True,True,15981867526b451292338ffade4ee93e,isomorphism,
+2,bipartite,Bipartite,33,"(6, [(0,5), (1,5), (2,5), (3,4), (4,4), (5,0), (5,1), (5,2), (5,3), (5,4)])",True,False,,isomorphism,
+2,bipartite,Bipartite,34,"(6, [(0, 5), (1, 5), (2, 4), (3, 4), (4, 5)])",True,True,833c89e8aca800e5707fb47ea63f9088,isomorphism,
+2,bipartite,Bipartite,35,"(6, [(0,5), (1,5), (2,5), (3,5), (4,5)])",True,True,c24dd733315066f7c7da3d578f954d8c,isomorphism,
+2,bipartite,Bipartite,36,"(6, [(0,3),(1,4),(2,5),(3,5),(4,5),(5,3),(5,4),(5,5)])",True,False,,isomorphism,
+2,bipartite,Bipartite,37,"(6, [(0,3),(0,4),(1,4),(1,5),(2,3),(2,5)])",True,True,da3c81488557dc57e6e1f0bd43d65336,isomorphism,
+2,bipartite,Bipartite,38,"(6, [(0,3),(0,5),(1,4),(1,5),(2,3),(2,5)])",True,True,31bcee1b066a63f64c6901bb1e1b69cb,isomorphism,
+2,bipartite,Bipartite,39,"(6, [(0,5), (1,5), (2,5), (3,5), (4,5)])",True,True,c24dd733315066f7c7da3d578f954d8c,isomorphism,
+2,bipartite,Bipartite,40,"(6, [(0,5),(0,4),(1,5),(1,3),(2,4),(2,5)])",True,True,31bcee1b066a63f64c6901bb1e1b69cb,isomorphism,
+2,bipartite,Bipartite,41,"(6, [(0,5),(1,5),(2,5),(3,5),(4,5)])",True,True,c24dd733315066f7c7da3d578f954d8c,isomorphism,
+2,bipartite,Bipartite,42,"(6, [(0, 5), (1, 5), (2, 5), (3, 4), (4, 4)])",True,False,,isomorphism,
+2,bipartite,Bipartite,43,"(6, [(0,3), (0,4), (1,3), (1,5), (2,4), (2,5)])",True,True,da3c81488557dc57e6e1f0bd43d65336,isomorphism,
+2,bipartite,Bipartite,44,"(6, [(0, 3), (1, 4), (2, 5)])",True,True,87224c590a6c623e4385c63f6a5a56ea,isomorphism,
+2,bipartite,Bipartite,45,"(6, [(0,3), (0,4), (0,5), (1,3), (1,4), (2,5)])",True,True,31bcee1b066a63f64c6901bb1e1b69cb,isomorphism,
+2,bipartite,Bipartite,46,"(10, [(0,5), (1,5), (2,5), (3,5), (4,5)])",True,True,7a3c26afcf7b6a230d620eadbf2b1cd4,isomorphism,
+2,bipartite,Bipartite,47,"(6, [(0,5),(1,5),(2,5),(3,5)])",True,True,2e768b42c4b41092707056751b69e60a,isomorphism,
+2,bipartite,Bipartite,48,"(10, [(0, 5), (0, 6), (1, 7), (1, 8), (2, 5), (2, 9), (3, 6), (3, 7), (4, 8)])",True,True,dc09eb5accc563a82d933e0dde59da6e,isomorphism,
+2,bipartite,Bipartite,49,"(6, [(0,1),(0,2),(0,3),(0,4),(1,2),(1,3),(1,4),(2,3),(2,4),(5,6),(5,7),(5,8),(5,9),(6,7),(6,8),(6,9),(7,8),(7,9)])",False,False,,isomorphism,第 10 条边端点越界（节点范围应为 0..5）。
+2,bipartite,Bipartite,50,"(6, [(0,3), (0,4), (1,4), (1,5), (2,5)])",True,True,50803b752054f0512687e537ee7368f9,isomorphism,
+2,bipartite,Bipartite,51,"(6, [(0, 3), (1, 4), (2, 5)])",True,True,87224c590a6c623e4385c63f6a5a56ea,isomorphism,
+2,bipartite,Bipartite,52,"(6, [(0, 3), (1, 5), (2, 6), (4, 8)])",False,False,,isomorphism,第 3 条边端点越界（节点范围应为 0..5）。
+2,bipartite,Bipartite,53,"(10, [(0,3), (0,4), (0,5), (1,3), (1,4), (2,5), (3,4), (4,5)])",True,False,,isomorphism,
+2,bipartite,Bipartite,54,"(6, [(u1,v1), (u2,v2), ...])",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：malformed node or string on line 1: <ast.Name object at 0x7973023489d0>"
+2,bipartite,Bipartite,55,"(8, [(0,5),(1,5),(2,5),(3,5),(4,5)])",True,True,c65942e6ebbb740ceebd027fd7bb848e,isomorphism,
+2,bipartite,Bipartite,56,"(6, [(0, 5), (1, 5), (2, 5), (3, 5), (4, 5)])",True,True,c24dd733315066f7c7da3d578f954d8c,isomorphism,
+2,bipartite,Bipartite,57,"(10, [(0,5), (1,5), (2,5), (3,5), (4,5)])",True,True,7a3c26afcf7b6a230d620eadbf2b1cd4,isomorphism,
+2,bipartite,Bipartite,58,"(10, [(0, 5), (1, 6), (2, 7), (3, 8), (4, 9)])",True,True,be3312c5c1bc33b10be9c834d0af7350,isomorphism,
+2,bipartite,Bipartite,59,"(6, [(0, 3), (1, 4), (2, 5)])",True,True,87224c590a6c623e4385c63f6a5a56ea,isomorphism,
+2,bipartite,Bipartite,60,"(10, [(0,5),(1,4),(1,9),(2,6),(2,8),(3,7),(3,10)])",False,False,,isomorphism,第 7 条边端点越界（节点范围应为 0..9）。
+2,bipartite,Bipartite,61,"(6, [(0,3),(0,4),(1,4),(1,5),(2,5)])",True,True,50803b752054f0512687e537ee7368f9,isomorphism,
+2,bipartite,Bipartite,62,"(6, [(0,4),(1,4),(1,5),(2,3),(2,5)])",True,True,50803b752054f0512687e537ee7368f9,isomorphism,
+2,bipartite,Bipartite,63,"(10, [(0,5),(1,6),(2,7),(3,8),(4,9)])",True,True,be3312c5c1bc33b10be9c834d0af7350,isomorphism,
+2,bipartite,Bipartite,64,"(9, [(0,5),(1,6),(2,7),(3,8),(4,9)])",False,False,,isomorphism,第 5 条边端点越界（节点范围应为 0..8）。
+2,bipartite,Bipartite,65,"(6, [(0,3), (1,4), (2,5)])",True,True,87224c590a6c623e4385c63f6a5a56ea,isomorphism,
+2,bipartite,Bipartite,66,"(10, [(0, 5), (1, 6), (2, 7), (3, 8), (4, 9)])",True,True,be3312c5c1bc33b10be9c834d0af7350,isomorphism,
+2,bipartite,Bipartite,67,"(6, [(0, 5), (1, 5), (2, 5), (3, 5)])",True,True,2e768b42c4b41092707056751b69e60a,isomorphism,
+2,bipartite,Bipartite,68,"(6, [(0, 5), (1, 5), (2, 5), (3, 5), (4, 5)])",True,True,c24dd733315066f7c7da3d578f954d8c,isomorphism,
+2,bipartite,Bipartite,69,"(6, [(0,3),(1,4),(2,5),(3,0),(4,1),(5,2)])",True,True,87224c590a6c623e4385c63f6a5a56ea,isomorphism,
+2,bipartite,Bipartite,70,"(6, [(0,3), (0,4), (0,5), (1,3), (1,4), (2,5)])",True,True,31bcee1b066a63f64c6901bb1e1b69cb,isomorphism,
+2,bipartite,Bipartite,71,"(10, [(0, 5), (1, 5), (2, 5), (3, 5), (4, 5)])",True,True,7a3c26afcf7b6a230d620eadbf2b1cd4,isomorphism,
+2,bipartite,Bipartite,72,"(10, [((0, 5), (1, 6), (2, 7), (3, 8), (4, 9), (0, 4))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+2,bipartite,Bipartite,73,"(10, [(0, 5), (1, 5), (2, 5), (3, 5), (4, 5)])",True,True,7a3c26afcf7b6a230d620eadbf2b1cd4,isomorphism,
+2,bipartite,Bipartite,74,"(9, [(0, 5), (1, 6), (2, 7), (3, 8), (4, 9), (5, 0), (6, 1), (7, 2), (8, 3), (9, 4)])",False,False,,isomorphism,第 5 条边端点越界（节点范围应为 0..8）。
+2,bipartite,Bipartite,75,"(6, [(0,5), (1,5), (2,5), (3,5), (4,5)])",True,True,c24dd733315066f7c7da3d578f954d8c,isomorphism,
+2,bipartite,Bipartite,76,"(6, [(0,5),(0,3),(1,4),(1,5),(2,3),(2,5)])",True,True,31bcee1b066a63f64c6901bb1e1b69cb,isomorphism,
+2,bipartite,Bipartite,77,"(6, [(0, 3), (0, 4), (1, 4), (2, 5)])",True,True,944d1e10c1efdd3cf89f3eb5fd93918c,isomorphism,
+2,bipartite,Bipartite,78,"(10, [((0,5), (1,5), (2,5), (3,5), (4,5))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+2,bipartite,Bipartite,79,"(6, [(0, 5), (0, 0), (1, 1), (2, 2), (3, 3), (4, 4)])",True,False,,isomorphism,
+2,bipartite,Bipartite,80,"(6, [(0,3), (0,4), (0,5), (1,3), (1,4), (2,5)])",True,True,31bcee1b066a63f64c6901bb1e1b69cb,isomorphism,
+2,bipartite,Bipartite,81,"(6, [(0,3),(0,4),(1,4),(1,5),(2,3),(2,5)])",True,True,da3c81488557dc57e6e1f0bd43d65336,isomorphism,
+2,bipartite,Bipartite,82,"(6, [(0,5),(0,3),(0,4),(1,4),(1,5),(2,3),(2,5)])",True,True,15981867526b451292338ffade4ee93e,isomorphism,
+2,bipartite,Bipartite,83,"(10, [(0, 5), (1, 5), (2, 5), (3, 5), (4, 5)])",True,True,7a3c26afcf7b6a230d620eadbf2b1cd4,isomorphism,
+2,bipartite,Bipartite,84,"(10, [('0', '5'), ('1', '6'), ('2', '7'), ('3', '8'), ('4', '9')])",True,True,be3312c5c1bc33b10be9c834d0af7350,isomorphism,
+2,bipartite,Bipartite,85,"(10, [(0, 5), (1, 6), (2, 7), (3, 8), (4, 9)])",True,True,be3312c5c1bc33b10be9c834d0af7350,isomorphism,
+2,bipartite,Bipartite,86,"(6, [(0,5),(0,3),(0,4),(1,5),(1,4),(2,3),(2,5)])",True,True,15981867526b451292338ffade4ee93e,isomorphism,
+2,bipartite,Bipartite,87,"(6, [(0, 3), (1, 4), (2, 5)])",True,True,87224c590a6c623e4385c63f6a5a56ea,isomorphism,
+2,bipartite,Bipartite,88,"(5, [(0,5), (1,5), (2,5), (3,5), (4,5)])",False,False,,isomorphism,第 1 条边端点越界（节点范围应为 0..4）。
+2,bipartite,Bipartite,89,"(6, [(0,3), (0,4), (1,3), (1,4), (2,5)])",True,True,7273659d5d28548f0a6e0383bcc9f2a8,isomorphism,
+2,bipartite,Bipartite,90,"(6, [(0,5), (0,3), (0,4), (1,5), (1,4), (2,3), (2,5)])",True,True,15981867526b451292338ffade4ee93e,isomorphism,
+2,bipartite,Bipartite,91,"(6, [(0,5),(0,5),(1,5),(1,5),(2,5),(2,5),(3,5),(3,5),(4,5),(4,5)])",True,True,c24dd733315066f7c7da3d578f954d8c,isomorphism,
+2,bipartite,Bipartite,92,"(6, [(0,3),(0,4),(0,5),(1,3),(1,4),(2,5)])",True,True,31bcee1b066a63f64c6901bb1e1b69cb,isomorphism,
+2,bipartite,Bipartite,93,"(10, [(0, 5), (1, 6), (2, 7), (3, 8), (4, 9), (0, 1), (1, 2), (2, 3), (3, 4)])",True,True,82d5471bd79f8c51f60453267cf62176,isomorphism,
+2,bipartite,Bipartite,94,"(6, [(0,3),(0,4),(0,5),(1,3),(1,4),(1,5),(2,3),(2,4),(2,5)])",True,True,1a41b4e61e53acb3bf88861a051d3d19,isomorphism,
+2,bipartite,Bipartite,95,"(6, [(0,3), (0,4), (1,3), (1,5), (2,4), (2,5)])",True,True,da3c81488557dc57e6e1f0bd43d65336,isomorphism,
+2,bipartite,Bipartite,96,"(6, [(0,5),(0,6),(1,6),(2,5),(3,7),(4,8)])",False,False,,isomorphism,第 2 条边端点越界（节点范围应为 0..5）。
+2,bipartite,Bipartite,97,"(6, [(0, 5), (1, 5), (2, 5), (3, 5), (4, 5)])",True,True,c24dd733315066f7c7da3d578f954d8c,isomorphism,
+2,bipartite,Bipartite,98,"(6, [(0, 3), (1, 4), (2, 5)])",True,True,87224c590a6c623e4385c63f6a5a56ea,isomorphism,
+2,bipartite,Bipartite,99,"(6, [(0, 4), (1, 3), (1, 5), (2, 4), (2, 5)])",True,True,50803b752054f0512687e537ee7368f9,isomorphism,
+2,bipartite,Bipartite,100,"(6, [(0, 5), (1, 5), (2, 5), (3, 5), (4, 5)])",True,True,c24dd733315066f7c7da3d578f954d8c,isomorphism,
+2,k_coloring,k-coloring,1,"(10, [
+    (0, 1),
+    (0, 2),
+    (0, 3),
+    (0, 4),
+    (0, 5),
+    (1, 2),
+    (1, 3),
+    (1, 4),
+    (2, 5),
+    (2, 6),
+    (3, 4),
+    (3, 7),
+    (4, 5),
+    (4, 8),
+    (5, 6),
+    (5, 7),
+ ",False,False,,isomorphism,第 20 条边端点越界（节点范围应为 0..9）。
+2,k_coloring,k-coloring,2,"(10, [
+    (0,1), (0,2), (0,3), (1,4), (1,5), (2,6), (2,7), (3,8), (3,9),
+    (4,5), (4,6), (5,7), (5,8), (6,9), (7,8), (8,9)
+])",True,False,,isomorphism,
+2,k_coloring,k-coloring,3,"(10, [
+    (0, 2),
+    (1, 3),
+    (2, 4),
+    (3, 5),
+    (4, 6),
+    (5, 7),
+    (6, 8),
+    (7, 9),
+    (8, 10),
+    (0, 2),
+    (1, 3),
+    (2, 4),
+    (3, 5),
+    (4, 6),
+    (5, 7),
+    (6, 8),
+",False,False,,isomorphism,第 9 条边端点越界（节点范围应为 0..9）。
+2,k_coloring,k-coloring,4,"(10, [(0,4), (1,5), (2,6), (3,7), (8,9), (9,10), (0,8), (1,9), (2,10)])",False,False,,isomorphism,第 6 条边端点越界（节点范围应为 0..9）。
+2,k_coloring,k-coloring,5,"(10, [(0,3), (1,4), (2,5), (3,0), (4,1), (5,2), (6,7), (7,8), (8,9), (9,6)])",True,False,,isomorphism,
+2,k_coloring,k-coloring,6,"(10, [
+    (0, 1, 2),
+    (0, 2, 3),
+    (0, 3, 4),
+    (1, 2, 5),
+    (1, 5, 6),
+    (2, 3, 7),
+    (2, 7, 8),
+    (3, 4, 9),
+    (3, 9, 0)
+])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+2,k_coloring,k-coloring,7,"(10, [(u1,v1), (u2,v2), ...])",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：malformed node or string on line 1: <ast.Name object at 0x79730234a650>"
+2,k_coloring,k-coloring,8,"(10, [(0,1), (0,2), (0,3), (1,4), (1,5), (2,6), (2,7), (3,8), (3,9), (4,9), (5,8), (6,7), (7,8), (8,9), (9,0)])",True,False,,isomorphism,
+2,k_coloring,k-coloring,9,"(10, [
+  (0, 1),  (0, 2),  (0, 3),  (0, 4),  (0, 5),  (1, 2),  (1, 3),  (1, 4),  (1, 5),
+  (2, 3),  (2, 4),  (2, 5),  (3, 4),  (3, 5),  (4, 5),  (5, 0),  (5, 1),  (5, 2),
+  (5, 3),  (5, 4),  (5, 5),  ",True,False,,isomorphism,
+2,k_coloring,k-coloring,10,"(10, [(0,1),(0,2),(0,3), (1,4),(1,5),(2,6),(2,7),(3,8),(3,9),(4,10)])",False,False,,isomorphism,第 10 条边端点越界（节点范围应为 0..9）。
+2,k_coloring,k-coloring,11,"(20, [((0,1), (1,2), (2,3)), ((0,4), (1,5), (2,6)), ((0,7), (1,8), (2,9)), ((3,10), (4,11), (5,12)), ((3,14), (4,15), (5,16)), ((3,17), (4,18), (5,19)), ((6,20), (7,0), (8,1)), ((6,14), (7,15), (8,16)",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+2,k_coloring,k-coloring,12,"(10, [((0,1),(1,2)), ((0,2),(1,3)), ((0,3),(1,4)), ((1,4),(2,5)), ((2,5),(3,6)), ((3,6),(4,7)), ((4,7),(5,8)), ((5,8),(6,9)), ((6,9),(7,0))])",False,False,,isomorphism,第 1 条边包含非整数端点。
+2,k_coloring,k-coloring,13,"(10, [
+    (0,1), (0,2), (0,3),
+    (1,4), (1,5), (1,6),
+    (2,7), (2,8), (2,9),
+    (3,10), (3,11), (3,12),
+    (4,13), (4,14), (4,15),
+    (5,16), (5,17), (5,18),
+    (6,19), (6,20), (6,21),
+    (7",False,False,,isomorphism,第 10 条边端点越界（节点范围应为 0..9）。
+2,k_coloring,k-coloring,14,"(19, [(0,3), (1,4), (2,5), (3,6), (4,7), (5,8), (6,9), (7,0), (8,1), (9,2)])",True,False,,isomorphism,
+2,k_coloring,k-coloring,15,"(10, [(0,1),(1,2),(2,3),(3,4),(4,5),(5,6),(6,7),(7,8),(8,9),(9,0)])",True,False,,isomorphism,
+2,k_coloring,k-coloring,16,"(10, [((0,1), (1,2)), ((0,2), (2,3)), ((1,3), (3,4)), ((2,4), (4,5)), ((3,5), (5,0)), ((4,0), (0,3))])",False,False,,isomorphism,第 1 条边包含非整数端点。
+2,k_coloring,k-coloring,17,"Sure, I'd be happy to help!
+
+First, let's start by considering the number of nodes we need. Since we want to have 10 nodes and 32 edges, we can set n = 10.
+
+Next, we need to partition the nodes into 3",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：unterminated string literal (detected at line 1) (<unknown>, line 1)"
+2,k_coloring,k-coloring,18,"(10, [((0,1), (1,2)), ((0,2), (2,3)), ((0,3), (3,4)), ((1,4), (4,5)), ((2,5), (5,0)), ((3,0), (0,1))])",False,False,,isomorphism,第 1 条边包含非整数端点。
+2,k_coloring,k-coloring,19,"(10, [((0,1), (1,2)), ((1,2), (2,3)), ((2,3), (3,4)), ((3,4), (4,5)), ((4,5), (5,0)), ((5,0), (0,3)), ((0,3), (3,4))])",False,False,,isomorphism,第 1 条边包含非整数端点。
+2,k_coloring,k-coloring,20,"(10, [(0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,8), (8,9), (9,0)])",True,False,,isomorphism,
+2,k_coloring,k-coloring,21,"(10, [(0,1), (0,2), (0,4), (0,6), (0,8), (1,3), (1,5), (2,3), (2,5), (3,4), (4,6), (5,7), (6,8), (7,9), (8,9), (9,10)])",False,False,,isomorphism,第 16 条边端点越界（节点范围应为 0..9）。
+2,k_coloring,k-coloring,22,"(10, [(0,1),(1,2),(2,3),(3,4),(4,5),(5,6),(6,7),(7,8),(8,9),(9,0)])",True,False,,isomorphism,
+2,k_coloring,k-coloring,23,"(10, [(0, 1), (1, 2), (2, 3), (3, 4), (4, 5), (5, 6), (6, 7), (7, 8), (8, 9), (9, 0)])",True,False,,isomorphism,
+2,k_coloring,k-coloring,24,"(10, [(0,1),(1,2),(2,3),(3,4),(4,5),(5,6),(6,7),(7,8),(8,9),(9,0)])",True,False,,isomorphism,
+2,k_coloring,k-coloring,25,"(10, [(0,3), (0,6), (1,3), (1,5), (2,3), (2,7), (3,4), (3,8), (4,6), (5,8), (6,9)])",True,False,,isomorphism,
+2,k_coloring,k-coloring,26,"(10, [
+    (0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7), (0,8), (0,9),
+    (1,2), (1,3), (1,4), (1,5), (1,6), (1,7), (1,8), (1,9),
+    (2,3), (2,4), (2,5), (2,6), (2,7), (2,8), (2,9),
+    (3,4), (3",True,False,,isomorphism,
+2,k_coloring,k-coloring,27,"(10, [(0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,8), (8,9), (9,0)])",True,False,,isomorphism,
+2,k_coloring,k-coloring,28,"(10, [
+    (0, 1), 
+    (0, 2), 
+    (0, 3), 
+    (1, 4), 
+    (1, 5), 
+    (2, 6), 
+    (2, 7), 
+    (3, 8), 
+    (3, 9), 
+    (4, 10)
+])",False,False,,isomorphism,第 10 条边端点越界（节点范围应为 0..9）。
+2,k_coloring,k-coloring,29,"(10, [((0, 3), (1, 4), (2, 5)), ((3, 6), (4, 7), (5, 8))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+2,k_coloring,k-coloring,30,"(10, [((0,3), (1,4), (2,5)), ((6,7), (8,9)), ((3,4), (5,0))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+2,k_coloring,k-coloring,31,"(10, [(0,3), (1,4), (2,5), (3,6), (4,7), (5,8), (6,9)])",True,False,,isomorphism,
+2,k_coloring,k-coloring,32,"(10, [
+    (0,1), (1,2), (2,3), (3,4), (4,5), (5,6),
+    (6,7), (7,8), (8,0), (0,1), (1,7), (2,8),
+    (3,6), (4,5), (5,6), (6,7), (7,8), (8,0)
+])",True,False,,isomorphism,
+2,k_coloring,k-coloring,33,"(10, [((0,3), (1,4), (2,5)), ((6,8), (7,9)), ((0,1), (1,2), (2,3)), ((4,6), (5,7), (6,8)), ((0,2), (1,3), (2,4)), ((4,5), (5,6), (6,7)), ((0,4), (1,5), (2,6)), ((3,7), (4,8), (5,9))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+2,k_coloring,k-coloring,34,"(10, [((0,1),(1,2)),((0,2),(2,3)),((0,3),(3,4)),((1,4),(4,5)),((2,5),(5,0)),((3,0),(0,1))])",False,False,,isomorphism,第 1 条边包含非整数端点。
+2,k_coloring,k-coloring,35,"(10, [(0, 4), (1, 5), (2, 6), (3, 9), (4, 8), (5, 10), (0, 1), (1, 2), (2, 3), (3, 4), (4, 5), (5, 6), (6, 7), (7, 8), (8, 9)])",False,False,,isomorphism,第 6 条边端点越界（节点范围应为 0..9）。
+2,k_coloring,k-coloring,36,"(10, [((0,1),(1,2)), ((0,2),(2,3)), ((0,3),(3,4)), ((1,4),(4,5)), ((2,5),(5,0)), ((3,0),(0,1))])",False,False,,isomorphism,第 1 条边包含非整数端点。
+2,k_coloring,k-coloring,37,"(10, [((0,1),(1,2)), ((0,2),(2,3)), ((0,3),(3,4)), ((1,4),(4,5)), ((2,5),(5,0)), ((3,0),(0,1))])",False,False,,isomorphism,第 1 条边包含非整数端点。
+2,k_coloring,k-coloring,38,"(10, [
+    (0,1), (0,2), (0,3),
+    (1,4), (1,5), (1,6),
+    (2,7), (2,8), (2,9),
+    (3,10), (3,11), (3,12)
+])",False,False,,isomorphism,第 10 条边端点越界（节点范围应为 0..9）。
+2,k_coloring,k-coloring,39,"(10, [(0,1), (0,2), (0,3), (1,4), (1,5), (2,6), (2,7), (3,8), (3,9), (4,9), (5,8), (6,7), (7,8), (8,9), (9,0)])",True,False,,isomorphism,
+2,k_coloring,k-coloring,40,"(10, [
+    (0,1), (1,2), (2,3), (3,0),
+    (1,4), (2,5), (4,1),
+    (0,3), (1,5)
+])",True,False,,isomorphism,
+2,k_coloring,k-coloring,41,"(10, [(0,5), (1,6), (2,7), (3,8), (4,9), (0,10), (1,11), (2,12), (3,13), (4,14)])",False,False,,isomorphism,第 6 条边端点越界（节点范围应为 0..9）。
+2,k_coloring,k-coloring,42,"(10, [((0,1), (1,2)), ((0,2), (2,3)), ((0,3), (3,4)), ((1,4), (4,5)), ((2,5), (5,0)), ((3,0), (0,3))])",False,False,,isomorphism,第 1 条边包含非整数端点。
+2,k_coloring,k-coloring,43,"(10, [((0,1),(1,2)), ((0,2),(1,3)), ((0,3),(1,4)), ((1,2),(2,5)), ((1,3),(2,6)), ((1,4),(2,7)), ((2,3),(3,8)), ((2,4),(3,9)), ((3,4),(4,0))])",False,False,,isomorphism,第 1 条边包含非整数端点。
+2,k_coloring,k-coloring,44,"(10, [(0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,8), (8,9), (9,0)])",True,False,,isomorphism,
+2,k_coloring,k-coloring,45,"(10, [
+    (0,1), (1,2), (2,3), (3,4), (4,5), (5,6),
+    (0,7), (1,8), (2,9), (3,10),
+    (4,11), (5,12), (6,13), (7,14), (8,9), (9,10)
+])",False,False,,isomorphism,第 10 条边端点越界（节点范围应为 0..9）。
+2,k_coloring,k-coloring,46,"(10, [((0,1),(1,2)),((0,2),(1,3)),((0,3),(1,4)),((1,4),(2,5)),((2,5),(3,6)),((3,6),(4,7)),((4,7),(5,8)),((5,8),(6,9)),((6,9),(7,0))])",False,False,,isomorphism,第 1 条边包含非整数端点。
+2,k_coloring,k-coloring,47,"(10, [((0,1), (1,2)), ((0,2), (1,3)), ((0,3), (1,4)), ((2,3), (3,4)), ((2,4), (3,5)), ((3,4), (4,5)), ((3,5), (4,0)), ((4,5), (5,0)), ((5,0), (0,3))])",False,False,,isomorphism,第 1 条边包含非整数端点。
+2,k_coloring,k-coloring,48,"(10, [
+    (0, 3),
+    (1, 4),
+    (2, 5),
+    (3, 0),
+    (4, 1),
+    (5, 2),
+    (6, 7),
+    (7, 8),
+    (8, 9),
+    (9, 0)
+])",True,False,,isomorphism,
+2,k_coloring,k-coloring,49,"(10, [(0,1,3), (0,2,4), (0,3,5), (1,2,6), (1,3,7), (2,3,8), (2,4,9), (3,4,10), (3,5,11), (4,5,12)])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+2,k_coloring,k-coloring,50,"(10, [
+    (0, 2),
+    (1, 3),
+    (2, 4),
+    (3, 5),
+    (4, 6),
+    (5, 7),
+    (6, 8),
+    (7, 9),
+    (8, 10),
+    (9, 0)
+])",False,False,,isomorphism,第 9 条边端点越界（节点范围应为 0..9）。
+2,k_coloring,k-coloring,51,"(10, [(0, 1), (0, 2), (1, 3), (2, 4), (3, 5), (4, 6), (5, 7), (6, 8), (7, 9), (8, 0)])",True,False,,isomorphism,
+2,k_coloring,k-coloring,52,"(10, [(0,3), (0,1), (0,2), (1,3), (1,4), (2,3), (2,1), (3,4), (3,5), (4,5), (6,7), (6,8), (7,8), (7,9), (8,9)])",True,False,,isomorphism,
+2,k_coloring,k-coloring,53,"(10, [((0,1),(1,2)), ((0,2),(2,3)), ((0,3),(3,4)), ((1,4),(4,5)), ((2,5),(5,0)), ((3,0),(0,1))])",False,False,,isomorphism,第 1 条边包含非整数端点。
+2,k_coloring,k-coloring,54,"(10, [(0,1),(1,2),(2,3),(3,4),(4,5),(5,6),(6,7),(7,8),(8,9),(9,1)])",True,False,,isomorphism,
+2,k_coloring,k-coloring,55,"(10, [((0,1), (1,2)), ((0,2), (2,3)), ((0,3), (3,4)), ((1,4), (4,5)), ((2,5), (5,0)), ((3,0), (0,1))])",False,False,,isomorphism,第 1 条边包含非整数端点。
+2,k_coloring,k-coloring,56,"(10, [(0, 1), (1, 2), (2, 3), (3, 4), (4, 5), (5, 6), (6, 7), (7, 8), (8, 9), (9, 10)])",False,False,,isomorphism,第 10 条边端点越界（节点范围应为 0..9）。
+2,k_coloring,k-coloring,57,"(10, [
+    (0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7), (0,8), (0,9),
+    (1,2), (1,3), (1,4), (1,5), (1,6), (1,7), (1,8), (1,9),
+    (2,3), (2,4), (2,5), (2,6), (2,7), (2,8), (2,9),
+    (3,4), (3",True,False,,isomorphism,
+2,k_coloring,k-coloring,58,"Sure! Here's my reasoning and the final graph:
+
+1. A 3-colorable graph can be vertex-colored with 3 colors such that no two adjacent vertices share the same color.
+
+To ensure that the graph is 3-color",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：unterminated string literal (detected at line 1) (<unknown>, line 1)"
+2,k_coloring,k-coloring,59,"(10, [((0,1), (1,2), (2,3)), ((3,4), (4,5), (5,6)), ((6,7), (7,8), (8,9)), ((0,3), (3,4), (4,5)), ((1,2), (2,3), (3,4)), ((5,6), (6,7), (7,8)), ((8,9), (9,0), (0,1))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+2,k_coloring,k-coloring,60,"(10, [
+    (0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7), (0,8), (0,9),
+    (1,2), (1,3), (1,4), (1,5), (1,6), (1,7), (1,8), (1,9),
+    (2,3), (2,4), (2,5), (2,6), (2,7), (2,8), (2,9),
+    (3,4), (3",True,False,,isomorphism,
+2,k_coloring,k-coloring,61,"(10, [(0,1),(1,2),(2,3),(3,4),(4,5),(5,6),(6,7),(7,8),(8,0),(0,2),(2,4),(1,3),(3,5),(5,6),(6,7),(7,8)])",True,False,,isomorphism,
+2,k_coloring,k-coloring,62,"(10, [
+    (0, 1),
+    (1, 2),
+    (2, 3),
+    (3, 4),
+    (4, 5),
+    (5, 6),
+    (6, 7),
+    (7, 8),
+    (8, 9),
+    (9, 0)
+])",True,False,,isomorphism,
+2,k_coloring,k-coloring,63,"(10, [
+    (0, 1),  (0, 2),  (0, 3),
+    (1, 2),  (1, 4),  (1, 5),
+    (2, 3),  (2, 6),  (2, 7),
+    (3, 4),  (3, 8),  (3, 9),
+    (4, 5),  (4, 6),  (4, 7),
+    (5, 8),  (5, 9),  (5, 0),
+    (6, 7),  ",True,False,,isomorphism,
+2,k_coloring,k-coloring,64,"(10, [((0, 1), (1, 2), (2, 3)), ((4, 5), (5, 6), (6, 7)), ((8, 9), (9, 0), (0, 3))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+2,k_coloring,k-coloring,65,"(10, [((0,1), (1,2), (2,3)), ((0,4), (4,5), (5,0)), ((1,6), (2,7), (3,8)), ((4,9), (5,10), (0,9))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+2,k_coloring,k-coloring,66,"(10, [((0, 2), (1, 3), (2, 4), (3, 5), (4, 6), (5, 7), (6, 8), (7, 9), (8, 10))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+2,k_coloring,k-coloring,67,"(10, [
+    (0, 2), (0, 3), (0, 4), (1, 2), (1, 5), (2, 3), (2, 6), (3, 4), (3, 7), (4, 5), (4, 8), (5, 6), (5, 9), (6, 7), (6, 8), (7, 8), (7, 9), (8, 9)
+])",True,False,,isomorphism,
+2,k_coloring,k-coloring,68,"(10, [(0, 2), (1, 3), (2, 4), (3, 5), (4, 6), (5, 7), (6, 8), (7, 9), (8, 0)])",True,False,,isomorphism,
+2,k_coloring,k-coloring,69,"(10, [
+    (0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7), (0,8), (0,9),
+    (1,2), (1,3), (1,4), (1,5), (1,6), (1,7), (1,8), (1,9),
+    (2,3), (2,4), (2,5), (2,6), (2,7), (2,8), (2,9),
+    (3,4), (3",True,False,,isomorphism,
+2,k_coloring,k-coloring,70,"(10, [(0,5),(1,6),(2,7),(3,8),(4,9),(5,1),(6,2),(7,3),(8,4)])",True,False,,isomorphism,
+2,k_coloring,k-coloring,71,"(10, [(0,1),(1,2),(2,3),(3,4),(4,5),(5,6),(6,7),(7,8),(8,9),(9,0)])",True,False,,isomorphism,
+2,k_coloring,k-coloring,72,"(10, [((0,1), (1,2), (2,3)), ((0,4), (1,5), (2,6)), ((3,7), (4,8), (5,9)), ((7,0), (8,1), (9,2))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+2,k_coloring,k-coloring,73,"(10, [((0, 1), (1, 2), (2, 3), (3, 4), (4, 5), (5, 6), (6, 7), (7, 8), (8, 9), (0, 3), (1, 5), (2, 7), (3, 9)])",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：closing parenthesis ']' does not match opening parenthesis '(' (<unknown>, line 1)"
+2,k_coloring,k-coloring,74,"(10, [
+    (0, 3), (1, 4), (2, 5), (3, 6), (4, 7), (5, 8), (6, 9),
+    (7, 10), (8, 11), (9, 0)
+])",False,False,,isomorphism,第 8 条边端点越界（节点范围应为 0..9）。
+2,k_coloring,k-coloring,75,"(10, [((0, 1), (1, 2), (2, 3), (3, 4), (4, 5), (5, 6), (6, 7), (7, 8), (8, 9), (9, 10))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+2,k_coloring,k-coloring,76,"(10, [((0,3), (1,4), (2,5)), ((3,0), (4,1), (5,2)), ((6,7), (7,8), (8,0))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+2,k_coloring,k-coloring,77,"(10, [(0, 2), (0, 4), (0, 6), (1, 2), (1, 3), (1, 5), (2, 3), (2, 5), (3, 4), (3, 6), (4, 6), (5, 7), (5, 9), (6, 7), (6, 9), (7, 8), (7, 10), (8, 9), (9, 10)])",False,False,,isomorphism,第 17 条边端点越界（节点范围应为 0..9）。
+2,k_coloring,k-coloring,78,"(10, [(0,1),(1,2),(2,3),(3,4),(4,5),(5,6),(6,0),(0,3),(1,7),(2,8),(3,9),(4,10),(5,0)])",False,False,,isomorphism,第 12 条边端点越界（节点范围应为 0..9）。
+2,k_coloring,k-coloring,79,"(10, [((0,1),(1,2),(2,3)),((3,4),(4,5),(5,6)),((6,7),(7,8),(8,9))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+2,k_coloring,k-coloring,80,"(10, [(0,1),(1,2),(2,3),(3,4),(4,5),(5,6),(6,7),(7,8),(8,0)])",True,False,,isomorphism,
+2,k_coloring,k-coloring,81,"(10, [((0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,8), (8,0))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+2,k_coloring,k-coloring,82,"(10, [((0,1), (1,2)), ((0,2), (2,3)), ((0,3), (3,4)), ((1,4), (4,5)), ((2,5), (5,0)), ((3,0), (0,1))])",False,False,,isomorphism,第 1 条边包含非整数端点。
+2,k_coloring,k-coloring,83,"(10, [(0,3), (1,4), (2,5), (3,6), (4,7), (5,8), (6,1), (7,2), (8,3), (9,0)])",True,False,,isomorphism,
+2,k_coloring,k-coloring,84,"Sure, I'd be happy to help! Here's my reasoning and the final graph:
+
+Reasoning:
+
+1. A 3-colorable graph can be vertex-colored with 3 colors such that no two adjacent vertices share the same color. Th",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：unterminated string literal (detected at line 6) (<unknown>, line 6)"
+2,k_coloring,k-coloring,85,"(10, [(0, 1), (0, 2), (0, 3), (0, 4), (0, 6), (0, 7), (0, 9), (1, 2), (1, 3), (1, 5), (1, 7), (2, 3), (2, 4), (2, 6), (3, 4), (3, 6), (3, 7), (4, 5), (4, 7), (5, 6), (5, 7), (6, 7), (7, 8), (7, 9), (8",False,False,,isomorphism,第 26 条边端点越界（节点范围应为 0..9）。
+2,k_coloring,k-coloring,86,"(10, [(0, 1), (0, 3), (1, 2), (1, 4), (2, 3), (2, 5), (3, 4), (3, 7), (4, 6), (5, 7), (6, 8), (1, 0), (2, 9), (3, 8), (4, 7), (5, 6), (6, 1), (7, 3), (8, 9)])",True,False,,isomorphism,
+2,k_coloring,k-coloring,87,"(10, [
+    (0, 1),
+    (0, 2),
+    (1, 3),
+    (2, 4),
+    (3, 5),
+    (4, 6),
+    (5, 7),
+    (6, 8),
+    (7, 9),
+    (8, 10),
+    (9, 11),
+    (10, 12),
+    (11, 13),
+    (12, 14)
+])",False,False,,isomorphism,第 10 条边端点越界（节点范围应为 0..9）。
+2,k_coloring,k-coloring,88,"(10, [(0,1),(1,2),(2,3),(3,4),(4,5),(5,6),(6,7),(7,8),(8,9),(9,0)])",True,False,,isomorphism,
+2,k_coloring,k-coloring,89,"(10, [((0, 3), (1, 2), (2, 5)), ((3, 6), (4, 7), (5, 8)), ((0, 1), (1, 4), (2, 5)), ((3, 4), (4, 5), (5, 8)), ((6, 7), (7, 8))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+2,k_coloring,k-coloring,90,"(10, [('0', '1'), ('0', '2'), ('0', '3'), ('0', '4'), ('0', '5'), ('0', '6'), ('0', '7'), ('0', '8'), ('0', '9')])",True,False,,isomorphism,
+2,k_coloring,k-coloring,91,"(10, [(0,3), (1,4), (2,5), (3,6), (4,7), (5,8), (6,9), (7,0)])",True,False,,isomorphism,
+2,k_coloring,k-coloring,92,"(10, [(0,2), (1,3), (2,4), (3,5), (4,6), (5,7), (6,8), (7,9), (0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,8), (8,9)])",True,False,,isomorphism,
+2,k_coloring,k-coloring,93,"(10, [
+    (0, 2),
+    (1, 3),
+    (2, 4),
+    (3, 5),
+    (4, 6),
+    (5, 7),
+    (6, 8),
+    (7, 9),
+    (8, 10),
+    (0, 4),
+    (1, 3),
+    (2, 5),
+    (3, 7),
+    (4, 8),
+    (5, 6),
+    (6, 2),
+",False,False,,isomorphism,第 9 条边端点越界（节点范围应为 0..9）。
+2,k_coloring,k-coloring,94,"(10, [((0, 1), (1, 2), (2, 3)), ((0, 4), (4, 5), (5, 6)), ((7, 8), (8, 9), (9, 0))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+2,k_coloring,k-coloring,95,"(10, [(0,3), (1,4), (2,5), (3,6), (4,7), (5,8), (6,7), (7,8), (8,9)])",True,False,,isomorphism,
+2,k_coloring,k-coloring,96,"(10, [((0,1),(1,2)),((0,2),(2,3)),((0,3),(3,4)),((1,4),(4,5)),((2,5),(5,0)),((3,0),(0,1))])",False,False,,isomorphism,第 1 条边包含非整数端点。
+2,k_coloring,k-coloring,97,"(10, [
+    (0, 1), (0, 4), (0, 8),
+    (1, 2), (1, 5), (1, 9),
+    (2, 3), (2, 6), (2, 10),
+    (3, 4), (3, 8), (3, 9),
+    (4, 5), (4, 9), (4, 0),
+    (5, 6), (5, 10), (5, 0),
+    (6, 7), (6, 8), (6,",False,False,,isomorphism,第 9 条边端点越界（节点范围应为 0..9）。
+2,k_coloring,k-coloring,98,"(10, [((0,1), (1,2), (2,3)), ((0,4), (1,5), (2,6)), ((3,7), (4,8), (5,9)), ((0,7), (1,8), (2,9))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+2,k_coloring,k-coloring,99,"(10, [(0,1), (0,3), (1,2), (1,4), (2,3), (2,4), (3,4)])",True,False,,isomorphism,
+2,k_coloring,k-coloring,100,"(10, [
+    (0, 1),  (0, 2),  (0, 3),  (1, 4),  (1, 5),  (2, 6),  (2, 7),  (3, 8),  (3, 9)
+])",True,False,,isomorphism,

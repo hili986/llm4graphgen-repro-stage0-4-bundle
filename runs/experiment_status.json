@@ -82,5 +82,53 @@
     "error_detail": null,
     "output_dir": null,
     "log_tail": "  [GIN] 从缓存加载模型: cache\\gin_molhiv_99653e15.pt\n  [Stage4] LLM 调用 1: 获取 50 个分子 (累计 50)\n  [Stage4] LLM 调用 2: 获取 52 个分子 (累计 102)\nStage4 运行完成：runs/stage4_gpt-4_few_shot_cot_gin_100g_20260219_060725\n结果文件：property_metrics.csv / property_samples.csv / llm_io.jsonl"
+  },
+  "stage2_Llama-2-13b-chat-hf_zero_shot_small_100s_r3": {
+    "name": "stage2_Llama-2-13b-chat-hf_zero_shot_small_100s_r3",
+    "status": "completed",
+    "start_time": "2026-03-02T19:01:54",
+    "end_time": "2026-03-02T22:11:30",
+    "duration_sec": 11376.0,
+    "return_code": 0,
+    "error_type": null,
+    "error_detail": null,
+    "output_dir": "runs/stage2_Llama-2-13b-chat-hf_zero_shot_small_100s_r3_20260302_190154",
+    "log_tail": "Stage2 LLaMA-2 zero_shot 运行完成"
+  },
+  "stage2_Llama-2-13b-chat-hf_zero_shot_cot_small_100s_r3": {
+    "name": "stage2_Llama-2-13b-chat-hf_zero_shot_cot_small_100s_r3",
+    "status": "completed",
+    "start_time": "2026-03-02T22:11:30",
+    "end_time": "2026-03-03T21:21:35",
+    "duration_sec": 83405.0,
+    "return_code": 0,
+    "error_type": null,
+    "error_detail": null,
+    "output_dir": "runs/stage2_Llama-2-13b-chat-hf_zero_shot_cot_small_100s_r3_20260302_221130",
+    "log_tail": "Stage2 LLaMA-2 zero_shot_cot 运行完成"
+  },
+  "stage2_Llama-2-13b-chat-hf_few_shot_small_100s_r3": {
+    "name": "stage2_Llama-2-13b-chat-hf_few_shot_small_100s_r3",
+    "status": "completed",
+    "start_time": "2026-03-03T21:21:35",
+    "end_time": "2026-03-03T23:03:13",
+    "duration_sec": 6098.0,
+    "return_code": 0,
+    "error_type": null,
+    "error_detail": null,
+    "output_dir": "runs/stage2_Llama-2-13b-chat-hf_few_shot_small_100s_r3_20260303_212135",
+    "log_tail": "Stage2 LLaMA-2 few_shot 运行完成 (max_tokens=2048)"
+  },
+  "stage2_Llama-2-13b-chat-hf_few_shot_cot_small_100s_r3": {
+    "name": "stage2_Llama-2-13b-chat-hf_few_shot_cot_small_100s_r3",
+    "status": "completed",
+    "start_time": "2026-03-03T23:03:13",
+    "end_time": "2026-03-04T08:00:00",
+    "duration_sec": 32207.0,
+    "return_code": 0,
+    "error_type": null,
+    "error_detail": null,
+    "output_dir": "runs/stage2_Llama-2-13b-chat-hf_few_shot_cot_small_100s_r3_20260303_230313",
+    "log_tail": "Stage2 LLaMA-2 few_shot_cot 运行完成 (max_tokens=2048)"
   }
 }

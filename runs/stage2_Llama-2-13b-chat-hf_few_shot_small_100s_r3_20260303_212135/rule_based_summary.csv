@@ -1,0 +1,9 @@
+﻿task_id,task_name,strategy,size,n,unique_method,num_repeats,valid_rate_mean,valid_rate_std,valid_rate_display,unique_rate_mean,unique_rate_std,unique_rate_display,novel_rate_mean,novel_rate_std,novel_rate_display
+tree,Tree,few_shot,small,8,isomorphism,3,0.3,0.1,29.3±5.8,0.1152,0.0108,11.5±1.1,0.6945,0.0393,69.4±3.9
+cycle,Cycle,few_shot,small,10,isomorphism,3,1.0,0.0,100.0±0.0,0.0100,0.0000,1.0±0.0,1.0000,0.0000,100.0±0.0
+planar,Planar,few_shot,small,8,isomorphism,3,0.0,0.0,1.7±0.5,1.0000,0.0000,100.0±0.0,1.0000,0.0000,100.0±0.0
+components,#Components,few_shot,small,8,isomorphism,3,0.0,0.0,0.3±0.5,0.3333,0.4714,33.3±47.1,0.3333,0.4714,33.3±47.1
+k_regular,k-regular,few_shot,small,12,isomorphism,3,0.0,0.0,0.0±0.0,0.0000,0.0000,0.0±0.0,0.0000,0.0000,0.0±0.0
+wheel,Wheel,few_shot,small,8,isomorphism,3,0.0,0.0,0.0±0.0,0.0000,0.0000,0.0±0.0,0.0000,0.0000,0.0±0.0
+bipartite,Bipartite,few_shot,small,6,isomorphism,3,1.0,0.0,100.0±0.0,0.0100,0.0000,1.0±0.0,0.0000,0.0000,0.0±0.0
+k_coloring,k-coloring,few_shot,small,10,isomorphism,3,0.0,0.0,0.0±0.0,0.0000,0.0000,0.0±0.0,0.0000,0.0000,0.0±0.0

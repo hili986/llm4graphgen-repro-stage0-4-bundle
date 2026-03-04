@@ -1,0 +1,1952 @@
+﻿repeat,task_id,task_name,sample_id,raw_output,parse_success,is_valid,unique_key,unique_method,parse_failure_reason
+1,tree,Tree,1,"(0, [('1', '0'), ('2', '1'), ('3', '2'), ('4', '3'), ('5', '4'), ('6', '5'), ('7', '6'), ('8', '7')])",False,False,,isomorphism,第 1 条边端点越界（节点范围应为 0..-1）。
+1,tree,Tree,2,"(8, [
+    (0, 1),
+    (1, 2),
+    (2, 3),
+    (3, 4),
+    (4, 5),
+    (5, 6),
+    (6, 7),
+    (7, 0)
+])",True,False,,isomorphism,
+1,tree,Tree,3,"Sure, I'd be happy to help! Here's my reasoning step by step:
+
+1. Start with node 0.
+
+So, our graph will start with one node labeled 0.
+
+2. Connect each new node to exactly one existing node.
+
+For eac",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：unterminated string literal (detected at line 15) (<unknown>, line 15)"
+1,tree,Tree,4,"(0, [(0,0), (1,1), (2,2), (3,3), (4,4), (5,5), (6,6)])",False,False,,isomorphism,第 1 条边端点越界（节点范围应为 0..-1）。
+1,tree,Tree,6,"(8, [(0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,0)])",True,False,,isomorphism,
+1,tree,Tree,8,"(8, [(0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,0)])",True,False,,isomorphism,
+1,tree,Tree,9,"(8, [(0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,8)])",False,False,,isomorphism,第 8 条边端点越界（节点范围应为 0..7）。
+1,tree,Tree,10,"(8, [(7, 8)])",False,False,,isomorphism,第 1 条边端点越界（节点范围应为 0..7）。
+1,tree,Tree,11,"(8, [((0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,0))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,tree,Tree,13,"(8, [(0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,8)])",False,False,,isomorphism,第 8 条边端点越界（节点范围应为 0..7）。
+1,tree,Tree,14,"(8, [(0, 1), (1, 2), (2, 3), (3, 4), (4, 5), (5, 6), (6, 7), (7, 8)])",False,False,,isomorphism,第 8 条边端点越界（节点范围应为 0..7）。
+1,tree,Tree,15,"(1, [(1, 2)])",False,False,,isomorphism,第 1 条边端点越界（节点范围应为 0..0）。
+1,tree,Tree,16,"(8, [(0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,8)])",False,False,,isomorphism,第 8 条边端点越界（节点范围应为 0..7）。
+1,tree,Tree,17,"(8, [(0,0), (1,1), (2,2), (3,3), (4,4), (5,5), (6,6), (7,7), (8,8)])",False,False,,isomorphism,第 9 条边端点越界（节点范围应为 0..7）。
+1,tree,Tree,19,"(7, [6])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,tree,Tree,20,"(8, [(0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,8)])",False,False,,isomorphism,第 8 条边端点越界（节点范围应为 0..7）。
+1,tree,Tree,23,"(8, [((0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,0))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,tree,Tree,24,"(0, [('0', '1'), ('0', '2'), ('0', '3'), ('0', '4'), ('0', '5'), ('0', '6'), ('0', '7')])",False,False,,isomorphism,第 1 条边端点越界（节点范围应为 0..-1）。
+1,tree,Tree,25,"(8, [('0', '1'), ('1', '2'), ('2', '3'), ('3', '4'), ('4', '5'), ('5', '6')])",True,False,,isomorphism,
+1,tree,Tree,26,"(8, [(0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,8)])",False,False,,isomorphism,第 8 条边端点越界（节点范围应为 0..7）。
+1,tree,Tree,27,"(8, [
+    (0,1),
+    (1,2),
+    (2,3),
+    (3,4),
+    (4,5),
+    (5,6),
+    (6,7),
+    (7,0)
+])",True,False,,isomorphism,
+1,tree,Tree,28,"(8, [(0, 1), (1, 2), (2, 3), (3, 4), (4, 5), (5, 6), (6, 7), (7, 8)])",False,False,,isomorphism,第 8 条边端点越界（节点范围应为 0..7）。
+1,tree,Tree,29,"(7, [6])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,tree,Tree,31,"(8, [('0', '1'), ('1', '2'), ('2', '3'), ('3', '4'), ('4', '5'), ('5', '6')])",True,False,,isomorphism,
+1,tree,Tree,32,"(8, [(0,1), (0,2), (0,3), (1,4), (1,5), (2,6), (2,7), (3,7)])",True,False,,isomorphism,
+1,tree,Tree,33,"(4, [('3', '4')])",False,False,,isomorphism,第 1 条边端点越界（节点范围应为 0..3）。
+1,tree,Tree,34,"(6, [5])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,tree,Tree,35,"(8, [(0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,8)])",False,False,,isomorphism,第 8 条边端点越界（节点范围应为 0..7）。
+1,tree,Tree,36,"(0, [(0,1), (1,2), (2,3), (3,4), (4,5), (5,6)])",False,False,,isomorphism,第 1 条边端点越界（节点范围应为 0..-1）。
+1,tree,Tree,37,"(8, [((0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,0))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,tree,Tree,38,"(8, [(""0"", ""1""), (""1"", ""2""), (""2"", ""3""), (""3"", ""4""), (""4"", ""5""), (""5"", ""6""), (""6"", ""7""), (""7"", ""8"")])",False,False,,isomorphism,第 8 条边端点越界（节点范围应为 0..7）。
+1,tree,Tree,39,"(8, [(0, 1), (1, 2), (2, 3), (3, 4), (4, 5), (5, 6)])",True,False,,isomorphism,
+1,tree,Tree,40,"(0, [(0,1), (2,0), (3,1), (4,2), (5,3), (6,4), (7,6)])",False,False,,isomorphism,第 1 条边端点越界（节点范围应为 0..-1）。
+1,tree,Tree,41,"(7, [(6, 7)])",False,False,,isomorphism,第 1 条边端点越界（节点范围应为 0..6）。
+1,tree,Tree,43,"(8, [(0, 1), (1, 2), (2, 3), (3, 4), (4, 5), (5, 6)])",True,False,,isomorphism,
+1,tree,Tree,44,"(8, [(0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,8)])",False,False,,isomorphism,第 8 条边端点越界（节点范围应为 0..7）。
+1,tree,Tree,45,"(8, [(""0"", ""1""), (""0"", ""2""), (""0"", ""3""), (""1"", ""4""), (""1"", ""5""), (""2"", ""6""), (""2"", ""7""), (""3"", ""7"")])",True,False,,isomorphism,
+1,tree,Tree,46,"(8, [((0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,0))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,tree,Tree,48,"(0, [('0', '1')])",False,False,,isomorphism,第 1 条边端点越界（节点范围应为 0..-1）。
+1,tree,Tree,51,"(0, [(0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7)])",False,False,,isomorphism,第 1 条边端点越界（节点范围应为 0..-1）。
+1,tree,Tree,52,"(8, [(0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,8)])",False,False,,isomorphism,第 8 条边端点越界（节点范围应为 0..7）。
+1,tree,Tree,53,"(0, [(0,1), (2,0), (3,1), (4,2), (5,3), (6,4)])",False,False,,isomorphism,第 1 条边端点越界（节点范围应为 0..-1）。
+1,tree,Tree,54,"(0, [('0', '1'), ('1', '2'), ('2', '3'), ('3', '4'), ('4', '5'), ('5', '6')])",False,False,,isomorphism,第 1 条边端点越界（节点范围应为 0..-1）。
+1,tree,Tree,55,"(8, [(0, 1), (1, 2), (2, 3), (3, 4), (4, 5), (5, 6), (6, 7), (7, 8)])",False,False,,isomorphism,第 8 条边端点越界（节点范围应为 0..7）。
+1,tree,Tree,57,"(8, [(0, 1), (1, 2), (2, 3), (3, 4), (4, 5), (5, 6), (6, 7), (7, 0)])",True,False,,isomorphism,
+1,tree,Tree,59,"(8, [(0, 1), (1, 2), (2, 3), (3, 4), (4, 5), (5, 6), (6, 7), (7, 8)])",False,False,,isomorphism,第 8 条边端点越界（节点范围应为 0..7）。
+1,tree,Tree,60,"(8, [(0,1), (1,2), (2,3), (3,4), (4,5), (5,6)])",True,False,,isomorphism,
+1,tree,Tree,61,"(8, [7])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,tree,Tree,64,"(7, [6])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,tree,Tree,65,"(8, [((0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,tree,Tree,66,"(8, [
+  (0, 1),
+  (1, 2),
+  (2, 3),
+  (3, 4),
+  (4, 5),
+  (5, 6),
+  (6, 7),
+  (7, 0)
+])",True,False,,isomorphism,
+1,tree,Tree,67,"(8, [
+    (0, [])",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：'[' was never closed (<unknown>, line 1)"
+1,tree,Tree,68,"(0, [(0,0), (1,0), (2,1), (3,2), (4,3), (5,4), (6,5), (7,6), (8,7)])",False,False,,isomorphism,第 1 条边端点越界（节点范围应为 0..-1）。
+1,tree,Tree,69,"(8, [(0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,8)])",False,False,,isomorphism,第 8 条边端点越界（节点范围应为 0..7）。
+1,tree,Tree,70,"(8, [((0, 1), (1, 2), (2, 3), (3, 4), (4, 5), (5, 6))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,tree,Tree,73,"(8, [('0', '0'), ('1', '0'), ('2', '1'), ('3', '2'), ('4', '3'), ('5', '4'), ('6', '5'), ('7', '6')])",True,False,,isomorphism,
+1,tree,Tree,74,"(8, [('0', '1'), ('1', '2'), ('2', '3'), ('3', '0'), ('4', '2'), ('5', '3'), ('6', '4'), ('7', '5'), ('8', '7')])",False,False,,isomorphism,第 9 条边端点越界（节点范围应为 0..7）。
+1,tree,Tree,75,"(0, [(0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7)])",False,False,,isomorphism,第 1 条边端点越界（节点范围应为 0..-1）。
+1,tree,Tree,76,"(8, [((0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,8))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,tree,Tree,79,"(8, [(0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,0)])",True,False,,isomorphism,
+1,tree,Tree,80,"(8, [('0', '1'), ('1', '2'), ('2', '3'), ('3', '4'), ('4', '5'), ('5', '6'), ('6', '7'), ('7', '8')])",False,False,,isomorphism,第 8 条边端点越界（节点范围应为 0..7）。
+1,tree,Tree,86,"(8, [('0', '1'), ('1', '2'), ('2', '3'), ('3', '4'), ('4', '5'), ('5', '6'), ('6', '7'), ('7', '0')])",True,False,,isomorphism,
+1,tree,Tree,87,"(0, [(0, 1), (0, 2), (1, 3), (2, 4), (3, 5), (4, 6), (5, 7)])",False,False,,isomorphism,第 1 条边端点越界（节点范围应为 0..-1）。
+1,tree,Tree,88,"(8, [('0', '1'), ('1', '2'), ('2', '3'), ('3', '4'), ('4', '5')])",True,False,,isomorphism,
+1,tree,Tree,90,"(0, [(""0"", ""7""), (""1"", ""7""), (""2"", ""7""), (""3"", ""7""), (""4"", ""7""), (""5"", ""7""), (""6"", ""7"")])",False,False,,isomorphism,第 1 条边端点越界（节点范围应为 0..-1）。
+1,tree,Tree,91,"(6, [5])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,tree,Tree,92,"(6, [(6, 7)])",False,False,,isomorphism,第 1 条边端点越界（节点范围应为 0..5）。
+1,tree,Tree,93,"(8, [('0', '0'), ('1', '1'), ('2', '2'), ('3', '3'), ('4', '4'), ('5', '5'), ('6', '6'), ('7', '7')])",True,False,,isomorphism,
+1,tree,Tree,94,"(7, [6])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,tree,Tree,95,"(0, [])",True,False,,isomorphism,
+1,tree,Tree,96,"(0, [(0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,8)])",False,False,,isomorphism,第 1 条边端点越界（节点范围应为 0..-1）。
+1,tree,Tree,98,"(8, [('0', '1'), ('0', '2'), ('1', '3'), ('1', '4'), ('2', '5'), ('2', '6'), ('3', '7'), ('4', '7')])",True,False,,isomorphism,
+1,cycle,Cycle,1,"(10, [
+    (0, 1),
+    (0, 2),
+    (0, 3),
+    (0, 4),
+    (0, 5),
+    (0, 6),
+    (0, 7),
+    (0, 8),
+    (0, 9),
+    (9, 0)
+])",True,False,,isomorphism,
+1,cycle,Cycle,3,"(10, [((0,1), (1,2), (2,3), ..., (9,0))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,cycle,Cycle,4,"(10, [((0, 1), (1, 2), (2, 3), (3, 4), (4, 5), (5, 6), (6, 7), (7, 8), (8, 9), (9, 0))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,cycle,Cycle,5,"(10, [(0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7), (0,8), (0,9), (9,0)])",True,False,,isomorphism,
+1,cycle,Cycle,6,"(10, [((0, 1), (1, 2), (2, 3), ..., (9, 8), (8, 0))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,cycle,Cycle,8,"(10, [('0', '1'), ('0', '9'), ('1', '2'), ('1', '3'), ('2', '3'), ('2', '4'), ('3', '4'), ('3', '5'), ('4', '5'), ('4', '6'), ('5', '6'), ('5', '7'), ('6', '7'), ('6', '8'), ('7', '8'), ('7', '9'), ('",True,False,,isomorphism,
+1,cycle,Cycle,9,"Sure, I'd be happy to help! Here's my reasoning and the final graph:
+
+1. First, let's create a path visiting all 10 nodes: 0-1-2-...-9.
+
+Node 0 has no edges, so we'll start there.
+
+Node 1 has one edge",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：unterminated string literal (detected at line 3) (<unknown>, line 3)"
+1,cycle,Cycle,10,"(10, [((0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,8), (8,9), (9,0))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,cycle,Cycle,12,"(10, [((0,1), (1,2), (2,3)), ((3,4), (4,5), (5,6)), ((6,7), (7,8), (8,9)), ((9,0))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,cycle,Cycle,13,"(10, [((0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,8), (8,9), (9,0))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,cycle,Cycle,14,"(10, [('0', '1'), ('0', '2'), ('0', '3'), ('0', '4'), ('0', '5'), ('0', '6'), ('0', '7'), ('0', '8'), ('0', '9')])",True,False,,isomorphism,
+1,cycle,Cycle,15,"Sure, I can help you with that! Here's my reasoning:
+
+1. First, let's create a path visiting all 10 nodes: 0-1-2-...-9. We can do this by starting at node 0 and traversing the path in a loop, adding e",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：unterminated string literal (detected at line 1) (<unknown>, line 1)"
+1,cycle,Cycle,17,"(10, [
+    (0, 1),
+    (0, 2),
+    (0, 3),
+    (0, 4),
+    (0, 5),
+    (0, 6),
+    (0, 7),
+    (0, 8),
+    (0, 9),
+    (9, 0)
+])",True,False,,isomorphism,
+1,cycle,Cycle,18,"(10, [
+    (0, 1),
+    (0, 2),
+    (1, 3),
+    (1, 4),
+    (2, 5),
+    (2, 6),
+    (3, 7),
+    (3, 8),
+    (4, 9),
+    (4, 0)
+])",True,False,,isomorphism,
+1,cycle,Cycle,19,"Sure, I can help you with that! Here's my reasoning step by step:
+
+1. Create a path visiting all 10 nodes: 0-1-2-...-9.
+
+To create a path visiting all 10 nodes, we can start at node 0 and visit each n",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：unterminated string literal (detected at line 1) (<unknown>, line 1)"
+1,cycle,Cycle,21,"Sure, I'd be happy to help! Here's my reasoning step by step:
+
+1. Create a path visiting all 10 nodes:
+
+To create a path visiting all 10 nodes, we can start at node 0 and visit each node in a sequence",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：unterminated string literal (detected at line 15) (<unknown>, line 15)"
+1,cycle,Cycle,22,"(10, [(0,1), (1,2), (2,3), ..., (9,0)])",False,False,,isomorphism,"第 4 条边不是二元组 `(u,v)`。"
+1,cycle,Cycle,24,"(10, [('0', '1'), ('0', '9'), ('1', '2'), ('1', '3'), ('2', '4'), ('2', '6'), ('3', '5'), ('3', '7'), ('4', '8'), ('5', '6'), ('6', '7'), ('7', '8'), ('8', '9'), ('9', '0')])",True,False,,isomorphism,
+1,cycle,Cycle,26,"(10, [('0', '1'), ('0', '2'), ('1', '2'), ('1', '3'), ('2', '3'), ('2', '4'), ('3', '4'), ('3', '5'), ('4', '5'), ('4', '9'), ('5', '9'), ('9', '0')])",True,False,,isomorphism,
+1,cycle,Cycle,27,"(10, [(0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7), (0,8), (0,9), (9,0)])",True,False,,isomorphism,
+1,cycle,Cycle,28,"(10, [((0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,8), (8,9), (9,0))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,cycle,Cycle,29,"(10, [((0,1), (1,2), (2,3), ..., (9,0))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,cycle,Cycle,32,"(10, [('0', '1'), ('0', '2'), ('0', '3'), ('0', '4'), ('0', '5'), ('0', '6'), ('0', '7'), ('0', '8'), ('0', '9')])",True,False,,isomorphism,
+1,cycle,Cycle,35,"(10, [('A', 'B'), ('A', 'C'), ('B', 'D'), ('B', 'E'), ('C', 'D'), ('C', 'F'), ('D', 'E'), ('D', 'G'), ('E', 'F'), ('E', 'G'), ('F', 'G')])",False,False,,isomorphism,第 1 条边端点无法转为整数：'A'。
+1,cycle,Cycle,36,"(10, [((0,1), (1,2), (2,3), ..., (9,10))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,cycle,Cycle,37,"(10, [((0, 1), (1, 2), (2, 3), (3, 4), (4, 5), (5, 6), (6, 7), (7, 8), (8, 9), (9, 0))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,cycle,Cycle,38,"(10, [(u1,v1), (u2,v2), ...])",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：malformed node or string on line 1: <ast.Name object at 0x78c8646c7fa0>"
+1,cycle,Cycle,39,"(10, [((0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,8), (8,9), (9,0))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,cycle,Cycle,40,"(10, [((0,1), (1,2), (2,3), ..., (9,0))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,cycle,Cycle,44,"(10, [((0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,8), (8,9), (9,0))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,cycle,Cycle,47,"(10, [((0, 1), (1, 2), (2, 3), ..., (9, 0))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,cycle,Cycle,48,"(10, [
+    (0, 1),
+    (0, 2),
+    (0, 3),
+    (0, 4),
+    (0, 5),
+    (0, 6),
+    (0, 7),
+    (0, 8),
+    (0, 9),
+    (9, 0)
+])",True,False,,isomorphism,
+1,cycle,Cycle,50,"(10, [((0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,8), (8,9), (9,0))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,cycle,Cycle,51,"(10, [('0', '1'), ('0', '2'), ('1', '3'), ('1', '4'), ('2', '5'), ('2', '6'), ('3', '7'), ('3', '8'), ('4', '9'), ('5', '9'), ('6', '9'), ('7', '8'), ('8', '9')])",True,False,,isomorphism,
+1,cycle,Cycle,52,"(10, [((0, 1), (1, 2), (2, 3), ..., (9, 0))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,cycle,Cycle,54,"(10, [((0, 1), (1, 2), (2, 3), (3, 4), (4, 5), (5, 6), (6, 7), (7, 8), (8, 9), (9, 0))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,cycle,Cycle,57,"(10, [
+    (0, 9),
+    (1, 2),
+    (2, 3),
+    (3, 4),
+    (4, 5),
+    (5, 6),
+    (6, 7),
+    (7, 8),
+    (8, 9),
+    (9, 0)
+])",True,False,,isomorphism,
+1,cycle,Cycle,59,"(10, [(0, 1), (1, 2), (2, 3), ..., (9, 0)])",False,False,,isomorphism,"第 4 条边不是二元组 `(u,v)`。"
+1,cycle,Cycle,60,"(10, [((0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,8), (8,9), (9,0))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,cycle,Cycle,61,"(10, [(u1,v1), (u2,v2), ...])",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：malformed node or string on line 1: <ast.Name object at 0x78c8646c6500>"
+1,cycle,Cycle,62,"(10, [('0', '1'), ('0', '2'), ('1', '3'), ('1', '4'), ('2', '3'), ('2', '4'), ('3', '4'), ('3', '5'), ('4', '5'), ('4', '6'), ('5', '6'), ('5', '7'), ('6', '7'), ('6', '8'), ('7', '8'), ('7', '9'), ('",True,False,,isomorphism,
+1,cycle,Cycle,64,"(10, [(0,1), (0,2), ..., (9,10), (1,2), (1,3), ..., (9,8)])",False,False,,isomorphism,"第 3 条边不是二元组 `(u,v)`。"
+1,cycle,Cycle,66,"(10, [((0, 1), (1, 2), (2, 3), (3, 4), (4, 5), (5, 6), (6, 7), (7, 8), (8, 9), (9, 0))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,cycle,Cycle,67,"(10, [(0, 1), (1, 2), (2, 3), ..., (9, 0), (0, 9)])",False,False,,isomorphism,"第 4 条边不是二元组 `(u,v)`。"
+1,cycle,Cycle,71,"(10, [((0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,8), (8,9), (9,0))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,cycle,Cycle,72,"(10, [((0, 1), (1, 2), (2, 3), (3, 4), (4, 5), (5, 6), (6, 7), (7, 8), (8, 9), (9, 0))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,cycle,Cycle,73,"(10, [(0, 1), (1, 2), (2, 3), ..., (9, 0), (0, 9)])",False,False,,isomorphism,"第 4 条边不是二元组 `(u,v)`。"
+1,cycle,Cycle,76,"(10, [
+    (0, 1),
+    (0, 2),
+    (0, 3),
+    (0, 4),
+    (0, 5),
+    (0, 6),
+    (0, 7),
+    (0, 8),
+    (0, 9),
+    (9, 0)
+])",True,False,,isomorphism,
+1,cycle,Cycle,77,"(10, [('0', '1'), ('1', '3'), ('2', '4'), ('3', '6'), ('4', '7'), ('5', '8'), ('6', '9'), ('7', '8'), ('8', '9'), ('9', '0')])",True,False,,isomorphism,
+1,cycle,Cycle,78,"(10, [((0,1), (1,2), (2,3), ..., (9,0))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,cycle,Cycle,79,"(10, [((0, 1), (1, 2), (2, 3), (3, 4), (4, 5), (5, 6), (6, 7), (7, 8), (8, 9), (9, 0))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,cycle,Cycle,80,"(10, [(0,1), (0,2), (1,3), (1,4), (2,5), (2,6), (3,7), (3,8), (4,9), (4,0)])",True,False,,isomorphism,
+1,cycle,Cycle,81,"(10, [((0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,8), (8,9), (9,0))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,cycle,Cycle,84,"(10, [((0, 1), (1, 2), (2, 3), ..., (9, 10)), ((0, 2), (2, 3), (3, 4), ..., (8, 9)), ...])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,cycle,Cycle,87,"(10, [('0', '1'), ('0', '2'), ('1', '2'), ('1', '3'), ('2', '3'), ('2', '4'), ('3', '4'), ('3', '5'), ('4', '5'), ('4', '9'), ('5', '9'), ('9', '0')])",True,False,,isomorphism,
+1,cycle,Cycle,89,"(10, [('0', '1'), ('0', '2'), ('0', '3'), ('0', '4'), ('0', '5'), ('0', '6'), ('0', '7'), ('0', '8'), ('0', '9')])",True,False,,isomorphism,
+1,cycle,Cycle,90,"(10, [((0, 1), (1, 2), (2, 3), ..., (9, 0)),])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,cycle,Cycle,91,"(10, [((0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,8), (8,9), (9,0))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,cycle,Cycle,92,"(10, [(0,1), (0,9), (1,2), (1,9), (2,3), (2,9), (3,4), (3,8), (4,5), (4,7), (5,6), (5,7), (6,7), (7,8), (8,9)])",True,False,,isomorphism,
+1,cycle,Cycle,93,"(10, [((0, 1), (1, 2), (2, 3), (3, 4), (4, 5), (5, 6), (6, 7), (7, 8), (8, 9), (9, 0))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,cycle,Cycle,96,"(10, [(0,1), (0,2), (1,2), (1,3), (2,3), (2,4), (3,4), (3,5), (4,5), (4,9), (5,9), (5,0)])",True,False,,isomorphism,
+1,cycle,Cycle,97,"(10, [(0, 1), (0, 2), (1, 2), (1, 3), (2, 3), (2, 4), (3, 4), (3, 5), (4, 5), (4, 9), (5, 9), (9, 0)])",True,False,,isomorphism,
+1,cycle,Cycle,98,"(10, [((0, 1), (1, 2), (2, 3), ..., (9, 10))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,cycle,Cycle,99,"(10, [(0, 1), (1, 3), (2, 4), (3, 1), (4, 6), (5, 8), (6, 9), (7, 8), (8, 9), (9, 0)])",True,False,,isomorphism,
+1,cycle,Cycle,100,"(10, [((0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,8), (8,9), (9,0))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,planar,Planar,1,"(0, [(0,1), (0,2), (0,3)])",False,False,,isomorphism,第 1 条边端点越界（节点范围应为 0..-1）。
+1,planar,Planar,2,"Sure, I'd be happy to help you generate a planar graph with 8 nodes and 24 edges! Here's my reasoning and the final graph:
+
+1. A planar graph can be drawn without edge crossings.
+
+Since we're dealing ",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：unterminated string literal (detected at line 5) (<unknown>, line 5)"
+1,planar,Planar,3,"(8, [('0', '1'), ('1', '2'), ('2', '3'), ('3', '4')])",True,False,,isomorphism,
+1,planar,Planar,4,"Sure! Here's my plan for generating a planar graph with 8 nodes and 24 edges:
+
+1. Since a planar graph can be drawn without edge crossings, we'll start with an empty graph and incrementally add nodes ",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：unterminated string literal (detected at line 1) (<unknown>, line 1)"
+1,planar,Planar,5,"(8, [
+  (0, 1),
+  (0, 2),
+  (0, 3),
+  (1, 4),
+  (1, 5),
+  (2, 6),
+  (2, 7),
+  (3, 8),
+  (3, 1),
+  (4, 5),
+  (4, 6),
+  (5, 7),
+  (5, 8),
+  (6, 7),
+  (7, 8)
+])",False,False,,isomorphism,第 8 条边端点越界（节点范围应为 0..7）。
+1,planar,Planar,6,"Sure, I'd be happy to help! Here's my reasoning and the final graph:
+
+1. Since we're dealing with a planar graph, we know that we can draw the graph without any edge crossings.
+2. A planar graph with ",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：unterminated string literal (detected at line 3) (<unknown>, line 3)"
+1,planar,Planar,7,"(5, [(""0"", ""1""), (""0"", ""2""), (""0"", ""3""), (""1"", ""4""), (""1"", ""5""), (""2"", ""6""), (""2"", ""7""), (""3"", ""8"")])",False,False,,isomorphism,第 5 条边端点越界（节点范围应为 0..4）。
+1,planar,Planar,8,"Sure, I'd be happy to help! Here's my reasoning and the final graph:
+
+1. A planar graph can be drawn without edge crossings. This means that the graph must be drawn in a way that no two edges intersec",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：invalid decimal literal (<unknown>, line 4)"
+1,planar,Planar,9,"(8, [(0,1), (1,2), (2,3), (3,4), (4,5)])",True,False,,isomorphism,
+1,planar,Planar,10,"(8, [
+    (0,1), (1,2), (2,0),
+    (3,4), (4,5), (5,3),
+    (6,7), (7,0), (0,6)
+])",True,False,,isomorphism,
+1,planar,Planar,11,"(8, [((0,1), (1,2), (2,3)), ((0,4), (4,5), (5,6)), ((0,7), (7,8)), ((1,4), (4,6)), ((2,5), (5,7)), ((3,6), (6,8))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,planar,Planar,12,"Sure! Here's my reasoning and the final graph:
+
+1. A planar graph can be drawn without edge crossings, so we know that our graph will have no edge crossings.
+2. For 8 nodes, a planar graph has at most",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：unterminated string literal (detected at line 1) (<unknown>, line 1)"
+1,planar,Planar,13,"Sure! Here's my reasoning and the final graph:
+
+1. A planar graph can be drawn without edge crossings.
+
+To ensure that the graph is planar, we need to avoid including any subgraphs that are not planar",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：unterminated string literal (detected at line 1) (<unknown>, line 1)"
+1,planar,Planar,14,"Sure, I'd be happy to help! Here's my reasoning and the final graph:
+
+1. Since a planar graph can be drawn without edge crossings, we know that the graph must be 3-connected, meaning that there are no",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：invalid decimal literal (<unknown>, line 4)"
+1,planar,Planar,15,"Sure, I'd be happy to help you generate a planar graph with 8 nodes and 24 edges! Here's my reasoning and the final graph:
+
+1. A planar graph can be drawn without edge crossings.
+
+To ensure that the g",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：unterminated string literal (detected at line 5) (<unknown>, line 5)"
+1,planar,Planar,16,"Sure, I'd be happy to help! Here's my reasoning and the final graph:
+
+1. A planar graph can be drawn without edge crossings.
+
+Since we're dealing with a planar graph, we know that the graph can be dra",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：unterminated string literal (detected at line 5) (<unknown>, line 5)"
+1,planar,Planar,17,"(8, [
+    (0, 1), (1, 2), (2, 3), (3, 0),
+    (4, 5), (5, 6), (6, 4), (7, 8),
+    (8, 2), (9, 3)
+])",False,False,,isomorphism,第 8 条边端点越界（节点范围应为 0..7）。
+1,planar,Planar,18,"(8, [(0,1), (0,2), (0,3), (1,2), (1,3), (2,3), (3,4), (3,5), (4,5), (4,6), (5,6), (6,7), (7,8)])",False,False,,isomorphism,第 13 条边端点越界（节点范围应为 0..7）。
+1,planar,Planar,19,"Sure! Here's my reasoning and the final graph:
+
+1. A planar graph can be drawn without edge crossings, so we'll start with a planar graph with 8 nodes.
+2. For 8 nodes, a planar graph has at most 3n-6 ",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：unterminated string literal (detected at line 1) (<unknown>, line 1)"
+1,planar,Planar,20,"Sure, I'd be happy to help! Here's my reasoning and the final graph:
+
+1. Since we want a planar graph, we know that the graph cannot have any edge crossings. This means that the graph must be drawn in",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：invalid decimal literal (<unknown>, line 3)"
+1,planar,Planar,21,"(8, [
+    (0, 1),
+    (1, 2),
+    (2, 3),
+    (3, 4),
+    (4, 5),
+    (5, 6),
+    (6, 7),
+    (7, 0)
+])",True,False,,isomorphism,
+1,planar,Planar,22,"Sure, I'd be happy to help! Here's my reasoning and the final graph:
+
+1. A planar graph can be drawn without edge crossings. This means that we can draw the graph on a plane (like a piece of paper) wi",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：invalid decimal literal (<unknown>, line 4)"
+1,planar,Planar,23,"(8, [
+  (0, 1),  // node 0 has one self-loop
+  (1, 2),  // node 1 has one forward edge
+  (2, 3),  // node 2 has one forward edge
+  (3, 4),  // node 3 has one forward edge
+  (4, 5),  // node 4 has one ",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：invalid syntax (<unknown>, line 2)"
+1,planar,Planar,24,"(8, [((1,3), (1,4), (2,0), (2,4), (3,1), (3,2), (4,1), (4,2))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,planar,Planar,25,"Sure! Here's my reasoning and the final graph:
+
+1. A planar graph can be drawn without edge crossings, so we'll start by ensuring that our graph has no edge crossings.
+2. For 8 nodes, a planar graph h",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：unterminated string literal (detected at line 1) (<unknown>, line 1)"
+1,planar,Planar,26,"Sure! Here's my reasoning and the final graph:
+
+1. A planar graph can be drawn without edge crossings.
+
+To ensure that the graph is planar, we'll start by choosing a non-crossing layout for the graph.",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：unterminated string literal (detected at line 1) (<unknown>, line 1)"
+1,planar,Planar,27,"(8, [
+  (0, 1),
+  (0, 2),
+  (0, 3),
+  (1, 4),
+  (1, 5),
+  (2, 6),
+  (2, 7),
+  (3, 8),
+  (4, 5),
+  (4, 6),
+  (5, 7),
+  (6, 7),
+  (7, 8)
+])",False,False,,isomorphism,第 8 条边端点越界（节点范围应为 0..7）。
+1,planar,Planar,28,"(8, [((0,1), (1,2), (2,3)), ((0,4), (4,1), (4,3)), ((1,4), (4,2), (4,5)), ((2,6), (6,3), (6,5)), ((3,6), (6,4), (6,7)), ((4,7), (7,4), (7,6))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,planar,Planar,29,"Sure, I'd be happy to help you with that! Here's my reasoning and the final graph:
+
+1. A planar graph can be drawn without edge crossings. This means that we can draw the graph on a plane (like a piec",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：invalid decimal literal (<unknown>, line 4)"
+1,planar,Planar,30,"(8, [((0,1), (0,2), (0,3)), ((1,2), (1,3), (1,4)), ((2,3), (2,4), (2,5)), ((3,4), (3,5), (3,6)), ((4,5), (4,6), (4,7)), ((5,6), (5,7), (5,8))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,planar,Planar,31,"(8, [(0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7)])",True,False,,isomorphism,
+1,planar,Planar,32,"(8, [(0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7)])",True,False,,isomorphism,
+1,planar,Planar,33,"(8, [(0,1), (1,2), (2,3), (3,0), (4,5), (5,7), (6,7), (7,8), (8,0)])",False,False,,isomorphism,第 8 条边端点越界（节点范围应为 0..7）。
+1,planar,Planar,34,"(6, [(6,7)])",False,False,,isomorphism,第 1 条边端点越界（节点范围应为 0..5）。
+1,planar,Planar,35,"Sure, I'd be happy to help! Here's my reasoning and the final graph:
+
+1. A planar graph can be drawn without edge crossings, so we can start by drawing the graph on a plane.
+2. For 8 nodes, a planar g",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：invalid decimal literal (<unknown>, line 4)"
+1,planar,Planar,36,"(8, [((0,1), (0,2), (0,3)), ((1,2), (1,3), (1,4)), ((2,3), (2,4), (2,5)), ((3,4), (3,5), (3,6)), ((4,5), (4,6), (4,7)), ((5,6), (5,7), (5,8)), ((6,7), (6,8), (7,8))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,planar,Planar,37,"(8, [(0,1), (0,2), (0,3), (1,2), (1,4), (2,3), (2,5), (3,4), (3,6)])",True,False,,isomorphism,
+1,planar,Planar,38,"Sure! Here's my reasoning and the final graph:
+
+1. Since we're dealing with a planar graph, we know that the graph can be drawn without edge crossings.
+2. A planar graph with 8 nodes has at most 3n-6 ",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：unterminated string literal (detected at line 1) (<unknown>, line 1)"
+1,planar,Planar,39,"(8, [((0,1), (1,2), (2,3)), ((0,4), (4,5), (5,6)), ((0,7), (7,8), (8,0))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,planar,Planar,40,"(8, [(0, 1), (1, 2), (2, 3), (3, 4), (4, 5), (5, 6)])",True,False,,isomorphism,
+1,planar,Planar,41,"Sure, I can help you with that! Here's my reasoning and the final graph:
+
+1. A planar graph can be drawn without edge crossings. This means that for a graph with n nodes, there can be at most 3n-6 edg",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：unterminated string literal (detected at line 1) (<unknown>, line 1)"
+1,planar,Planar,42,"Sure, I'd be happy to help! Here's my reasoning and the final graph:
+
+1. A planar graph can be drawn without edge crossings. This means that we can draw the graph on a plane (e.g. a piece of paper) wi",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：invalid decimal literal (<unknown>, line 4)"
+1,planar,Planar,43,"(8, [(0,4), (1,6), (2,3), (2,7), (3,5), (3,8), (4,5), (4,9), (5,6), (5,9), (6,7), (6,8)])",False,False,,isomorphism,第 6 条边端点越界（节点范围应为 0..7）。
+1,planar,Planar,44,"(8, [(0,1), (0,4), (1,2), (1,5), (2,3), (2,6), (3,4), (3,7), (4,5), (5,6), (6,7)])",True,False,,isomorphism,
+1,planar,Planar,45,"(8, [(0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7), (0,8)])",False,False,,isomorphism,第 8 条边端点越界（节点范围应为 0..7）。
+1,planar,Planar,46,"(0, [(0, 1), (1, 2), (2, 3)])",False,False,,isomorphism,第 1 条边端点越界（节点范围应为 0..-1）。
+1,planar,Planar,47,"(8, [
+    (0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7), (0,8),
+    (1,2), (1,3), (1,4), (1,5), (1,6), (1,7), (1,8),
+    (2,3), (2,4), (2,5), (2,6), (2,7), (2,8),
+    (3,4), (3,5), (3,6), (3,7), (3,",False,False,,isomorphism,第 8 条边端点越界（节点范围应为 0..7）。
+1,planar,Planar,48,"Sure, I'd be happy to help! Here's my reasoning and the final graph:
+
+1. A planar graph can be drawn without edge crossings, so we know that our graph will have a maximum of 3n-6 edges.
+2. Since we ha",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：invalid decimal literal (<unknown>, line 3)"
+1,planar,Planar,49,"(8, [
+  (0,1), (0,2), (0,3),
+  (1,2), (1,3), (1,4),
+  (2,3), (2,4), (2,5),
+  (3,4), (3,5), (3,6),
+  (4,5), (4,6), (4,7),
+  (5,6), (5,7), (5,8),
+  (6,7), (6,8), (7,8)
+])",False,False,,isomorphism,第 18 条边端点越界（节点范围应为 0..7）。
+1,planar,Planar,50,"Sure! Here's my reasoning and the final graph:
+
+1. A planar graph can be drawn without edge crossings, so we know that our graph will be planar.
+2. For 8 nodes, a planar graph has at most 3n-6 = 18 ed",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：unterminated string literal (detected at line 1) (<unknown>, line 1)"
+1,planar,Planar,51,"(8, [((0,1), (1,2), (2,3), (3,4)), ((0,5), (5,6), (6,7), (7,8)), ((1,5), (5,8)), ((2,6)), ((3,7)), ((4,8))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,planar,Planar,52,"Sure! Here's my plan for generating a planar graph with 8 nodes and 24 edges:
+
+1. A planar graph can be drawn without edge crossings, so we'll start with a blank slate.
+2. For 8 nodes, a planar graph ",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：unterminated string literal (detected at line 1) (<unknown>, line 1)"
+1,planar,Planar,53,"(8, [(0,1), (0,2), (0,3), (1,2), (1,3), (2,3), (4,5), (4,6), (5,6), (5,7), (6,7)])",True,False,,isomorphism,
+1,planar,Planar,54,"Sure! Here's my reasoning and the final graph:
+
+1. A planar graph can be drawn without edge crossings.
+
+Since we have 8 nodes, we know that a planar graph with 8 nodes has at most 3n-6 = 18 edges.
+
+2.",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：unterminated string literal (detected at line 1) (<unknown>, line 1)"
+1,planar,Planar,55,"(8, [
+    (0,1), (0,2), (0,3), (1,2), (1,3), (2,3),
+    (4,5), (4,6), (5,6), (5,7), (6,7), (7,8)
+])",False,False,,isomorphism,第 12 条边端点越界（节点范围应为 0..7）。
+1,planar,Planar,56,"(8, [
+    (0, 1),
+    (0, 2),
+    (0, 3),
+    (1, 2),
+    (1, 4),
+    (2, 3),
+    (2, 5),
+    (3, 4),
+    (3, 6),
+    (4, 5),
+    (4, 7),
+    (5, 6),
+    (5, 8),
+    (6, 7),
+    (7, 8)
+])",False,False,,isomorphism,第 13 条边端点越界（节点范围应为 0..7）。
+1,planar,Planar,57,"(1, [((1, 2)), (2, 3), (3, 4)])",False,False,,isomorphism,第 1 条边端点越界（节点范围应为 0..0）。
+1,planar,Planar,58,"(8, [(0,1), (0,2), (0,3), (0,4), (1,2), (1,3), (1,4), (2,3), (2,4), (3,4)])",True,False,,isomorphism,
+1,planar,Planar,59,"Sure! Here's my reasoning and the final graph:
+
+1. A planar graph can be drawn without edge crossings, so we know that our graph will not have any edge crossings.
+2. For 8 nodes, a planar graph has at",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：unterminated string literal (detected at line 1) (<unknown>, line 1)"
+1,planar,Planar,60,"(7, [])",True,False,,isomorphism,
+1,planar,Planar,61,"Sure! Here's my plan for generating a planar graph with 8 nodes and 24 edges:
+
+1. Since a planar graph can be drawn without edge crossings, we know that the maximum number of edges in a planar graph w",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：unterminated string literal (detected at line 1) (<unknown>, line 1)"
+1,planar,Planar,62,"(8, [('0', '1'), ('1', '2'), ('2', '3'), ('3', '4'), ('4', '5')])",True,False,,isomorphism,
+1,planar,Planar,63,"(8, [(0,1), (0,2), (1,3), (1,4), (2,3), (2,5), (3,4), (3,6), (4,7), (5,7), (6,7), (4,8), (5,8), (6,8)])",False,False,,isomorphism,第 12 条边端点越界（节点范围应为 0..7）。
+1,planar,Planar,64,"(8, [((0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,0))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,planar,Planar,65,"(8, [
+  (0, 1),
+  (0, 2),
+  (0, 3),
+  (1, 4),
+  (1, 5),
+  (2, 6),
+  (2, 7),
+  (3, 8),
+  (4, 5),
+  (4, 6),
+  (5, 7),
+  (5, 8),
+  (6, 7),
+  (6, 8),
+  (7, 8)
+])",False,False,,isomorphism,第 8 条边端点越界（节点范围应为 0..7）。
+1,planar,Planar,66,"(8, [
+    (0,1),
+    (1,2),
+    (2,3),
+    (3,4),
+    (4,5),
+    (5,6),
+    (6,7),
+    (7,8)
+])",False,False,,isomorphism,第 8 条边端点越界（节点范围应为 0..7）。
+1,planar,Planar,67,"(8, [(0,1), (0,2), (0,3), (1,2), (1,3), (2,3), (3,4), (3,5), (4,5), (4,6), (5,6), (5,7), (6,7), (7,8)])",False,False,,isomorphism,第 14 条边端点越界（节点范围应为 0..7）。
+1,planar,Planar,68,"(8, [('0', '1'), ('1', '2')])",True,False,,isomorphism,
+1,planar,Planar,69,"(8, [
+    (0,1), (0,2), (0,3), (0,4),
+    (1,2), (1,3), (1,5), (1,6),
+    (2,3), (2,4), (2,6), (2,7),
+    (3,4), (3,5), (3,7), (3,8),
+    (4,5), (4,6), (4,7), (4,8),
+    (5,6), (5,7), (5,8),
+    (6,7)",False,False,,isomorphism,第 16 条边端点越界（节点范围应为 0..7）。
+1,planar,Planar,70,"(5, [('A', 'B'), ('A', 'C'), ('B', 'C'), ('A', 'D'), ('B', 'E'), ('C', 'E')])",False,False,,isomorphism,第 1 条边端点无法转为整数：'A'。
+1,planar,Planar,71,"(3, [])",True,False,,isomorphism,
+1,planar,Planar,72,"(6, [('A', 'B'), ('A', 'C'), ('A', 'D'), ('B', 'C'), ('B', 'D'), ('C', 'D'), ('E', 'A'), ('E', 'C'), ('F', 'B'), ('F', 'D')])",False,False,,isomorphism,第 1 条边端点无法转为整数：'A'。
+1,planar,Planar,73,"(8, [
+  (0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7), (0,8)
+  (1,2), (1,3), (1,4), (1,5), (1,6), (1,7), (1,8)
+  (2,3), (2,4), (2,5), (2,6), (2,7), (2,8)
+  (3,4), (3,5), (3,6), (3,7), (3,8)
+  (4,5),",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：malformed node or string on line 2: <ast.Call object at 0x78c8646c5840>"
+1,planar,Planar,74,"(8, [(0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,0)])",True,False,,isomorphism,
+1,planar,Planar,75,"(8, [((0,1), (1,2), (2,3)), ((0,2), (2,4), (4,5)), ((0,3), (3,6), (6,7)), ((1,4), (4,8), (8,7)), ((2,5), (5,6), (6,7)), ((3,7), (7,8), (8,0))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,planar,Planar,76,"(8, [
+    (0,1),
+    (0,2),
+    (0,3),
+    (1,2),
+    (1,3),
+    (2,3),
+    (2,4),
+    (3,4),
+    (3,5),
+    (4,5),
+    (4,6),
+    (5,6),
+    (5,7),
+    (6,7),
+    (7,8),
+])",False,False,,isomorphism,第 15 条边端点越界（节点范围应为 0..7）。
+1,planar,Planar,77,"(0, [(0,1), (0,2), (1,0)])",False,False,,isomorphism,第 1 条边端点越界（节点范围应为 0..-1）。
+1,planar,Planar,78,"(8, [((0,1), (1,2), (2,3)), ((0,4), (4,5), (5,6)), ((0,7), (7,8), (8,0))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,planar,Planar,79,"Sure, I'd be happy to help! Here's my reasoning and the final graph:
+
+1. A planar graph can be drawn without edge crossings. This means that we can draw the graph on a plane without any edges intersec",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：invalid decimal literal (<unknown>, line 4)"
+1,planar,Planar,80,"(0, [(0,1), (0,2), (0,3)], (1, [(1,0), (1,4), (1,5)], (2, [(2,0), (2,1), (2,3)], (3, [(3,0), (3,1), (3,2)])",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：'(' was never closed (<unknown>, line 1)"
+1,planar,Planar,81,"Sure! Here's my reasoning and the final graph:
+
+1. A planar graph can be drawn without edge crossings.
+
+To ensure that the graph is planar, we'll avoid constructing any subgraphs that are known to be ",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：unterminated string literal (detected at line 1) (<unknown>, line 1)"
+1,planar,Planar,82,"Sure! Here's my plan for generating a planar graph with 8 nodes and 24 edges:
+
+1. A planar graph can be drawn without edge crossings. This means that we can draw the graph on a plane without any edges",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：unterminated string literal (detected at line 1) (<unknown>, line 1)"
+1,planar,Planar,83,"Sure, I'd be happy to help! Here's my reasoning and the final graph:
+
+1. A planar graph can be drawn without edge crossings.
+
+Since we're dealing with a planar graph, we know that we can draw the grap",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：unterminated string literal (detected at line 5) (<unknown>, line 5)"
+1,planar,Planar,84,"(8, [((0,4), (1,5), (2,6), (3,7))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,planar,Planar,85,"(8, [('0', '1'), ('0', '2'), ('1', '2'), ('2', '3'), ('2', '4'), ('3', '4'), ('3', '5'), ('4', '5'),
+('0', '3'), ('0', '4'), ('1', '3'), ('1', '4'), ('2', '3'), ('2', '5'), ('3', '5'), ('4', '3'),
+('4",True,False,,isomorphism,
+1,planar,Planar,86,"(8, [(0,1), (0,3), (1,2)])",True,False,,isomorphism,
+1,planar,Planar,87,"(8, [
+    (0,1),
+    (1,2),
+    (2,3),
+    (3,4),
+    (4,5),
+    (5,6),
+    (6,7),
+    (7,8)
+])",False,False,,isomorphism,第 8 条边端点越界（节点范围应为 0..7）。
+1,planar,Planar,88,"(0, [(0,1), (0,2), (0,4), (1,5), (2,6), (3,7), (4,8)])",False,False,,isomorphism,第 1 条边端点越界（节点范围应为 0..-1）。
+1,planar,Planar,89,"(8, [])",True,False,,isomorphism,
+1,planar,Planar,90,"(8, [('0', '1'), ('0', '3'), ('1', '2'), ('1', '4'), ('2', '3'), ('2', '5'), ('3', '4'), ('3', '6'), ('4', '7'), ('5', '8'), ('6', '7'), ('7', '8')])",False,False,,isomorphism,第 10 条边端点越界（节点范围应为 0..7）。
+1,planar,Planar,91,"(0, [(0,1)], 1, [(1,2)], 2, [(2,3)], 3, [(3,4)])",False,False,,isomorphism,"输出必须是长度为 2 的元组：`(n, edges)`。"
+1,planar,Planar,92,"(8, [
+    (0, 1),
+    (0, 2),
+    (0, 3),
+    (1, 2),
+    (1, 3),
+    (2, 3),
+    (2, 4),
+    (3, 4),
+    (3, 5),
+    (4, 5),
+    (4, 6),
+    (5, 6),
+    (5, 7),
+    (6, 7),
+    (7, 8)
+])",False,False,,isomorphism,第 15 条边端点越界（节点范围应为 0..7）。
+1,planar,Planar,93,"(0, [(0, 1), (1, 2), (2, 3), (3, 4), (4, 5), (5, 6), (6, 7)])",False,False,,isomorphism,第 1 条边端点越界（节点范围应为 0..-1）。
+1,planar,Planar,94,"Sure! Here's my plan to generate a planar graph with 8 nodes and 24 edges:
+
+1. A planar graph can be drawn without edge crossings, so we'll start with a blank slate.
+2. For 8 nodes, a planar graph has",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：unterminated string literal (detected at line 1) (<unknown>, line 1)"
+1,planar,Planar,95,"(8, [(0,1), (0,2), (0,3), (1,2), (1,3), (2,3), (2,4), (3,4), (3,5), (4,5), (4,6), (5,6), (5,7), (6,7), (7,8)])",False,False,,isomorphism,第 15 条边端点越界（节点范围应为 0..7）。
+1,planar,Planar,96,"Sure, I'd be happy to help! Here's my reasoning and the final graph:
+
+1. A planar graph can be drawn without edge crossings, so we know that our graph will be planar.
+2. For 8 nodes, a planar graph ha",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：invalid decimal literal (<unknown>, line 4)"
+1,planar,Planar,97,"(8, [((0,1), (0,2), (0,3)), ((1,2), (1,3), (1,4)), ((2,3), (2,4), (2,5)), ((3,4), (3,5), (3,6)), ((4,5), (4,6), (4,7)), ((5,6), (5,7), (5,8)), ((6,7), (6,8), (7,8))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,planar,Planar,98,"Sure, I'd be happy to help! Here's my reasoning and the final graph:
+
+1. Since we want a planar graph, we know that the maximum degree of any node cannot exceed 3. This means that we can have at most ",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：invalid decimal literal (<unknown>, line 3)"
+1,planar,Planar,99,"(8, [(0,1), (0,2), (1,3), (2,4), (3,5), (4,6), (5,7), (6,8)])",False,False,,isomorphism,第 8 条边端点越界（节点范围应为 0..7）。
+1,planar,Planar,100,"Sure! Here's my reasoning and the final graph:
+
+1. A planar graph can be drawn without edge crossings. This means that we can draw the graph in a 2D plane without any edges intersecting each other.
+2.",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：unterminated string literal (detected at line 1) (<unknown>, line 1)"
+1,components,#Components,2,"(8, [((0,1), (1,2)), ((2,3), (3,4)), ((4,5), (5,6)), ((6,7), (7,0)), ((0,2), (2,4)), ((4,6), (6,8)), ((8,7), (7,0))])",False,False,,isomorphism,第 1 条边包含非整数端点。
+1,components,#Components,3,"(8, [((0,1), (0,3), (1,2)), ((2,4), (2,6), (3,5)), ((4,7), (5,7), (6,8))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,components,#Components,5,"(8, [((0, 1), (1, 2), (2, 3)), ((3, 4), (4, 5), (5, 6)), ((6, 7), (7, 0))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,components,#Components,6,"(8, [
+    (0, 1),
+    (2, 3),
+    (2, 4),
+    (4, 5),
+    (4, 6),
+    (6, 7),
+    (6, 8)
+])",False,False,,isomorphism,第 7 条边端点越界（节点范围应为 0..7）。
+1,components,#Components,7,"(8, [
+    (0,0),
+    (1,2),
+    (2,1),
+    (3,4),
+    (4,3),
+    (5,5),
+    (6,7),
+    (7,6)
+])",True,False,,isomorphism,
+1,components,#Components,9,"(8, [(0, 1), (2, 3), (4, 5), (6, 7)])",True,False,,isomorphism,
+1,components,#Components,12,"(8, [((0,1), (1,2)), ((2,3), (3,4)), ((4,5), (5,6)), ((6,7), (7,8))])",False,False,,isomorphism,第 1 条边包含非整数端点。
+1,components,#Components,13,"(8, [(0, 1), (2, 3), (4, 5), (6, 7)])",True,False,,isomorphism,
+1,components,#Components,14,"(8, [((0, 1), (1, 0)), ((2, 3), (3, 2)), ((4, 5), (5, 4)), ((6, 7), (7, 6))])",False,False,,isomorphism,第 1 条边包含非整数端点。
+1,components,#Components,15,"(8, [
+    (1, 2),
+    (2, 1),
+    (3, 4),
+    (4, 3),
+    (5, 6),
+    (6, 5),
+  ])",True,False,,isomorphism,
+1,components,#Components,16,"(8, [((0, 1), (2, 3), (4, 5), (6, 7))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,components,#Components,17,"(8, [
+    (0, 1),
+    (1, 0),
+    (2, 3),
+    (3, 2),
+    (4, 5),
+    (5, 4),
+    (6, 7),
+    (7, 6)
+])",True,False,,isomorphism,
+1,components,#Components,18,"(8, [(0,0), (1,2), (2,1), (3,4), (4,3), (5,6), (6,5), (7,7)])",True,False,,isomorphism,
+1,components,#Components,19,"(8, [(0,0), (1,1), (2,2), (3,3), (4,5), (5,4)])",True,False,,isomorphism,
+1,components,#Components,20,"(8, [((0, 1), (1, 2)), ((3, 4)), ((5, 6)), ((7))])",False,False,,isomorphism,第 1 条边包含非整数端点。
+1,components,#Components,21,"(8, [
+    (0, 1),
+    (2, 3),
+    (4, 5),
+    (6, 6),
+    (7, 7)
+])",True,False,,isomorphism,
+1,components,#Components,23,"Sure! Here's my reasoning and the final graph:
+
+1. Partition the 8 nodes into exactly 5 groups:
+
+Let's partition the 8 nodes into 5 groups of 1 or more nodes each. We can do this by starting with a si",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：unterminated string literal (detected at line 1) (<unknown>, line 1)"
+1,components,#Components,24,"(8, [(0, 1), (2, 3), (4, 5), (6, 6), (7, 7)])",True,False,,isomorphism,
+1,components,#Components,25,"(8, [(0, 1), (2, 3), (4, 5), (6, 7), (6, 7)])",True,False,,isomorphism,
+1,components,#Components,27,"(8, [
+    (0, 1),
+    (1, 2),
+    (2, 3),
+    (3, 4),
+    (5, 6),
+    (7, 8)
+])",False,False,,isomorphism,第 6 条边端点越界（节点范围应为 0..7）。
+1,components,#Components,29,"Sure, I can help you with that! Here's my reasoning and the final graph:
+
+1. Partition the 8 nodes into exactly 5 groups:
+
+To partition the 8 nodes into 5 groups, we can use a combination of two strat",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：unterminated string literal (detected at line 1) (<unknown>, line 1)"
+1,components,#Components,30,"(8, [
+    (0, 0),
+    (1, 2),
+    (2, 1),
+    (3, 4),
+    (4, 3),
+    (5, 6),
+    (6, 5),
+    (7, 8),
+    (8, 7)
+])",False,False,,isomorphism,第 8 条边端点越界（节点范围应为 0..7）。
+1,components,#Components,32,"(8, [
+    (0,0),
+    (1,2),
+    (2,1),
+    (3,4),
+    (4,3),
+    (5,6),
+    (6,5),
+    (7,7)
+])",True,False,,isomorphism,
+1,components,#Components,33,"Sure, I can help you with that! Here's my reasoning and the final graph:
+
+1. Partition the 8 nodes into exactly 5 groups:
+
+To partition the 8 nodes into 5 groups, we can start by dividing the nodes in",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：unterminated string literal (detected at line 1) (<unknown>, line 1)"
+1,components,#Components,34,"(8, [(0, 2), (2, 4), (4, 6), (1, 3), (3, 5), (5, 7)])",True,False,,isomorphism,
+1,components,#Components,36,"Sure, I can help you with that! Here's my reasoning and the final graph:
+
+1. Partition the 8 nodes into exactly 5 groups:
+
+To partition the 8 nodes into 5 groups, we can use a combination of two techn",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：unterminated string literal (detected at line 1) (<unknown>, line 1)"
+1,components,#Components,37,"(8, [((0,1), (0,2)), ((1,3), (1,4)), ((2,5), (2,6)), ((3,7), (3,8))])",False,False,,isomorphism,第 1 条边包含非整数端点。
+1,components,#Components,39,"(8, [((0, 1), (1, 2), (2, 1)), ((3, 4), (4, 3)), ((5, 6), (6, 7)), ((7, 6), (6, 7))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,components,#Components,40,"(8, [((0, 1), (2, 3), (4, 5), (6, 7))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,components,#Components,41,"(8, [(0,1), (0,2), (0,3), (1,2), (1,3), (2,3), (4,4), (5,5), (6,6), (7,7)])",True,False,,isomorphism,
+1,components,#Components,42,"(8, [((0, 1), (2, 3), (4, 5), (6, 6), (7, 7))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,components,#Components,43,"(8, [
+    (0, 1),
+    (2, 3),
+    (4, 5),
+    (6, 7)
+])",True,False,,isomorphism,
+1,components,#Components,45,"Sure, I can help you with that! Here's my reasoning and the final graph:
+
+1. Partition the 8 nodes into exactly 5 groups:
+
+To partition the 8 nodes into 5 groups, we need to find a way to divide the n",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：unterminated string literal (detected at line 1) (<unknown>, line 1)"
+1,components,#Components,46,"(8, [((0, 1), (1, 2), (2, 3)), ((3, 4), (4, 5), (5, 6)), ((6, 7), (7, 8))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,components,#Components,47,"(8, [
+    (0, 1),
+    (1, 2),
+    (2, 0),
+    (3, 4),
+    (4, 3),
+    (5, 6),
+    (6, 5),
+    (7, 7)
+])",True,False,,isomorphism,
+1,components,#Components,48,"(8, [(1,2), (1,3), (2,4), (3,5), (4,6), (5,7), (6,8)])",False,False,,isomorphism,第 7 条边端点越界（节点范围应为 0..7）。
+1,components,#Components,50,"(8, [
+    (0, 1),
+    (2, 3),
+    (4, 5),
+    (6, 7)
+])",True,False,,isomorphism,
+1,components,#Components,51,"(8, [((0,1), (1,2), (2,3)), ((3,4), (4,5)), ((5,6), (6,7))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,components,#Components,52,"(8, [((0, 1), (1, 2), (2, 0)), ((3, 4), (4, 5), (5, 3)), ((6, 7), (7, 6))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,components,#Components,53,"Sure! Here's my reasoning step by step:
+
+1. Partition the 8 nodes into exactly 5 groups:
+
+To ensure that we have exactly 5 connected components, we need to partition the 8 nodes into 5 groups of at le",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：unterminated string literal (detected at line 1) (<unknown>, line 1)"
+1,components,#Components,54,"(8, [
+    (0, 1),
+    (1, 2),
+    (3, 4),
+    (5, 6),
+    (7, 7)
+])",True,False,,isomorphism,
+1,components,#Components,58,"(8, [
+    (0, 1),
+    (1, 2),
+    (3, 4),
+    (4, 5),
+    (6, 7),
+    (7, 8)
+])",False,False,,isomorphism,第 6 条边端点越界（节点范围应为 0..7）。
+1,components,#Components,59,"(8, [
+    (0, 1),
+    (2, 3),
+    (4, 5),
+    (6, 7)
+])",True,False,,isomorphism,
+1,components,#Components,60,"(8, [(0, 2), (1, 3), (2, 4), (3, 5), (6, 7), (7, 8)])",False,False,,isomorphism,第 6 条边端点越界（节点范围应为 0..7）。
+1,components,#Components,61,"(8, [
+    (0, 1),
+    (2, 3),
+    (4, 5),
+    (6, 6),
+    (7, 7)
+])",True,False,,isomorphism,
+1,components,#Components,63,"(8, [('0', '0'), ('1', '2'), ('1', '1'), ('2', '3'), ('2', '2'), ('3', '4'), ('3', '3'), ('4', '5'), ('4', '6'), ('5', '6'), ('5', '5'), ('6', '7'), ('6', '7')])",True,False,,isomorphism,
+1,components,#Components,65,"Sure! Here's my reasoning and the final graph:
+
+1. Partition the 8 nodes into exactly 5 groups:
+
+Let's label the nodes from 0 to 7. We can partition the nodes into 5 groups of 1 or 2 nodes each, as fo",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：unterminated string literal (detected at line 1) (<unknown>, line 1)"
+1,components,#Components,66,"(8, [(0, 1), (1, 2), (3, 4), (4, 5), (6, 7), (7, 8)])",False,False,,isomorphism,第 6 条边端点越界（节点范围应为 0..7）。
+1,components,#Components,67,"(8, [
+    (0, 1),
+    (2, 3),
+    (4, 5),
+    (6, 7)
+])",True,False,,isomorphism,
+1,components,#Components,69,"Sure, I can help you with that! Here's my reasoning and the final graph:
+
+1. Partition the 8 nodes into exactly 5 groups:
+
+To partition the 8 nodes into 5 groups, we can use a combination of division ",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：unterminated string literal (detected at line 1) (<unknown>, line 1)"
+1,components,#Components,70,"Sure, I can help you with that! Here's my reasoning and the final graph:
+
+1. Partition the 8 nodes into exactly 5 groups:
+
+To partition the 8 nodes into 5 groups, we need to find a way to divide the n",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：unterminated string literal (detected at line 1) (<unknown>, line 1)"
+1,components,#Components,72,"(8, [
+    (0, 0),
+    (1, 2),
+    (2, 1),
+    (3, 4),
+    (4, 3),
+    (5, 6),
+    (6, 5),
+    (7, 7)
+])",True,False,,isomorphism,
+1,components,#Components,73,"(8, [(0, 1), (2, 3), (4, 5), (6, 6), (7, 7)])",True,False,,isomorphism,
+1,components,#Components,74,"(8, [(1, 2), (2, 1), (3, 4), (4, 3), (6, 7), (7, 6)])",True,False,,isomorphism,
+1,components,#Components,75,"(8, [
+    (0, 1),
+    (1, 2),
+    (2, 3),
+    (4, 5),
+    (5, 6),
+    (6, 7),
+    (8, 9)
+])",False,False,,isomorphism,第 7 条边端点越界（节点范围应为 0..7）。
+1,components,#Components,76,"(8, [
+    (0, 1),
+    (0, 3),
+    (1, 2),
+    (2, 3),
+    (4, 5),
+    (4, 7),
+    (5, 6),
+    (6, 7)
+])",True,False,,isomorphism,
+1,components,#Components,77,"(8, [
+    (0, 0),
+    (1, 2),
+    (2, 1),
+    (3, 4),
+    (4, 3),
+    (5, 6),
+    (6, 5),
+    (7, 7)
+])",True,False,,isomorphism,
+1,components,#Components,78,"(8, [
+    (0, 1),
+    (2, 3),
+    (4, 5),
+    (6, 6),
+    (7, 7)
+])",True,False,,isomorphism,
+1,components,#Components,79,"(8, [((0, 1), (1, 0)), ((2, 3), (3, 2)), ((4, 5), (5, 4)), ((6, 7), (7, 6))])",False,False,,isomorphism,第 1 条边包含非整数端点。
+1,components,#Components,80,"(8, [
+    (0, 1),
+    (1, 2),
+    (2, 3),
+    (4, 5),
+    (5, 6),
+    (6, 7),
+    (0, 2),
+    (1, 3)
+])",True,False,,isomorphism,
+1,components,#Components,81,"(8, [((0,1),), ((1,2),), ((3,4),), ((5,6),), ((7,8),)])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,components,#Components,82,"(8, [(0, 7), (1, 2), (3, 4), (5, 6), (7, 0)])",True,False,,isomorphism,
+1,components,#Components,85,"(8, [(0,0), (1,1), (2,2), (3,3), (4,4), (4,5)])",True,False,,isomorphism,
+1,components,#Components,86,"Sure! Here's my reasoning and the final graph:
+
+1. Partition the 8 nodes into exactly 5 groups:
+
+Let's label the nodes as 0, 1, 2, 3, 4, 5, 6, and 7. We can partition them into 5 groups as follows:
+
+G",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：unterminated string literal (detected at line 1) (<unknown>, line 1)"
+1,components,#Components,88,"(8, [((0,1), (0,2), (0,3)), ((1,2), (1,3)), ((2,3), (2,4)), ((3,4), (3,5)), ((4,5), (4,6))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,components,#Components,89,"Sure, I can help you with that! Here's my reasoning and the final graph:
+
+1. Partition the 8 nodes into exactly 5 groups:
+
+To partition the 8 nodes into 5 groups, we can start by dividing the nodes in",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：unterminated string literal (detected at line 1) (<unknown>, line 1)"
+1,components,#Components,90,"(8, [((0, 1), (1, 2), (2, 3), (3, 4)), ((5, 6),), ((7, 7),), ((8, 8),)])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,components,#Components,91,"(8, [
+    (0, 1),
+    (1, 2),
+    (2, 3),
+    (4, 5),
+    (5, 6),
+    (7, 8)
+])",False,False,,isomorphism,第 6 条边端点越界（节点范围应为 0..7）。
+1,components,#Components,92,"Sure, I can help you with that! Here's my reasoning and the final graph:
+
+1. Partition the 8 nodes into exactly 5 groups:
+
+Let's number the 8 nodes from 0 to 7. We can partition them into 5 groups of ",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：unterminated string literal (detected at line 1) (<unknown>, line 1)"
+1,components,#Components,93,"(8, [(0, 0), (1, 2), (3, 4), (5, 6), (7, 7)])",True,False,,isomorphism,
+1,components,#Components,95,"(8, [((0,0), (1,2), (2,1)), ((3,3), (3,4), (4,3), (4,4)), ((5,5), (5,6), (6,5), (6,6)), ((7,7))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,components,#Components,96,"(8, [(0, 1), (2, 3), (4, 5), (6, 6), (7, 7)])",True,False,,isomorphism,
+1,components,#Components,98,"(8, [(0, 1), (0, 2), (1, 2), (2, 3), (2, 4), (3, 4), (4, 5), (5, 6)])",True,False,,isomorphism,
+1,k_regular,k-regular,1,"(12, [(0,1), (0,2), (0,3), (1,4), (1,5), (2,6), (2,7), (3,8), (3,9), (4,10), (4,11), (5,12)])",False,False,,isomorphism,第 12 条边端点越界（节点范围应为 0..11）。
+1,k_regular,k-regular,2,"(12, [((0,1), (0,2), (0,3)), ((1,4), (1,5), (1,6)), ((2,7), (2,8), (2,9)), ((3,10), (3,11), (3,12))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,k_regular,k-regular,3,"(12, [('0', '1', '2'), ('0', '3', '4'), ('1', '2', '5'), ('1', '6', '7'), ('2', '4', '8'), ('2', '9', '10'), ('3', '4', '11'), ('3', '10', '12')])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,k_regular,k-regular,4,"(12, [(0,1), (0,2), (0,3), (1,4), (1,5), (2,6), (2,7), (3,8), (3,9), (4,10), (4,11), (5,12)])",False,False,,isomorphism,第 12 条边端点越界（节点范围应为 0..11）。
+1,k_regular,k-regular,5,"(12, [(0,1), (0,2), (0,3), (1,4), (1,5), (1,6), (2,7), (2,8), (2,9), (3,10), (3,11)])",True,False,,isomorphism,
+1,k_regular,k-regular,6,"(12, [(0,1,2), (0,3,4), (1,2,5), (1,6,7), (2,3,8), (2,9,10), (3,4,11), (3,12,11)])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,k_regular,k-regular,7,"(12, [(0,1), (0,2), (0,3), (1,4), (1,5), (1,6), (2,7), (2,8), (2,9), (3,10), (3,11)])",True,False,,isomorphism,
+1,k_regular,k-regular,8,"(12, [(0,1), (0,2), (0,3), (1,4), (1,5), (1,6), (2,7), (2,8), (2,9), (3,10), (3,11), (3,12)])",False,False,,isomorphism,第 12 条边端点越界（节点范围应为 0..11）。
+1,k_regular,k-regular,9,"(12, [((0,1), (0,2), (0,3)), ((1,4), (1,5), (1,6)), ((2,7), (2,8), (2,9)), ((3,10), (3,11), (3,12))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,k_regular,k-regular,10,"(12, [ (0,1), (1,2), (2,3), (4,5), (5,6), (6,7), (8,9), (9,10), (10,11) ])",True,False,,isomorphism,
+1,k_regular,k-regular,11,"Sure, I'd be happy to help you with that! Here's my reasoning step by step:
+
+1. Every node must have exactly 3 neighbors:
+
+Since we want every node to have degree exactly 3, we know that each node wil",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：invalid syntax (<unknown>, line 1)"
+1,k_regular,k-regular,12,"(12, [
+    (0, 1),
+    (0, 2),
+    (0, 3),
+    (1, 4),
+    (1, 5),
+    (1, 6),
+    (2, 7),
+    (2, 8),
+    (2, 9),
+    (3, 10),
+    (3, 11),
+    (3, 12)
+])",False,False,,isomorphism,第 12 条边端点越界（节点范围应为 0..11）。
+1,k_regular,k-regular,13,"Sure, I'd be happy to help you generate a 3-regular graph with 12 nodes!
+
+Step 1: Every node must have exactly 3 neighbors.
+
+Since we have 12 nodes, each node will have 3 x 12 = 36 neighbors in total.",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：unterminated string literal (detected at line 1) (<unknown>, line 1)"
+1,k_regular,k-regular,14,"(12, [
+    (0, [1, 2, 3])",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：'[' was never closed (<unknown>, line 1)"
+1,k_regular,k-regular,15,"(12, [(0,1), (0,2), (0,3), (1,4), (1,5), (1,6), (2,7), (2,8), (2,9), (3,10), (3,11)])",True,False,,isomorphism,
+1,k_regular,k-regular,16,"(12, [((0,1), (0,2), (0,3)), ((1,4), (1,5), (1,6)), ((2,7), (2,8), (2,9)), ((3,10), (3,11), (3,12))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,k_regular,k-regular,17,"(12, [
+    (0, 1), (0, 2), (0, 3),
+    (1, 4), (1, 5), (1, 6),
+    (2, 7), (2, 8), (2, 9),
+    (3, 10), (3, 11), (3, 12)
+])",False,False,,isomorphism,第 12 条边端点越界（节点范围应为 0..11）。
+1,k_regular,k-regular,18,"(12, [((0,1), (0,2), (0,3)), ((1,4), (1,5), (1,6)), ((2,7), (2,8), (2,9)), ((3,10), (3,11), (3,12))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,k_regular,k-regular,19,"(12, [(0,1), (0,2), (0,3), (1,2), (1,3), (1,4), (2,3), (2,4), (3,4), (4,5), (5,6), (5,7), (6,7)])",True,False,,isomorphism,
+1,k_regular,k-regular,20,"(12, [((0,1), (1,2), (2,3)), ((4,5), (5,6), (6,7)), ((8,9), (9,10), (10,11))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,k_regular,k-regular,21,"Sure! Let's go through the steps to construct a 3-regular graph with 12 nodes:
+
+Step 1: Every node must have exactly 3 neighbors.
+
+Since we have 12 nodes, each node will have 3 x 12 = 36 neighbors in ",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：unterminated string literal (detected at line 1) (<unknown>, line 1)"
+1,k_regular,k-regular,22,"(12, [((0,1), (0,2), (0,3)), ((1,4), (1,5), (1,6)), ((2,7), (2,8), (2,9)), ((3,10), (3,11), (3,12))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,k_regular,k-regular,23,"(12, [(0,1), (0,2), (0,3), (1,4), (1,5), (1,6), (2,7), (2,8), (2,9), (3,10), (3,11), (3,12)])",False,False,,isomorphism,第 12 条边端点越界（节点范围应为 0..11）。
+1,k_regular,k-regular,24,"(12, [((0,1), (0,2), (0,3)), ((1,2), (1,4), (1,5)), ((2,3), (2,6), (2,7)), ((3,4), (3,8), (3,9)), ((4,5), (4,10), (4,11)), ((5,6), (5,10), (5,12)), ((6,7), (6,8), (6,11)), ((7,8), (7,9), (7,12)), ((8,",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,k_regular,k-regular,25,"(12, [(0,1,2), (1,3,4), (2,5,6), (3,7,8), (4,9,10), (5,11,12)])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,k_regular,k-regular,26,"(12, [(0,1), (0,2), (0,3), (1,4), (1,5), (1,6), (2,7), (2,8), (2,9), (3,10), (3,11)])",True,False,,isomorphism,
+1,k_regular,k-regular,27,"(12, [(0,1), (0,2), (0,3), (1,4), (1,5), (1,6), (2,7), (2,8), (2,9), (3,10), (3,11)])",True,False,,isomorphism,
+1,k_regular,k-regular,28,"Sure! Here's my reasoning and the final graph:
+
+1. Every node must have exactly 3 neighbors:
+
+Since every node has degree exactly 3, we know that each node will have three neighbors. This means that f",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：unterminated string literal (detected at line 1) (<unknown>, line 1)"
+1,k_regular,k-regular,29,"(12, [(0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,8), (8,9), (9,10), (10,11), (11,0)])",True,False,,isomorphism,
+1,k_regular,k-regular,30,"(12, [('0', '1'), ('0', '2'), ('0', '3'), ('1', '4'), ('1', '5'), ('1', '6'), ('2', '7'), ('2', '8'), ('2', '9'), ('3', '10'), ('3', '11')])",True,False,,isomorphism,
+1,k_regular,k-regular,31,"Sure, I can help you with that!
+
+Step 1: Every node must have exactly 3 neighbors.
+
+Since we want a 3-regular graph, every node must have exactly 3 neighbors. This means that each node will have a deg",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：unterminated string literal (detected at line 15) (<unknown>, line 15)"
+1,k_regular,k-regular,32,"(12, [((0,1), (0,2), (0,3)), ((1,2), (1,4), (1,5)), ((2,3), (2,6), (2,7)), ((3,4), (3,8), (3,9)), ((4,5), (4,10), (4,11)), ((5,6), (5,12), (5,13)), ((6,7), (6,14), (6,15)), ((7,8), (7,16), (7,17)), ((",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,k_regular,k-regular,33,"(12, [((0,1), (0,2), (0,3)), ((1,4), (1,5), (1,6)), ((2,7), (2,8), (2,9)), ((3,10), (3,11), (3,12))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,k_regular,k-regular,34,"(0, [(0,1), (0,2), (0,3)],
+ (1, [(1,4), (1,5), (1,6)],
+ (2, [(2,7), (2,8), (2,9)],
+ (3, [(3,10), (3,11), (3,12)])",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：'(' was never closed (<unknown>, line 3)"
+1,k_regular,k-regular,35,"Sure, I can help you with that! Here's my reasoning and the final graph:
+
+1. Every node must have exactly 3 neighbors:
+
+Since every node has degree exactly 3, we know that each node must have three ne",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：unterminated string literal (detected at line 1) (<unknown>, line 1)"
+1,k_regular,k-regular,36,"Sure, I'd be happy to help! Here's my reasoning and the final graph:
+
+1. Every node must have exactly 3 neighbors:
+
+Since every node has degree exactly 3, we know that each node will have three neighb",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：invalid syntax (<unknown>, line 1)"
+1,k_regular,k-regular,37,"(12, [((0,1), (0,2), (0,3)), ((1,4), (1,5), (1,6)), ((2,7), (2,8), (2,9)), ((3,10), (3,11), (3,12))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,k_regular,k-regular,38,"(12, [
+    (0, 1),
+    (0, 2),
+    (0, 3),
+    (1, 4),
+    (1, 5),
+    (1, 6),
+    (2, 7),
+    (2, 8),
+    (2, 9),
+    (3, 10),
+    (3, 11),
+    (3, 12)
+])",False,False,,isomorphism,第 12 条边端点越界（节点范围应为 0..11）。
+1,k_regular,k-regular,39,"(12, [((0,1), (1,2), (2,3)), ((4,5), (5,8), (8,9)), ((7,6), (6,10), (10,11))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,k_regular,k-regular,40,"(12, [(0,1), (0,2), (0,3), (1,4), (1,5), (1,6), (2,7), (2,8), (2,9), (3,10), (3,11)])",True,False,,isomorphism,
+1,k_regular,k-regular,41,"(12, [((0, 1), (0, 2), (0, 3)), ((1, 4), (1, 5), (1, 6)), ((2, 7), (2, 8), (2, 9)), ((3, 10), (3, 11), (3, 12))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,k_regular,k-regular,42,"(3, [4, 5, 6])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,k_regular,k-regular,43,"Sure, I'd be happy to help! Here's my reasoning and the final graph:
+
+1. Every node must have exactly 3 neighbors:
+
+Since every node has degree exactly 3, we know that each node must have three neighb",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：invalid syntax (<unknown>, line 1)"
+1,k_regular,k-regular,44,"(12, [
+(0,1), (0,2), (0,3)
+(1,2), (1,3), (1,4)
+(2,3), (2,4), (2,5)
+(3,4), (3,5), (3,6)
+])",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：malformed node or string on line 2: <ast.Call object at 0x78c8646c7430>"
+1,k_regular,k-regular,45,"(12, [((0,1), (0,2), (0,3)), ((1,4), (1,5), (1,6)), ((2,7), (2,8), (2,9)), ((3,10), (3,11), (3,12))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,k_regular,k-regular,46,"(12, [((0,1), (0,2), (0,3)), ((1,4), (1,5), (1,6)), ((2,7), (2,8), (2,9)), ((3,10), (3,11), (3,12))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,k_regular,k-regular,47,"(12, [
+    (0,1), (0,2), (0,3),
+    (1,4), (1,5), (1,6),
+    (2,7), (2,8), (2,9),
+    (3,10), (3,11), (3,12)
+])",False,False,,isomorphism,第 12 条边端点越界（节点范围应为 0..11）。
+1,k_regular,k-regular,48,"Sure, I can help you with that!
+
+Step 1: Every node must have exactly 3 neighbors.
+
+Since we have 12 nodes, each node will have 3 neighbors, for a total of 3 x 12 = 36 edges.
+
+Step 2: The total number",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：invalid syntax (<unknown>, line 1)"
+1,k_regular,k-regular,49,"(12, [
+    (0, 1, 2),  # Group 1
+    (3, 4, 5),  # Group 2
+    (6, 7, 8)  # Group 3
+])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,k_regular,k-regular,50,"(12, [(0,1), (0,2), (0,3), (1,4), (1,5), (1,6), (2,7), (2,8), (2,9), (3,10), (3,11)])",True,False,,isomorphism,
+1,k_regular,k-regular,51,"Sure, I can help you with that!
+
+1. First, let's determine the total number of edges in the graph. Since every node has degree exactly 3, there will be a total of 3 edges coming out of each node. Sinc",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：unterminated string literal (detected at line 3) (<unknown>, line 3)"
+1,k_regular,k-regular,52,"(0, [(0,1), (0,2), (0,3)], [(4,5), (4,6), (4,7)], [(8,9), (8,10), (8,11)], [(12,13), (12,14), (12,15)])",False,False,,isomorphism,"输出必须是长度为 2 的元组：`(n, edges)`。"
+1,k_regular,k-regular,53,"(12, [(0,1), (0,2), (0,3), (1,4), (1,5), (1,6), (2,7), (2,8), (2,9), (3,10), (3,11)])",True,False,,isomorphism,
+1,k_regular,k-regular,54,"(0, [(0,1),(0,2)], [(1,3),(1,4)], [(2,5),(2,6)], [(3,7),(3,8)], [(4,9),(4,10)])",False,False,,isomorphism,"输出必须是长度为 2 的元组：`(n, edges)`。"
+1,k_regular,k-regular,55,"(12, [(0,1), (0,2), (0,3), (1,2), (1,3), (2,3), (2,0), (3,1), (3,2), (3,0)])",True,False,,isomorphism,
+1,k_regular,k-regular,56,"(6, [ (6,7), (6,8), (6,9) ])",False,False,,isomorphism,第 1 条边端点越界（节点范围应为 0..5）。
+1,k_regular,k-regular,57,"Sure! Here's my reasoning step by step:
+
+1. Every node must have exactly 3 neighbors:
+
+Since we want every node to have degree exactly 3, we need to ensure that each node has three neighbors. This mea",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：unterminated string literal (detected at line 1) (<unknown>, line 1)"
+1,k_regular,k-regular,58,"Sure! Let's go through the steps to generate a 3-regular graph with 12 nodes:
+
+1. Every node must have exactly 3 neighbors.
+2. The total number of edges must be n*k/2 = 18 (since we have 12 nodes and ",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：unterminated string literal (detected at line 1) (<unknown>, line 1)"
+1,k_regular,k-regular,59,"Sure! Here's my reasoning and the final graph:
+
+1. Every node must have exactly 3 neighbors:
+
+Since every node has degree exactly 3, we know that each node will have three neighbors. This means that t",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：unterminated string literal (detected at line 1) (<unknown>, line 1)"
+1,k_regular,k-regular,60,"(12, [((0,4), (0,8), (1,5)), ((1,9), (2,6), (2,10)), ((4,5), (5,9), (8,10))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,k_regular,k-regular,61,"Sure, I'd be happy to help you with that! Here's my reasoning and the final graph:
+
+1. Every node must have exactly 3 neighbors:
+
+Since every node has degree exactly 3, we know that each node must hav",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：invalid syntax (<unknown>, line 1)"
+1,k_regular,k-regular,62,"(12, [(0,1), (0,2), (0,3), (1,4), (1,5), (1,6), (2,7), (2,8), (2,9), (3,10), (3,11)])",True,False,,isomorphism,
+1,k_regular,k-regular,63,"(12, [
+    (0, 1),
+    (0, 2),
+    (0, 3),
+    (1, 2),
+    (1, 3),
+    (1, 4),
+    (2, 3),
+    (2, 4),
+    (3, 4),
+    (4, 5),
+    (4, 6),
+    (5, 6),
+    (5, 7),
+    (6, 7),
+    (7, 8),
+    (8, 9),
+ ",True,False,,isomorphism,
+1,k_regular,k-regular,64,"Sure, I'd be happy to help!
+
+Step 1: Every node must have exactly 3 neighbors.
+
+Since we want every node to have degree exactly 3, we need to ensure that every node has three neighbors. This means tha",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：unterminated string literal (detected at line 1) (<unknown>, line 1)"
+1,k_regular,k-regular,65,"(12, [
+    (0, 1), (0, 2), (0, 3),
+    (1, 4), (1, 5), (1, 6),
+    (2, 7), (2, 8), (2, 9),
+    (3, 10), (3, 11), (3, 12)
+])",False,False,,isomorphism,第 12 条边端点越界（节点范围应为 0..11）。
+1,k_regular,k-regular,66,"(12, [((0,1), (0,2), (0,3)), ((1,4), (1,5), (1,6)), ((2,7), (2,8), (2,9)), ((3,10), (3,11), (3,12))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,k_regular,k-regular,67,"(12, [((0,1), (0,2), (0,3)), ((1,4), (1,5), (1,6)), ((2,7), (2,8), (2,9)), ((3,10), (3,11), (3,12))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,k_regular,k-regular,68,"(12, [(0,1), (0,2), (0,3), (1,4), (1,5), (1,6), (2,7), (2,8), (2,9), (3,10), (3,11)])",True,False,,isomorphism,
+1,k_regular,k-regular,69,"(0, [(0,1), (0,2), (1,3), (1,4), (2,5), (2,6)])",False,False,,isomorphism,第 1 条边端点越界（节点范围应为 0..-1）。
+1,k_regular,k-regular,70,"(12, [(0,1), (0,2), (0,3), (1,4), (1,5), (1,6), (2,7), (2,8), (2,9), (3,10), (3,11)])",True,False,,isomorphism,
+1,k_regular,k-regular,71,"(12, [(0,1), (0,2), (0,3), (1,4), (1,5), (2,6), (2,7), (3,8), (3,9), (4,10), (4,11), (5,12)])",False,False,,isomorphism,第 12 条边端点越界（节点范围应为 0..11）。
+1,k_regular,k-regular,72,"(12, [(0,1), (0,2), (0,3), (1,4), (1,5), (1,6), (2,7), (2,8), (2,9), (3,10), (3,11)])",True,False,,isomorphism,
+1,k_regular,k-regular,73,"Sure! Here's my reasoning step by step, followed by the final graph:
+
+1. Every node must have exactly 3 neighbors:
+
+Since every node has degree exactly 3, we know that each node will have three neighb",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：unterminated string literal (detected at line 1) (<unknown>, line 1)"
+1,k_regular,k-regular,74,"Sure! Here's my reasoning and the final graph:
+
+1. Every node must have exactly 3 neighbors:
+
+Since every node has degree exactly 3, we know that each node must have three neighbors. This means that f",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：unterminated string literal (detected at line 1) (<unknown>, line 1)"
+1,k_regular,k-regular,75,"(12, [(0, 1, 2), (1, 4, 5, 6), (2, 7, 8, 9)])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,k_regular,k-regular,76,"(12, [
+    (0, 1, 2),
+    (1, 3, 4),
+    (2, 5, 6),
+    (3, 7, 8),
+    (4, 9, 10),
+    (5, 11, 12)
+])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,k_regular,k-regular,77,"(12, [((0,1), (0,2), (0,3)), ((1,4), (1,5), (1,6)), ((2,7), (2,8), (2,9)), ((3,10), (3,11), (3,12))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,k_regular,k-regular,78,"(3, [(3,4), (3,9), (3,10)])",False,False,,isomorphism,第 1 条边端点越界（节点范围应为 0..2）。
+1,k_regular,k-regular,79,"Sure, I can help you with that! Here's my reasoning and the final graph:
+
+1. Every node must have exactly 3 neighbors:
+
+Since we want every node to have degree exactly 3, we need to ensure that each n",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：unterminated string literal (detected at line 1) (<unknown>, line 1)"
+1,k_regular,k-regular,80,"(12, [(0,1), (0,2), (0,3), (1,4), (1,5), (2,6), (2,7), (3,8), (3,9), (4,10), (4,11), (5,12)])",False,False,,isomorphism,第 12 条边端点越界（节点范围应为 0..11）。
+1,k_regular,k-regular,81,"(12, [(0,1), (0,2), (0,3), (1,4), (1,5), (1,6), (2,7), (2,8), (2,9), (3,10), (3,11)])",True,False,,isomorphism,
+1,k_regular,k-regular,82,"(12, [(0,1), (0,2), (0,3), (1,4), (1,5), (2,6), (2,7), (3,8), (3,9), (3,10), (4,11), (4,0)])",True,False,,isomorphism,
+1,k_regular,k-regular,83,"(12, [
+    (0, 1),
+    (0, 2),
+    (1, 3),
+    (1, 4),
+    (2, 5),
+    (2, 6),
+    (3, 7),
+    (3, 8),
+    (4, 9),
+    (4, 10),
+    (5, 11),
+    (5, 12)
+])",False,False,,isomorphism,第 12 条边端点越界（节点范围应为 0..11）。
+1,k_regular,k-regular,84,"(12, [((0,4), (0,8), (4,8)), ((1,2), (1,5), (2,5)), ((2,3), (2,6), (3,6)), ((5,6), (5,9), (6,9)), ((9,10), (9,11), (10,11))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,k_regular,k-regular,85,"(12, [(0,1), (0,2), (0,3), (1,2), (1,3), (1,4), (2,3), (2,4), (2,5), (3,4), (3,5), (3,6)])",True,False,,isomorphism,
+1,k_regular,k-regular,86,"(7, [(7,8), (7,9), (7,10)])",False,False,,isomorphism,第 1 条边端点越界（节点范围应为 0..6）。
+1,k_regular,k-regular,87,"Sure, I'd be happy to help!
+
+First, let's start by considering the degree constraint for each node. Since every node must have degree exactly 3, we know that each node will have 3 neighbors. This mean",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：unterminated string literal (detected at line 1) (<unknown>, line 1)"
+1,k_regular,k-regular,88,"(12, [(0,1), (0,2), (0,3), (1,4), (1,5), (1,6), (2,7), (2,8), (2,9), (3,10), (3,11)])",True,False,,isomorphism,
+1,k_regular,k-regular,89,"(12, [(0,1), (0,2), (0,3), (1,4), (1,5), (1,6), (2,7), (2,8), (2,9), (3,10), (3,11)])",True,False,,isomorphism,
+1,k_regular,k-regular,90,"Sure, I'd be happy to help you with that! Here's my reasoning and the final graph:
+
+1. Every node must have exactly 3 neighbors:
+
+Since we want every node to have degree exactly 3, we need to ensure t",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：unterminated string literal (detected at line 5) (<unknown>, line 5)"
+1,k_regular,k-regular,91,"Sure, I can help you with that!
+
+1. First, let's determine the number of nodes (n) based on the given condition that every node must have exactly 3 neighbors. Since every node has degree 3, the total ",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：unterminated string literal (detected at line 3) (<unknown>, line 3)"
+1,k_regular,k-regular,92,"Sure! Let's go through the steps to generate a 3-regular graph with 12 nodes:
+
+1. Every node must have exactly 3 neighbors.
+2. The total number of edges must be n*k/2 = 18.
+
+To satisfy these condition",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：unterminated string literal (detected at line 1) (<unknown>, line 1)"
+1,k_regular,k-regular,93,"(12, [(0,1), (0,2), (0,3), (1,4), (1,5), (1,6), (2,7), (2,8), (2,9), (3,10), (3,11)])",True,False,,isomorphism,
+1,k_regular,k-regular,94,"(12, [
+    (0,1),
+    (0,2),
+    (0,3),
+    (1,2),
+    (1,3),
+    (2,3)
+])",True,False,,isomorphism,
+1,k_regular,k-regular,95,"(12, [((0,1), (0,2), (0,3)), ((1,4), (1,5), (1,6)), ((2,7), (2,8), (2,9)), ((3,10), (3,11), (3,12))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,k_regular,k-regular,97,"Sure, I'd be happy to help! Here's my reasoning step by step:
+
+1. Every node must have exactly 3 neighbors:
+
+Since we're building a 3-regular graph, every node must have exactly 3 neighbors. This mean",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：invalid syntax (<unknown>, line 1)"
+1,k_regular,k-regular,98,"(12, [(0,1), (0,2), (0,3), (1,4), (1,5), (1,6), (2,7), (2,8), (2,9), (3,10), (3,11)])",True,False,,isomorphism,
+1,k_regular,k-regular,99,"(12, [(0,1), (0,2), (0,3), (1,4), (1,5), (1,6), (2,7), (2,8), (2,9), (3,10), (3,11)])",True,False,,isomorphism,
+1,k_regular,k-regular,100,"(12, [(0,1), (0,2), (0,3), (1,4), (1,5), (1,6), (2,7), (2,8), (3,9), (3,10), (4,11), (5,12)])",False,False,,isomorphism,第 12 条边端点越界（节点范围应为 0..11）。
+1,wheel,Wheel,1,"(8, [((0,1), (0,2), (0,3), ..., (0,7)), ((1,2), (2,3), (3,4), ..., (7,1))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,wheel,Wheel,2,"Sure! Here's my reasoning:
+
+1. Choose node 0 as the center (hub).
+
+Since we want the center to have a degree of 7, we'll choose node 0 as the center.
+
+2. Connect node 0 to all other nodes 1..7.
+
+Since",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：unterminated string literal (detected at line 1) (<unknown>, line 1)"
+1,wheel,Wheel,3,"(8, [
+    (0, 1), (0, 2), (0, 3), (0, 4), (0, 5), (0, 6), (0, 7),
+    (1, 2), (1, 3), (1, 4),
+    (2, 3), (2, 4),
+    (3, 4), (3, 5),
+    (4, 5), (4, 6),
+    (5, 6), (5, 7),
+    (6, 7), (7, 0)
+])",True,False,,isomorphism,
+1,wheel,Wheel,4,"(8, [('0', '1'), ('0', '2'), ('0', '3'), ('0', '4'), ('0', '5'), ('0', '6'), ('0', '7')])",True,False,,isomorphism,
+1,wheel,Wheel,5,"(8, [(0,1), (0,2), ..., (0,7), (1,2), (1,3), ..., (1,7), (2,3), (2,4), ..., (2,7), ...])",False,False,,isomorphism,"第 3 条边不是二元组 `(u,v)`。"
+1,wheel,Wheel,6,"(8, [((0,1), (0,2), (0,3), ..., (0,7)), ((1,2), (1,3), (1,4), ..., (1,7)), ((2,3), (2,4), (2,5), ..., (2,7)), ..., ((7,0), (7,1), (7,2), ..., (7,7))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,wheel,Wheel,7,"(8, [((0,1), (0,2), (0,3), ..., (0,7)), ((1,2), (1,3), (1,4), ..., (1,7)), ((2,3), (2,4), (2,5), ..., (2,7)), ..., ((7,0), (7,1), (7,2), ..., (7,7))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,wheel,Wheel,9,"(8, [((0, 1), (0, 2), (0, 3), (0, 4), (0, 5), (0, 6), (0, 7)), ((1, 2), (2, 3), (3, 4), (4, 5), (5, 6), (6, 7), (7, 1))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,wheel,Wheel,10,"(8, [((0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7)), ((1,2), (1,3), (1,4)), ((2,3), (2,4)), ((3,4), (3,5)), ((4,5), (4,6)), ((5,6), (5,7)), ((6,7), (6,1))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,wheel,Wheel,11,"(8, [((0,1), (0,2), (0,3), ..., (0,7)), ((1,2), (2,3), (3,4), ..., (7,1))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,wheel,Wheel,12,"(8, [((0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7)), ((1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,1))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,wheel,Wheel,13,"(8, [
+    (0, 1),
+    (0, 2),
+    (0, 3),
+    (0, 4),
+    (0, 5),
+    (0, 6),
+    (0, 7),
+    (1, 2),
+    (1, 3),
+    (1, 4),
+    (1, 5),
+    (1, 6),
+    (1, 7),
+    (2, 3),
+    (2, 4),
+    (2, 5),
+  ",True,False,,isomorphism,
+1,wheel,Wheel,14,"Sure! Here's my reasoning and the final graph:
+
+1. Choose node 0 as the center (hub):
+
+Let's choose node 0 as the center of the wheel graph. This node will have a degree of 7, as it will be connected ",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：unterminated string literal (detected at line 1) (<unknown>, line 1)"
+1,wheel,Wheel,15,"(8, [((0,1), (0,2), (0,3), ..., (0,7)), ((1,2), (1,3), (1,4), ..., (1,7)), ((2,3), (2,4), (2,5), ..., (2,7)), ..., ((7,0), (7,1), (7,2), ..., (7,6))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,wheel,Wheel,17,"(8, [((0,1), (0,2), (0,3), ..., (0,7), (0,1))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,wheel,Wheel,18,"(8, [((0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7)), ((1,2), (1,3), (1,4)), ((2,3), (2,4)), ((3,4), (3,5)), ((4,5), (4,6)), ((5,6), (5,7)), ((6,7), (6,1))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,wheel,Wheel,19,"(8, [((0,1), (0,2), (0,3), ..., (0,7)), ((1,2), (1,3), (1,4), ..., (1,7)), ((2,3), (2,4), (2,5), ..., (2,7)), ..., ((7,0), (7,1), (7,2), ..., (7,6))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,wheel,Wheel,20,"(8, [((0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7)), ((1,2), (2,3), (3,4)), ((4,5), (5,6), (6,7)), ((7,0), (0,1), (1,2), (2,3), (3,4), (4,5), (5,6), (6,7))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,wheel,Wheel,21,"(8, [((0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7)), ((1,2), (2,3), (3,4), (4,5), (5,6), (6,7)), ((1,3), (2,4), (3,5), (4,6), (5,7)), ((2,4), (3,5), (4,6), (5,7)), ((3,5), (4,6), (5,7)), ((4,6), (5",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,wheel,Wheel,22,"(8, [((0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7)), ((1,2), (1,3), (1,4)), ((2,3), (2,4)), ((3,4), (3,5)), ((4,5), (4,6)), ((5,6), (5,7)), ((6,7), (6,1))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,wheel,Wheel,23,"(8, [((0,1), (0,2), (0,3), ..., (0,7)), ((1,2), (2,3), (3,4), ..., (7,1))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,wheel,Wheel,24,"(8, [((0,1), (0,2), (0,3), ..., (0,7), (1,2), (1,3), (2,3), (3,4), (4,5), (5,6), (6,7), (7,1)])",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：closing parenthesis ']' does not match opening parenthesis '(' (<unknown>, line 1)"
+1,wheel,Wheel,25,"(8, [((0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7)), ((1,2), (1,3), (1,4)), ((2,3), (2,4)), ((3,4), (3,5)), ((4,5), (4,6)), ((5,6), (5,7)), ((6,7), (6,1))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,wheel,Wheel,26,"(8, [(0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7), (1,2), (1,3), (1,4), (1,5), (1,6), (1,7), (2,3), (2,4), (2,5), (2,6), (2,7), (3,4), (3,5), (3,6), (3,7), (4,5), (4,6), (4,7), (5,6), (5,7), (6,7),",True,False,,isomorphism,
+1,wheel,Wheel,27,"(8, [((0,1), (0,2), (0,3), ..., (0,7)), ((1,2), (1,3), (1,4), ..., (1,7)), ((2,3), (2,4), (2,5), ..., (2,7)), ..., ((7,0), (7,1), (7,2), ..., (7,7))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,wheel,Wheel,28,"(8, [(0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7)])",True,False,,isomorphism,
+1,wheel,Wheel,29,"(8, [('0', '1'), ('0', '2'), ('0', '3'), ('0', '4'), ('0', '5'), ('0', '6'), ('0', '7'), ('1', '2'), ('1', '3'), ('1', '4'), ('1', '5'), ('1', '6'), ('1', '7'), ('2', '3'), ('2', '4'), ('2', '5'), ('2",True,False,,isomorphism,
+1,wheel,Wheel,30,"(8, [((0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7)), ((1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,1))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,wheel,Wheel,31,"(8, [((0,1), (0,2), (0,3), ..., (0,7)), ((1,2), (1,3), (1,4), ..., (1,7)), ((2,3), (2,4), (2,5), ..., (2,7)), ..., ((7,0), (7,1), (7,2), ..., (7,6))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,wheel,Wheel,32,"(8, [((0,1), (0,2), (0,3), ..., (0,7)), ((1,2), (1,3), (1,4), ..., (1,7)), ((2,3), (2,4), (2,5), ..., (2,7)), ..., ((7,0), (7,1), (7,2), ..., (7,7))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,wheel,Wheel,33,"(8, [((0,1), (0,2), (0,3), ..., (0,7)), ((1,2), (1,3), (1,4), ..., (1,7)), ((2,3), (2,4), (2,5), ..., (2,7)), ..., ((7,6), (7,5), (7,4), ..., (7,1))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,wheel,Wheel,34,"(8, [('0', '1'), ('0', '2'), ('0', '3'), ('0', '4'), ('0', '5'), ('0', '6'), ('0', '7')])",True,False,,isomorphism,
+1,wheel,Wheel,35,"(8, [(0,1), (0,2), ..., (0,7), (1,2), (1,3), ..., (7,1)])",False,False,,isomorphism,"第 3 条边不是二元组 `(u,v)`。"
+1,wheel,Wheel,36,"(8, [((0,1), (0,2), (0,3), ..., (0,7)), ((1,2), (1,3), (1,4), ..., (1,7)), ((2,3), (2,4), (2,5), ..., (2,7)), ..., ((7,0), (7,1), (7,2), ..., (7,7))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,wheel,Wheel,37,"(8, [((0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7)), ((1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,1))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,wheel,Wheel,38,"(8, [((0,1), (0,2), (0,3), ..., (0,7)), ((1,2), (2,3), (3,4), ..., (7,1))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,wheel,Wheel,39,"(8, [((0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7)), ((1,2), (2,3), (3,4), (4,5), (5,6), (6,7)), ((1,3), (2,4), (3,5), (4,6), (5,7)), ((1,4), (2,5), (3,6), (4,7)), ((1,5), (2,6), (3,7)), ((1,6), (2",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,wheel,Wheel,40,"(8, [((0,1), (0,2), (0,3), ..., (0,7)), ((1,2), (1,3), (1,4), ..., (1,7)), ((2,3), (2,4), (2,5), ..., (2,7)), ..., ((7,0), (7,1), (7,2), ..., (7,6))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,wheel,Wheel,41,"(8, [((0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7)), ((1,2), (1,3)), ((2,3), (2,4)), ((3,4), (3,5)), ((4,5), (4,6)), ((5,6), (5,7)), ((6,7), (6,1))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,wheel,Wheel,42,"(8, [(0,1), (0,2), (0,3), ..., (0,7), (1,2), (1,3), (2,3), ..., (7,1)])",False,False,,isomorphism,"第 4 条边不是二元组 `(u,v)`。"
+1,wheel,Wheel,43,"(8, [('0', '1'), ('0', '2'), ('0', '3'), ('0', '4'), ('0', '5'), ('0', '6'), ('0', '7')])",True,False,,isomorphism,
+1,wheel,Wheel,44,"(8, [((0,1), (0,2), (0,3), ..., (0,7)), ((1,2), (2,3), (3,4), ..., (7,1))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,wheel,Wheel,45,"(8, [((0,1), (0,2), (0,3), ..., (0,7)), ((1,2), (1,3), (1,4), ..., (1,7)), ((2,3), (2,4), (2,5), ..., (2,7)), ..., ((7,0), (7,1), (7,2), ..., (7,6))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,wheel,Wheel,46,"(8, [
+    (0, 1), (0, 2), (0, 3), ..., (0, 7),
+    (1, 2), (1, 3), (1, 4), ..., (1, 7),
+    (2, 3), (2, 4), (2, 5), ..., (2, 7),
+    (3, 4), (3, 5), (3, 6), ..., (3, 7),
+    (4, 5), (4, 6), (4, 7),
+  ",False,False,,isomorphism,"第 4 条边不是二元组 `(u,v)`。"
+1,wheel,Wheel,47,"(8, [((0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7)), ((1,2), (1,3), (1,4)), ((2,3), (2,4)), ((3,4), (3,5)), ((4,5), (4,6)), ((5,6), (5,7))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,wheel,Wheel,48,"(8, [((0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7), (1,2), (1,3), (1,4), (1,5), (1,6), (1,7), (2,3), (2,4), (2,5), (2,6), (2,7), (3,4), (3,5), (3,6), (3,7), (4,5), (4,6), (4,7), (5,6), (5,7), (6,7)",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：closing parenthesis ']' does not match opening parenthesis '(' (<unknown>, line 1)"
+1,wheel,Wheel,49,"(8, [((0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7)), ((1,2), (2,3), (3,4), (4,5), (5,6), (6,7)), ((1,3), (2,4), (3,5), (4,6), (5,7)), ((1,4), (2,5), (3,6), (4,7)), ((1,5), (2,6), (3,7)), ((1,6), (2",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,wheel,Wheel,50,"(8, [((0,1), (0,2), (0,3), ..., (0,7)), ((1,2), (1,3), (1,4), ..., (1,7)), ((2,3), (2,4), (2,5), ..., (2,7)), ..., ((7,0), (7,1), (7,2), ..., (7,6))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,wheel,Wheel,51,"(8, [((0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7)), ((1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,1))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,wheel,Wheel,52,"(8, [((0,1), (0,2), (0,3), ..., (0,7)), ((1,2), (1,3), (1,4), ..., (1,7)), ((2,3), (2,4), (2,5), ..., (2,7)), ..., ((7,0), (7,1), (7,2), ..., (7,7))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,wheel,Wheel,53,"(8, [((0,1), (0,2), (0,3), ..., (0,7)), ((1,2), (1,3), (1,4), ..., (1,7)), ...])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,wheel,Wheel,54,"(8, [((0,1), (0,2), (0,3), ..., (0,7)), ((1,2), (1,3), (1,4), ..., (1,7)), ((2,3), (2,4), (2,5), ..., (2,7)), ..., ((7,0), (7,1), (7,2), ..., (7,6))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,wheel,Wheel,55,"(8, [('0', '1'), ('0', '2'), ('0', '3'), ('0', '4'), ('0', '5'), ('0', '6'), ('0', '7'), ('1', '2'), ('1', '3'), ('2', '3'), ('2', '4'), ('3', '4'), ('3', '5'), ('4', '5'), ('4', '6'), ('5', '6'), ('5",True,False,,isomorphism,
+1,wheel,Wheel,56,"(8, [
+    (0, 1), (0, 2), (0, 3), ..., (0, 7),
+    (1, 2), (1, 3), (1, 4), ..., (1, 7),
+    (2, 3), (2, 4), (2, 5), ..., (2, 7),
+    (3, 4), (3, 5), (3, 6), ..., (3, 7),
+    (4, 5), (4, 6), (4, 7),
+  ",False,False,,isomorphism,"第 4 条边不是二元组 `(u,v)`。"
+1,wheel,Wheel,57,"(8, [((0,1), (0,2), (0,3), ..., (0,7)), ((1,2), (2,3), (3,4), ..., (7,1))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,wheel,Wheel,58,"(8, [((0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7)), ((1,2), (1,3), (1,4), (1,5), (1,6), (1,7)), ((2,3), (2,4), (2,5), (2,6), (2,7)), ((3,4), (3,5), (3,6), (3,7)), ((4,5), (4,6), (4,7)), ((5,6), (5",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,wheel,Wheel,59,"(8, [
+    (0, 1), (0, 2), (0, 3), (0, 4), (0, 5), (0, 6), (0, 7),
+    (1, 2), (1, 3), (1, 4),
+    (2, 3), (2, 4),
+    (3, 4), (3, 5),
+    (4, 5), (4, 6),
+    (5, 6), (5, 7),
+    (6, 7),
+])",True,False,,isomorphism,
+1,wheel,Wheel,60,"(8, [((0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7)), ((1,2), (2,3), (3,4), (4,5), (5,6), (6,7)), ((1,3), (2,4), (3,5), (4,6), (5,7)), ((2,4), (3,5), (4,6), (5,7)), ((3,5), (4,6), (5,7)), ((4,6), (5",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,wheel,Wheel,61,"(8, [((0, 1), (0, 2), (0, 3), ..., (0, 7), (1, 2), (2, 3), (3, 4), (4, 5), (5, 6), (6, 7), (7, 1))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,wheel,Wheel,62,"(8, [((0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7)), ((1,2), (1,3), (1,4)), ((2,3), (2,4)), ((3,4), (3,5)), ((4,5), (4,6)), ((5,6), (5,7)), ((6,7), (6,1))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,wheel,Wheel,63,"(8, [((0,1), (0,2), (0,3), ..., (0,7)), ((1,2), (1,3), (1,4)), ((2,3), (2,4), (2,5)), ((3,4), (3,5), (3,6)), ((4,5), (4,6), (4,7)), ((5,6), (5,7)), ((6,7))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,wheel,Wheel,64,"(8, [((0,1), (0,2), (0,3), ..., (0,7)), ((1,2), (1,3), (1,4), ..., (1,7)), ((2,3), (2,4), (2,5), ..., (2,7)), ..., ((7,0), (7,1), (7,2), ..., (7,7))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,wheel,Wheel,65,"(8, [((0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7)), ((1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,1))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,wheel,Wheel,66,"(8, [('0', '1'), ('0', '2'), ('0', '3'), ('0', '4'), ('0', '5'), ('0', '6'), ('0', '7')])",True,False,,isomorphism,
+1,wheel,Wheel,67,"(8, [((0, 1), (0, 2), (0, 3), ..., (0, 7)), ((1, 2), (2, 3), (3, 4), ..., (7, 1))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,wheel,Wheel,68,"(8, [((0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7)), ((1,2), (1,3)), ((2,3), (2,4)), ((3,4), (3,5)), ((4,5), (4,6)), ((5,6), (5,7)), ((6,7), (6,1))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,wheel,Wheel,69,"(8, [(0,1), (0,2), (0,3), ..., (0,7), (1,2), (1,3), (2,3), (3,4), (4,5), (5,6), (6,7), (7,1)])",False,False,,isomorphism,"第 4 条边不是二元组 `(u,v)`。"
+1,wheel,Wheel,70,"(8, [((0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7)), ((1,2), (2,3), (3,4), (4,5), (5,6), (6,7)), ((1,3), (2,4), (3,5), (4,6), (5,7)), ((2,4), (3,5), (4,6)), ((3,5), (4,6)), ((4,5), (5,6)), ((5,6), ",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,wheel,Wheel,71,"(8, [((0,1), (0,2), (0,3), ..., (0,7)), ((1,2), (1,3), (1,4), ..., (1,7)), ...])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,wheel,Wheel,72,"(8, [((0,1), (0,2), (0,3), ..., (0,7)), ((1,2), (1,3), (1,4), ..., (1,7)), ((2,3), (2,4), (2,5), ..., (2,7)), ..., ((7,0), (7,1), (7,2), ..., (7,6))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,wheel,Wheel,73,"(8, [((0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7)), ((1,2), (2,3), (3,4), (4,5), (5,6), (6,7)), ((1,3), (2,4), (3,5), (4,6), (5,7)), ((2,4), (3,5), (4,6), (5,7)), ((3,5), (4,6), (5,7)), ((4,6), (5",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,wheel,Wheel,74,"(8, [((0,1), (0,2), (0,3), ..., (0,7)), ((1,2), (1,3), (1,4), ..., (1,7)), ((2,3), (2,4), (2,5), ..., (2,7)), ..., ((7,0), (7,1), (7,2), ..., (7,7))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,wheel,Wheel,75,"(8, [((0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7)), ((1,2), (2,3), (3,4), (4,5), (5,6), (6,7)), ((1,3), (2,4), (3,5), (4,6), (5,7)), ((2,4), (3,5), (4,6)), ((3,5), (4,6)), ((4,5), (5,6)), ((5,6), ",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,wheel,Wheel,76,"(8, [((0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7)), ((1,2), (1,3)), ((2,3), (2,4)), ((3,4), (3,5)), ((4,5), (4,6)), ((5,6), (5,7)), ((6,7), (6,1))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,wheel,Wheel,77,"(8, [((0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7)), ((1,2), (2,3), (3,4), (4,5), (5,6), (6,7)), ((1,3), (2,4), (3,5), (4,6), (5,7)), ((2,4), (3,5), (4,6), (5,7)), ((3,5), (4,6), (5,7)), ((4,6), (5",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,wheel,Wheel,78,"(8, [((0,1), (0,2), (0,3), ..., (0,7)), ((1,2), (2,3), (3,4), ..., (7,1))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,wheel,Wheel,79,"(8, [('0', '1'), ('0', '2'), ('0', '3'), ('0', '4'), ('0', '5'), ('0', '6'), ('0', '7')])",True,False,,isomorphism,
+1,wheel,Wheel,80,"(8, [((0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7)), ((1,2), (2,3), (3,4), (4,5), (5,6), (6,7)), ((1,3), (2,4), (3,5), (4,6), (5,7)), ((1,4), (2,5), (3,6), (4,7)), ((1,5), (2,6), (3,7)), ((1,6), (2",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,wheel,Wheel,81,"(8, [((0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7)), ((1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,1))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,wheel,Wheel,82,"(8, [((0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7)), ((1,2), (2,3), (3,4), (4,5), (5,6), (6,7)), ((1,3), (2,4), (3,5), (4,6), (5,7)), ((2,4), (3,5), (4,6)), ((3,5), (4,6)), ((4,5), (5,6)), ((5,6), ",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,wheel,Wheel,83,"(8, [((0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7)), ((1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,1)), ...])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,wheel,Wheel,84,"(8, [((0,1), (0,2), (0,3), ..., (0,7)), ((1,2), (2,3), (3,4), ..., (7,1))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,wheel,Wheel,85,"(8, [((0,1), (0,2), (0,3), ..., (0,7)), ((1,2), (1,3), (1,4), ..., (1,7)), ((2,3), (2,4), (2,5), ..., (2,7)), ..., ((7,0), (7,1), (7,2), ..., (7,6))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,wheel,Wheel,86,"(8, [((0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7)), ((1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,1))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,wheel,Wheel,87,"(8, [((0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7)), ((1,2), (1,3)), ((2,3), (2,4)), ((3,4), (3,5)), ((4,5), (4,6)), ((5,6), (5,7)), ((6,7), (6,0))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,wheel,Wheel,88,"(8, [((0,1), (0,2), (0,3), ..., (0,7)), ((1,2), (2,3), (3,4), ..., (7,1))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,wheel,Wheel,89,"(8, [('0', '1'), ('0', '2'), ('0', '3'), ('0', '4'), ('0', '5'), ('0', '6'), ('0', '7')])",True,False,,isomorphism,
+1,wheel,Wheel,90,"(8, [((0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7)), ((1,2), (2,3), (3,4), (4,5), (5,6), (6,7)), ((1,3), (2,4), (3,5), (4,6), (5,7)), ((1,4), (2,5), (3,6), (4,7)), ((1,5), (2,6), (3,7)), ((1,6), (2",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,wheel,Wheel,91,"(8, [
+    (0, 1), (0, 2), (0, 3), ..., (0, 7),
+    (1, 2), (1, 3), (1, 4), ..., (1, 7),
+    (2, 3), (2, 4), (2, 5), ..., (2, 7),
+    (3, 4), (3, 5), (3, 6), ..., (3, 7),
+    (4, 5), (4, 6), (4, 7),
+  ",False,False,,isomorphism,"第 4 条边不是二元组 `(u,v)`。"
+1,wheel,Wheel,92,"(8, [((0,1), (0,2), (0,3), ..., (0,7)), ((1,2), (1,3), (1,4)), ((2,3), (2,4)), ((3,4), (3,5)), ((4,5), (4,6)), ((5,6), (5,7)), ((6,7), (6,1))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,wheel,Wheel,93,"Sure! Here's my reasoning:
+
+1. Choose node 0 as the center (hub):
+
+Since we want the center to have degree 7 and each rim node to have degree 3, it makes sense to choose node 0 as the center.
+
+2. Conn",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：unterminated string literal (detected at line 1) (<unknown>, line 1)"
+1,wheel,Wheel,94,"(8, [((0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7)), ((1,2), (2,3), (3,4), (4,5), (5,6), (6,7)), ((1,3), (2,4), (3,5), (4,6), (5,7)), ((1,4), (2,5), (3,6), (4,7)), ((1,5), (2,6), (3,7)), ((1,6), (2",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,wheel,Wheel,95,"(8, [((0,1), (0,2), (0,3), ..., (0,7)), ((1,2), (2,3), (3,4), ..., (7,1))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,wheel,Wheel,96,"(8, [((0,1), (0,2), (0,3), ..., (0,7)), ((1,2), (1,3), (1,4), ..., (1,7)), ((2,3), (2,4), (2,5), ..., (2,7)), ..., ((7,0), (7,1), (7,2), ..., (7,6))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,wheel,Wheel,97,"(8, [((0,1), (0,2), (0,3), ..., (0,7)), ((1,2), (1,3), (1,4), ..., (1,7)), ((2,3), (2,4), (2,5), ..., (2,7)), ..., ((7,0), (7,1), (7,2), ..., (7,6))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,wheel,Wheel,98,"(8, [((0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7)), ((1,2), (2,3), (3,4), (4,5), (5,6), (6,7)), ((1,3), (2,4), (3,5), (4,6), (5,7)), ((2,4), (3,5), (4,6)), ((3,5), (4,6)), ((4,5), (5,6)), ((5,6), ",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,wheel,Wheel,99,"(8, [((0,1), (0,2), (0,3), (0,4), (0,5), (0,6), (0,7)), ((1,2), (1,3), (1,4)), ((2,3), (2,4)), ((3,4), (3,5)), ((4,5), (4,6)), ((5,6), (5,7)), ((6,7), (6,1))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,wheel,Wheel,100,"(8, [(0,1), (0,2), (0,3), ..., (0,7), (1,2), (1,3), (1,4), ..., (1,7), (2,3), (2,4), ..., (2,7), (3,4), (3,5), ..., (3,7), (4,5), (4,6), ..., (4,7), (5,6), (5,7), (6,7)])",False,False,,isomorphism,"第 4 条边不是二元组 `(u,v)`。"
+1,bipartite,Bipartite,1,"(5, [((0,5), (1,5), (2,5), (3,5), (4,5))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,bipartite,Bipartite,3,"(5, [((0,5), (1,5), (2,5), (3,5), (4,5))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,bipartite,Bipartite,6,"(8, [((0,5), (1,6), (2,7), (3,8), (4,5)), ((5,0), (5,1), (5,2), (5,3), (5,4))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,bipartite,Bipartite,8,"(5, [(0,5), (1,5), (2,5), (3,5), (4,5)])",False,False,,isomorphism,第 1 条边端点越界（节点范围应为 0..4）。
+1,bipartite,Bipartite,9,"(5, [((0,5), (1,6), (2,7), (3,8), (4,5))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,bipartite,Bipartite,10,"(5, [((0, 5), (1, 5), (2, 5), (3, 5), (4, 5))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,bipartite,Bipartite,11,"(5, [((0,5), (1,5), (2,5), (3,5), (4,5))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,bipartite,Bipartite,12,"(5, [((0,5), (1,5), (2,5), (3,5), (4,5))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,bipartite,Bipartite,13,"(9, [((0, 5), (1, 6), (2, 7), (3, 8), (4, 9))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,bipartite,Bipartite,14,"(10, [((0,5), (1,5), (2,5), (3,5), (4,5)),])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,bipartite,Bipartite,16,"(5, [((0,5), (1,6), (2,7), (3,8), (4,5))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,bipartite,Bipartite,17,"(8, [((0, 5), (1, 5), (2, 5), (3, 5)), ((4, 5), (4, 5), (4, 5), (4, 5))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,bipartite,Bipartite,18,"(5, [(0, 5), (1, 5), (2, 5), (3, 5), (4, 5)])",False,False,,isomorphism,第 1 条边端点越界（节点范围应为 0..4）。
+1,bipartite,Bipartite,19,"(5, [(0, 5), (1, 5), (2, 5), (3, 5), (4, 5)])",False,False,,isomorphism,第 1 条边端点越界（节点范围应为 0..4）。
+1,bipartite,Bipartite,20,"(5, [(0, 5), (1, 5), (2, 5), (3, 5), (4, 5)])",False,False,,isomorphism,第 1 条边端点越界（节点范围应为 0..4）。
+1,bipartite,Bipartite,21,"(5, [
+    (0, 5),
+    (1, 5),
+    (2, 5),
+    (3, 5),
+    (4, 5)
+])",False,False,,isomorphism,第 1 条边端点越界（节点范围应为 0..4）。
+1,bipartite,Bipartite,23,"(8, [((0, 5), (1, 5), (2, 5), (3, 5), (4, 5))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,bipartite,Bipartite,24,"(10, [((0, 5), (1, 5), (2, 5), (3, 5), (4, 5))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,bipartite,Bipartite,25,"(9, [(0, 5), (1, 6), (2, 7), (3, 8), (4, 9)])",False,False,,isomorphism,第 5 条边端点越界（节点范围应为 0..8）。
+1,bipartite,Bipartite,27,"(8, [((0, 5), (1, 5), (2, 5), (3, 5), (4, 5))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,bipartite,Bipartite,28,"Sure, I can help you with that! Here's my reasoning:
+
+1. Split nodes into two groups: {0, 1, 2, 3, 4} and {5, 5, 5, 5, 5}.
+
+Since we have 5 nodes in each group, we can start by creating two sets of no",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：unterminated string literal (detected at line 1) (<unknown>, line 1)"
+1,bipartite,Bipartite,29,"(10, [((0, 5), (1, 5), (2, 5), (3, 5), (4, 5))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,bipartite,Bipartite,31,"(10, [((0, 5), (1, 5), (2, 5), (3, 5), (4, 5))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,bipartite,Bipartite,32,"(5, [(0,5), (1,5), (2,5), (3,5), (4,5)])",False,False,,isomorphism,第 1 条边端点越界（节点范围应为 0..4）。
+1,bipartite,Bipartite,33,"(5, [(0, 5), (1, 5), (2, 5), (3, 5), (4, 5)])",False,False,,isomorphism,第 1 条边端点越界（节点范围应为 0..4）。
+1,bipartite,Bipartite,38,"(5, [(0,5), (1,5), (2,5), (3,5), (4,5)])",False,False,,isomorphism,第 1 条边端点越界（节点范围应为 0..4）。
+1,bipartite,Bipartite,41,"(9, [((0,5), (1,6), (2,7), (3,8), (4,9))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,bipartite,Bipartite,43,"(5, [((0,5), (1,5), (2,5), (3,5), (4,5))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,bipartite,Bipartite,46,"(5, [(0, 5), (1, 5), (2, 5), (3, 5)])",False,False,,isomorphism,第 1 条边端点越界（节点范围应为 0..4）。
+1,bipartite,Bipartite,47,"(9, [(0, 5), (1, 6), (2, 7), (3, 8), (4, 9)])",False,False,,isomorphism,第 5 条边端点越界（节点范围应为 0..8）。
+1,bipartite,Bipartite,48,"(10, [((0, 5), (1, 5), (2, 5), (3, 5), (4, 5))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,bipartite,Bipartite,49,"(10, [((0, 5), (1, 5), (2, 5), (3, 5), (4, 5))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,bipartite,Bipartite,51,"(5, [((0,5), (1,6), (2,7), (3,8), (4,9))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,bipartite,Bipartite,53,"(5, [(0,5), (1,5), (2,5), (3,5), (4,5)])",False,False,,isomorphism,第 1 条边端点越界（节点范围应为 0..4）。
+1,bipartite,Bipartite,55,"(5, [(0,5), (1,5), (2,5), (3,5), (4,5)])",False,False,,isomorphism,第 1 条边端点越界（节点范围应为 0..4）。
+1,bipartite,Bipartite,56,"(9, [(0, 5), (1, 6), (2, 7), (3, 8), (4, 9)])",False,False,,isomorphism,第 5 条边端点越界（节点范围应为 0..8）。
+1,bipartite,Bipartite,57,"(10, [((0,5), (1,5), (2,5), (3,5), (4,5))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,bipartite,Bipartite,58,"(10, [((0,5), (1,6), (2,7), (3,8), (4,9))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,bipartite,Bipartite,61,"(9, [((0,5), (1,6), (2,7), (3,8), (4,9))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,bipartite,Bipartite,62,"(8, [((0,5), (1,5), (2,5), (3,5), (4,5)),])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,bipartite,Bipartite,63,"(5, [(0, 5), (1, 5), (2, 5), (3, 5), (4, 5)])",False,False,,isomorphism,第 1 条边端点越界（节点范围应为 0..4）。
+1,bipartite,Bipartite,68,"(5, [((0,5), (1,5), (2,5), (3,5), (4,5))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,bipartite,Bipartite,69,"(10, [((0, 5), (1, 5), (2, 5), (3, 5), (4, 5))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,bipartite,Bipartite,70,"(10, [((0,5), (1,6), (2,7), (3,8), (4,9))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,bipartite,Bipartite,72,"(5, [((0,5), (1,5), (2,5), (3,5), (4,5))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,bipartite,Bipartite,73,"(9, [((0, 5), (1, 6), (2, 7), (3, 8), (4, 9))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,bipartite,Bipartite,75,"(10, [((0,5), (1,5), (2,5), (3,5), (4,5))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,bipartite,Bipartite,78,"(8, [(0,5), (1,6), (2,7), (3,8), (4,5)])",False,False,,isomorphism,第 4 条边端点越界（节点范围应为 0..7）。
+1,bipartite,Bipartite,80,"(8, [((0,5), (1,6), (2,7), (3,8), (4,5)),])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,bipartite,Bipartite,81,"(10, [((0, 5), (1, 5), (2, 5), (3, 5), (4, 5))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,bipartite,Bipartite,82,"(5, [((0,5), (1,6), (2,7), (3,8), (4,9))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,bipartite,Bipartite,84,"(10, [((0,5), (1,5), (2,5), (3,5), (4,5))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,bipartite,Bipartite,85,"(5, [(0,5), (1,5), (2,5), (3,5), (4,5)])",False,False,,isomorphism,第 1 条边端点越界（节点范围应为 0..4）。
+1,bipartite,Bipartite,87,"(8, [((0, 5), (1, 5), (2, 5), (3, 5), (4, 5))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,bipartite,Bipartite,88,"(10, [((0,5), (1,6), (2,7), (3,8), (4,5))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,bipartite,Bipartite,89,"(5, [((0,5), (1,5), (2,5), (3,5), (4,5))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,bipartite,Bipartite,90,"(10, [((0, 5), (1, 5), (2, 5), (3, 5), (4, 5))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,bipartite,Bipartite,91,"(8, [((0,5), (1,6), (2,7), (3,8)), ((4,5), (4,6), (5,7), (5,8))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,bipartite,Bipartite,93,"(5, [(0, 5), (1, 5), (2, 5), (3, 5), (4, 5)])",False,False,,isomorphism,第 1 条边端点越界（节点范围应为 0..4）。
+1,bipartite,Bipartite,96,"(10, [(0,5), (1,5), (2,5), (3,5), (0,1), (1,2), (2,3), (3,4)])",True,False,,isomorphism,
+1,bipartite,Bipartite,97,"(10, [((0, 5), (1, 5), (2, 5), (3, 5), (4, 5))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,bipartite,Bipartite,98,"(5, [(0, 5), (1, 5), (2, 5), (3, 5), (4, 5)])",False,False,,isomorphism,第 1 条边端点越界（节点范围应为 0..4）。
+1,bipartite,Bipartite,100,"(8, [((0, 5), (1, 5), (2, 5), (3, 5), (4, 5))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,k_coloring,k-coloring,1,"(10, [
+    (0, 3),
+    (1, 4),
+    (2, 5),
+    (3, 6),
+    (4, 7),
+    (5, 8),
+    (6, 9),
+    (7, 10),
+    (8, 11),
+    (9, 12)
+])",False,False,,isomorphism,第 8 条边端点越界（节点范围应为 0..9）。
+1,k_coloring,k-coloring,2,"(10, [((0,0), (0,1), (0,2), (0,3)), ((1,0), (1,1), (1,2), (1,3)), ((2,0), (2,1), (2,2), (2,3)), ((3,0), (3,1), (3,2), (3,3)), ((4,0), (4,1), (4,2), (4,3)), ((5,0), (5,1), (5,2), (5,3)), ((6,0), (6,1),",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,k_coloring,k-coloring,3,"(10, [(0, 3), (1, 4), (2, 5), (3, 6), (4, 7), (5, 8), (6, 7), (7, 8), (8, 9)])",True,False,,isomorphism,
+1,k_coloring,k-coloring,4,"(10, [
+    (0, 1),
+    (0, 2),
+    (1, 3),
+    (1, 4),
+    (2, 5),
+    (2, 6),
+    (3, 7),
+    (3, 8),
+    (4, 9),
+    (5, 10)
+])",False,False,,isomorphism,第 10 条边端点越界（节点范围应为 0..9）。
+1,k_coloring,k-coloring,5,"(10, [
+    (0, 1, 2),
+    (3, 4, 5),
+    (6, 7, 8),
+    (1, 3, 6),
+    (2, 4, 7),
+    (5, 8, 9),
+    (9, 10, 0)
+])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,k_coloring,k-coloring,6,"(10, [
+    (0, 1),
+    (0, 3),
+    (0, 5),
+    (1, 2),
+    (1, 4),
+    (1, 7),
+    (2, 4),
+    (2, 6),
+    (3, 5),
+    (3, 7),
+    (4, 6),
+    (4, 8),
+    (5, 7),
+    (5, 9),
+    (6, 8),
+    (7, 9),
+ ",True,False,,isomorphism,
+1,k_coloring,k-coloring,7,"(10, [((0, 3), (1, 4), (2, 5)), ((3, 6), (4, 7), (5, 8)), ((6, 7), (7, 8), (8, 9))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,k_coloring,k-coloring,8,"(10, [((0,1), (0,2), (0,3)), ((1,2), (1,3), (2,3)), ((2,3), (3,4), (4,5)), ((4,5), (5,6), (6,7)), ((7,8), (8,9), (9,0))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,k_coloring,k-coloring,9,"Sure, I can help you with that! Here's my reasoning and the final graph:
+
+1. A 3-colorable graph can be vertex-colored with 3 colors such that no two adjacent vertices share the same color.
+
+To ensure",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：unterminated string literal (detected at line 1) (<unknown>, line 1)"
+1,k_coloring,k-coloring,10,"(10, [
+	(0, 1),
+	(0, 3),
+	(0, 5),
+	(0, 7),
+	(0, 9),
+	(1, 2),
+	(1, 4),
+	(1, 6),
+	(2, 4),
+	(2, 6),
+	(2, 8),
+	(3, 5),
+	(3, 7),
+	(3, 9),
+	(4, 6),
+	(4, 8),
+	(5, 7),
+	(5, 9),
+	(6, 8),
+	(7, 9),
+	(8, 10),
+	(9",False,False,,isomorphism,第 21 条边端点越界（节点范围应为 0..9）。
+1,k_coloring,k-coloring,11,"(10, [
+	(0, 3),
+	(1, 4),
+	(2, 5),
+	(6, 7),
+	(7, 8),
+	(8, 9),
+	(9, 0)
+])",True,False,,isomorphism,
+1,k_coloring,k-coloring,12,"(10, [((0,1), (0,2)), ((1,2), (1,3)), ((2,3), (2,4)), ((3,4), (3,5)), ((4,5), (4,6)), ((5,6), (5,7)), ((6,7), (6,8)), ((7,8), (7,9)), ((8,9), (8,0))])",False,False,,isomorphism,第 1 条边包含非整数端点。
+1,k_coloring,k-coloring,13,"(10, [
+    (0, 1),
+    (0, 3),
+    (1, 2),
+    (1, 5),
+    (2, 4),
+    (2, 7),
+    (3, 4),
+    (3, 8),
+    (4, 5),
+    (4, 9),
+    (5, 6),
+    (5, 7),
+    (6, 7),
+    (7, 8),
+    (8, 9)
+])",True,False,,isomorphism,
+1,k_coloring,k-coloring,14,"(10, [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9)])",True,False,,isomorphism,
+1,k_coloring,k-coloring,15,"Sure, I'd be happy to help! Here's my reasoning and the final graph:
+
+1. First, let's start with a graph that has 10 nodes. We can label the nodes from 0 to 9.
+2. Since we want to color the graph with",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：unterminated string literal (detected at line 3) (<unknown>, line 3)"
+1,k_coloring,k-coloring,16,"(10, [((0,1), (0,2), (0,3), (1,4), (1,5), (2,6), (2,7), (3,8), (3,9)), ((4,5), (4,6), (4,7), (5,8), (5,9)), ((6,7), (6,8), (7,9))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,k_coloring,k-coloring,17,"(10, [(0, 3), (0, 6), (1, 4), (2, 5), (3, 7), (4, 8), (5, 9)])",True,False,,isomorphism,
+1,k_coloring,k-coloring,18,"(10, [
+    (0, 4),
+    (1, 5),
+    (2, 6),
+    (3, 7),
+    (4, 8),
+    (5, 9),
+    (6, 10),
+    (8, 0),
+    (9, 1),
+    (10, 2)
+])",False,False,,isomorphism,第 7 条边端点越界（节点范围应为 0..9）。
+1,k_coloring,k-coloring,19,"(10, [((0,1), (0,2), (0,3)), ((1,4), (1,5), (1,6)), ((2,7), (2,8), (2,9)), ((3,10), (3,11), (3,12))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,k_coloring,k-coloring,20,"(10, [((0,0), (0,1), (0,2)), ((1,0), (1,1), (1,3)), ((2,0), (2,1), (2,3)), ((3,0), (3,2), (3,4)), ((4,1), (4,2), (4,5)), ((5,2), (5,3), (5,6)), ((6,3), (6,4), (6,7)), ((7,4), (7,5), (7,8)), ((8,5), (8",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,k_coloring,k-coloring,21,"(10, [
+    (0, 1, red),
+    (0, 2, red),
+    (0, 3, red),
+    (1, 4, blue),
+    (1, 5, blue),
+    (2, 6, green),
+    (2, 7, green),
+    (3, 8, green),
+    (3, 9, green),
+    (4, 9, blue),
+    (5, 10, ",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：malformed node or string on line 2: <ast.Name object at 0x78c8644b3130>"
+1,k_coloring,k-coloring,22,"(10, [
+    (0, 1),
+    (0, 2),
+    (0, 3),
+    (1, 2),
+    (1, 3),
+    (2, 3),
+    (3, 4),
+    (3, 5),
+    (4, 5),
+    (4, 6),
+    (5, 6),
+    (5, 7),
+    (6, 7),
+    (7, 8),
+    (7, 9),
+    (8, 9)
+])",True,False,,isomorphism,
+1,k_coloring,k-coloring,23,"(10, [
+    (0, 1, red),  // 0-1 edge is red
+    (0, 2, blue),   // 0-2 edge is blue
+    (1, 3, green),  // 1-3 edge is green
+    (1, 4, red),   // 1-4 edge is red
+    (2, 5, blue),  // 2-5 edge is blu",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：invalid syntax (<unknown>, line 2)"
+1,k_coloring,k-coloring,24,"(10, [((0, 3), (1, 4), (2, 5)), ((6, 7), (7, 8), (8, 9))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,k_coloring,k-coloring,25,"Sure, I'd be happy to help! Here's my reasoning and the final graph:
+
+1. A 3-colorable graph can be vertex-colored with 3 colors such that no two adjacent vertices share the same color.
+
+To ensure tha",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：unterminated string literal (detected at line 9) (<unknown>, line 9)"
+1,k_coloring,k-coloring,26,"(10, [
+    (0, 1), (0, 2), (0, 3),
+    (1, 4), (1, 5), (1, 6),
+    (2, 7), (2, 8), (2, 9),
+    (3, 10), (4, 10), (5, 10),
+    (6, 7), (7, 8), (8, 9),
+    (9, 10), (10, 1)
+])",False,False,,isomorphism,第 10 条边端点越界（节点范围应为 0..9）。
+1,k_coloring,k-coloring,27,"(10, [
+    (0, 1), (0, 2), (0, 3),
+    (1, 4), (1, 5), (1, 6),
+    (2, 7), (2, 8), (2, 9),
+    (3, 10), (3, 4), (3, 5),
+    (4, 6), (4, 7), (4, 8),
+    (5, 9), (5, 10), (6, 7),
+    (7, 8), (8, 9), (9,",False,False,,isomorphism,第 10 条边端点越界（节点范围应为 0..9）。
+1,k_coloring,k-coloring,28,"(10, [(0, 1), (0, 3), (0, 7), (2, 4), (2, 6), (4, 5), (4, 7), (6, 8), (8, 9), (1, 3), (1, 5), (3, 5), (5, 7), (7, 9)])",True,False,,isomorphism,
+1,k_coloring,k-coloring,29,"Sure! Here's my reasoning and the final graph:
+
+1. A 3-colorable graph can be vertex-colored with 3 colors such that no two adjacent vertices share the same color. This means that we can assign each n",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：unterminated string literal (detected at line 1) (<unknown>, line 1)"
+1,k_coloring,k-coloring,30,"Sure! Let's go through the steps to create a 3-colorable graph with 10 nodes and 32 edges.
+
+Step 1: A 3-colorable graph can be vertex-colored with 3 colors such that no two adjacent vertices share the",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：unterminated string literal (detected at line 1) (<unknown>, line 1)"
+1,k_coloring,k-coloring,31,"Sure! Here's my reasoning and the final graph:
+
+1. A 3-colorable graph can be vertex-colored with 3 colors such that no two adjacent vertices share the same color.
+
+To ensure that the graph is 3-color",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：unterminated string literal (detected at line 1) (<unknown>, line 1)"
+1,k_coloring,k-coloring,32,"(10, [
+	(0, 1),
+	(0, 3),
+	(1, 2),
+	(1, 5),
+	(2, 4),
+	(3, 7),
+	(4, 6),
+	(5, 9),
+	(6, 8),
+	(7, 9),
+	(8, 9)
+])",True,False,,isomorphism,
+1,k_coloring,k-coloring,33,"(10, [((0,1), (0,2)), ((0,3), (1,4)), ((1,5), (2,6)), ((2,7), (3,8)), ((3,9), (4,10)), ((4,6), (5,7)), ((5,8), (6,9)), ((6,10), (7,8)), ((7,9), (8,10))])",False,False,,isomorphism,第 1 条边包含非整数端点。
+1,k_coloring,k-coloring,34,"(10, [((0,1), (0,2), (0,3), (1,4)), ((1,5), (1,6), (2,5), (2,6)), ((2,7), (2,8), (3,7), (3,8))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,k_coloring,k-coloring,35,"(10, [((0,1), (0,2), (0,3)), ((1,4), (1,5), (1,6)), ((2,7), (2,8), (2,9)), ((3,10), (3,11), (3,12))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,k_coloring,k-coloring,36,"(10, [((0,1), (1,2), (2,0)), ((3,4), (4,5), (5,3)), ((6,7), (7,8), (8,6)), ((0,3), (3,6), (6,0)), ((1,4), (4,7), (7,1)), ((2,5), (5,8), (8,2)), ((3,9), (9,0), (0,3))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,k_coloring,k-coloring,37,"(10, [((0,1), (0,2), (0,3), (1,4)), ((1,5), (1,6), (1,7), (2,8)), ((2,9), (2,10), (3,10), (3,9)), ((3,8), (3,7), (4,7), (4,8))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,k_coloring,k-coloring,38,"(10, [(0,1), (0,2), (0,3), (1,4), (1,5), (1,6), (2,7), (2,8), (2,9), (3,10)])",False,False,,isomorphism,第 10 条边端点越界（节点范围应为 0..9）。
+1,k_coloring,k-coloring,39,"(10, [
+    (0, 1),  // red-blue
+    (0, 2),  // red-green
+    (1, 3),  // blue-green
+    (1, 4),  // blue-red
+    (2, 5),  // green-red
+    (2, 6),  // green-blue
+    (3, 7),  // red-red
+    (3, 8),  ",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：invalid syntax (<unknown>, line 2)"
+1,k_coloring,k-coloring,40,"(10, [(0,2), (0,3), (0,4), (1,2), (1,3), (1,5), (2,4), (2,6), (3,5), (3,7), (4,6), (4,8), (5,7), (5,9), (6,8), (7,9)])",True,False,,isomorphism,
+1,k_coloring,k-coloring,41,"Sure! Let's go through the steps to create a 3-colorable graph with 10 nodes and 32 edges.
+
+Step 1: A 3-colorable graph can be vertex-colored with 3 colors such that no two adjacent vertices share the",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：unterminated string literal (detected at line 1) (<unknown>, line 1)"
+1,k_coloring,k-coloring,42,"Sure! Here's my reasoning and the final graph:
+
+1. A 3-colorable graph can be vertex-colored with 3 colors such that no two adjacent vertices share the same color.
+
+To ensure that the graph is 3-color",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：unterminated string literal (detected at line 1) (<unknown>, line 1)"
+1,k_coloring,k-coloring,43,"Sure! Let's go through the steps to create a 3-colorable graph with 10 nodes and 32 edges.
+
+Step 1: A 3-colorable graph can be vertex-colored with 3 colors such that no two adjacent vertices share the",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：unterminated string literal (detected at line 1) (<unknown>, line 1)"
+1,k_coloring,k-coloring,44,"Sure! Here's my reasoning and the final graph:
+
+1. A 3-colorable graph can be vertex-colored with 3 colors such that no two adjacent vertices share the same color.
+
+To ensure that the graph is 3-color",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：unterminated string literal (detected at line 1) (<unknown>, line 1)"
+1,k_coloring,k-coloring,45,"(10, [((0, 1), (0, 2), (0, 3)), ((1, 4), (1, 5), (1, 6)), ((2, 7), (2, 8), (2, 9)), ((3, 7), (3, 8), (3, 9)), ((4, 5), (4, 6)), ((5, 6), (5, 7)), ((6, 7), (6, 8)), ((7, 8), (7, 9)), ((8, 9), (8, 0))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,k_coloring,k-coloring,46,"(10, [(0, 1), (0, 3), (0, 5), (2, 1), (2, 3), (2, 5), (4, 6), (4, 8), (6, 7), (6, 9), (8, 10), (8, 12), (10, 13), (10, 14)])",False,False,,isomorphism,第 11 条边端点越界（节点范围应为 0..9）。
+1,k_coloring,k-coloring,47,"(10, [
+    (0, 2),
+    (1, 3),
+    (4, 6),
+    (5, 7),
+    (8, 9),
+])",True,False,,isomorphism,
+1,k_coloring,k-coloring,48,"(10, [('0', '1'), ('0', '3'), ('1', '2'), ('1', '5'), ('2', '4'), ('3', '4'), ('3', '7'), ('4', '6'), ('5', '7'), ('6', '8'), ('7', '8')])",True,False,,isomorphism,
+1,k_coloring,k-coloring,49,"Sure! Let's go through the steps to create a 3-colorable graph with 10 nodes and 32 edges.
+
+Step 1: A 3-colorable graph can be vertex-colored with 3 colors such that no two adjacent vertices share the",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：unterminated string literal (detected at line 1) (<unknown>, line 1)"
+1,k_coloring,k-coloring,50,"(10, [
+	(0, 1),
+	(2, 3),
+	(4, 5),
+	(6, 7),
+	(8, 9)
+])",True,False,,isomorphism,
+1,k_coloring,k-coloring,51,"Sure, I'd be happy to help!
+
+First, let's start with the reasoning. To create a 3-colorable graph with 10 nodes and 32 edges, we can follow these steps:
+
+1. Partition the nodes into 3 color classes:
+
+",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：unterminated string literal (detected at line 1) (<unknown>, line 1)"
+1,k_coloring,k-coloring,52,"(10, [
+    (0, 1), (0, 2), (0, 3), (0, 4), (1, 4), (1, 5), (2, 5), (2, 6), (3, 6), (3, 7),
+    (4, 7), (4, 8), (5, 8), (5, 9), (6, 9), (7, 9), (8, 9), (9, 0)
+])",True,False,,isomorphism,
+1,k_coloring,k-coloring,53,"(10, [((0,1), (1,2), (2,3)), ((0,4), (4,5), (5,6)), ((0,7), (7,8), (8,9)), ((1,7), (2,8), (3,9)), ((4,6), (5,7), (6,8)), ((5,9), (6,10), (7,8))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,k_coloring,k-coloring,54,"(10, [(0, 1), (0, 2), (1, 2), (1, 0), (2, 0), (2, 1)])",True,False,,isomorphism,
+1,k_coloring,k-coloring,55,"(10, [
+  (0, 1, red),
+  (0, 2, red),
+  (0, 3, red),
+  (0, 4, red),
+  (1, 2, blue),
+  (1, 3, blue),
+  (1, 4, blue),
+  (2, 3, green),
+  (2, 4, green),
+  (3, 4, green),
+  (3, 5, red),
+  (4, 5, blue),
+  (",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：malformed node or string on line 2: <ast.Name object at 0x78c8644b1540>"
+1,k_coloring,k-coloring,56,"(10, [(0, 2), (0, 3), (0, 5), (1, 2), (1, 4), (1, 6), (2, 3), (2, 7), (3, 4), (3, 8), (4, 5), (4, 9), (5, 6), (5, 7), (6, 8), (7, 9)])",True,False,,isomorphism,
+1,k_coloring,k-coloring,57,"(10, [
+    (0, 1),
+    (1, 2),
+    (2, 3),
+    (3, 4),
+    (4, 5),
+    (5, 6),
+    (6, 7),
+    (7, 8),
+    (8, 9),
+    (9, 0)
+])",True,False,,isomorphism,
+1,k_coloring,k-coloring,58,"Sure, I'd be happy to help!
+
+First, let's start with the reasoning. To create a 3-colorable graph with 10 nodes and 32 edges, we can follow these steps:
+
+Step 1: Partition the nodes into 3 color class",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：unterminated string literal (detected at line 1) (<unknown>, line 1)"
+1,k_coloring,k-coloring,59,"(10, [
+    (0, 1), (0, 2), (0, 3),
+    (1, 4), (1, 5), (1, 6),
+    (2, 7), (2, 8), (2, 9),
+    (3, 10), (3, 4), (3, 5),
+    (4, 6), (4, 7), (4, 8),
+    (5, 9), (5, 10), (5, 2),
+    (6, 8), (6, 9), (6,",False,False,,isomorphism,第 10 条边端点越界（节点范围应为 0..9）。
+1,k_coloring,k-coloring,60,"(10, [
+    (0, 1),  // red-blue edge
+    (0, 2),  // red-green edge
+    (1, 3),  // blue-green edge
+    (2, 4),  // blue-red edge
+    (3, 5),  // green-red edge
+    (4, 6),  // green-blue edge
+    (5,",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：invalid syntax (<unknown>, line 2)"
+1,k_coloring,k-coloring,61,"(10, [((0,1), (0,2), (0,3)), ((1,2), (1,4), (1,5)), ((2,3), (2,6), (2,7)), ((3,4), (3,8), (3,9)), ((4,5), (4,10), (5,10))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,k_coloring,k-coloring,62,"(10, [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (0, 10)])",False,False,,isomorphism,第 6 条边端点越界（节点范围应为 0..9）。
+1,k_coloring,k-coloring,63,"Sure! Let's go through the steps to generate a 3-colorable graph with 10 nodes and 32 edges.
+
+Step 1: A 3-colorable graph can be vertex-colored with 3 colors such that no two adjacent vertices share t",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：unterminated string literal (detected at line 1) (<unknown>, line 1)"
+1,k_coloring,k-coloring,64,"Sure! Let's go through the steps to create a 3-colorable graph with 10 nodes and 32 edges:
+
+1. A 3-colorable graph can be vertex-colored with 3 colors such that no two adjacent vertices share the same",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：unterminated string literal (detected at line 1) (<unknown>, line 1)"
+1,k_coloring,k-coloring,65,"Sure! Let's go through the steps to create a 3-colorable graph with 10 nodes and 32 edges.
+
+Step 1: A 3-colorable graph can be vertex-colored with 3 colors such that no two adjacent vertices share the",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：unterminated string literal (detected at line 1) (<unknown>, line 1)"
+1,k_coloring,k-coloring,66,"Sure! Let's go through the steps to generate a 3-colorable graph with 10 nodes and 32 edges.
+
+Step 1: A 3-colorable graph can be vertex-colored with 3 colors such that no two adjacent vertices share t",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：unterminated string literal (detected at line 1) (<unknown>, line 1)"
+1,k_coloring,k-coloring,67,"Sure! Here's my reasoning and the final graph:
+
+1. A 3-colorable graph can be vertex-colored with 3 colors such that no two adjacent vertices share the same color.
+
+To ensure that the graph is 3-color",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：unterminated string literal (detected at line 1) (<unknown>, line 1)"
+1,k_coloring,k-coloring,68,"Sure, I'd be happy to help! Here's my reasoning and the final graph:
+
+Reasoning:
+
+1. A 3-colorable graph can be vertex-colored with 3 colors such that no two adjacent vertices share the same color.
+
+T",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：unterminated string literal (detected at line 11) (<unknown>, line 11)"
+1,k_coloring,k-coloring,69,"Sure! Let's go through the steps to generate a 3-colorable graph with 10 nodes and 32 edges.
+
+Step 1: A 3-colorable graph can be vertex-colored with 3 colors such that no two adjacent vertices share t",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：unterminated string literal (detected at line 1) (<unknown>, line 1)"
+1,k_coloring,k-coloring,70,"(10, [
+    (0, 4),
+    (1, 5),
+    (2, 6),
+    (3, 7),
+    (8, 9),
+    (9, 10),
+    (0, 8),
+    (1, 9),
+    (2, 10),
+    (3, 4),
+    (4, 5),
+    (5, 6),
+    (6, 7),
+    (7, 8),
+    (8, 9),
+    (9, 10)",False,False,,isomorphism,第 6 条边端点越界（节点范围应为 0..9）。
+1,k_coloring,k-coloring,71,"(10, [
+    (0, 1, red),  // R-B-G
+    (1, 2, blue),  // R-B-G
+    (2, 3, green),  // R-B-G
+    (3, 4, red),  // R-B-G
+    (4, 5, blue),  // R-B-G
+    (5, 6, green),  // R-B-G
+    (6, 7, red),  // R-B-",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：invalid syntax (<unknown>, line 2)"
+1,k_coloring,k-coloring,72,"(10, [((0,1), (0,2), (0,3), (0,4)), ((1,2), (1,3), (1,4), (2,3)), ((2,3), (2,4), (3,4), (3,0)), ((3,4), (3,0), (4,0), (4,1)), ((4,1), (4,2), (4,3), (0,1))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,k_coloring,k-coloring,73,"(10, [
+    (0, 4),
+    (1, 5),
+    (2, 6),
+    (3, 7),
+    (8, 9),
+    (9, 10)
+])",False,False,,isomorphism,第 6 条边端点越界（节点范围应为 0..9）。
+1,k_coloring,k-coloring,74,"(10, [(0, 1), (0, 3), (1, 2), (1, 5), (2, 4), (2, 7), (3, 6), (3, 8), (4, 5), (4, 9), (5, 6), (5, 7), (6, 8), (7, 9)])",True,False,,isomorphism,
+1,k_coloring,k-coloring,75,"(10, [((0,1), (0,2), (0,3)), ((1,2), (1,3), (2,3)), ((2,3), (2,4), (3,4)), ((3,4), (3,5), (4,5)), ((4,5), (4,6), (5,6)), ((5,6), (5,7), (6,7)), ((6,7), (6,8), (7,8)), ((7,8), (7,9), (8,9))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,k_coloring,k-coloring,76,"(10, [((0,1), (0,2), (0,3)), ((1,2), (1,4), (1,5)), ((2,3), (2,6), (2,7)), ((3,4), (3,8), (3,9)), ((4,5), (4,10)), ((5,6), (5,8)), ((6,7), (6,9)), ((7,8), (7,10)), ((8,9), (8,10))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,k_coloring,k-coloring,77,"(10, [
+	(0, 1),
+	(1, 2),
+	(2, 3),
+	(3, 4),
+	(4, 5),
+	(5, 6),
+	(6, 7),
+	(7, 8),
+	(8, 9),
+	(0, 4),
+	(1, 5),
+	(2, 6),
+	(3, 7),
+	(4, 8),
+	(5, 9)
+])",True,False,,isomorphism,
+1,k_coloring,k-coloring,78,"(10, [
+    (0, 1),  # red to blue
+    (0, 2),  # red to green
+    (1, 3),  # blue to red
+    (1, 4),  # blue to green
+    (2, 5),  # green to red
+    (2, 6),  # green to blue
+    (3, 7),  # green to r",False,False,,isomorphism,第 10 条边端点越界（节点范围应为 0..9）。
+1,k_coloring,k-coloring,79,"(10, [(0, 1), (1, 2), (2, 3), (3, 4), (4, 5), (5, 6), (6, 7), (7, 8), (8, 9), (9, 0)])",True,False,,isomorphism,
+1,k_coloring,k-coloring,80,"(10, [
+  (0, 1), (0, 2), (0, 3),
+  (1, 4), (1, 5),
+  (2, 6), (2, 7),
+  (3, 8), (3, 9),
+  (4, 10), (5, 10)
+])",False,False,,isomorphism,第 10 条边端点越界（节点范围应为 0..9）。
+1,k_coloring,k-coloring,81,"(10, [
+    (0, 1), (0, 2), (0, 3), (1, 4), (1, 5), (2, 6), (2, 7), (3, 8), (3, 9)
+])",True,False,,isomorphism,
+1,k_coloring,k-coloring,82,"(10, [(0, 1), (0, 2), (1, 3), (2, 4), (2, 6), (3, 5), (3, 7), (4, 6), (4, 8), (5, 7), (5, 9), (6, 8), (7, 9), (8, 2), (9, 0)])",True,False,,isomorphism,
+1,k_coloring,k-coloring,83,"(10, [
+    (0, 1),  (0, 2),  (0, 3),  (1, 4),  (1, 5),  (2, 6),  (2, 7),  (3, 8),  (3, 9)
+])",True,False,,isomorphism,
+1,k_coloring,k-coloring,84,"(10, [
+    (0, 1),  // Red to Blue
+    (1, 2),  // Blue to Red
+    (2, 3),  // Red to Blue
+    (3, 4),  // Blue to Green
+    (4, 5),  // Green to Red
+    (5, 6),  // Red to Blue
+    (6, 7),  // Blue t",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：invalid syntax (<unknown>, line 2)"
+1,k_coloring,k-coloring,85,"Sure! Here's my reasoning and the final graph:
+
+1. First, I'll find a partition of the nodes into 3 color classes. Let's call the colors red, blue, and green.
+2. Since there are 10 nodes, we can parti",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：unterminated string literal (detected at line 1) (<unknown>, line 1)"
+1,k_coloring,k-coloring,86,"(10, [(0, 1), (0, 2), (1, 2), (1, 0), (2, 0), (2, 1)])",True,False,,isomorphism,
+1,k_coloring,k-coloring,87,"(10, [
+  (0, 1, red),  // 0-1 edge is red
+  (0, 2, blue),  // 0-2 edge is blue
+  (1, 3, red),  // 1-3 edge is red
+  (1, 4, green),  // 1-4 edge is green
+  (2, 5, blue),  // 2-5 edge is blue
+  (2, 6, g",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：invalid syntax (<unknown>, line 2)"
+1,k_coloring,k-coloring,88,"Sure! Let's go through the steps to create a 3-colorable graph with 10 nodes and 32 edges.
+
+Step 1: A 3-colorable graph can be vertex-colored with 3 colors such that no two adjacent vertices share the",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：unterminated string literal (detected at line 1) (<unknown>, line 1)"
+1,k_coloring,k-coloring,89,"(10, [
+    (0, 1),  // red-blue edge
+    (0, 2),  // red-green edge
+    (1, 3),  // blue-green edge
+    (1, 4),  // blue-red edge
+    (2, 5),  // green-red edge
+    (2, 6),  // green-blue edge
+    (3,",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：invalid syntax (<unknown>, line 2)"
+1,k_coloring,k-coloring,90,"(10, [((0,2), (1,3), (4,5)), ((2,4), (3,5), (6,7)), ((4,6), (5,7), (8,9))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,k_coloring,k-coloring,91,"(10, [
+	(0, 1), (0, 2), (0, 4), (0, 6), (0, 8),
+	(1, 2), (1, 3), (1, 5), (1, 7), (1, 9),
+	(2, 4), (2, 6), (2, 8),
+	(3, 5), (3, 7), (3, 9),
+	(4, 6), (4, 8),
+	(5, 7), (5, 9),
+	(6, 8), (6, 9),
+	(7, 9),
+	",True,False,,isomorphism,
+1,k_coloring,k-coloring,92,"(10, [((0,1), (0,2)), ((0,3), (1,4)), ((0,5), (2,6)), ((1,7), (2,8)), ((3,9), (4,10)), ((5,6), (6,7)), ((5,8), (6,9)), ((7,8), (8,9))])",False,False,,isomorphism,第 1 条边包含非整数端点。
+1,k_coloring,k-coloring,93,"(10, [((0,1), (0,2), (0,3)), ((1,4), (1,5), (1,6)), ((2,7), (2,8), (2,9)), ((3,10), (3,11), (3,12))])",False,False,,isomorphism,"第 1 条边不是二元组 `(u,v)`。"
+1,k_coloring,k-coloring,94,"Sure, I'd be happy to help!
+
+To start, we know that a 3-colorable graph can be vertex-colored with 3 colors such that no two adjacent vertices share the same color. This means that we can partition th",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：unterminated string literal (detected at line 1) (<unknown>, line 1)"
+1,k_coloring,k-coloring,95,"Sure, I'd be happy to help! Here's my reasoning and the final graph:
+
+1. First, let's start with a graph that has 10 nodes, labeled 0 to 9. We can create a complete graph with 10 nodes, where each nod",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：unterminated string literal (detected at line 3) (<unknown>, line 3)"
+1,k_coloring,k-coloring,96,"(10, [
+    (0, 1),  // Red to Blue
+    (0, 2),  // Red to Green
+    (1, 3),  // Blue to Red
+    (1, 4),  // Blue to Green
+    (2, 5),  // Green to Red
+    (2, 6),  // Green to Blue
+    (3, 7),  // Gre",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：invalid syntax (<unknown>, line 2)"
+1,k_coloring,k-coloring,97,"(10, [
+    (0, 1), 
+    (0, 2), 
+    (0, 3), 
+    (1, 4), 
+    (1, 5), 
+    (2, 6), 
+    (2, 7), 
+    (3, 8), 
+    (3, 9), 
+    (4, 5), 
+    (4, 6), 
+    (5, 7), 
+    (5, 8), 
+    (6, 9), 
+    (7, 8),",True,False,,isomorphism,
+1,k_coloring,k-coloring,98,"(10, [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (0, 10)])",False,False,,isomorphism,第 6 条边端点越界（节点范围应为 0..9）。
+1,k_coloring,k-coloring,99,"(10, [
+    (0, 1, red),  // 0-1 edge is red
+    (0, 2, blue),  // 0-2 edge is blue
+    (0, 3, green), // 0-3 edge is green
+    (1, 4, red),  // 1-4 edge is red
+    (1, 5, blue),  // 1-5 edge is blue
+ ",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：invalid syntax (<unknown>, line 2)"
+1,k_coloring,k-coloring,100,"Sure, I'd be happy to help you generate a 3-colorable graph with 10 nodes and 32 edges!
+
+Step 1: A 3-colorable graph can be vertex-colored with 3 colors such that no two adjacent vertices share the sa",False,False,,isomorphism,"格式错误，无法解析为 `(n, [(u,v), ...])`：unterminated string literal (detected at line 1) (<unknown>, line 1)"
