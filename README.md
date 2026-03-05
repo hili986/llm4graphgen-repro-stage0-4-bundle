@@ -532,6 +532,7 @@ export OPENAI_BASE_URL="http://localhost:8000/v1"
 | `--num-repeats` | 重复实验次数 | `1` |
 | `--size` | 图规模：`small` / `medium` / `large` | `medium` |
 | `--unique-method` | 去重方法：`isomorphism`（WL 哈希）/ `signature` | `isomorphism` |
+| `--tasks` | 只运行指定任务（如 `--tasks cycle k_regular k_coloring`） | 全部 8 个 |
 
 ### Stage 3: `llm4graphgen.stage3_distribution`
 

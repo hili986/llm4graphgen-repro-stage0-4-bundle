@@ -130,5 +130,101 @@
     "error_detail": null,
     "output_dir": "runs/stage2_Llama-2-13b-chat-hf_few_shot_cot_small_100s_r3_20260303_230313",
     "log_tail": "Stage2 LLaMA-2 few_shot_cot 运行完成 (max_tokens=2048)"
+  },
+  "stage2_Llama-2-13b-chat-hf_zero_shot_medium_100s_r3": {
+    "name": "stage2_Llama-2-13b-chat-hf_zero_shot_medium_100s_r3",
+    "status": "completed",
+    "start_time": "2026-03-04T14:15:45",
+    "end_time": "2026-03-04T15:19:15",
+    "duration_sec": 3810,
+    "return_code": 0,
+    "error_type": null,
+    "error_detail": null,
+    "output_dir": "runs/stage2_Llama-2-13b-chat-hf_zero_shot_medium_100s_r3_20260304_141545",
+    "log_tail": "Stage2 LLaMA-2 zero_shot medium 运行完成 (max_tokens=2048)"
+  },
+  "stage2_Llama-2-13b-chat-hf_few_shot_medium_100s_r3": {
+    "name": "stage2_Llama-2-13b-chat-hf_few_shot_medium_100s_r3",
+    "status": "completed",
+    "start_time": "2026-03-04T15:19:15",
+    "end_time": "2026-03-04T16:04:51",
+    "duration_sec": 2736,
+    "return_code": 0,
+    "error_type": null,
+    "error_detail": null,
+    "output_dir": "runs/stage2_Llama-2-13b-chat-hf_few_shot_medium_100s_r3_20260304_151915",
+    "log_tail": "Stage2 LLaMA-2 few_shot medium 运行完成 (max_tokens=2048)"
+  },
+  "stage2_Llama-2-13b-chat-hf_zero_shot_cot_medium_100s_r3": {
+    "name": "stage2_Llama-2-13b-chat-hf_zero_shot_cot_medium_100s_r3",
+    "status": "completed",
+    "start_time": "2026-03-04T16:04:52",
+    "end_time": "2026-03-04T19:52:35",
+    "duration_sec": 13663,
+    "return_code": 0,
+    "error_type": null,
+    "error_detail": null,
+    "output_dir": "runs/stage2_Llama-2-13b-chat-hf_zero_shot_cot_medium_100s_r3_20260304_160452",
+    "log_tail": "Stage2 LLaMA-2 zero_shot_cot medium 运行完成 (max_tokens=2048)"
+  },
+  "stage2_Llama-2-13b-chat-hf_few_shot_cot_medium_100s_r3": {
+    "name": "stage2_Llama-2-13b-chat-hf_few_shot_cot_medium_100s_r3",
+    "status": "completed",
+    "start_time": "2026-03-04T19:52:36",
+    "end_time": "2026-03-04T23:35:15",
+    "duration_sec": 13359,
+    "return_code": 0,
+    "error_type": null,
+    "error_detail": null,
+    "output_dir": "runs/stage2_Llama-2-13b-chat-hf_few_shot_cot_medium_100s_r3_20260304_195236",
+    "log_tail": "Stage2 LLaMA-2 few_shot_cot medium 运行完成 (max_tokens=2048)"
+  },
+  "stage2_Llama-2-13b-chat-hf_zero_shot_large_100s_r3": {
+    "name": "stage2_Llama-2-13b-chat-hf_zero_shot_large_100s_r3",
+    "status": "completed",
+    "start_time": "2026-03-04T23:35:16",
+    "end_time": "2026-03-05T00:49:37",
+    "duration_sec": 4461,
+    "return_code": 0,
+    "error_type": null,
+    "error_detail": null,
+    "output_dir": "runs/stage2_Llama-2-13b-chat-hf_zero_shot_large_100s_r3_20260304_233516",
+    "log_tail": "Stage2 LLaMA-2 zero_shot large 运行完成 (max_tokens=2048)"
+  },
+  "stage2_Llama-2-13b-chat-hf_few_shot_large_100s_r3": {
+    "name": "stage2_Llama-2-13b-chat-hf_few_shot_large_100s_r3",
+    "status": "completed",
+    "start_time": "2026-03-05T00:49:37",
+    "end_time": "2026-03-05T01:41:10",
+    "duration_sec": 3093,
+    "return_code": 0,
+    "error_type": null,
+    "error_detail": null,
+    "output_dir": "runs/stage2_Llama-2-13b-chat-hf_few_shot_large_100s_r3_20260305_004937",
+    "log_tail": "Stage2 LLaMA-2 few_shot large 运行完成 (max_tokens=2048)"
+  },
+  "stage2_Llama-2-13b-chat-hf_zero_shot_cot_large_100s_r3": {
+    "name": "stage2_Llama-2-13b-chat-hf_zero_shot_cot_large_100s_r3",
+    "status": "completed",
+    "start_time": "2026-03-05T01:41:11",
+    "end_time": "2026-03-05T05:35:37",
+    "duration_sec": 14066,
+    "return_code": 0,
+    "error_type": null,
+    "error_detail": null,
+    "output_dir": "runs/stage2_Llama-2-13b-chat-hf_zero_shot_cot_large_100s_r3_20260305_014111",
+    "log_tail": "Stage2 LLaMA-2 zero_shot_cot large 运行完成 (max_tokens=2048)"
+  },
+  "stage2_Llama-2-13b-chat-hf_few_shot_cot_large_100s_r3": {
+    "name": "stage2_Llama-2-13b-chat-hf_few_shot_cot_large_100s_r3",
+    "status": "completed",
+    "start_time": "2026-03-05T05:35:38",
+    "end_time": "2026-03-05T09:24:53",
+    "duration_sec": 13755,
+    "return_code": 0,
+    "error_type": null,
+    "error_detail": null,
+    "output_dir": "runs/stage2_Llama-2-13b-chat-hf_few_shot_cot_large_100s_r3_20260305_053538",
+    "log_tail": "Stage2 LLaMA-2 few_shot_cot large 运行完成 (max_tokens=2048)"
   }
 }

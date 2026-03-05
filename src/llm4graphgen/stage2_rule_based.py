@@ -290,21 +290,32 @@ SIZE_PRESETS: dict[str, dict[str, dict[str, int]]] = {
 }
 
 
-def _task_configs(size: str = "medium") -> list[TaskConfig]:
-    """生成任务配置，支持 small/medium/large 三种规模。"""
+ALL_TASKS = [
+    ("tree", "Tree"),
+    ("cycle", "Cycle"),
+    ("planar", "Planar"),
+    ("components", "#Components"),
+    ("k_regular", "k-regular"),
+    ("wheel", "Wheel"),
+    ("bipartite", "Bipartite"),
+    ("k_coloring", "k-coloring"),
+]
+
+ALL_TASK_IDS = [t[0] for t in ALL_TASKS]
+
+
+def _task_configs(size: str = "medium", tasks_filter: list[str] | None = None) -> list[TaskConfig]:
+    """生成任务配置，支持 small/medium/large 三种规模。
+
+    Args:
+        tasks_filter: 只运行指定的任务 ID 列表，None 表示全部 8 个任务。
+    """
     preset = SIZE_PRESETS[size]
 
     configs = []
-    for task_id, params in [
-        ("tree", "Tree"),
-        ("cycle", "Cycle"),
-        ("planar", "Planar"),
-        ("components", "#Components"),
-        ("k_regular", "k-regular"),
-        ("wheel", "Wheel"),
-        ("bipartite", "Bipartite"),
-        ("k_coloring", "k-coloring"),
-    ]:
+    for task_id, params in ALL_TASKS:
+        if tasks_filter and task_id not in tasks_filter:
+            continue
         p = preset[task_id]
         validator_args = {k: v for k, v in p.items() if k != "n"}
         configs.append(TaskConfig(
@@ -434,6 +445,7 @@ def run_stage2(
     num_repeats: int = 1,
     unique_method: str = "isomorphism",
     size: str = "medium",
+    tasks_filter: list[str] | None = None,
 ) -> tuple[int, Path]:
     """运行 Stage2 评测。
 
@@ -444,11 +456,12 @@ def run_stage2(
         num_repeats: 重复实验次数
         unique_method: "signature" (v2 边排序) 或 "isomorphism" (v3 WL hash，默认)
         size: "small" | "medium" | "large" (对齐论文 Table 4/8)
+        tasks_filter: 只运行指定的任务 ID 列表，None 表示全部。
     """
     run_dir = output_root / run_id
     run_dir.mkdir(parents=True, exist_ok=True)
 
-    tasks = _task_configs(size=size)
+    tasks = _task_configs(size=size, tasks_filter=tasks_filter)
     use_mock = provider is None
 
     # 选择去重函数
@@ -711,6 +724,9 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--size", default="medium",
                         choices=["small", "medium", "large"],
                         help="图规模：small/medium/large (对齐论文 Table 4/8)")
+    parser.add_argument("--tasks", nargs="+", default=None,
+                        choices=ALL_TASK_IDS,
+                        help="只运行指定任务 (默认全部 8 个)，如 --tasks cycle k_regular k_coloring")
     args = parser.parse_args(argv)
 
     # 自动生成描述性 run_id
@@ -742,6 +758,7 @@ def main(argv: list[str] | None = None) -> int:
         num_repeats=args.num_repeats,
         unique_method=args.unique_method,
         size=args.size,
+        tasks_filter=args.tasks,
     )
     print(f"Stage2 运行完成：{run_dir.as_posix()}")
     print("结果文件：rule_based_summary.csv / rule_based_metrics.csv / llm_io.jsonl")

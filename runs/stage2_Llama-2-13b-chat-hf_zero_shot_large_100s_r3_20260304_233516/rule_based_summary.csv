@@ -1,0 +1,4 @@
+﻿task_id,task_name,strategy,size,n,unique_method,num_repeats,valid_rate_mean,valid_rate_std,valid_rate_display,unique_rate_mean,unique_rate_std,unique_rate_display,novel_rate_mean,novel_rate_std,novel_rate_display
+cycle,Cycle,zero_shot,large,20,isomorphism,3,0.6,0.0,56.3±2.5,0.0178,0.0008,1.8±0.1,1.0000,0.0000,100.0±0.0
+k_regular,k-regular,zero_shot,large,20,isomorphism,3,0.0,0.0,0.0±0.0,0.0000,0.0000,0.0±0.0,0.0000,0.0000,0.0±0.0
+k_coloring,k-coloring,zero_shot,large,18,isomorphism,3,0.0,0.0,0.0±0.0,0.0000,0.0000,0.0±0.0,0.0000,0.0000,0.0±0.0

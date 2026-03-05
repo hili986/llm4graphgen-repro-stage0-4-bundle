@@ -1,0 +1,4 @@
+﻿repeat,task_id,task_name,strategy,size,n,unique_method,total_samples,parse_success_count,parse_fail_count,valid_count,unique_valid_count,novel_unique_count,valid_rate,unique_rate,novel_rate
+2,cycle,Cycle,zero_shot_cot,medium,15,isomorphism,100,32,68,22,1,1,0.2200,0.0455,1.0000
+2,k_regular,k-regular,zero_shot_cot,medium,16,isomorphism,100,42,58,1,1,1,0.0100,1.0000,1.0000
+2,k_coloring,k-coloring,zero_shot_cot,medium,15,isomorphism,100,26,74,0,0,0,0.0000,0.0000,0.0000
