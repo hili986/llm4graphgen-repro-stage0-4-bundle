@@ -1,0 +1,2 @@
+﻿total_samples,valid_count,valid_rate,unique_valid_count,unique_rate,novel_unique_count,novel_rate,CM,C_raw,rectified_C,classifier_TPR,classifier_FPR,classifier_own_TPR,classifier_own_FPR,classifier_type,tpr_fpr_source,rectified_C_formula
+103,74,0.7184,25,0.3378,25,1.0000,0.0009,0.0000,0.0000,0.3056,0.0047,0.3056,0.0047,gin,classifier,C(G) = (CM - FPR) / (TPR - FPR)

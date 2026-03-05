@@ -176,9 +176,15 @@ def train_gin_classifier(
     cache_file = _gin_cache_path(data_root, num_layer, emb_dim, epochs)
 
     # ---- 加载数据集 ----
+    # PyTorch 2.6+ 默认 weights_only=True，但 ogb 内部 torch.load 未适配
+    _orig_torch_load = torch.load
+    torch.load = lambda *a, **kw: _orig_torch_load(
+        *a, **{**kw, "weights_only": kw.get("weights_only", False)}
+    )
     if verbose:
         print("  [GIN] 加载 OGBG-MolHIV 数据集...")
     dataset = PygGraphPropPredDataset(name="ogbg-molhiv", root=data_root)
+    torch.load = _orig_torch_load  # 恢复原始行为
     split_idx = dataset.get_idx_split()
 
     train_loader = DataLoader(

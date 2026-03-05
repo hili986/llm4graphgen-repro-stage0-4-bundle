@@ -226,5 +226,53 @@
     "error_detail": null,
     "output_dir": "runs/stage2_Llama-2-13b-chat-hf_few_shot_cot_large_100s_r3_20260305_053538",
     "log_tail": "Stage2 LLaMA-2 few_shot_cot large 运行完成 (max_tokens=2048)"
+  },
+  "stage4_Llama-2-13b-chat-hf_few_shot_gin_100g": {
+    "name": "stage4_Llama-2-13b-chat-hf_few_shot_gin_100g",
+    "status": "completed",
+    "start_time": "2026-03-05T15:14:40",
+    "end_time": "2026-03-05T15:16:04",
+    "duration_sec": 84,
+    "return_code": 0,
+    "error_type": null,
+    "error_detail": null,
+    "output_dir": "runs/stage4_Llama-2-13b-chat-hf_few_shot_gin_100g_20260305_151440",
+    "log_tail": "Stage4 LLaMA-2 few_shot GIN 运行完成"
+  },
+  "stage4_Llama-2-13b-chat-hf_few_shot_gin_paper-tpr_100g": {
+    "name": "stage4_Llama-2-13b-chat-hf_few_shot_gin_paper-tpr_100g",
+    "status": "completed",
+    "start_time": "2026-03-05T15:16:04",
+    "end_time": "2026-03-05T15:18:02",
+    "duration_sec": 118,
+    "return_code": 0,
+    "error_type": null,
+    "error_detail": null,
+    "output_dir": "runs/stage4_Llama-2-13b-chat-hf_few_shot_gin_paper-tpr_100g_20260305_151604",
+    "log_tail": "Stage4 LLaMA-2 few_shot GIN paper-tpr 运行完成"
+  },
+  "stage4_Llama-2-13b-chat-hf_few_shot_cot_gin_100g": {
+    "name": "stage4_Llama-2-13b-chat-hf_few_shot_cot_gin_100g",
+    "status": "completed",
+    "start_time": "2026-03-05T15:18:02",
+    "end_time": "2026-03-05T15:21:33",
+    "duration_sec": 211,
+    "return_code": 0,
+    "error_type": null,
+    "error_detail": null,
+    "output_dir": "runs/stage4_Llama-2-13b-chat-hf_few_shot_cot_gin_100g_20260305_151802",
+    "log_tail": "Stage4 LLaMA-2 few_shot_cot GIN 运行完成"
+  },
+  "stage4_Llama-2-13b-chat-hf_few_shot_cot_gin_paper-tpr_100g": {
+    "name": "stage4_Llama-2-13b-chat-hf_few_shot_cot_gin_paper-tpr_100g",
+    "status": "completed",
+    "start_time": "2026-03-05T15:21:33",
+    "end_time": "2026-03-05T15:23:56",
+    "duration_sec": 143,
+    "return_code": 0,
+    "error_type": null,
+    "error_detail": null,
+    "output_dir": "runs/stage4_Llama-2-13b-chat-hf_few_shot_cot_gin_paper-tpr_100g_20260305_152133",
+    "log_tail": "Stage4 LLaMA-2 few_shot_cot GIN paper-tpr 运行完成"
   }
 }

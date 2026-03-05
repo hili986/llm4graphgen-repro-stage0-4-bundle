@@ -12,9 +12,15 @@
 #   cd ~/llm4graphgen
 #   nohup bash run_llama2_stage4.sh > run_llama2_stage4.log 2>&1 &
 
+# 确保 conda 环境激活
+eval "$(conda shell.bash hook 2>/dev/null || /home/sheng-xiang/miniconda3/bin/conda shell.bash hook)"
+conda activate llm4graphgen
+
 export OPENAI_BASE_URL=http://localhost:8000/v1
 export OPENAI_API_KEY=none
 export LLM_MAX_TOKENS=2048
+# vLLM 已占用 GPU，GIN 分类器用 CPU 即可（模型很小）
+export CUDA_VISIBLE_DEVICES=""
 
 MODEL="/home/sheng-xiang/models/Llama-2-13b-chat-hf"
 
